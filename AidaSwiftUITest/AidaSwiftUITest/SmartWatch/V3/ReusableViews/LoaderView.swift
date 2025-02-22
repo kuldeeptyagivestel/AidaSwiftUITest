@@ -36,7 +36,7 @@ private struct AnimatedClockLoadingView: View {
     @State private var rotateShortNeedle = false
     @State private var rotateLongNeedle = false
 
-    private let clockColor = Color.fromHex("#C0C0C0")
+    private let clockColor = Color.clockColor
 
     var body: some View {
         ZStack {
@@ -80,12 +80,5 @@ private struct AnimatedClockLoadingView: View {
             rotateShortNeedle = true
             rotateLongNeedle = true
         }
-    }
-}
-
-// MARK: - Preview
-struct LoaderView_Previews: PreviewProvider {
-    static var previews: some View {
-        WatchfaceCell(title: "Preview", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w65.gif?alt=media&token=a90ed96b-4754-4671-a249-a8e0db5ae15a"))
     }
 }

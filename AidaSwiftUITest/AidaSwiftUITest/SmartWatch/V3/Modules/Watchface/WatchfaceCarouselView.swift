@@ -7,85 +7,93 @@
 
 import SwiftUI
 
-// MARK: - Model
+// MARK: - WatchfaceModel: Need to remove later: TEMP Only
 struct WatchfaceModel: Identifiable {
     let id = UUID()
     let title: String
     let imageURL: URL?
 }
 
-//MARK: WatchfaceCarouselView
-// WatchfaceCarouselView: Represents the core horizontal scrollable view with cells.
-internal struct WatchfaceCarouselView: View {
-    let watchfaces: [WatchfaceModel]
-    let cellSize: CGSize
-    let cornerRadius: CGFloat
-    let sidePadding: CGFloat = 5 // Space before first and after last cell
+///Watchface Showcase View
+extension SmartWatch.V3.Watchfaces {
+    // MARK: - WatchfaceShowcaseView
+    //WatchfaceShowcaseView: Horizontal Watch Face Collection View with Header title and Arrow
+    internal struct WatchfaceShowcaseView: View {
+        let title: String
+        let watchfaces: [WatchfaceModel]
+        let cellSize: CGSize
+        let cornerRadius: CGFloat
 
-    var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            // Horizontal ScrollView with leading and trailing padding
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 8) {
-                    // Add leading space
-                    Spacer().frame(width: sidePadding)
-
-                    // Watchface cells
-                    ForEach(watchfaces) { watchface in
-                        WatchfaceCell(
-                            title: watchface.title,
-                            imageURL: watchface.imageURL,
-                            size: cellSize,
-                            cornerRadius: cornerRadius
-                        )
-                        .padding(.vertical, 8) // Add vertical padding to avoid clipping
-                    }
-
-                    // Add trailing space
-                    Spacer().frame(width: sidePadding)
+        var body: some View {
+            VStack(alignment: .leading, spacing: 16) {
+                // Title and arrow header
+                HStack {
+                    Text(title)
+                        .font(.custom(.muli, style: .bold, size: 17))
+                        .foregroundColor(.black)
+                    
+                    Spacer()
+                    
+                    Image(systemName: "arrow.right")
+                        .foregroundColor(Color.cellNavigationArrowColor)
+                        .padding(.trailing, 7)
                 }
+                .padding(.horizontal, 10)
+                
+                WatchfaceCarouselView(
+                    watchfaces: watchfaces,
+                    cellSize: cellSize,
+                    cornerRadius: cornerRadius
+                )
             }
-            .frame(height: cellSize.height + 16) // Avoid clipping
+            .padding(.vertical, 10)
+            .background(Color.whiteBgColor)
         }
     }
 }
 
-// MARK: - WatchfaceShowcaseView
-//WatchfaceShowcaseView: Horizontal Watch Face Collection View with Header title and Arrow
-internal struct WatchfaceShowcaseView: View {
-    let title: String
-    let watchfaces: [WatchfaceModel]
-    let cellSize: CGSize
-    let cornerRadius: CGFloat
+//MARK: WatchfaceCarouselView
+extension SmartWatch.V3.Watchfaces {
+    // WatchfaceCarouselView: Represents the core horizontal scrollable view with cells.
+    internal struct WatchfaceCarouselView: View {
+        let watchfaces: [WatchfaceModel]
+        let cellSize: CGSize
+        let cornerRadius: CGFloat
+        let sidePadding: CGFloat = 5 // Space before first and after last cell
 
-    var body: some View {
-        VStack(alignment: .leading, spacing: 15) {
-            // Title and arrow header
-            HStack {
-                Text(title)
-                    .font(.headline)
-                    .foregroundColor(.black)
-                Spacer()
-                Image(systemName: "arrow.right")
-                    .foregroundColor(.gray)
+        var body: some View {
+            VStack(alignment: .leading, spacing: 12) {
+                // Horizontal ScrollView with leading and trailing padding
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 8) {
+                        // Add leading space
+                        Spacer().frame(width: sidePadding)
+
+                        // Watchface cells
+                        ForEach(watchfaces) { watchface in
+                            WatchfaceCell(
+                                title: watchface.title,
+                                imageURL: watchface.imageURL,
+                                size: cellSize,
+                                cornerRadius: cornerRadius
+                            )
+                            .padding(.vertical, 8) // Add vertical padding to avoid clipping
+                        }
+
+                        // Add trailing space
+                        Spacer().frame(width: sidePadding)
+                    }
+                }
+                .frame(height: cellSize.height + 16) // Avoid clipping
             }
-            .padding(.horizontal, 10)
-            
-            WatchfaceCarouselView(
-                watchfaces: watchfaces,
-                cellSize: cellSize,
-                cornerRadius: cornerRadius
-            )
         }
-        .padding(.vertical, 10)
-        .background(Color.fromHex("#FFFFFF"))
     }
 }
 
 // MARK: - Preview
-struct WatchfaceShowcaseView_Previews: PreviewProvider {
+struct Previews_WatchfaceShowcaseView: PreviewProvider {
     static var previews: some View {
-        WatchfaceShowcaseView(
+        SmartWatch.V3.Watchfaces.WatchfaceShowcaseView(
             title: "Watch Face",
             watchfaces: [
                 WatchfaceModel(title: "Face 1", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w65.gif?alt=media&token=a90ed96b-4754-4671-a249-a8e0db5ae15a")),

@@ -7,18 +7,18 @@
 
 import SwiftUI
 
+//Toggle Switch: ON/OFF
 struct ToggleSwitchStyle: ToggleStyle {
-    
     func makeBody(configuration: Configuration) -> some View {
         HStack {
             configuration.label
             Spacer()
             ZStack {
                 RoundedRectangle(cornerRadius: 12)
-                    .fill(configuration.isOn ? Color.orange : Color.gray.opacity(0.3))
+                    .fill(configuration.isOn ? Color.toggleOnColor : Color.toggleOffColor)
                     .frame(width: 37, height: 12)
                 Circle()
-                    .fill(Color.white)
+                    .fill(Color.popupBGColor)
                     .frame(width: 18, height: 18)
                     .offset(x: configuration.isOn ? 10 : -10)
                     .animation(.easeInOut(duration: 0.2), value: configuration.isOn)

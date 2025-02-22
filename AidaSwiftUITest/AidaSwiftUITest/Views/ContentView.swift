@@ -12,12 +12,7 @@ struct ContentView: View {
     var body: some View {
         @State var isNew = true
         VStack(spacing: 10) {
-            FirmwareVersionView(version: "1.61.99", isNew: $isNew)
-            Button("Toggle NEW Tag") {
-                withAnimation {
-                    isNew.toggle()
-                }
-            }
+        
         }
         .padding(5)
         .previewLayout(.sizeThatFits)
