@@ -9,10 +9,12 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
+   // static let rootViewModel = SmartWatch.V3.DeviceConfigDashboard.ConfigDashboardViewModelMocking()
+    static let rootViewModel = WatchV3ConfigDashboardViewModel()
     var body: some View {
-        @State var isNew = true
-        VStack(spacing: 10) {
         
+        VStack(spacing: 10) {
+            SmartWatch.V3.DeviceConfigDashboard.ConfigDashboardView(viewModel: ContentView.rootViewModel)
         }
         .padding(5)
         .previewLayout(.sizeThatFits)
@@ -22,41 +24,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-
-//struct ContentView: View {
-////    @Environment(\.modelContext) private var modelContext
-////    @Query private var items: [Item]
-//
-//    var body: some View {
-////        NavigationSplitView {
-////            List {
-////                ForEach(items) { item in
-////                    NavigationLink {
-////                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-////                    } label: {
-////                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-////                    }
-////                }
-////                .onDelete(perform: deleteItems)
-////            }
-////            .toolbar {
-////                ToolbarItem(placement: .navigationBarTrailing) {
-////                    EditButton()
-////                }
-////                ToolbarItem {
-////                    Button(action: addItem) {
-////                        Label("Add Item", systemImage: "plus")
-////                    }
-////                }
-////            }
-////        } detail: {
-////            Text("Select an item")
-////        }
-//    }
-//}
-
-//#Preview {
-//    ContentView()
-//        .modelContainer(for: Item.self, inMemory: true)
-//}

@@ -11,7 +11,7 @@ import SwiftUI
 extension SmartWatch.V3.DeviceConfigDashboard {
     //MARK: - FirmwareVersionView
     struct FirmwareVersionView: View {
-        let version: String
+        @Binding var version: String
         @Binding var isNew: Bool
 
         var body: some View {
@@ -47,11 +47,12 @@ extension SmartWatch.V3.DeviceConfigDashboard {
 struct Previews_FirmwareVersionView: PreviewProvider {
     // MARK: - Preview Wrapper
     private struct FirmwareVersionView_PreviewWrapper: View {
+        @State private var version = "1.61.99"
         @State private var isNew = true
         
         var body: some View {
             VStack {
-                SmartWatch.V3.DeviceConfigDashboard.FirmwareVersionView(version: "1.61.99", isNew: $isNew)
+                SmartWatch.V3.DeviceConfigDashboard.FirmwareVersionView(version: $version, isNew: $isNew)
                 
                 Button(action: {
                     withAnimation {

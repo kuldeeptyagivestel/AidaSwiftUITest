@@ -13,7 +13,8 @@ extension Color {
     
     //MARK: Table, Cells BG Colors
     static let cellBgColor = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1))
-    static let whiteBgColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)) ///White color
+    static let whiteBgColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)) //White color
+    static let scrollViewBgColor = Color(#colorLiteral(red: 0.9607843137, green: 0.9607843137, blue: 0.9607843137, alpha: 1)) //F5F5F5: Off White
     
     //MARK:  Button Colors
     static let buttonColor = Color(#colorLiteral(red: 1, green: 0.4705882353, blue: 0.1921568627, alpha: 1))

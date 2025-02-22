@@ -11,10 +11,7 @@ import SwiftUI
 extension SmartWatch.V3.DeviceConfigDashboard {
     //MARK: - WatchSummaryView
     struct WatchSummaryView: View {
-        let deviceName: String
-        let batteryPercentage: Int
-        let firmwareVersion: String
-        @Binding var isNewFirmware: Bool
+        @Binding var watchSummary: WatchSummary
         
         var body: some View {
             HStack(spacing: 16) {
@@ -27,14 +24,14 @@ extension SmartWatch.V3.DeviceConfigDashboard {
 
                 VStack(alignment: .leading, spacing: 12) {
                     // Device Name
-                    Text(deviceName)
+                    Text(watchSummary.deviceName)
                         .foregroundColor(Color.labelPrimary)
                         .font(.custom(.muli, style: .bold, size: 19))
                         .lineLimit(1)
 
                     HStack(spacing: 8) {
                         // Battery Status
-                        BatteryStatusView(batteryPercentage: .constant(batteryPercentage))
+                        BatteryStatusView(batteryPercentage: $watchSummary.batteryPercentage)
                             .frame(width: 75, height: 20)
                         
                         Text("•")
@@ -43,7 +40,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
                             .padding(.leading, 5)
 
                         // Firmware Version
-                        FirmwareVersionView(version: firmwareVersion, isNew: $isNewFirmware)
+                        FirmwareVersionView(version: $watchSummary.currentFirmware, isNew: $watchSummary.isNewFirmware)
                             .previewLayout(.sizeThatFits)
                     }
                 }
@@ -64,15 +61,18 @@ extension SmartWatch.V3.DeviceConfigDashboard {
 
 // MARK: - Preview
 struct Previews_WatchSummaryView: PreviewProvider {
+    @State static var watchSummary = SmartWatch.V3.DeviceConfigDashboard.WatchSummary(
+        deviceName: "Vestel Smart Watch 3",
+        batteryPercentage: 79,
+        isCharging: true,
+        currentFirmware: "1.61.99",
+        latestFirmware: "1.62.00",
+        isNewFirmware: true
+    )
+    
     static var previews: some View {
-        @State var isNewFirmware = true
-        SmartWatch.V3.DeviceConfigDashboard.WatchSummaryView(
-            deviceName: "Vestel Smart Watch 3",
-            batteryPercentage: 79,
-            firmwareVersion: "1.61.99",
-            isNewFirmware: $isNewFirmware
-        )
-        .previewLayout(.sizeThatFits)
-        .background(Color(UIColor.systemGroupedBackground))
+        SmartWatch.V3.DeviceConfigDashboard.WatchSummaryView(watchSummary: $watchSummary)
+            .previewLayout(.sizeThatFits)
+            .background(Color(UIColor.systemGroupedBackground))
     }
 }
