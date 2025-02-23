@@ -54,20 +54,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
             Feature(title: "Device language", type: .navigable)
         ]
         
-        @Published var watchfaces: [WatchfaceModel] = [
-            WatchfaceModel(title: "Swapnil", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w65.gif?alt=media&token=a90ed96b-4754-4671-a249-a8e0db5ae15a")),
-            WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w66.gif?alt=media&token=b6b21b0a-3ba9-4310-9ae7-3fa0d3752699")),
-            WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w19.png?alt=media&token=b78d6728-3fd2-49f4-ad11-676a38752356")),
-            WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w69.gif?alt=media&token=ff98fa78-5c0a-4055-b1a3-689d372cdc4b")),
-            WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w91.gif?alt=media&token=a09a67f8-a1b8-46ef-bef3-60756eb08177")),
-            WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w55.gif?alt=media&token=c2388c59-b182-4b64-90e5-1c36d53c14da")),
-            WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w53.gif?alt=media&token=981e36fb-e507-4457-bc32-d4882e4d425a")),
-            WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w41.gif?alt=media&token=6f99a32d-1d31-474a-bc66-922d0d390dc1")),
-            WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w4.png?alt=media&token=d46f2a81-7dd4-4f3d-adc3-2f9e033d16eb")),
-            WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w3.png?alt=media&token=ea0b2f97-5699-43e4-8d71-62d88ce57ae4")),
-            WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w22.png?alt=media&token=694a35bd-6c10-4d51-a695-dc81a53fa1ca")),
-            WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w2.png?alt=media&token=0cb526d6-ccea-4eb9-b8f8-e5166e69e2ff"))
-        ]
+        @Published var watchfaces: [CloudWatchfaceItem] = CloudWatchfaceItem.mock
         
         // MARK: - Initializer
         init() {
@@ -169,22 +156,6 @@ extension SmartWatch.V3.DeviceConfigDashboard {
             rootViewModel.watchSummary.latestFirmware = latestVersion
             rootViewModel.watchSummary.isNewFirmware = currentVersion != latestVersion
             
-            let watchfacesPrivate: [WatchfaceModel] = [
-                WatchfaceModel(title: "Swapnil", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w65.gif?alt=media&token=a90ed96b-4754-4671-a249-a8e0db5ae15a")),
-                WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w66.gif?alt=media&token=b6b21b0a-3ba9-4310-9ae7-3fa0d3752699")),
-                WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w19.png?alt=media&token=b78d6728-3fd2-49f4-ad11-676a38752356")),
-                WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w69.gif?alt=media&token=ff98fa78-5c0a-4055-b1a3-689d372cdc4b")),
-                WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w91.gif?alt=media&token=a09a67f8-a1b8-46ef-bef3-60756eb08177")),
-                WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w55.gif?alt=media&token=c2388c59-b182-4b64-90e5-1c36d53c14da")),
-                WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w53.gif?alt=media&token=981e36fb-e507-4457-bc32-d4882e4d425a")),
-                WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w41.gif?alt=media&token=6f99a32d-1d31-474a-bc66-922d0d390dc1")),
-                WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w4.png?alt=media&token=d46f2a81-7dd4-4f3d-adc3-2f9e033d16eb")),
-                WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w3.png?alt=media&token=ea0b2f97-5699-43e4-8d71-62d88ce57ae4")),
-                WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w22.png?alt=media&token=694a35bd-6c10-4d51-a695-dc81a53fa1ca")),
-                WatchfaceModel(title: "", imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w2.png?alt=media&token=0cb526d6-ccea-4eb9-b8f8-e5166e69e2ff"))
-            ]
-            
-            rootViewModel.watchfaces.append(watchfacesPrivate[Int.random(in: 0...11)])
             rootViewModel.features.append(Feature(title: "Settings", type: .navigable))
         }
         

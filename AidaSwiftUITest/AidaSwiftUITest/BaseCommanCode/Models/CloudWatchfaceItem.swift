@@ -9,7 +9,7 @@
 
 import Foundation
 
-public struct CloudWatchfaceItem: Hashable, Codable, Equatable {
+public struct CloudWatchfaceItem: Hashable, Codable, Equatable, Identifiable {
     // MARK: Properties
     public private(set) var id: String = ""
     private var titleLocalized: [String: String] = [:]
@@ -203,17 +203,48 @@ extension CloudWatchfaceItem {
     }
 }
 
+// MARK: - Firebase Model to Item
+extension CloudWatchfaceItem {
+    init(_ fromFirebaseModel: FirebaseWatchface) {
+        self.id = fromFirebaseModel.id
+        self.titleLocalized = fromFirebaseModel.titleLocalized
+        self.descLocalized = fromFirebaseModel.descLocalized
+        self.source = fromFirebaseModel.source
+        self.smartWatchType = fromFirebaseModel.smartWatchType
+        self.animationType = fromFirebaseModel.animationType
+        self.mediaFormat = fromFirebaseModel.mediaFormat
+        self.fileRelativeUrl = fromFirebaseModel.fileRelativeUrl
+        self.previewRelativeUrl = fromFirebaseModel.previewRelativeUrl
+        self.updatedAt = fromFirebaseModel.updatedAt
+        self.rating = fromFirebaseModel.rating
+        self.price = fromFirebaseModel.price
+        self.currency = fromFirebaseModel.currency
+        self.categories = fromFirebaseModel.categories
+        self.tags = fromFirebaseModel.tags
+        self.isDownloaded = false // Default value for Firebase models
+    }
+}
 
 // MARK: - LOCALIZATION EXTENSION
 extension CloudWatchfaceItem {
     /// Get localized title based on user's language preference.
+    public var localizedTitle: String {
+        return localizedTitle()
+    }
+    
+    /// Get localized title based on user's language preference.
+    public var localizedDesc: String {
+        return localizedDesc()
+    }
+    
+    /// Get localized title based on user's language preference.
     public func localizedTitle(for language: LocalizedLanguage = LocalizedLanguage.userLocale) -> String {
-        return titleLocalized[language.designator] ?? titleLocalized[LocalizedLanguage.english.designator] ?? "Unnamed Watchface"
+        return titleLocalized[language.designator] ?? titleLocalized[LocalizedLanguage.english.designator] ?? ""
     }
 
     /// Get localized description based on user's language preference.
     public func localizedDesc(for language: LocalizedLanguage = LocalizedLanguage.userLocale) -> String {
-        return descLocalized[language.designator] ?? descLocalized[LocalizedLanguage.english.designator] ?? "No description available."
+        return descLocalized[language.designator] ?? descLocalized[LocalizedLanguage.english.designator] ?? ""
     }
 }
 
@@ -248,6 +279,19 @@ public struct WatchfaceDetailsItem {
     ///Update localFilePath after downloading the file.
     public mutating func update(isDownloaded: Bool) {
         self.cloudWatchface.update(isDownloaded: isDownloaded)
+    }
+}
+
+//MARK: -
+//MARK: - MOCKING
+extension CloudWatchfaceItem {
+    // Method to read CloudWatchfaces.json and return models
+    public static var mock: [CloudWatchfaceItem] {
+        let watchfaces = FirebaseWatchface.mock.map { fbWatchface in
+            CloudWatchfaceItem(fbWatchface)
+        }
+        
+        return watchfaces
     }
 }
 

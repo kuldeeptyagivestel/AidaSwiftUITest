@@ -379,4 +379,36 @@ public enum SmartWatchType: Int, Codable, CaseIterable, Equatable {
     ///**GTX12**, or **gtx12** **DeviceId List: [542]**
     case v3 = 4
     
+    ///Return code Name to use in watchfaces..
+    public var codeName: String {
+        switch self {
+        case .v1:
+            return "v1"
+        case .v2:
+            return "v2"
+        case .v2Max:
+            return "v2Max"
+        case .v3:
+            return "v3"
+        default:
+            return "v3"
+        }
+    }
+    
+    //Return SmartWatchType from codeName
+    public static func getType(codeName: String) -> SmartWatchType {
+        switch codeName {
+        case "v1":
+            return .v1
+        case "v2":
+            return .v2
+        case "v2Max":
+            return .v2Max
+        case "v3":
+            return .v3
+        default:
+            return .unknown
+        }
+    }
+    
 }

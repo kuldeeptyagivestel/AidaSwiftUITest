@@ -1,0 +1,58 @@
+[
+    {
+        "id": "cat_new",
+        "nameLocalized": {"en": "New Arrivals", "tr": "Nouveautés"},
+        "code": "new",
+        "priority": 1,
+        "isActive": true,
+        "createdAt": "2025-01-10T12:00:00Z"
+    },
+    {
+        "id": "cat_topRank",
+        "nameLocalized": {"en": "Top Rank", "tr": "Mejor Clasificado"},
+        "code": "topRank",
+        "priority": 3,
+        "isActive": false,
+        "createdAt": "2025-01-10T12:02:00Z"
+    },
+    {
+        "id": "cat_currentlyHot",
+        "nameLocalized": {"en": "Currently Hot", "tr": "Tendencias Actuales"},
+        "code": "currentlyHot",
+        "priority": 4,
+        "isActive": true,
+        "createdAt": "2025-01-10T12:03:00Z"
+    },
+    {
+        "id": "cat_popular",
+        "nameLocalized": {"en": "Popular", "tr": "Popular"},
+        "code": "popular",
+        "priority": 5,
+        "isActive": true,
+        "createdAt": "2025-01-10T12:05:00Z"
+    },
+    {
+        "id": "cat_premium",
+        "nameLocalized": {"en": "Premium", "tr": "Premium"},
+        "code": "premium",
+        "priority": 7,
+        "isActive": false,
+        "createdAt": "2025-01-10T12:09:00Z"
+    },
+    {
+        "id": "cat_trendingNow",
+        "nameLocalized": {"en": "Trending Now", "tr": "Tendencias Ahora"},
+        "code": "trendingNow",
+        "priority": 6,
+        "isActive": true,
+        "createdAt": "2025-01-10T12:14:00Z"
+    },
+    {
+        "id": "cat_dynamic",
+        "nameLocalized": {"en": "Dynamic", "tr": "Dinámico"},
+        "code": "dynamic",
+        "priority": 2,
+        "isActive": true,
+        "createdAt": "2025-01-10T12:04:00Z"
+    }
+]

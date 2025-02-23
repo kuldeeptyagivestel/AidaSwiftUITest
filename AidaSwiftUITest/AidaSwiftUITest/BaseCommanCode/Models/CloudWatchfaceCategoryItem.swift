@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct CloudWatchfaceCategoryItem: Hashable, Codable, Equatable {
+public struct CloudWatchfaceCategoryItem: Hashable, Codable, Equatable, Identifiable {
     // MARK: Properties
     public private(set) var id: String = ""
     private var nameLocalized: [String: String] = [:]
@@ -43,6 +43,18 @@ extension CloudWatchfaceCategoryItem {
     }
 }
 
+// MARK: - Firebase Model Conversion
+extension CloudWatchfaceCategoryItem {
+    init(_ fromFirebaseModel: FirebaseWatchfaceCategory) {
+        self.id = fromFirebaseModel.id
+        self.nameLocalized = fromFirebaseModel.nameLocalized
+        self.code = fromFirebaseModel.code
+        self.priority = fromFirebaseModel.priority
+        self.isActive = fromFirebaseModel.isActive
+        self.createdAt = fromFirebaseModel.createdAt
+    }
+}
+
 // MARK: - JSON Conversion Helpers
 extension CloudWatchfaceCategoryItem {
     // Method to convert dictionary to JSON string
@@ -60,5 +72,18 @@ extension CloudWatchfaceCategoryItem {
             return dictionary
         }
         return [:]
+    }
+}
+
+//MARK: -
+//MARK: - MOCKING
+extension CloudWatchfaceCategoryItem {
+    // Method to read CloudWatchfaces.json and return models
+    public static var mock: [CloudWatchfaceCategoryItem] {
+        let watchfaces = FirebaseWatchfaceCategory.mock.map { category in
+            CloudWatchfaceCategoryItem(category)
+        }
+        
+        return watchfaces
     }
 }

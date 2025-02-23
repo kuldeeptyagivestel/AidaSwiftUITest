@@ -87,7 +87,7 @@ extension SmartWatch.V3.Watchfaces {
                 
                 // Step 3: Display title text
                 Text(title)
-                    .font(.custom(.openSans, style: .semibold, size: 13))
+                    .font(.custom(.openSans, style: .regular, size: 13))
                     .foregroundColor(Color.labelSecondary)
                     .lineLimit(1)
             }
