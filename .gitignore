@@ -60,5 +60,9 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+.DS_Store
+.DS_Store
 AidaSwiftUITest/.DS_Store
+.DS_Store
 AidaSwiftUITest/AidaSwiftUITest/.DS_Store
+AidaSwiftUITest/.DS_Store
