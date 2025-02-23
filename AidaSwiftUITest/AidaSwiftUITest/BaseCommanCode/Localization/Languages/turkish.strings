@@ -1570,6 +1570,55 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "airpurifier_app_transition_desc" = "**Vestel Akıllı Yaşam** uygulaması, VHT-402 Hava temizleyicinizin tüm özelliklerine erişmenizi ve kontrol etmenizi sağlayacak en güncel platformdur. Bu uygulamayı indirerek cihazınızı kullanmaya devam edebilirsiniz.";
 "go_to_app_store" = "App Store'a Git";
 
+//MARK: - WATCH SETTINGS PAGES: V3
+"factoryReset" = "Fabrika Ayarlarına Sıfırlama";
+"restartTheDevice" = "Cihazı Yeniden Başlatma";
+"firmwareUpdate" = "Yazılım Güncellemesi";
+"deviceInfo" = "Cihaz Bilgileri";
+"charging" = "Şarj ediliyor...";
+
+//MARK: - Firmware
+"buttonLabel" = "Cihazı Kaldır";
+"updatebuttonLabel" = "Güncelleme";
+
+//MARK: - V3 Features
+
+//MARK: Calls
+"calls" = "Aramalar";
+
+//MARK: Notifications
+"notifications" = "Bildirimler";
+
+//MARK: Alarm
+"alarm" = "Alarm";
+
+//MARK: Health Monitor
+"healthMonitor" = "Sağlık monitörü";
+
+//MARK: Do Not Disturb Mode
+"doNotDisturbMode" = "Rahatsız etmeyin modu";
+
+//MARK: Sport Recognition
+"sportRecognition" = "Spor tanıma";
+
+//MARK: Find My Phone
+"findMyPhone" = "Telefonumu bul";
+
+//MARK: Music Control
+"musicControl" = "Müzik kontrolü";
+
+//MARK: Weather Display
+"weatherDisplay" = "Hava durumu ekranı";
+
+//MARK: Shortcuts
+"shortcuts" = "Kısayollar";
+
+//MARK: Sport Display
+"sportDisplay" = "Spor ekranı";
+
+//MARK: Device Language
+"deviceLanguage" = "Cihaz dili";
+
 //MARK: -
 //MARK: -  SLEEP TRACKER
 "smartSleepTracker" = "Vestel Akıllı Uyku Takip Bandı";

@@ -1549,6 +1549,55 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 ///Device corrupted: need to remove and reconnect again.
 "connection_failed_device_corrupted" = "Device status is unknown and cannot be reconnected. Please remove the device from the app and then reconnect it.";
 
+//MARK: - WATCH SETTINGS PAGES: V3
+"factoryReset" = "Factory Reset";
+"restartTheDevice" = "Restart the device";
+"firmwareUpdate" = "Firmware Update";
+"deviceInfo" = "Device Info";
+"charging" = "Charging...";
+
+//MARK: - Firmware
+"buttonLabel" = "Remove Device";
+"updatebuttonLabel" = "Update";
+
+//MARK: - V3 Features
+
+//MARK: Calls
+"calls" = "Calls";
+
+//MARK: Notifications
+"notifications" = "Notifications";
+
+//MARK: Alarm
+"alarm" = "Alarm";
+
+//MARK: Health Monitor
+"healthMonitor" = "Health Monitor";
+
+//MARK: Do Not Disturb Mode
+"doNotDisturbMode" = "Do Not Disturb Mode";
+
+//MARK: Sport Recognition
+"sportRecognition" = "Sport Recognition";
+
+//MARK: Find My Phone
+"findMyPhone" = "Find My Phone";
+
+//MARK: Music Control
+"musicControl" = "Music Control";
+
+//MARK: Weather Display
+"weatherDisplay" = "Weather Display";
+
+//MARK: Shortcuts
+"shortcuts" = "Shortcuts";
+
+//MARK: Sport Display
+"sportDisplay" = "Sport Display";
+
+//MARK: Device Language
+"deviceLanguage" = "Device Language";
+
 //MARK: -
 //MARK: -  AIRPURIFIER
 "airpurifier_app_transition_title" = "Air Purifier App Transition";

@@ -21,7 +21,7 @@ extension SmartWatch.V3.DeviceManagement {
                 Image(imageName)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 60, height: 80)
+                    .frame(width: 81, height: 81)
                     .padding(.leading, 16)
 
                 VStack(alignment: .leading, spacing: 12) {
@@ -37,12 +37,14 @@ extension SmartWatch.V3.DeviceManagement {
                             .frame(width: 75, height: 20)
                         
                         Text("•")
-                            .font(.custom(.muli, style: .bold, size: 14))
+                            .font(.custom(.muli, style: .regular, size: 16))
                             .foregroundColor(Color.labelSecondary)
                             .padding(.leading, 5)
 
                         // Device state
                         Text(deviceState)
+                            .font(.custom(.muli, style: .regular, size: 16))
+                            .foregroundColor(Color.labelSecondary)
                         Spacer()
                     }
                 }

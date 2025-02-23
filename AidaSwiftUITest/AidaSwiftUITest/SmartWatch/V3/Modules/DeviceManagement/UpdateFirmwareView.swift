@@ -14,7 +14,7 @@ extension SmartWatch.V3.DeviceManagement {
     struct UpdateFirmwareView: View {
         @EnvironmentObject var navigation: NavigationCoordinator
         @ObservedObject var viewModel: DeviceManagementViewModel  // ViewModel injected via navigation
-        @State private var udpateAvailable: Bool = true
+        @State private var updateAvailable: Bool = true
         
         var body: some View {
             GeometryReader { geometry in
@@ -50,7 +50,7 @@ extension SmartWatch.V3.DeviceManagement {
                     .padding(.bottom,10)
                     
 // Condition for the update available or updated
-                    if udpateAvailable{
+                    if updateAvailable{
                         VStack{
                             VStack(alignment: .leading){
                                 Text("  New version is available:(\(viewModel.deviceFirmwareVersion))")
@@ -93,8 +93,11 @@ extension SmartWatch.V3.DeviceManagement {
                                 .shadow(color: Color.black.opacity(0.1), radius: 6, x: 0, y: 2))
                         Spacer.height(UIScreen.main.bounds.height - 405)
                     }
-                    
-                    PrimaryButton()
+                    if updateAvailable{
+                        PrimaryButton(title:.localized(.update), state: .active, borderColor: Color.buttonColor)
+                    }else{
+                        PrimaryButton(title: .localized(.update), state: .inactive, borderColor: Color.buttonColor)
+                    }
                     Spacer()
                 }
                 .background(Color.scrollViewBgColor)

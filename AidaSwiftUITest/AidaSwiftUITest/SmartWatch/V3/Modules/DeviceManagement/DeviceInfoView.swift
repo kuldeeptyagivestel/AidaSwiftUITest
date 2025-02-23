@@ -25,7 +25,7 @@ extension SmartWatch.V3.DeviceManagement {
                             .background(
                                 LinearGradient(
                                     gradient: Gradient(colors: [
-                                        Color.fromHex("#F9DBCD"),Color.fromHex("#FFF3FF")
+                                        Color.gradientStartColor,Color.gradientEndColor
                                     ]),
                                     startPoint: .top,
                                     endPoint: .bottom
@@ -39,7 +39,6 @@ extension SmartWatch.V3.DeviceManagement {
                         InfoCell(text:"Firmware version" , info: $viewModel.deviceInfoSummary.version)
                         InfoCell(text:"Resource pack version" , info: $viewModel.deviceInfoSummary.version)
                         InfoCell(text:"Device language version" , info: $viewModel.deviceInfoSummary.version)
-                        
                         Spacer()
                     }
                 }

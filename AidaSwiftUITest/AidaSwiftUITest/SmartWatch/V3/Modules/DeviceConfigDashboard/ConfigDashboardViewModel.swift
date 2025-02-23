@@ -27,11 +27,11 @@ extension SmartWatch.V3 {
 extension SmartWatch.V3.DeviceConfigDashboard {
     // ViewModel responsible for managing data related to the Route History view.
     class ConfigDashboardViewModel: ViewModel {
-        var title: String = "Vestel Smart Watch 3"
+        var title: String = .localized(.add_device_smartwatchv3_name)
         
         // MARK: - Published Properties
         @Published var watchSummary: WatchSummary = WatchSummary(
-            deviceName: "Vestel Smart Watch 3",
+            deviceName: .localized(.add_device_smartwatchv3_name),
             batteryPercentage: 65,
             isCharging: true,
             currentFirmware: "1.61.99",
@@ -40,18 +40,18 @@ extension SmartWatch.V3.DeviceConfigDashboard {
         )
         
         @Published var features: [Feature] = [
-            Feature(title: "Calls", type: .navigable),
-            Feature(title: "Notifications", type: .navigable),
-            Feature(title: "Alarm", type: .navigable),
-            Feature(title: "Health monitor", type: .navigable),
-            Feature(title: "Do not disturb mode", type: .navigable),
-            Feature(title: "Sport recognition", type: .navigable),
-            Feature(title: "Find my phone", type: .switchable(value: true)),
-            Feature(title: "Music control", type: .switchable(value: true)),
-            Feature(title: "Weather display", type: .switchable(value: true)),
-            Feature(title: "Shortcuts", type: .navigable),
-            Feature(title: "Sport display", type: .navigable),
-            Feature(title: "Device language", type: .navigable)
+            Feature(title: .localized(.calls), type: .navigable),
+            Feature(title: .localized(.notifications), type: .navigable),
+            Feature(title: .localized(.alarm), type: .navigable),
+            Feature(title: .localized(.healthMonitor), type: .navigable),
+            Feature(title: .localized(.doNotDisturbMode), type: .navigable),
+            Feature(title: .localized(.sportRecognition), type: .navigable),
+            Feature(title: .localized(.findMyPhone), type: .switchable(value: true)),
+            Feature(title: .localized(.musicControl), type: .switchable(value: true)),
+            Feature(title: .localized(.weatherDisplay), type: .switchable(value: true)),
+            Feature(title: .localized(.shortcuts), type: .navigable),
+            Feature(title: .localized(.sportDisplay), type: .navigable),
+            Feature(title: .localized(.deviceLanguage), type: .navigable)
         ]
         
         @Published var watchfaces: [CloudWatchfaceItem] = CloudWatchfaceItem.mock
@@ -79,7 +79,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
         func fetchData() {
             // Simulated data fetching and updates
             self.watchSummary = WatchSummary(
-                deviceName: "Vestel Smart Watch 3",
+                deviceName: .localized(.add_device_smartwatchv3_name),
                 batteryPercentage: 75,
                 isCharging: false,
                 currentFirmware: "1.61.99",

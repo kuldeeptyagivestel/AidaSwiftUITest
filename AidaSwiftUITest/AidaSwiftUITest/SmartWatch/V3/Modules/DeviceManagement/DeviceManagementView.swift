@@ -18,7 +18,7 @@ extension SmartWatch.V3.DeviceManagement {
         var body: some View {
             GeometryReader { geometry in
                 VStack(spacing:0) {
-                    DeviceSummaryView( imageName: "smartwatchv3/deviceImage", deviceState: "Charging",deviceSummary: $viewModel.deviceSummary)
+                    DeviceSummaryView( imageName: "smartwatchv3/deviceImage", deviceState:.localized(.charging),deviceSummary: $viewModel.deviceSummary)
                     Text("")
                     FeatureCellWithVersion(featureTitle: $viewModel.deviceFirmware, version: $viewModel.deviceFirmwareVersion, isNew: $viewModel.deviceFirmwareTag)
                     FeatureCell(featureTitle: $viewModel.deviceDeviceInfo)
@@ -29,7 +29,7 @@ extension SmartWatch.V3.DeviceManagement {
                         }
                     }
                     Spacer()
-                    PrimaryButton()
+                    PrimaryButton(title:.localized(.buttonLabel), state: .primary, borderColor: Color.buttonColor)
                     Spacer()
                 }.background(Color.scrollViewBgColor)
             }
@@ -47,7 +47,7 @@ extension SmartWatch.V3.DeviceManagement {
                 HStack{
                     Text(featureTitle)
                         .font(.custom(.muli, style: .bold, size: 17))
-                    
+                        .foregroundColor(Color.labelPrimary)
                     Spacer()
 
                     Image(systemName: "arrow.right")
@@ -82,7 +82,7 @@ extension SmartWatch.V3.DeviceManagement {
                 HStack{
                     Text(featureTitle)
                         .font(.custom(.muli, style: .bold, size: 17))
-                    
+                        .foregroundColor(Color.labelPrimary)
                     Spacer()
                     
                     SmartWatch.V3.DeviceConfigDashboard.FirmwareVersionView(version: $version, isNew: $isNew)

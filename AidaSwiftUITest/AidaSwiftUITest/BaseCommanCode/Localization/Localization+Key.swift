@@ -1450,6 +1450,54 @@ public enum LocalizationKey: String {
     case connection_failed_desc
     case connection_failed_device_corrupted
     
+    //MARK: - WATCH DeviceConfig Page: V3
+    case factoryReset
+    case restartTheDevice
+    case firmwareUpdate
+    case deviceInfo
+    case charging
+    //MARK: - Firmware
+    case buttonLabel
+    case updatebuttonLabel
+    
+    //MARK: - V3 Features
+    
+    //MARK: Calls
+    case calls
+    
+    //MARK: Notifications
+    case notifications
+    
+    //MARK: Alarm
+    case alarm
+    
+    //MARK: Health Monitor
+    case healthMonitor
+    
+    //MARK: Do Not Disturb Mode
+    case doNotDisturbMode
+    
+    //MARK: Sport Recognition
+    case sportRecognition
+    
+    //MARK: Find My Phone
+    case findMyPhone
+    
+    //MARK: Music Control
+    case musicControl
+    
+    //MARK: Weather Display
+    case weatherDisplay
+    
+    //MARK: Shortcuts
+    case shortcuts
+    
+    //MARK: Sport Display
+    case sportDisplay
+    
+    //MARK: Device Language
+    case deviceLanguage
+    
     //MARK: -
     //MARK: -  AIRPURIFIER
     case airpurifier_app_transition_title

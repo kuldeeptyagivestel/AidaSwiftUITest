@@ -30,7 +30,7 @@ extension SmartWatch.V3.DeviceManagement {
         
         // MARK: - Published Properties
         @Published var deviceSummary: DeviceSummary = DeviceSummary(
-            deviceName: "Vestel Smart Watch 3",
+            deviceName: .localized(.add_device_smartwatchv3_name),
             batteryPercentage: 65,
             isCharging: true,
             currentFirmware: "1.61.99",
@@ -38,21 +38,21 @@ extension SmartWatch.V3.DeviceManagement {
             isNewFirmware: true
         )
         @Published var deviceInfoSummary: DeviceInfoSummary = DeviceInfoSummary(
-            deviceName: "Vestel Smart Watch 3",
-            bluetoothName: "String",
-            macAddress: "String",
-            deviceDataUpdateTime : "String",
+            deviceName: .localized(.add_device_smartwatchv3_name),
+            bluetoothName: "Akıllı Saat 3",
+            macAddress: "50:19:38:27",
+            deviceDataUpdateTime : "21/09/28 13:54",
             version: "V3"
         )
-        @Published var deviceFeature: [String] = ["Factory Reset","Restart the device"]
+        @Published var deviceFeature: [String] = [.localized(.factoryReset),.localized(.restartTheDevice)]
         
-        @Published var deviceFirmware : String = "Firmware Update"
+        @Published var deviceFirmware : String = .localized(.firmwareUpdate)
         
-        @Published var deviceDeviceInfo : String = "Device Info"
+        @Published var deviceDeviceInfo : String = .localized(.deviceInfo)
         
         @Published var deviceFirmwareVersion: String = "1.61.99"
         @Published var deviceFirmwareTag: Bool = true
-        @Published var deviceName: String = "Vestel Smart Watch 3"
+        @Published var deviceName: String = .localized(.add_device_smartwatchv3_name)
         //MARK: Life Cycle Methods
         init() {
             fetchData()
@@ -71,7 +71,7 @@ extension SmartWatch.V3.DeviceManagement {
         func fetchData() {
             // Simulated data fetching and updates
             self.deviceSummary = DeviceSummary(
-                deviceName: "Vestel Smart Watch 3",
+                deviceName: .localized(.add_device_smartwatchv3_name),
                 batteryPercentage: 75,
                 isCharging: false,
                 currentFirmware: "1.61.99",
@@ -80,7 +80,7 @@ extension SmartWatch.V3.DeviceManagement {
             )
             
             self.deviceInfoSummary = DeviceInfoSummary(
-                deviceName: "Vestel Smart Watch 3",
+                deviceName: .localized(.add_device_smartwatchv3_name),
                 bluetoothName: "Akıllı Saat 3",
                 macAddress: "50:19:38:27",
                 deviceDataUpdateTime : "21/09/28 13:54", version: "V3"
