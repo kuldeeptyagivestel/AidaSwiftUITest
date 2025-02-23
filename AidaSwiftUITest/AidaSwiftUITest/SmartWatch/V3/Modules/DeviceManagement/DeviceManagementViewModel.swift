@@ -37,7 +37,13 @@ extension SmartWatch.V3.DeviceManagement {
             latestFirmware: "1.62.00",
             isNewFirmware: true
         )
-        
+        @Published var deviceInfoSummary: DeviceInfoSummary = DeviceInfoSummary(
+            deviceName: "Vestel Smart Watch 3",
+            bluetoothName: "String",
+            macAddress: "String",
+            deviceDataUpdateTime : "String",
+            version: "V3"
+        )
         @Published var deviceFeature: [String] = ["Factory Reset","Restart the device"]
         
         @Published var deviceFirmware : String = "Firmware Update"
@@ -46,6 +52,7 @@ extension SmartWatch.V3.DeviceManagement {
         
         @Published var deviceFirmwareVersion: String = "1.61.99"
         @Published var deviceFirmwareTag: Bool = true
+        @Published var deviceName: String = "Vestel Smart Watch 3"
         //MARK: Life Cycle Methods
         init() {
             fetchData()
@@ -70,6 +77,13 @@ extension SmartWatch.V3.DeviceManagement {
                 currentFirmware: "1.61.99",
                 latestFirmware: "1.62.00",
                 isNewFirmware: true
+            )
+            
+            self.deviceInfoSummary = DeviceInfoSummary(
+                deviceName: "Vestel Smart Watch 3",
+                bluetoothName: "Akıllı Saat 3",
+                macAddress: "50:19:38:27",
+                deviceDataUpdateTime : "21/09/28 13:54", version: "V3"
             )
         }
 
@@ -108,6 +122,26 @@ extension SmartWatch.V3.DeviceManagement {
             self.currentFirmware = currentFirmware
             self.latestFirmware = latestFirmware
             self.isNewFirmware = isNewFirmware
+        }
+    }
+    internal struct DeviceInfoSummary {
+        var deviceName: String
+        var bluetoothName: String
+        var macAddress: String
+        var deviceDataUpdateTime : String
+        var version: String
+        // Optional initializer for clarity
+        public init(deviceName: String,
+                    bluetoothName: String,
+                    macAddress: String,
+                    deviceDataUpdateTime: String,
+                    version: String
+        ) {
+            self.deviceName = deviceName
+            self.bluetoothName = bluetoothName
+            self.macAddress = macAddress
+            self.deviceDataUpdateTime = deviceDataUpdateTime
+            self.version = version
         }
     }
 }

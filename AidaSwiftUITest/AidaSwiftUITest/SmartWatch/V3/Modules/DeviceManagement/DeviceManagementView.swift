@@ -28,7 +28,9 @@ extension SmartWatch.V3.DeviceManagement {
                             print("Tapped feature: \(tappedFeature)")
                         }
                     }
-
+                    Spacer()
+                    PrimaryButton()
+                    Spacer()
                 }.background(Color.scrollViewBgColor)
             }
         }
