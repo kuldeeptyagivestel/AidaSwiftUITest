@@ -1,0 +1,2011 @@
+"company_name" = "Vestel";
+"app_name" = "Akıllı Sağlık";
+"welcome" = "Hoş geldiniz";
+"email" = "E-posta";
+"password" = "Şifre";
+"forget_password" = "Şifremi Unuttum";
+"login" = "Giriş Yap";
+"or" = "—— ya da ——";
+"login_with_vestel" = "Vestel ile Giriş Yap";
+"login_with_google" = "Google ile Giriş Yap";
+"login_with_apple" = "Apple ile Giriş Yap";
+"register" = "Kayıt Ol";
+"no_target_set" = "Henüz bir hedef belirlenmemiş";
+"register_link" = "Vestel.com.tr üyeliğinizle giriş yapabilirsiniz.";
+
+"error_email_not_valid" = "Geçerli bir e-posta giriniz.";
+"error_name_not_valid" = "Lütfen geçerli bir ad yazınız";
+"error_surname_not_valid" = "Lütfen geçerli bir soyad yazınız";
+"error_password_contains_number" = "Şifre sayı içermeli";
+"error_password_contains_uppercase" = "Şifre en az 1 büyük karakter içermeli";
+"error_password_contains_special_char" = "Şifre en az 1 özel karakter içermeli";
+"error_password_contains_length" = "Şifre 8 karakterden kısa olamaz";
+"error_password_dont_match" = "Şifreler eşleşmiyor, lütfen yeniden yazın";
+
+"enter_valid_password" = "Geçerli bir şifre girin.";
+"error_password_not_found" = "Şifre boş bırakılamaz";
+"error_name_not_found" = "Ad boş bırakılamaz";
+"error_surname_not_found" = "Soyad boş bırakılamaz";
+"error_email_not_found" = "Email boş bırakılamaz";
+"user_activation_already_activated" = "Kullanıcınız daha önce aktifleştirilmiş";
+"user_activation_generic_error" = "Aktivasyon problemi.Lütfen daha sonra tekrar deneyiniz.";
+"change_password_success" = "Şifreniz başarıyla değiştirildi.";
+"change_password_old_password_incorrect" = "Eski şifreniz doğru değil.Lütfen tekrar deneyiniz.";
+"change_password_error" = "Size gönderilen son mailde yer alan bağlantıyı kullandığınıza emin olunuz.";
+"placeholder_current_password" = "Mevcut şifre";
+"placeholder_new_password" = "Yeni şifre";
+"placeholder_new_password_re" = "Yeni şifre tekrar";
+"change_password_title" = "Şifrenizi yenileyin";
+
+//MARK: - CRM COGNITO ERROR:
+"error_to_get_jwt_token" = "Beklenmeyen bir hata, JWT tokenları oluşturulurken meydana geldi. Lütfen tekrar deneyin veya yardım için destek ile iletişime geçin.";
+"error_unable_to_login" = "Giriş yapılırken beklenmeyen bir hata oluştu. Lütfen tekrar deneyin veya yardım için destek ekibiyle iletişime geçin.";
+"cannot_migrate_user" = "Hesabınızı taşırken bir hata oluştu. Lütfen daha sonra tekrar deneyin veya destek için iletişime geçin.";
+//"incorrect_user_credentials" = "Yanlış e-posta veya şifre. Lütfen doğru kimlik bilgilerini girin. Hesabınız yoksa, bir tane oluşturmak için kaydolabilirsiniz.";
+"incorrect_user_credentials" = "E-posta veya şifre yanlış.";
+//MARK: - PASSWORD ERROR
+"incorrect_password" = "Yanlış şifre. Lütfen tekrar deneyin.";
+"password_reset_error" = "Lütfen şifrenizi sıfırlayın ve daha sonra tekrar deneyin. Herhangi bir sorunla karşılaşırsanız, destek ekibimize başvurun.";
+
+//MARK: - ACCOUNT VALIDATION ERROR
+"account_setup_error" = "Hesabınızı kurarken beklenmeyen bir hata oluştu. Lütfen tekrar deneyin veya destek için iletişime geçin.";
+"account_disabled" = "Hesabınız yönetici tarafından devre dışı bırakıldı. Lütfen destek için iletişime geçin.";
+"account_not_Active" = "Bu hesap etkin değil. Lütfen tekrar deneyin veya yardım için destek ile iletişime geçin.";
+"not_accepted_agreement" = "Devam etmek için anlaşmayı kabul etmelisiniz.";
+"agreement_error" = "Anlaşma ile ilgili bir hata oluştu. Lütfen daha sonra tekrar deneyin.";
+"account_blocked" = "Hesabınız bloke edildi. Lütfen destek ile iletişime geçin.";
+"account_confirmation_error" = "Lütfen hesabınızı onaylayın ve daha sonra tekrar deneyin. Herhangi bir sorunla karşılaşırsanız, destek ekibimize başvurun.";
+"you_are_all_set" = "You are all set!";
+"register_account_create_success_continue" = "Akıllı Sağlık kullanmaya başla";
+
+//MARK: - UPDATE PROFILE
+"unable_update_profile" = "Profil güncellenemiyor. Lütfen daha sonra tekrar deneyin.";
+"account_verification_failed" = "Account verification failed.";
+"unable_update_profile_photo" = "Profil fotoğrafı güncellenemiyor. Lütfen daha sonra tekrar deneyin.";
+
+//MARK: - DELETE ACCOUNT
+"delete_account" = "Hesabı Sil";
+"delete_account_popup_title" = "Kullanıcı hesabınızı silmek istediğinizden emin misiniz?";
+"delete_account_popup_desc" = "Hesabınızın silinmesi kalıcı bir işlemdir ve silinen hesaba tekrar erişilemez. Bu hesapla ilişkili web sitelerine ve uygulamalara artık giriş yapamayacağınızı belirtmek isteriz.";
+
+"delete_account_success_popup_title" = "Kullanıcı hesabınızı silme talebiniz başarıyla alındı";
+"delete_account_success_popup_desc" = "Hesabınız 10 gün boyunca pasif olacaktır ve bu süre içinde sistemlerimize giriş yaparsanız hesap silme isteğiniz iptal edilip hesabınız tekrar aktif olacaktır.";
+
+"delete_account_fail_popup_title" = "İstek başarısız oldu!";
+"delete_account_fail_popup_desc" = "Kullanıcı hesabınızı silme isteğiniz teknik bir nedenden dolayı başarısız oldu. Lütfen tekrar deneyin.";
+
+//MARK: - NETWORK API ERRORS
+"unknown_error" = "Beklenmeyen bir hata oluştu. Lütfen daha sonra tekrar deneyin veya destek için iletişime geçin.";
+"unexpected_state_error" = "Beklenmeyen bir durumla karşılaşıldı. Lütfen tekrar deneyin veya yardım için destekle iletişime geçin.";
+"no_internet" = "İnternet bağlantısı yok. Lütfen internet ayarlarınızı kontrol edin ve tekrar deneyin.";
+"request_failed" = "Sunucuya yapılan istek başarısız oldu. Lütfen tekrar deneyin veya destek için iletişime geçin.";
+"invalid_response" = "Sunucudan geçersiz bir yanıt alındı. Lütfen daha sonra tekrar deneyin veya destek için iletişime geçin.";
+"decoding_error" = "Yanıt işlenirken bir hata oluştu. Lütfen daha sonra tekrar deneyin veya destek için iletişime geçin.";
+"authentication_error" = "Yetkisiz erişim. Lütfen tekrar giriş yapın.";
+"server_unavailable" = "Sunucu şu anda kullanılamıyor. Lütfen daha sonra tekrar deneyin.";
+"file_upload_failed" = "Dosya yüklemesi başarısız oldu. Lütfen tekrar deneyin.";
+"file_download_failed" = "İndirme başarısız oldu. Lütfen daha sonra tekrar deneyin veya yardım için destek ile iletişime geçin.";
+"session_expired" = "Oturumunuzun süresi doldu. Devam etmek için lütfen tekrar giriş yapın.";
+"timeout" = "İstek zaman aşımına uğradı. Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin.";
+
+//MARK: - FIREBASE DATASTORE API ERRORS
+"fb_user_not_found" = "Kullanıcı verisi bulunamadı.";
+"fb_no_record_found" = "Kayıt bulunamadı.";
+"fb_authentication_error" = "Kimlik doğrulama başarısız oldu. Lütfen çıkış yapın ve daha sonra tekrar deneyin. Sorun devam ederse, destek için lütfen iletişime geçin.";
+"fb_permission_denied" = "İzin reddedildi. Bu kaynağa erişiminiz yok. Lütfen destek için iletişime geçin.";
+"fb_resource_not_found" = "Kaynak bulunamadı. Lütfen destek için iletişime geçin.";
+"fb_resource_already_exists" = "Kaynak zaten var. Lütfen farklı bir tanımlayıcı kullanın.";
+"fb_cancelled" = "İşlem iptal edildi. Lütfen daha sonra tekrar deneyin veya destek için iletişime geçin.";
+"fb_deadline_exceeded" = "İşlem süresi aşıldı. Lütfen daha sonra tekrar deneyin veya destek için iletişime geçin.";
+"fb_service_unavailable" = "Hizmet şu anda kullanılamıyor. Lütfen daha sonra tekrar deneyin veya destek için iletişime geçin.";
+"fb_data_loss" = "Veri kaybı meydana geldi. Lütfen destek için iletişime geçin.";
+
+//MARK: - DATABASE CRUD OPs ERRORS
+"db_create_record_error" = "Kayıt oluşturulurken bir hata oluştu. Lütfen tekrar deneyin ve sorun devam ederse destek için iletişime geçin.";
+"db_read_record_error" = "Gerekli bilgileri almak mümkün değil. Lütfen daha sonra tekrar deneyin. Sorun devam ederse destek için iletişime geçin.";
+"db_update_record_error" = "İstenen bilgiler güncellenemedi. Lütfen tekrar deneyin ve sorun devam ederse destek için iletişime geçin.";
+"db_delete_record_error" = "Seçilen öğe silinirken bir hata oluştu. Lütfen tekrar deneyin ve sorun devam ederse destek için iletişime geçin.";
+"db_cleanup_error" = "Tüm kullanıcı verileri silinirken bir hata oluştu. Lütfen tekrar deneyin ve sorun devam ederse destek için iletişime geçin.";
+
+//MARK: - FIREBASE STORAGE ERRORS
+"firebaseDownloadError" = "Dosya buluttan indirilemedi. Lütfen internet bağlantınızı kontrol edin ve yeniden deneyin.";
+"firebaseSaveError" = "Dosya yerel olarak kaydedilemedi. Lütfen yeterli depolama alanı olduğundan emin olun ve yeniden deneyin.";
+"firebaseFileNotFound" = "İstenen dosya sunucuda bulunamadı. Yardım için lütfen destek ile iletişime geçin.";
+"firebasePermissionError" = "Dosyaya erişim izni reddedildi. Lütfen hesap bilgilerinizi doğrulayın ve yeniden deneyin.";
+
+//MARK: - BUTTON TITle
+"done" = "Bitti";
+
+//MARK: -
+"login_already_have" = "Zaten hesabın var mı? Giriş Yap";
+"no_target_set" = "Henüz bir hedef belirlenmemiş";
+"privacy_and_terms" = "Gizlilik ve Koşullar";
+"privacy_and_conditions" = "Gizlilik ve Koşullar";
+"activation" = "Aktivasyon";
+"account_created" = "Hesap Oluşturuldu";
+"successful" = "Başarılı";
+"activation_email" = "Aktivasyon emailiniz tekrar gönderilmiştir";
+"re_entry" = "Girilen e-posta adresi kullanılmaktadır.Lütfen mail adresinizi yeniden giriniz.";
+"confirm_terms_and_policy" = "Lütfen kullanım koşullarını ve gizlilik politikasını onaylayın." ;
+"checkEmail" = "Gelen kutunuzu kontrol edin.";
+"sendLinkEmail" = "Şifrenizi sıfırlamanız için e-posta adresinize bir link gönderdik. Gelen linke tıklayıp yeni şifrenizi belirleyin.";
+"noUserFound" = "Girdiğiniz email ile bir kullanıcı bulunamadı";
+"resetPassword" = "Şifrenizi sıfırlayın";
+"confirmPassword" = "Yeni Şifreyi Onaylayın";
+"no_target_set" = "Henüz bir hedef belirlenmemiş";
+
+"register_name" = "Ad";
+"register_surname" = "Soyad";
+"register_email" = "E-posta";
+"register_password" = "Şifre";
+"register_password_requirements" = "Şifreniz en az 8 karakter olmalı ve büyük harf, küçük harf, rakam ve özel karakter içermelidir.";
+"register_password_continue" = "Devam Et";
+"register_step_1" = "1. Adım";
+"register_step_2" = "2. Adım";
+"register_step_3" = "3. Adım";
+"register_step_4" = "4. Adım";
+"valid_email" = "Lütfen geçerli bir email giriniz";
+"register_approve_privacy" = "Gizlilik politikasını okudum, onaylıyorum.";
+"register_privacy" = "Gizlilik Politikası";
+"register_approve_usage" = "Kullanım koşullarını okudum, onaylıyorum.";
+"register_terms" = "Kullanım Koşulları";
+"register_email_activation_title" = "Aktivasyon e-postanız gönderilmiştir.";
+"register_email_activation_desc" = "Gelen kutunuzdaki linke tıklayarak üyeliğinizi tamamlayabilirsiniz.";
+"register_email_activation_not_received" = "E-posta gelmedi mi? Tekrar Gönder";
+"register_account_create_success_title" = "Hesabınız başarıyla oluşturuldu.";
+"register_account_create_success_desc" = "Hesap bilgileriniz e-posta adresinize gönderilmiştir.";
+
+//MARK: - CONSENT MANAGEMENT
+"consent_mgmt_title" = "İletişim İzinleri";
+"consent_mgmt_message_title" = "İleti Yönetim Sistemi İzinleri";
+"consent_mgmt_whatsapp_title" = "Whatsapp İletişim İzni";
+"consent_mgmt_approve_message_consent" = "İleti Yönetim Sistemi İzinleri’ni okudum, onaylıyorum.";
+"consent_mgmt_approve_whatsapp_consent" = "Whatsapp İletişim İzni’ni okudum, onaylıyorum.";
+"consent_mgmt_sms" = "SMS";
+"consent_mgmt_phone" = "Telefon";
+"consent_mgmt_email" = "E-mail";
+
+//MARK: - COGNITO POPUPs
+"login_cognito_verify_contact_info_title" = "İletişim Bilgilerinizi Doğrulayınız";
+"login_cognito_verify_contact_info_desc" = "Uygulamayı yenilenen sistemimiz ile kullanmak için Vestel web sitesindeki “Üyelik Bilgilerim” bölümünden iletişim bilgilerinizi doğrulamanız gerekmektedir.";
+"login_cognito_verify_button" = "Doğrula";
+"login_cognito_system_change_title" = "Sistem Değişikliği";
+"login_cognito_system_change_desc" = "gg.aa.yyyy tarihi itibariyle size daha iyi bir hizmet sunmak için yeni sisteme geçiyoruz. Artık web sitelerimize ve uygulamalarımıza tek bir üyelikle giriş yapabileceksiniz.\n\nBu yeni sisteme geçiş sonrası uygulamanızı güncellemeniz ve şifrenizi yenilemeniz yeterli olacaktır.\n\nDaha detaylı bilgi almak için Vestel web sitesindeki yeni sistem bilgilendirme metni sayfasını ziyaret edebilirsiniz.";
+"login_cognito_system_change_bold_part" = "gg.aa.yyyy";
+"login_cognito_system_change_password" = "Sistem değişikliği sayesinde tek bir üyelik ile Vestel web sitelerine ve uygulamalarına giriş yapabileceksiniz.\n\nBu yeni sisteme geçerek Akıllı Sağlık’e giriş sağlayabilmek için şifrenizi yenilemeniz gerekmektedir.";
+"login_cognito_system_change_password_button" = "Şifremi Yenile";
+
+"emailAlert" = "Endişe etmeyin! Size yardımcı olabilmemiz için aşağıdaki satıra e-posta adresinizi girin.";
+"scale_not_found" = "Vestel Akıllı Tartı bulunamadı. Lütfen tekrar deneyin.";
+
+"profile_detail_text" = "Sağlığına dair daha kesin sonuçlar almak için kişisel bilgilerini girmelisin.";
+"profile_gender_update" = "Cinsiyetini seç";
+"profile_weight_update" = "Kilon kaç?";
+"profile_height_update" = "Boyun kaç?";
+"profile_birthday_update" = "Doğum günün ne zaman?";
+"profile_detail" = "Profil Detayları";
+
+"onboard_step_1_title" = "Güne iyi bir başlangıç için su iç";
+"onboard_step_1_desc" = "Gün içinde tüketmen gereken su miktarı için hedef belirleyebilir, tükettiğin su miktarını Akıllı Sağlık ile takip edebilirsin";
+"onboard_step_2_title" = "Hareket et, rutinden çık";
+"onboard_step_2_desc" = "Gün içinde atacağın adım sayısı için hedef belirleyebilir, kronometre ile aktivite başlatabilir, kattettiğin mesafeyi ve yaktığın kaloriyi Akıllı Sağlık ile takip edebilirsin";
+"onboard_step_3_title" = "Düzenli uyu, zinde kal";
+"onboard_step_3_desc" = "Akıllı cihazını senkronize ederek, uyku düzenini ve uyku kaliteni Akıllı Sağlık ile görüntüleyebilirsin";
+"onboard_step_3_button" = "Başla";
+
+"set_goals_title" = "Hedef Belirle";
+"set_goals_desc" = "Adım, su, mesafe, kalori ve kilo için belirlediğin hedeflere ulaştığında Akıllı Sağlık sana bildirim gönderir.";
+"set_goals_weight" = "Hedef kilo";
+
+"profile_name" = "Ad";
+"profile_surname" = "Soyad";
+"profile_gender" = "Cinsiyet";
+"profile_birthdate" = "Doğum tarihi";
+"profile_height" = "Boy";
+"profile_weight" = "Kilo";
+"profile_target_weight" = "Hedef kilo";
+"profile_edit_desc" = "Yukarıdaki profil bilgilerinizi Vestel web sitesi üzerinden düzenleyeceksiniz.";
+"profile_desc" = "Sağlığına dair daha kesin sonuçlar almak için kişisel bilgileri girdiğinden emin ol.";
+"update_goal" = "Hedefi güncelle";
+"keep_goal" = "Hedefi koru";
+
+"smartband_name_beauty" = "Vestel Akıllı Bileklik";
+"smartwatch_name_beauty" = "Vestel Akıllı Saat";
+"smartwatchv2_name_beauty" = "Vestel Akıllı Saat 2";
+"smartwatchv2max_name_beauty" = "Vestel Akıllı Saat 2 Max";
+"smartwatchv3_name_beauty" = "Vestel Akıllı Saat 3";
+"smartscale_name_beauty" = "Vestel Akıllı Tartı";
+"smartlight_name_beauty" = "Vestel Akıllı Işık";
+"airpurifier_name_beauty" = "Vestel Hava Temizleyici";
+"sleeptracker_name_beauty" = "Vestel Akıllı Uyku Takip Bandı";
+"smartlightv2_name_beauty" = "Vestel Akıllı Uyku Işığı";
+"just_phone" = "Telefon";
+
+"height" = "Boy";
+"weight" = "Kilo";
+"set_target_weight" = "Hedef Kilo";
+"bmi" = "Vücut Kitle İndeksi";
+
+"devices_add_device" = "Cihaz Ekle";
+"devices_title" = "Cihazlarım";
+"search_device" = "Cihaz Aranıyor";
+"device_banner_url" = "devices/devicebannerTR";
+"device_paired" = "Eşleştirilmiş Cihazlarım";
+
+"device_activate_bluetooth" = "Bluetooth'u Aktif Et";
+"device_turnon_bluetooth" = "Telefonunuzun bluetooth özelliğini açın!";
+
+"device_connect_connecting_title" = "Bağlanılıyor";
+"device_not_connect_connecting_title" = "Silinecek..";
+
+"device_connect_approve_title" = "Onayla";
+"device_connect_approve_desc" = "Bağlantıyı onaylamak için lütfen bilekliğe dokunun.";
+
+"smartwatchv2_connecting_title" = "Bağlanıyor...";
+"smartwatchv2_connecting_desc" = "Bağlanırken cihazı telefona yakın tutun ve uygulamayı kapatmayın.";
+
+///Remove Device Screen Texts
+"smartwatch_removed_device_succeed" = "Cihaz kaldırma başarılı!";
+"smartwatch_removed_device_subtitle" = "Cihaza yeniden bağlanmak için telefonunuzun Bluetooth ayarlarında cihazın eşleştirmesini kaldırmanız gerekir.\nBunun için;";
+
+"smartwatch_removed_device_option1" = "1. “Ayarlar > Bluetooth”a gidin ve cihazınızı bulun.";
+
+"smartwatch_remove_option2_part_one" = "2. ";
+"smartwatch_remove_option2_part_part_two" = " butonuna dokunun ve “Bu aygıtı unut” seçeneğini seçin.";
+
+"smartwatchv2_binding_title_p1" = "Eşleştirmeyi tamamlamak için lütfen ";
+"smartwatchv2_binding_title_p2" = " dokunun.";
+
+"device_connect_complete_title" = "Bağlantı başarılı";
+"device_connect_fail_title" = "Bağlantı başarısız";
+"device_connect_fail_desc" = "Cihazınızın kapsama alanı içinde ve fişe takılı olduğuna ayrıca telefonunuzun bluetooth özelliğinin açık olduğuna emin olunuz.";
+
+"device_disconnected" = "Cihaz Bağlantısı Kesildi";
+
+"device_sync" = "Senkronize Ediliyor";
+"device_sync_progress" = "İlerleme...";
+
+"smartwatchv2_call_notification" = "Çağrı bildirimi";
+"smartwatchv2_message_notification" = "Mesaj bildirimleri";
+"smartwatchv2_health_monitor" = "Sağlık monitörü";
+"smartwatchv2_dont_disturb" = "Rahatsız etme";
+"smartwatchv2_exercise_recognition" = "Aktivite tanıma";
+"smartwatchv2_emergency" = "Acil durum";
+"smartwatchv2_find_my_phone" = "Telefonumu bul";
+"smartwatchv2_music_control" = "Müziği kontrol et";
+"smartwatchv2_wristup" = "Bilek kaldırma ile ekran uyandırma";
+"smartwatchv2_weather_notification" = "Hava durumu bildirimi";
+"smartwatchv2_auto_brightness" = "Otomatik parlaklık";
+"smartwatchv2_shortcuts" = "Kısayol";
+"smartwatchv2_activity_display" = "Aktivite ekranı";
+"smartwatchv2_units" = "Birimler";
+"smartwatchv2_device_language" = "Cihaz dili";
+"smartwatchv2_date_time" = "Tarih & Saat";
+"smartwatchv2_faq" = "S.S.S.";
+"smartwatchv2_device_info" = "Cihaz bilgisi";
+"smartwatchv2_reset" = "Akıllı saat ayarlarını sıfırla";
+"smartwatch_v2_restart" = "Akıllı saati yeniden başlat";
+
+"smartwatchv2max_activity_recognition" = "Aktivite tanıma";
+"smartwatchv2max_weather_display" = "Hava durumu gösterimi";
+"smartwatchv2max_reset" = "Akıllı saat ayarlarını sıfırla";
+"smartwatchv2max_restart" = "Akıllı saati yeniden başlat";
+
+"restarted_successfully" = "Başarıyla yeniden başlatıldı";
+
+"playingMusic" = "Çalan müzik";
+"smartband_calling_notifications" = "Çağrı bildirimi";
+"smartband_message_notifications" = "SMS bildirimi";
+"smartband_find_my_phone" = "Telefonumu bul";
+"smartband_anti_lost" = "Bağlantı kopma uyarısı";
+"smartband_control_music" = "Müziği kontrol et";
+"smartband_wrist_up_time_display" = "Bileklik takma alışkanlığı";
+"smartband_hr_display" = "Kalp atış hızı monitörü";
+"smartband_hr_display_title" = "Kalp Atış Hızı Monitörü";
+"smartband_find_my_band" = "Bilekliğimi bul";
+"smartband_alarm" = "Alarm";
+"smartband_app_notifications" = "Uygulama bildirimleri";
+"smartband_app_notifications_title" = "Uygulama Bildirimleri";
+"smartband_take_photo" = "Fotoğraf çek";
+"smartband_sedentary" = "Hareketsizlik uyarısı";
+"smartband_sedentary_title" = "Hareketsizlik Uyarısı";
+"smartband_reset_alert_title" = "Ayarları sıfırlamak istiyor musun?";
+"smartband_reset_alert_detail" = "Eğer bileklik ayarlarını sıfırlarsan bileklikteki tüm bilgiler silinecektir.";
+"pair_problem" = "Lütfen bilekliği eşleyin.";
+"smartband_repeat_alarm" = "Yinele";
+"repeat_days_not_found" = "Tekrar günü eklenmedi";
+
+"smartwatch_scan_imgage_link" = "smartwatch/device_bigTR";
+"smartwatchv2_scan_imgage_link" = "smartwatchv2/device_bigTR";
+"smartwatch_calling_notifications" = "Çağrı bildirimi";
+"smartwatch_message_notifications" = "SMS bildirimi";
+"smartwatch_find_my_phone" = "Telefonumu bul";
+"smartwatch_anti_lost" = "Bağlantı kopma uyarısı";
+"smartwatch_control_music" = "Müziği kontrol et";
+"smartwatch_wrist_up_time_display" = "Saat takma alışkanlığı";
+"smartwatch_hr_display" = "Kalp atış hızı monitörü";
+"smartwatch_hr_display_title" = "Kalp Atış Hızı Monitörü";
+"smartwatch_alarm" = "Alarm";
+"smartwatch_app_notifications" = "Uygulama bildirimleri";
+"smartwatch_app_notifications_title" = "Uygulama Bildirimleri";
+"smartwatch_sedentary" = "Hareketsizlik uyarısı";
+"smartwatch_sedentary_title" = "Hareketsizlik Uyarısı";
+"smartwatch_sos" = "Acil durum";
+
+"smartwatch_reset_failure_title" =  "Akıllı saat ayarlarının sıfırlanması başarısız oldu.";
+
+"smartwatch_same_alarm_title" = "Alarm kaydedilmedi";
+"smartwatch_same_alarm_desc" = "Bu alarm zaten daha önce kaydedilmiştir.";
+
+"sedentary_title" = "Hareketsizlik Uyarısı";
+"sedentary_reminder_choice" = "Hareketsizlik uyarısı";
+"sedentary_time" = "Hareketsiz kalınan süre";
+"sedentary_start_end_time" = "Başlangıç - bitiş saati";
+"sedentary_desc" = "Belirlediğin süre boyunca hareketsiz kalırsan bileklik hareket etmen gerektiğini hatırlatmak için hafifçe titreyecektir.";
+
+"hrmonitor_measure" = "Otomatik ölçüm";
+"hrmonitor_reminder" = "Kalp atış hızı bildirimi";
+"hrmonitor_reminderinfo" = "Kalp atış hızın belirlediğin bmp değerinden hızlı attığında bileklik uyarı amaçlı titreyecektir.";
+"hrmonitor_desc" = "• Otomatik ölçüm, her 15 dakikada bir kalp atış hızınızı ölçer ve kaydeder. Otomatik ölçüm bilekliğin batarya süresini etkileyebilir. \n • Kalp atış hızı hatırlatıcısı sayesinde, kalp atış hızın belirlediğin değeri aştığı zaman bileklik uyarı amaçlı titreyecektir.";
+"hrmonitor_unit" = "bpm";
+
+"photo_title" = "Kaydedildi";
+"photo_desc" = "Fotoğrafınız kaydedildi";
+
+"contacts_permission_title" = "Akıllı Sağlık kişiler erişimi";
+"contacts_permission_desc" = "Seçtiğiniz kişilere yardım mesajı gönderilebilmesi için erişim izni vermelisiniz.";
+"location_permission_title" = "Akıllı Sağlık konum erişimi";
+"location_permission_desc" = "Seçtiğiniz kişilere konumunuz ile yardım mesajı gönderilebilmesi için konum izni vermelisiniz.";
+"camera_permission_title" = "Akıllı Sağlık kamera erişimi";
+"camera_permission_desc" = "Fotoğraf çek özelliğini kullanmak için kamera yetkisi vermelisiniz.";
+"camera_permission_desc_qr_scan" = "QR kodlarını tarayabilmek için uygulamanın kameranıza erişimi olması gerekir. Bu özelliği kullanmaya devam etmek için lütfen Ayarlar'a gidip kamera izinlerini etkinleştirin.";
+"photos_permission_title" = "Akıllı Sağlık fotoğraflar erişimi";
+"photos_permission_desc" = "Fotoğraf kaydedebilmek için fotoğraflar erişimini vermeniz gerekir.";
+"camera_loading" = "Bileklik Bekleniyor...";
+"settings_loading" = "Ayarlar Bekleniyor...";
+"add_new_family_member" = "Üye Ekle";
+"update_family_member" = "Üye Güncelle";
+"family_member_desc" = "Aile üyesinin sağlığına dair daha kesin sonuçlar almak için kişisel bilgileri girdiğinden emin ol.";
+
+"settings_title" = "Ayarlar";
+"weight_details" = "Kilo Detayları";
+"settings_notifications" = "Bildirimler";
+"settings_password" = "Şifre";
+"settings_backup" = "Yedeklemeyi Geri Yükle";
+"settings_language_title" = "Dil";
+"settings_faq" = "S.S.S.";
+"settings_about" = "Hakkında";
+"settings_logout" = "Çıkış Yap";
+"hour_short" = "sa";
+"minute_short" = "dk";
+"guest" = "Misafir";
+"male" = "Erkek";
+"female" = "Kadın";
+"other" = "Diğer";
+"go_to_settings" = "Ayarlar'a gidin";
+"family_members" = "Aile Üyeleri";
+"add_family_member" = "Aile üyesi ekle";
+
+"settings_notifications_desc" = "Ekinleştirdiğin hedeflere ulaştığında Akıllı Sağlık sana bildirim gönderir.";
+"settings_notifications_daily_step" = "Günlük adım sayısı";
+"settings_notifications_water_intake" = "Günlük su miktarı";
+"settings_notifications_distance" = "Günlük mesafe";
+"settings_notifications_calorie" = "Günlük kalori";
+"settings_notifications_target_weight" = "Hedef kilo";
+
+"settings_change_password" = "Şifre Değiştir";
+"settings_password_desc" = "Şifre değişikliği işlemi için Vestel web sitesine yönlendirileceksiniz.\n\nDevam etmek istediğinize emin misiniz?";
+
+"continueText" = "Devam Et";
+"finish" = "Bitir";
+"unattended_weights" = "Tüm Veriler";
+"add_device_title" = "Cihaz Ekle";
+"add_device_smartband_name" = "Vestel Akıllı Bileklik";
+"add_device_smartband_desc" = "Vestel Akıllı Bileklik; kalp atışı, uyku takibi, adım sayar, kalori ölçümü titreşimle çağrı ve mesaj bildirimi özelliklerine sahiptir.";
+"edit_data" = "Kiloyu Güncelle";
+"add_device_smartwatch_name" = "Vestel Akıllı Saat";
+"add_device_smartwatch_desc" = "Vestel Akıllı Saat; kalp atışı, uyku takibi, adım sayar, kalori ölçümü titreşimle çağrı ve mesaj bildirimi özelliklerine sahiptir.";
+
+"add_device_smartwatchv2_name" = "Vestel Akıllı Saat 2";
+"add_device_smartwatchv2_desc" = "Vestel Akıllı Saat 2; uyku takibi, adım sayar, stres ölçümü, kandaki oksiyen seviyesi ölçümü, kalp atış hızı ölçümü, adet döngüsü takibi, aktivite takibi, hava durumu göstergesi, çağrı ve mesaj bildirimi özelliklerine sahiptir.";
+
+"add_device_smartwatchv2max_name" = "Vestel Akıllı Saat 2 Max";
+"add_device_smartwatchv2max_desc" = "Vestel Akıllı Saat 2 Max; uyku takibi, adım sayar, stres ölçümü, kandaki oksiyen seviyesi ölçümü, kalp atış hızı ölçümü, adet döngüsü takibi, aktivite takibi, hava durumu göstergesi, çağrı ve mesaj bildirimi özelliklerine sahiptir.";
+
+"add_device_smartwatchv3_name" = "Vestel Akıllı Saat 3";
+"add_device_smartwatchv3_desc" = "Vestel Akıllı Saat 3; uyku takibi, adım sayar, stres ölçümü, kandaki oksiyen seviyesi ölçümü, kalp atış hızı ölçümü, adet döngüsü takibi, aktivite takibi, hava durumu göstergesi, çağrı ve mesaj bildirimi özelliklerine sahiptir.";
+
+"add_device_scale_name" = "Vestel Akıllı Tartı";
+"add_device_scale_desc" = "Vestel Akıllı Tartı; kilo, vücut kitle indeksi, yağ, kas, su, kemik, iç organ yağ oranı ve bazal metabolizma hızı ölçüm özelliklerine sahiptir.";
+
+"add_device_light_name" = "Vestel Akıllı Işık";
+"add_device_light_desc" = "Vestel Akıllı Işık; ses ve ışık özellikleriyle uyku deneyimini geliştirmene yardımcı olur. Bluetooth hoparlör ve hareket ile kontrol özelliklerine sahiptir.";
+"add_device_light_plugged" = "Güç kablosunu taktığında cihaz ışığı 3 kere yanıp sönecektir.";
+"scan_device_desc" = "Bağlanmak istediğin cihazı seç.";
+"scan_device_no_found" = "Cihaz bulunamadı. Cihazın açık ve yakın konumda olduğundan emin ol.";
+"try_following_pair_again" = "Aşağıdaki deneyin ve tekrar eşleştirin:";
+"turn_on_bluetooth_pair_again" = "Telefonun Bluetooth’unu kapatıp tekrar açın. Cihazın yeterli şarjı olduğundan emin ol. Cihazı fabrika ayarlarına sıfırlayın ve tekrar eşleştirin.";
+"scan_again" = "Tekrar ara";
+"reached_goal" = " hedefine ulaştın!";
+
+//MARK: -
+//MARK: - REPORT A PROBLEM MODULE
+"report_a_problem" = "Sorun Bildir";
+"send" = "Gönder";
+"tell_us_your_problem" = "Bize sorununuzu kısaca anlatın.";
+"device_model" = "Cihaz Modeli";
+"none" = "Hiçbiri";
+"choose_device_Error_title" = "Lütfen devam etmek için cihaz seçin.";
+"empty_text" = "";
+"report_sent_popup_title" = "Raporunuz gönderildi.";
+"report_sent_popup_desc" = "Sorun giderme sürecinde bize yardımcı olduğunuz için teşekkür ederiz.";
+
+//Step
+"step" = "adım";
+"step_title" = "Adım";
+"step_desc" = "Attığın adım sayısını görüntüleyebilir, aktif kalmak için kendine günlük adım sayısı hedefleyebilirsin. Vestel akıllı cihazını senkronize ederek daha kesin sonuçlara ulaşabilirsin. Dilersen paylaş butonuna tıklayarak sosyal medyada paylaşabilirsin.";
+
+//Sleep
+"sleep_title" = "Uyku";
+"sleep_desc" = "Vestel akıllı cihazını senkronize ederek uyku düzenini ve uyku kaliteni (derin uyku, hafif uyku ve uyanık kalınan süre) takip edebilirsin. Veri kaynağı, en son senkronize edilen cihazın verilerini otomatik olarak gösterir, gerekirse başka bir cihaza manuel olarak değiştirilebilir.Dilersen paylaş butonuna tıklayarak sosyal medyada paylaşabilirsin.";
+"sleep_deep_sleep" = "Derin Uyku";
+"sleep_light_sleep" = "Hafif Uyku";
+"sleep_rem_sleep" = "REM uykusu";
+"sleep_awake" = "Uyanık Kalma";
+
+"sleep_time_daily" = "Uyku saati";
+"wake_time_daily" = "Uyanma saati";
+"sleep_full_time_daily" = "Uyku süresi";
+
+"sleep_deep_sleep_graph" = "Derin";
+"sleep_light_sleep_graph" = "Hafif";
+"sleep_rem_sleep_graph" = "REM";
+"sleep_awake_graph" = "Uyanık";
+
+"sleep_avg_light" = "Ort. Hafif uyku";
+"sleep_avg_deep" = "Ort. Derin uyku";
+"sleep_avg_sleeptime" = "Ort. Uyku süresi";
+"sleep_add" = "Uyku ekle";
+"sleep_total" = "Toplam uyku";
+"sleep_add_time" = "Uyku süresi ekle";
+"sleep_start_time" = "Başlangıç saati";
+"sleep_end_time" = "Bitiş saati";
+"sleep_added" = "Uyku eklendi.";
+"sleep_add_alert" = "Bitiş saati başlangıç saatinden büyük olmalıdır.";
+"sleep_future_alert" = "Şuandan büyük bir zaman için uyku ekleyemezsiniz.";
+
+"tab1" = "Ana Sayfa";
+"tab2" = "Profil";
+"tab3" = "Cihazlarım";
+"tab4" = "Ayarlar";
+
+//Water
+"water_title" = "Su";
+"water_desc" = "Gün içinde tükettiğin su miktarını seçip “Ekle” butonuna tıklayarak kaydedebilirsin. Vücudunun ihtiyacı olan su miktarına ulaşman için günlük su miktarını hedefleyebilirsin.";
+"water_total_intake" = "Toplam";
+"water_intake_added" = "Su miktarı başarıyla eklendi.";
+"water_average_intake" = "Ortalama";
+
+//Calorie
+"calorie_title" = "Kalori";
+"calorie_desc" = "Yaktığın kaloriyi görüntüleyebilir, aktif kalmak için kendine günlük kalori hedefleyebilirsin. Vestel akıllı cihazını senkronize ederek daha kesin sonuçlara ulaşabilirsin. Dilersen paylaş butonuna tıklayarak sosyal medyada paylaşabilirsin.";
+
+//Hearthrate
+"hr_title" = "Kalp Atış Hızı";
+"hr_desc" = "Vestel akıllı cihazını senkronize ederek kalp atış hızını ve son ölçüm detaylarını takip edebilirsin. Kalp hızını ölç butonuna tıklayarak anlık kalp atış hızını görüntüleyebilirsin. Dilersen paylaş butonuna tıklayarak sosyal medyada paylaşabilirsin.";
+"heartRate_low" = "Düşük";
+"heartRate_normal" = "Orta";
+"heartRate_high" = "Yüksek";
+"hr_measure" = "Kalp atış hızını ölç";
+"hr_minvalue" = "En düşük";
+"hr_maxvalue" = "En yüksek";
+"hr_avgvalue" = "Ortalama";
+
+//Distance
+"distance_title" = "Mesafe";
+"distance_desc" = "Katettiğin mesafeyi görüntüleyebilir, aktif kalmak için kendine günlük mesafe hedefleyebilirsin. Vestel akıllı cihazını senkronize ederek daha kesin sonuçlara ulaşabilirsin. Dilersen paylaş butonuna tıklayarak sosyal medyada paylaşabilirsin.";
+
+//Weight
+"weight_title" = "Kilo";
+"add_weight" = "Kilo ekle";
+"weight_desc" = "Vücut kitle indeksini, yağ, kas, su, kemik, iç organ yağ oranını ve bazal metabolizma hızını görüntüleyebilmen için çıplak ayak ile tartılman gerekir. Vestel akıllı tartıyı senkronize ederek geçmiş verilerini takip edebilirsin. Dilersen paylaş butonuna tıklayarak sosyal medyada paylaşabilirsin.";
+"weight_latest" = "Son veriler";
+"weight_my_data" = "Verilerim";
+"weight_added" = "Kilo başarıyla eklendi.";
+"barefoot_text" = "Çıplak ayak ile tartıya çık";
+"barefoot_detail_text" = "Vücut kitle indeksini, yağ, kas, su, kemik, iç organ yağ oranını ve bazal metabolizma hızını görüntüleyebilmen için çıplak ayak ile tartılman gerekir.";
+"unit_step" = "Adım";
+"unit_sleep" = "Saat";
+"unit_water" = "Lt";
+"unit_weight" = "Kg";
+"cancel" = "İptal";
+
+"water_glass_water_text" = "0.2 lt su bardağıdır.";
+"beverage_glass_water_text" = "0.33 lt içecek bardağıdır.";
+"bottle_water_text" = "0.5 lt şişelenmiş bir sudur.";
+"carafe_water_text" = "1 lt bir sürahidir.";
+"add_water" = "Ekle";
+"no_backup_found" = "Bulunamadı";
+"smartband_reset" = "Bileklik ayarlarını sıfırla";
+
+"feature_data_not_found_title" = "Kayıtlı veri bulunamadı";
+"feature_data_not_found_desc" = "Verileri görüntüleyebilmek için Vestel akıllı cihazını senkronize et.";
+"feature_data_not_found_desc_step" = "Henüz hiç adım atmadın.";
+"feature_data_not_found_desc_calorie" = "Henüz hiç kalori yakmadın.";
+"feature_data_not_found_desc_distance" = "Henüz hiç adım atmadın.";
+"feature_data_not_found_desc_weight" = "Verileri görüntüleyebilmek için tartıyı senkronize et ya da güncel kilonu ekle.";
+"feature_data_not_found_desc_heartrate" = "Verileri görüntüleyebilmek için Vestel akıllı cihazını senkronize et.";
+"feature_data_not_found_desc_water" = "Henüz hiç su miktarı eklemedin.";
+"feature_data_not_found_desc_sleep" = "Verileri görüntüleyebilmek için Vestel akıllı cihazını senkronize et ya da uyku süreni ekle.";
+"feature_data_not_found_desc_stress" = "Otomatik stres seviyesi ölçümü kapalı ya da henüz stres seviyeni ölçmedin.";
+"feature_data_not_found_desc_o2level" = "Henüz kandaki oksiyen seviyeni ölçmedin.";
+
+"goal" = "hedef";
+"feature_daily" = "Günlük";
+"feature_weekly" = "Haftalık";
+"feature_monthly" = "Aylık";
+
+"feature_maximum_in_today" = "Gün içinde en fazla";
+"feature_minimum_in_today" = "Gün içinde en az";
+"feature_time_between" = "Zaman Aralığı";
+"feature_last_update" = "Son güncelleme";
+
+"feature_minimum" = "En az";
+"edit" = "Düzenle";
+"delete" = "Sil";
+"feature_maximum" = "En fazla";
+"feature_average" = "Ortalama";
+"feature_average_graph" = "Ortalama:";
+"hoursGraphLabel" = "12 saat";
+"update" = "Güncelle";
+"lastUpdate" = "Son güncelleme:";
+"update_profile_popup_title" = "Seni daha iyi tanıyalım";
+"update_profile_popup_desc" = "Akıllı bilekliğinden adım, kalori ve mesafe bilgilerine dair daha kesin sonuçlar almak için kişisel bilgilerini girmen gerekiyor.";
+"update_profile_ok_button" = "Bilgileri Güncelle";
+"update_profile_not_now" = "Şimdi değil";
+
+"not_activated_account" = "Aktive edilmemiş hesap";
+"not_activated_account_desc" = "“Şifremi Unuttum” özelliğinden yararlanabilmek için hesabını aktive etmen gerekmektedir. Aktivasyon linkine kayıtlı olduğun e-posta adresinden ulaşabilirsin.";
+
+//Alert
+"error" = "Hata";
+"warning" = "Uyarı";
+"info" = "Bilgi";
+"alert" = "Uyarı";
+"alert_no_user_found" = "Girdiğiniz email ve şifre ile kullancı bulunamadı";
+"incorrect_email_and_pass" = "Girdiğiniz email veya şifre yanlış lütfen tekrar deneyiniz ya da şifrenizi sıfırlayınız";
+"confirm_email_title" = "Aktive edilmemiş hesap";
+"confirm_email" = "Hesabını aktive etmek için kayıtlı olduğun e-posta adresine aktivasyon linki göndermen gerekmekte. Gelen kutundaki linke tıklayarak hesabını aktive edebilirsin.";
+"general_login_fail" = "Lütfen daha sonra tekrar deneyiniz.";
+"too_many_bad_password_Try" = "Çok fazla hatalı şifre denemesi sebebiyle hesabınız güvenlik amaçlı donduruldu. 'Şifremi Unuttum' butonuna tıklayarak oluşturduğunuz yeni şifre ile giriş yapınız.";
+
+//ERROR Alert
+//MARK: - Error
+"brightness_sync_failure" = "Parlaklık Eşitleme Hatası";
+"brightness_sync_failure_details" = "Otomatik parlaklık senkronizasyonu başarısız oldu. Lütfen tekrar deneyin.";
+
+"no_update_today" = "Yok";
+"set" = "Hedef";
+"set_step" = "Günlük hedef";
+"set_step_text" = "Hedeflenen Günlük Adım Sayısı";
+"set_water" = "Günlük Su Miktarı";
+"set_water_text" = "Hedeflenen Günlük Su Miktarı";
+"set_distance" = "Günlük Katedilen Mesafe";
+"set_distance_text" = "Hedeflenen Günlük Mesafe";
+"set_calorie" = "Günlük Yakılan Kalori";
+"set_calorie_text" = "Hedeflenen Günlük Kalori";
+"save" = "Kaydet";
+
+"clear" = "Temizle";
+"reset" = "Sıfırla";
+"app_version_title" = "Uygulama versiyonu";
+"privacy_policy_title" = "Gizlilik sözleşmesi";
+"terms_and_conditions_title" = "Kullanım sözleşmesi";
+"privacy_policy_nointernet_title" = "Gizlilik Politikası görüntülenemiyor";
+"privacy_policy_nointernet_desc" = "İnternet bağlantısı yok veya başarısız.
+Gizlilik Politikasını görüntüleyebilmek için lütfen bağlantı ayarlarını kontrol edip tekrar deneyin.";
+"terms_and_conditions_nointernet_title" = "Kullanım Koşulları görüntülenemiyor";
+"terms_and_conditions_nointernet_desc" = "İnternet bağlantısı yok veya başarısız.
+Kullanım Koşullarını görüntüleyebilmek için lütfen bağlantı ayarlarını kontrol edip tekrar deneyin.";
+"logout_are_you_sure" = "Çıkış yapmak istediğinize emin misiniz?";
+
+"not_connected_step_title" = "Güzel bir güne adım at";
+"not_connected_step_desc" = "Attığın adımları görüntüleyebilmek için “Bağlan” butonuna tıklayarak Vestel akıllı cihazını senkronize et.";
+
+"not_connected_calorie_title" = "Aktif ol kalorileri yak";
+"not_connected_calorie_desc" = "Yaktığın kalorileri görüntüleyebilmek için “Bağlan” butonuna tıklayarak Vestel akıllı cihazını senkronize et.";
+
+"not_connected_sleep_title" = "Düzenli uyu, zinde kal";
+"not_connected_sleep_desc" = "Uyku düzenini ve uyku kaliteni görüntüleyebilmek için “Bağlan” butonuna tıklayarak Vestel akıllı cihazını senkronize et.";
+"not_connected_sleep_additional_desc" = "";
+
+"not_connected_distance_title" = "Hareket et, rutinden çık";
+"not_connected_distance_desc" = "Katettiğin mesafeyi görüntüleyebilmek için “Bağlan” butonuna tıklayarak Vestel akıllı cihazını senkronize et.";
+
+"not_connected_hr_title" = "Kalbinin ritmini yakala";
+"not_connected_hr_desc" = "Kalp atış hızını ve son ölçüm detaylarını görüntüleyebilmek için “Bağlan” butonuna tıklayarak Vestel akıllı cihazını senkronize et.";
+
+"not_connected_water_title" = "Güne iyi bir başlangıç için su iç";
+"not_connected_water_desc" = "Henüz hiç su miktarı eklemedin. İçtiğin su miktarını seçip “Ekle” butonuna tıklayarak kaydedebilirsin.";
+
+"not_connected_weight_title" = "Vücudun hakkında bilgi sahibi ol";
+"not_connected_weight_desc" = "Kilonu, vücut kitle indeksini, yağ, kas, su, kemik, iç organ yağ oranını ve bazal metabolizma hızını öğrenebilmek için verilerini takip edebilirsin. “Bağlan” butonuna tıklayarak Vestel akıllı tartıyı senkronize et.";
+"not_connected_weight_additional_desc" = " Eğer akıllı tartıya sahip değil isen güncel kilonu manuel olarak ekleyebilirsin.";
+
+"not_connected_stress_title" = "Stres seviyeni öğren";
+"not_connected_stress_desc" = "Stress seviyeni görüntüleyebilmek için “Bağlan” butonuna tıklayarak Vestel Akıllı Saat 2 (Max)'yi senkronize et.";
+
+"not_connected_bloodox_title" = "Kandaki oksijen seviyeni öğren";
+"not_connected_bloodox_desc" = "Kan oksijen seviyeni görüntüleyebilmek için “Bağlan” butonuna tıklayarak Vestel Akıllı Saat 2 (Max)'yi senkronize et.";
+
+"not_connected_menstrual_cycle_title" = "Adet döngünü takip et";
+"not_connected_menstrual_cycle_desc" = "Bir sonraki adet ve ovulasyon döngülerinizi takip edebilir ve hatırlatıcı kurabilirsiniz. Bir sonraki adet ve ovulasyon döngüsü tahmini için adet bilgilerinizi girmelisiniz.";
+"add_menstrual_cycle" = "Adet döngüsü bilgilerini gir";
+
+"connect_smartband" = "Bağlan";
+"not_connected_skip" = "Atla";
+
+"repeat_title" = "Tekrarla";
+"time_interval_not_set" = "Aralık seçilmemiş";
+"unit_sedentary" = "Dakika";
+
+"sedentary_start_end_title" = "Başlangıç - bitiş saati";
+"sedentary_start_end_desc" = "Belirlediğin saatler arasında bileklik aktivite yapman gerektiğini hatırlatmak için hafifçe titreyecektir.";
+"sedentary_start_time" = "Başlangıç saati";
+"sedentary_end_time" = "Bitiş saati";
+
+"battery_info" = "Pil Yüzdesi";
+"connected" = "Bağlantı kuruldu";
+"not_connected" = "Bağlı değil";
+"device_connect" = "Bağlı";
+"app_notifications_desc" = "İzin verdiğin uygulamalara gelen bildirimlerde bileklik titreyecektir.";
+"alarm_list" = "Alarm Listesi";
+"add_alarm" = "Alarm Ekle";
+"set_alarm_label" = "Alarm ekle";
+"set_alarm" = "Alarm Ekle";
+"add_alarm_backbtn_title" = "Alarm Ekle";
+"alarm_time" = "Alarm Saati";
+"bmi_desc" = "Vücut kitle indeksi yani BMI (Body Mass Index) vücudunuzun ağırlık sınıfladırmasını hesaplamak için dünya çapında kullanılan temel bir istatistiksel yöntemdir.BMI = Ağırlık/Boy uzunluğunun karesi (kg/m²).";
+"no_device_connected" = "Bağlı bir cihaz bulunamadı. Bağlanmak için basın";
+"update_alarm" = "Alarmı Düzenle";
+"alarm_retry_day_none" = "Gün seçilmedi.";
+"enable" = "Aktif";
+"disabled" = "Devre Dışı";
+
+"ok" = "Tamam";
+"select_from_gallery" = "Galeriden Seç";
+
+"data_sync_progress" = "Verileriniz senkronize ediliyor";
+"backup_progress" = "Yedekleme İlerletiliyor";
+"backup_completed" = "Yedekleme Tamamlandı";
+
+"bluetooth_access_denied_title" = "Bağlantı İzni Reddedildi";
+"bluetooth_access_denied_Desc" = "Lütfen Cihaz Ayarlarında Bluetooth İzni verin.";
+
+//Reach Goal Popup
+"target_weight" = "Hedef kilonuza ulaştınız.";
+"target_steps" = "Günlük hedef adımınıza ulaştınız.";
+"target_distance" = "Günlük hedef mesafenize ulaştınız.";
+"target_calorie" = "Günlük hedef kalorinize ulaştınız.";
+"target_water" = "Günlük hedef su alımına ulaştınız.";
+"congratulations" = "Tebrikler";
+
+//Notifications
+"notification" = "Bildirimler";
+"no_notifications" = "Bildirim yok";
+"no_notifications_desc" = "Henüz hiçbir bildirimin yok. Belirlediğin hedeflere ulaştığında Akıllı Sağlık sana bildirim gönderir. Ayarlar menüsünden bildirimlerin açık olduğuna emin olun.";
+"open_notifications" = "Sağlığını yakın takibe al";
+"open_notifications_desc" = "Belirlediğin hedeflere ulaştığında Akıllı Sağlık sana bildirim gönderir. Motivasyon mesajlarıyla günlük hedeflerine ulaşmana yardımcı olur. Sağlığını yakından takip etmek için Akıllı Sağlık bildirimlerini aç.";
+"turn_on_notifications" = "Bildirimleri Aç";
+
+//Weight
+
+"bmi_desc" = "Vücut kitle indeksi yani BMI (Body Mass Index) vücudunuzun ağırlık sınıfladırmasını hesaplamak için dünya çapında kullanılan temel bir istatistiksel yöntemdir.BMI = Ağırlık/Boy uzunluğunun karesi (kg/m²).";
+"bmi_title" = "Vücut kitle indeksi";
+"bmi_value_underweight" = "Zayıf";
+"bmi_value_normal" = "Normal";
+"bmi_value_owerweight" = "Kilolu";
+"bmi_value_obese" = "Çok Kilolu";
+
+"body_fat_title" = "Yağ Oranı";
+"body_fat_desc" = "Yağ oranı, vücut yağı ağırlığının vücudun toplam ağırlığına oranını belirtir. Yağ oranı toplam vücut ağırlığını direkt olarak göstermese de, yağ oranının azalmasını kilo vermenin esas göstergesidir.";
+"body_fat_inadequate" = "Yetersiz";
+"body_fat_low" = "Düşük";
+"body_fat_normal" = "Normal";
+"body_fat_fat" = "Yağlı";
+"body_fat_too_fat" = "Yüksek Yağlı";
+
+"muscle_title" = "Kas Oranı";
+"muscle_desc" = "Kas oranı, toplam kas ve vücut ağırlığını, boy uzunluğu ve diğer etkenlerin bileşimleri dikkate alınarak hesaplanır. Bu oran kişinin sağlık durumu ve kuvveti hakkında bilgi verir. Kas oranı yüksek olan kişilerde bazal metabolizma hızı yüksek, kalori yakımı hızlı ve kilo kaybı daha kolaydır.";
+"muscle_inadequate" = "Yetersiz";
+"muscle_normal" = "Normal";
+"muscle_perfect" = "Mükemmel";
+
+"body_water_title" = "Su Oranı";
+"body_water_desc" = "Su oranı, vücudun toplam ağırlığı içindeki suyun oranını belirtir. Yeterli su oranı metabolizmanın iyi çalışmasına yardımcı olur.";
+"body_water_inadequate" = "Yetersiz";
+"body_water_normal" = "Normal";
+"body_water_perfect" = "Mükemmel";
+
+"bodysalts_title" = "Kemik Oranı";
+"bodysalts_desc" = "Kemik oranı, vücuttaki kemik dokusu ağırlığını, dolayısıyla kemik sağlığını belirten bir değerdir.";
+"bodysalts_inadequate" = "Yetersiz";
+"bodysalts_normal" = "Normal";
+"bodysalts_perfect" = "Mükemmel";
+
+"visceral_fat_title" = "İç Organ Yağ Oranı";
+"visceral_fat_desc" = "İç organ yağ oranı, iç organ çevresinde ve özellikle karın boşluğundaki yağı belirtir. Belirli miktarda iç organ yağı yaşam için gereklidir çünkü iç organları destekler ve korur.";
+"visceral_fat_normal" = "Normal";
+"visceral_fat_fat" = "Yağlı";
+"visceral_fat_danger" = "Tehlikeli";
+
+"bmr_title" = "Bazal Metabolizma Hızı";
+"bmr_desc" = "Bazal metabolima hızı, normal oda sıcaklığında, fiziksel olarak dinlenir vaziyette ve mental olarak dingin iken vücudun harcadığı enerjidir.";
+"bmr_slow" = "Yavaş";
+"bmr_fast" = "Hızlı";
+
+//Scale
+"scale_vfit" = "Vestel Akıllı Tartı";
+"scale_family_members" = "Aile Üyeleri";
+"scale_pregnancy_mode" = "Hamilelik Modu";
+"scale_pregnancy_desc" = "Hamilelik modu özelliğini etkinleştirerek tartıldığında cihaz elektrik göndermez. Bu nedenle yağ, kas, su, kemik ve iç organ yağ oranları ve bazal metabolizma hızı bilgileri alınamaz.\n\n*Hamilelerin cihazı çorapla kullanması gerekmektedir.";
+
+//Smart scale onboarding
+"scale_step_1_title" = "Çıplak ayak ile tartıya çık";
+"scale_step_1_desc" = "Vücut kitle indeksini, yağ, kas, su, kemik, iç organ yağ oranını ve bazal metabolizma hızını görüntüleyebilmen için çıplak ayak ile tartılman gerekir.";
+"scale_step_2_title" = "Aile üyesi ekle";
+"scale_step_2_desc" = "Aile üyesi ekleyebilir, onlar için hedef kilo belirleyebilir ve kilo takibi yapabilirsin.";
+"scale_step_3_title" = "Hamilelik modu özelliği";
+"scale_step_3_desc" = "Hamilelik modu özelliğini etkinleştirerek tartıldığında cihaz elektrik göndermez. Bu nedenle yağ, kas, su, kemik ve iç organ yağ oranları ve bazal metabolizma hızı bilgileri alınamaz.";
+"scale_step_4_title" = "Misafir detaylarını görüntüle";
+"scale_step_4_desc" = "Misafire ait veri detaylarını anlık olarak görüntüleyebilirsin.";
+"scale_step_4_button" = "Başla";
+
+//Weight
+"weight_title" = "Kilo";
+"body_fat_title" = "Yağ Oranı";
+"muscle_title" = "Kas Oranı";
+"body_water_title" = "Su Oranı";
+"bodysalts_title" = "Kemik Oranı";
+"visceral_fat_title" = "İç Organ Yağ Oranı";
+"bmr_title" = "Bazal Metabolizma Hızı";
+"scale_all_data" = "Tüm Veriler";
+"scale_delete_data" = "Seçilenleri sil";
+"scale_viewdetail" = "Detay görüntüle";
+"scale_guestinfo" = "Guest Info";
+"scale_guestdetail" = "Misafir detaylarını görüntüle";
+"scale_guestdetail_desc" = "Misafire ait detay bilgilerini geçici olarak görüntüleyebilmek için misafirin cinsiyet, doğum tarihi ve boy bilgilerini girmen gerekir. Bu bilgiler sonrası için kaydedilmez.";
+"scale_guestdetail_button" = "Misafir Bilgilerini Gir";
+"share" = "Paylaş";
+
+//UnattendendWeightFoundController
+"unattendend_weight_title" = "Yeni kilo verisi bulundu.Verileri görüntülemek ister misin?";
+"unattendend_weight_desc" = " Verileri daha sonra Cihazlarım ekranındaki Akıllı Sağlık Akıllı Tartı’dan düzenleyebilirsin.";
+"unattendend_weight_cancel" = "Şimdi Değil";
+"unattendend_weight_show" = "Görüntüle";
+"scale_pregnancy_mode" = "Hamilelik Modu";
+
+//SmartWatch
+"smartwatch_time_date" = "Tarih & Saat";
+"smartwatch_not_disturb" = "Rahatsız Etme";
+"smartwatch_activity_display" = "Aktivite Ekranı";
+"smartwatch_firmware_update" = "Cihaz yazılım güncellemesi";
+"time_format" = "Saat Formatı";
+"not_disturb" = "Rahatsız Etme";
+"time_format_12" = "12 saat";
+"time_format_24" = "24 saat";
+"swhrmonitor_desc" = "• Otomatik ölçüm, her 5 dakikada bir kalp atış hızını ölçer ve kaydeder. Otomatik ölçüm saatin batarya süresini etkileyebilir.";
+"app_notifications_desc_for_smartwatch" = "İzin verilen uygulamalar için bildirim aldığınızda saat titreyecektir.";
+"smartwatch_sedentary_desc" = "Belirlediğin süre boyunca hareketsiz kalırsan saat hareket etmen gerektiğini hatırlatmak için hafifçe titreyecektir.";
+
+//Activity Display
+"add_activity" = "Aktivite Ekle";
+"walk" = "Yürüyüş";
+"run" = "Koşu";
+"hike" = "Doğa Yürüyüşü";
+"climbing" = "Tırmanma";
+"bike" = "Bisiklet";
+"treadmill" = "Koşu Bandı";
+"spinning" = "Spinning";
+"yoga" = "Yoga";
+"dance" = "Dans";
+"workout" = "Egzersiz";
+"badminton" = "Badminton";
+"football" = "Futbol";
+"basketball" = "Basketbol";
+"tennis" = "Tenis";
+"no_selected_activity" = "Tüm aktiviler kaldırılamaz.";
+
+//Menstrual Tracking
+"menstrual_length" = "Adet Uzunluğu";
+"menstrual_length_desc" = "Adet uzunluğu, başlangıç ve bitiş tarihleri arasındaki gün sayısıdır.";
+"menstrual_cycle_length" = "Adet Döngüsü Uzunluğu";
+"menstrual_cycle_length_desc" = "Adet döngüsü uzunluğu, adetin ilk günü ile bir sonraki adetin ilk günü arasındaki gün sayısıdır.";
+"last_menstrual_date" = "Son Adet Tarihi";
+"last_menstrual_date_desc" = "Son adet tarihi, son adetinizin başladığı ilk gündür.";
+"menstrual_reminder" = "Adet Hatırlatıcı";
+"menstrual_reminder_desc" = "Yaklaşan tahmini adetini hatırlatmak için belirlediğin gün sayısı kadar önce bildirim gönderir.";
+"ovulation_reminder" = "Doğurganlık Dönemi Hatırlatıcı";
+"ovulation_reminder_desc" = "Belirlediğin gün sayısı kadar önceden yaklaşan doğurganlık dönemini hatırlatmak için bildirim gönderir.";
+"notification_time" = "Bildirim Saati";
+"notification_time_desc" = "Belirlediğin saatte adet ve doğurganlık hatırlatıcıları için bildirim gönderir.";
+"smartwatch_menstrual_tracking_desc" = "Bir sonraki adet ve doğurganlık dönemlerini takip edebilir ve hatırlatıcı kurabilirsin.";
+"smartwatch_menstrual_tracking_title" = "Adet Döngüsü Takibi";
+"smartwatch_menstrual_tracking_info" = "Adet Döngüsü Bilgileri";
+"smartwatch_menstrual_tracking_notification" = "Hatırlatıcı Ayarları";
+"smartwatch_menstrual_tracking_info_desc" = "Adet uzunluğu ve döngü süresi bir sonraki adet günü tahmini için önemlidir.";
+"smartwatch_menstrual_tracking_notification_desc" = "Yaklaşan adet ve doğurganlık dönemleri için hatırlatıcı kurabilir ve bildirim saatini belirleyebilirsin.";
+"days" = " gün";
+"days_in_advance" = " gün önceden";
+
+//Days
+"mon" = "Pzt";
+"tue" = "Sal";
+"wed" = "Çar";
+"thu" = "Per";
+"fri" = "Cum";
+"sat" = "Cmt";
+"sun" = "Paz";
+"once" = "Bir defa";
+
+"sleep_type_wakeup" = "Uyanma";
+"sleep_type_appoinment" = "Buluşma";
+"sleep_type_exercise" = "Egzersiz";
+"sleep_type_medicine" = "İlaç";
+"sleep_type_meetup" = "Toplantı";
+"sleep_type_party" = "Parti";
+"sleep_type_sleep" = "Uyku";
+"sleep_type_title" = "Alarm Türü";
+
+"alarm_type_getup" = "Uyanma";
+"alarm_type_appointment" = "Buluşma";
+"alarm_type_workout" = "Egzersiz";
+"alarm_type_medicine" = "İlaç";
+"alarm_type_meeting" = "Toplantı";
+"alarm_type_party" = "Parti";
+"alarm_type_go_to_bed" = "Uyku";
+
+"device_not_found_go_settings" = "Cihaz bulunamadı. Cihazın açık ve yakın konumda olduğundan emin ol. Cihaza önceden bağlandıysan telefonunun kendi ayarlarının altından 'Ayarlar -> Bluetooth' bölümüne giderek bağlı cihazı seçip 'Bu aygıtı unut'a tıkla.";
+
+"smartwatch_remove_fail_title" = "Cihaz kaldırılamadı.";
+"smartwatch_remove_fail_detail" = "Lütfen bağlanın ve tekrar deneyin.";
+
+//Alert
+"internet_connection" = "Lütfen internet bağlantınızı kontrol edin";
+"error_occured" = "Bir hata oluştu. Lütfen daha sonra tekrar deneyin";
+
+//Wallpaper Add Photo missing
+"error_photo_missing_title" = "fotoğraf bulunamadı";
+"error_photo_missing_desc" = "Devam etmek için lütfen fotoğraf ekleyin.";
+
+//All alarm set error
+"error_alarm_max" = "10’dan fazla alarm eklenemez.";
+
+//Smart light onboarding
+"light_step_1_title" = "Ses Seviyesi Ayarlama";
+"light_step_1_desc" = "Vestel Akıllı Işık ses seviyesini kısmak için sol tarafa dokun, açmak için sağ tarafa dokun.";
+"light_step_2_title" = "Işık Düğmesi ve Parlaklık Kontrolü";
+"light_step_2_desc" = "Işık Ayarları sayfasından ışığı açabilir/kapatabilir ve parlaklığını ayarlayabilirsin. Parlaklığı kısmak için sol alt bölüme uzun süre dokun, parlaklığı arttırmak için sağ alt bölüme uzun süre dokun. ";
+"light_step_3_title" = "Alarmı Kapatma";
+"light_step_3_desc" = "Alarm duyulduğunda alarmı durdurmak için dokun.";
+"light_step_4_title" = "Hoparlör Kullanımı";
+"light_step_4_desc" = "Telefonunun bluetoothunu “Vestel Akıllı Işık” ile eşleştirerek hoparlör olarak kullan.";
+
+"smartlight_connected" = "Bağlı";
+"smartlight_sleep_reminder" = "Uyku hatırlatıcı";
+"smartlight_gesture_control" = "El hareketi kontrolü";
+"smartlight_program" = "Program";
+"smartlight_night_light" = "Gece aydınlatması";
+"smartlight_device_id" = "Cihaz ID";
+"smartlight_firmware_update" = "Yazılım güncellemesi";
+"smartlight_user_manual" = "Kullanım kılavuzu";
+"smartlight_faq" = "S.S.S";
+"smartlight_reset" = "Aygıt ayarlarını sıfırla";
+"smartlight_reset_alert_title" = "Ayarları sıfırlamak istiyor musun?";
+"smartlight_reset_alert_detail" = "Eğer ayarlarını sıfırlarsan akıllı ışık aygıtındaki tüm tercihlerin silinecektir.";
+"smartlight_control_device" = "Cihazı Kontrol Et";
+"disconnect" = "Sonlandır";
+"smartlight_program_add" = "Program Ekle";
+"smartlight_program_backbtn_title_add" = "Program Ekle";
+"smartlight_noprogram_title" = "Program Bulunamadı";
+"smartlight_noprogram_desc" = "Akıllı ışık için henüz program eklemedin. Program özelliği ile ışık, belirdiğin saat ve günlerde ayarlanan renk ve müzik ile açılır.";
+"smartlight_program_light" = "Aydınlatma ayarları";
+"smartlight_autoturnoff" = "Otomatik kapanma";
+"smartlight_autoturnoff_duration" = "Otomatik kapanma süresi";
+"smartlight_autoturnoff_desc" = "Belirlediğin sürenin sonunda Akıllı Işık otomatik olarak kapanır.";
+"smartlight_program_volume" = "Müzik sesi";
+"smartlight_program_name" = "Program ismi";
+"smartlight_program_maxcount" = "Maksimum program sayısına ulaşıldı.";
+
+//Smart light user manual
+"light_user_manual_1" = "Işığı açmak/kapatmak için düğmeye basın.";
+"light_user_manual_2" = "Işık rengini/müziği değiştirmek için elini salla.";
+"light_user_manual_3" = "Vestel Akıllı Işık ses seviyesini kısmak için sol tarafa dokun, açmak için sağ tarafa dokun.";
+"light_user_manual_4" = "Işık Ayarları sayfasından ışığı açabilir/kapatabilir ve parlaklığını ayarlayabilirsin. Parlaklığı kısmak için sol alt bölüme uzun süre dokun, parlaklığı arttırmak için sağ alt bölüme uzun süre dokun.";
+"light_user_manual_5" = "Alarm duyulduğunda alarmı durdurmak için dokun.";
+"light_user_manual_6" = "Alarm duyulduğunda alarmı ertelemek için elini salla.";
+
+"set_time" = "Uyku hatırlatıcı saati";
+"set_time_desc" = "Uyku hatırlatıcı saati belirle";
+"sleep_reminder_desc" = "Uyku hatırlatıcı özelliği belirlediğin saatte uyuman gerektiğini hatırlatacaktır.";
+"night_light_desc" = "Gece aydınlatması özelliği ile belirdiğin saat aralığında, ışık üzerindeki butona basıldığında ışık ayarlanan renk ve parlaklıkla açılır.";
+"nightlight_title_start_end_title" = "Başlangıç - bitiş saati";
+"nightlight_title_configuration" = "Aydınlatma ayarları";
+"music" = "Müzik";
+
+"firmware_update_desc" = "Önemli Uyarı: Cihaz yazılımını güncelledikten sonra telefonunuzun bluetoothunu kapatıp açıp, aygıtınızı tekrar bağlayınız.";
+"firmware_upgrade" = "Güncelle";
+"firmware_wait" = "Cihaz yazılımı güncelleniyor";
+"firmware_updated" = "Cihaz yazılımı güncellendi";
+"firmware_updated_desc" = "Güncellenen son sürümle devam etmek için telefonunun bluetoothunu kapatıp yeniden aç.";
+"adjustTimeShowing" = "Saatin gizleneceği zaman aralığını ayarla";
+"firmware_failed" = "Cihaz yazılımı güncellenemedi";
+"firmware_failed_desc" = "Lütfen tekrar deneyin.";
+"firmware_already_updated" = "Cihaz yazılımı zaten güncel";
+"firmware_found" = "Saat Güncelleştirmesi Mevcut";
+"firmware_found_desc" = "Yüklemek için telefon, saatinizin bataryasının %30 üstü ve eşleştirilmiş olmalıdır. 'Cihaz yazılım güncellemesi' menüsünden güncelleyebilirsiniz.";
+"firmware_found_desc_light" = "Yüklemek için telefon bataryası %30 veya üzeri ve aygıta yakın olmalıdır. 'Yazılım güncellemesi' menüsünden güncelleyebilirsiniz.";
+"firmware_found_light" = "Işık Güncelleştirmesi Mevcut";
+
+//Smart light alarm
+"wakeup_light" = "Uyandırma Işığı";
+"set_alarm_music1" = "Öten Kuşlar";
+"set_alarm_music2" = "Mutlu Bir Uyanış";
+"set_alarm_music3" = "Romantik Sabah";
+"set_alarm_music4" = "Harika Bir Gün";
+"set_alarm_music5" = "Güneş Doğdu";
+"set_alarm_music6" = "Gündüzsefası";
+"set_alarm_music7" = "Göl Kenarında Bir Sabah";
+"set_alarm_music8" = "Tatlım, Uyan";
+"set_alarm_music9" = "Günaydın Dünya";
+"sleepAssistantDuration" = "dk";
+
+"every_mon" = "Her Pazartesi";
+"every_tue" = "Her Salı";
+"every_wed" = "Her Çarşamba";
+"every_thu" = "Her Perşembe";
+"every_fri" = "Her Cuma";
+"every_sat" = "Her Cumartesi";
+"every_sun" = "Her Pazar";
+
+"snooze_alarm_title" = "Ertele";
+"snooze_alarm_duration" = "Erteleme zaman aralığı";
+"snooze_alarm_count" = "Erteleme sayısı";
+"snooze_min" = "dk";
+"snooze_times" = "kere";
+"on" = "Açık";
+"off" = "Kapalı";
+
+"alarm_volume" = "Alarm Sesi";
+"alarm_preview" = "Önizleme";
+"stop_alarm_preview" = "Önizlemeyi Durdur";
+"nomore_than_five" = "5’ten fazla alarm eklenemez.";
+"cannot_off_music_and_light_features" = "Müzik ve ışıklar aynı anda kapatılamaz.";
+
+"sl_alarm_title" = "Alarm Ekle";
+"sl_alarm_repeat" = "Tekrarla";
+"sl_alarm_snooze" = "Ertele";
+"sl_alarm_music" = "Müzik";
+"sl_alarm_wakeup_light" = "Uyandırma ışığı";
+"sl_alarm_wakeup_music" = "Uyandırma müziği";
+"sl_alarm_howto_close" = "Alarmı nasıl kapatırım?";
+
+"brightness" = "Işık Parlaklığı";
+"gesture_control_wave" = "El Salla";
+"gesture_control_wave_information" = "Renkleri görüntülemek için Görüntüle'ye dokun";
+"gesture_control_hover" = "Elini Göster";
+"gesture_control_disable" = "Kontrolü kapat";
+"gesture_control_switch_music" = "Müzik değiştir";
+"gesture_control_switch_light_color" = "Işık rengini değiştir";
+"gesture_control_switch_light_color_title" = "Işık Renkleri";
+"gesture_control_switch_light_color_information" = "Bu renkler sırasıyla gösterilmektedir. Renkleri değiştirmek için Düzenle'ye dokun. Renk sırasını sürükleyerek değiştirebilirsin.";
+"gesture_control_switch_light_color_favorites" = "Favoriler";
+"gesture_control_switch_light_color_toast" = "Değişiklikleri kaydetmek için, en az 3 renk seçmelisin.";
+"gesture_control_switch_play_pause_music" = "Müziği oynat/durdur";
+"light" = "Işık";
+"change_light_settings" = "Işık Ayarlarını Değiştir";
+"now_playing" = "Şu anda çalıyor";
+"stopped" = "Durduruldu";
+"smartlight_faq_sl" = "S.S.S Akıllı Işık";
+"question1" = "Akıllı Işık bağlantı sorunlarının sebepleri ve çözümleri nelerdir?";
+"question2" = "Müziklerim telefonumda çalıyorken neden Vestel Akıllı Işıkta çalmıyor?";
+"question3" = "Vestel Akıllı Işık ile Spotify veya Apple Music’ten şarkı oynatabilir miyim?";
+"question4" = "Elimi salladığımda neden ışık rengi / müzik değişmiyor?";
+"question5" = "Elimi gösterdiğimde neden müzik oynat / durdur çalışmıyor?";
+"question6" = "Vestel Akıllı Işığı uzaktan kontrol edebilir miyim?";
+"question7" = "Vestel Akıllı Işık çalışıyorken telefonumu kapatabilir miyim?";
+"question8" = "El hareketi ile ışığın rengini değiştirebilir miyim?";
+
+"answer1" = "Cihazına bağlanırken, şunlara dikkat etmelisin:
+
+1. Vestel Akıllı Işık açık olmalı
+2. Mobil Bluetooth açık olmalı
+3. Vestel Akıllı Işık ve telefonun arasında en fazla 5 metre mesafe olmalı
+4. Vestel Akıllı Işık diğer cihazlarla bağlı olmamalı
+
+Eğer yukarıda bahsedilen hiçbir çözüm sonuç vermiyorsa, cihaz ve uygulayı yeniden başlat.";
+"answer2" = "Sistem > Ayarlar > Bluetooth'u açarak 'Vestel Akıllı Işık' etkinleştirdikten sonra cep telefonunuzu 'Vestel Akıllı Işık'a bağlayın.";
+"answer3" = "Evet. Spotify veya Apple Music’ten şarkı oynatmak için telefonunun bluetootunu 'Vestel Akıllı Işık'a bağlaman gerekir.";
+"answer4" = "'El Salla' kontrolü kapalı ise ışık rengi/müzik değişmez. Cihazlarım > Vestel Akıllı Işık > El Hareketi Kontrolü > El Salla ekranlarını takip ederek kontrol etmek istediğin özelliği seçebilirsin.";
+"answer5" = "'Elini Göster' kontrolü kapalı ise müzik oynat/durdur çalışmaz. Cihazlarım > Vestel Akıllı Işık > El Hareketi Kontrolü > Elini Göster ekranlarını takip ederek müzik oynat/durdur özelliğini açabilirsin.";
+"answer6" = "Hayır. Vestel Akıllı Işık telefonunla Bluetooth 4.0 aracılığı ile bağlanmalıdır. Telefonunun kontrol sinyallerini almak için en fazla 5 metre mesafe olmalıdır.";
+"answer7" = "Evet, kapatabilirsin.";
+"answer8" = "Evet, kullanabilirsin. Cihazlarım > Vestel Akıllı Işık > El Hareketi Kontrolü > El Salla ekranlarını takip ederek ışık rengini değiştir özelliğini seçip ışık rengini el sallayarak değiştirmeye başlayabilirsin.";
+
+"smartlight_tab_white" = "Beyaz";
+"smartlight_tab_color" = "Renk";
+"smartlight_tab_color_cycle" = "Döngü";
+"smartlight_tab_favorite" = "Favori";
+"smartlight_add_fav" = "Seçilen rengi favorilere ekle";
+"smartlight_add_popup_desc" = "Seçiminiz favorilerinize eklendi.";
+"light_settings" = "Işık Ayarları";
+"smartlight_name" = "Aygıt İsmi";
+"smartlight_name_desc" =  "Cihazınızı adlandırın.";
+"smartlight_config" = "Cihaz Kurulumu";
+"smartlight_config_name_title" = "Cihaza isim ver";
+"smartlight_config_desc" = "Cihazın, mobil uygulamada verilen isim ile görüntülenecektir. Kullanım kolaylığı açısından, cihazına işlevi ve kullanım alanıyla uyumlu bir isim vermen önerilmektedir.";
+"smartlight_device_name" = "Cihaz İsmi";
+"smartlight_device_name_error"= "Cihaz ismi boş bırakılamaz!";
+"smartlight_fav_title" = "Favori renk bulunamadı";
+"smartlight_fav_desc" = "Henüz hiç favori renk eklemedin. 'Renk' menüsünden favori renk ekleyebilirsin.";
+"device_network" = "Kablosuz ağ erişimi";
+"device_network_name" = "Wi-Fi İsmi";
+"device_network_password" = "Şifre";
+
+"sea" = "Deniz";
+"wind" = "Rüzgar";
+"rain" = "Yağmur";
+"solo" = "Solo";
+"star" = "Yıldız";
+"summer" = "Yaz";
+"sun_" = "Güneş";
+"control_smartlight_title" = "Kontrol et - Vestel Akıllı Işık";
+
+"color_cycle_text" = "Renk otomatik olarak değişir.";
+"push_noti_title" = "Uyku zamanı";
+
+"smartlight_firmware_version" = "Sürümünüz:";
+"smartlight_firmware_old_version" = "olup güncellenmelidir.";
+"smartlight_firmware_latest_version" = "Bu en son sürümdür.";
+
+//Force update
+"forceUpdateTitle" = "Yeni güncelleme mevcut";
+"forceUpdateDesc" = "Son özelliklerle kullanmaya devam etmek için lütfen uygulamayı güncelleyin.";
+"forceupdateButton" = "Güncelle";
+"updateDescFromRemote" = "update_descTR";
+"updatedTermsAndConditionsTitle" = "Kullanım Koşulları güncellenmiştir.";
+"updatedTermsAndConditionsDesc" = "Yeni güncellemelerle devam etmek için lütfen değişiklikleri okuyup onaylayın.";
+"updatedPrivacyPolicyTitle" = "Gizlilik Politikası güncellenmiştir.";
+"updatedPrivacyPolicyDesc" = "Yeni güncellemelerle devam etmek için lütfen değişiklikleri okuyup onaylayın.";
+"updatedTCAndPPTitle" = "Kullanım Koşulları ve Gizlilik Politikası güncellenmiştir.";
+"updatedTCAndPPDesc" = "Yeni güncellemelerle devam etmek için lütfen değişiklikleri okuyup onaylayın.";
+"updatedTCStep" = "1. Kullanım Koşulları";
+"updatedPPStep" = "1. Gizlilik Politikası";
+"updatedTCAndPPSecondStep" = "2. Gizlilik Politikası";
+"updatedAccept" = "Onayla";
+"updatedWarningTCAndPPTitle" = "Kullanım Koşulları ve Gizlilik Politikası güncellendi";
+"updatedWarningTCTitle" = "Kullanım Koşulları güncellendi";
+"updatedWarningPPTitle" = "Gizlilik Politikası güncellendi";
+"updatedWarningTCAndPPDesc" = "İnternet bağlantısı yok veya başarısız. Güncellenen Kullanım Koşulları ve Gizlilik Politikasını görüntüleyebilmek için lütfen bağlantı ayarlarını kontrol edip tekrar deneyin.";
+"updatedWarningTCDesc" = "İnternet bağlantısı yok veya başarısız. Güncellenen Kullanım Koşullarını görüntüleyebilmek için lütfen bağlantı ayarlarını kontrol edip tekrar deneyin.";
+"updatedWarningPPDesc" = "İnternet bağlantısı yok veya başarısız. Güncellenen Gizlilik Politikasını görüntüleyebilmek için lütfen bağlantı ayarlarını kontrol edip tekrar deneyin.";
+
+//Smartlight Sleep Mode
+"sleep_mode" = "Uyku modu";
+"sleep_mode_settings" = "Uyku modu ayarları";
+"sleep_mode_settings_title" = "Uyku Modu Ayarları";
+"sleep_mode_duration" = "Uyku modu süresi";
+"sleep_mode_desc" = "Uyku modunu açtığında, müzik ve ışık ayarladığın sürenin sonunda otomatik olarak durur.";
+
+//AIRPURIFIER
+"add_device_airpurifier_name" = "Vestel Hava Temizleyici";
+"add_device_airpurifier_desc" = "Hava Temizleyici ile bulunduğun ortamdaki hava kalitesini görüntüleyebilir, manuel, otomatik ve uyku modları ile ortamdaki havayı değiştirebilirsin. WiFi üzerinden cihazını kontrol edebilirsin.";
+"airpurifier_device_conf" = "Cihaz Kurulumu";
+"connection_failed" = "Kurulum başarısız!";
+"try_again" = "Tekrar dene";
+"please_wait" = "Lütfen Bekleyin...";
+"please_wait_syncing" = "Cihazınız senkronize ediliyor... Lütfen bekleyin.";
+"estimated_waiting_time" = "Yaklaşık Bekleme Süresi 2 dakikadır.";
+"device_name" = "Cihaz İsmi";
+"wifi_access" = "Kablosuz ağ erişimi";
+"enter_wifi_password_info" = "“%@“ kablosuz ağının şifresini girin.";
+
+"wifi_password" = "Wi-Fi Şifresi";
+"device_info" = "Cihaz Bilgisi";
+"check_device_network" = "Ağ durumunu kontrol et";
+"remove_device" = "Cihazı Kaldır";
+"unbind_alert_detail" = "Cihaz bağlantısı kesilecek ve tüm veriler silinecektir.";
+
+"device_remove_confirm_title" = "Cihazı kaldırmak istediğine emin misin?";
+"device_remove_confirm_desc" = "Cihazın eşleştirmesi kaldırılacak ve cihaz listesinden silinecektir.";
+"device_remove_confirm_title_v2watch" = "Akıllı Saati cihazlarından kaldırmak istiyor musun?";
+"device_remove_confirm_desc_v2watch" = "Cihaz bağlantısı kesilecek ve tüm veriler silinecektir.";
+"device_remove_confirm_btn_text" = "Kaldır";
+"confirm" = "Onayla";
+
+"sosContact" = "Acil Durum Kişileri";
+"sosMessage" = "Acil Durum Mesajı";
+"sosDesc" = "Akıllı saatinin sağ butonuna uzun süre bastığında, acil durum özelliği seçtiğin kişilere yardım mesajı gönderir. Bu özelliğin kullanılabilmesi için:
+•  Akıllı saatindeki versiyonun, özelliği desteklemesi gerekir.
+•  Uygulama önde veya arka planda açık olmalıdır.
+•  Saat ve telefonun bağlantısı sağlanmış olmalıdır.
+•  Telefonun internete bağlı olmalıdır.
+•  Acil Durum butonu, yalnızca saat ekranı uyanıksa etkinleştirilebilir. Bu nedenle, Acil Durum için düğmeye basmadan önce saatini bir kez uyandırmalısın.
+•  Yardım mesajı, yalnızca +90 ile başlayan mobil telefon numaraları için gönderilebilir.";
+"sosImageDesc" = "Uzun Bas";
+"sosEmptyContactTitle" = "Seçili kişi bulunamadı";
+"sosEmptyContactDesc" = "Henüz hiç kişi eklemedin. Rehberinden 5 kişiyi acil durum kişilerine ekleyebilirsin.";
+"sosAddContact" = "Kişi Ekle";
+"search_on_contact" = "Kişi Ara";
+"sosmax_contact" = "En fazla 5 kişiyi acil durum kişilerine ekleyebilirsin.";
+"sos_contact_added" = "Seçtiğiniz kişi acil durum kişilerinize eklendi.";
+"sos_addedlist_desc" = "Rehberinden 5 kişiyi acil durum kişilerine ekleyebilirsin.";
+"already_registered" = "Zaten hesabın var mı? Giriş Yap";
+"activation_error" = "Aktivasyon Hatası";
+"activation_error_title" = "Aktivasyon linki geçersiz veya daha önce kullanılmış. Yeni aktivasyon linki için e-posta adresini girmen gereklidir.";
+"send_activation_link" = "Aktivasyon linki gönder";
+"not_activated_user" = "Aktive edilmemiş hesap";
+"not_activated_user_desc" = "Hesabını aktive etmek için kayıtlı olduğun e-posta adresine aktivasyon linki gönderdik. Gelen kutundaki linke tıklayarak hesabını aktive edebilirsin.";
+
+//MARK: -
+//MARK: - HOME DASHBOARD PAGES
+"no_data_available_to_display" = "Görüntülenecek veri yok.";
+
+//MARK: -
+//MARK: - WATCH SETTINGS PAGES: V2 - V2MAX
+
+//MARK: Stress
+"stress_title" = "Stres Seviyesi";
+"stress_range" = "Stres aralığı";
+"stress_automeasure" = "Otomatik ölçüm";
+"stress_desc" = "Otomatik stres seviyesi ölçümü ile saatin belirli aralıklarla stres seviyeni ölçer.";
+"stress_weekly_infotext" = "Haftalık stres ölçümü, stres takibi yapmanda ve stresini kontrol altına almanda yardımcı olabilir; lütfen etkili ölçüm için stres ölçümünü kullanmaya devam edin.";
+"stress_monthly_infotext" = "Aylık stres ölçümü, stres takibi yapmanda ve stresini kontrol altına almanda yardımcı olabilir; lütfen etkili ölçüm için stres ölçümünü kullanmaya devam edin.";
+
+//MARK: Blood oxygen
+"blood_title" = "Kan Oksijen Seviyesi";
+"blood_what_is" = "Kan oksijen seviyesi nedir?";
+
+//MARK: Menstrual Cycle
+"menstrualCycle_title" = "Adet Döngüsü";
+"menstrualCycleUpdate" = "Son adet tarihi:";
+"menstrual_cycle_add_step1" = "1. Adım";
+"menstrual_cycle_add_step2" = "2. Adım";
+"menstrual_cycle_add_step3" = "3. Adım";
+"menstrual_cycle_add_step4" = "4. Adım";
+"menstrual_cycle_add_step5" = "5. Adım";
+"menstrual_cycle_add_last_menstrual_date" = "Son adet tarihi";
+"menstrual_cycle_add_last_menstrual_date_desc" = "Son adet tarihi, son adetinizin başladığı ilk gündür.";
+"menstrual_cycle_add_menstrual_length" = "Adet uzunluğu";
+"menstrual_cycle_add_menstrual_length_desc" = "Adet uzunluğu, adetin ilk günü ile bir sonraki adetin ilk günü arasındaki gün sayısıdır.";
+"menstrual_cycle_add_menstrual_cycle_length" = "Adet döngüsü uzunluğu";
+"menstrual_cycle_add_set_reminder" = "Hatırlatıcı Kur";
+"menstrual_cycle_add_set_reminder_desc" = "Belirlediğin gün sayısı kadar önceden yaklaşan adet ve doğurganlık dönemini hatırlatmak için bildirim gönderir.";
+"menstrual_cycle_add_set_notification_time" = "Bildirim Saati";
+"menstrual_cycle_add_set_notification_time_desc" = "Belirlediğin saatte adet ve doğurganlık hatırlatıcıları için bildirim gönderir.";
+"last_menstrual" = "Bir sonraki adet";
+"ovulation" = "Ovulasyon";
+"cycle_length" = "Döngü uzunluğu";
+"menstrual_tracking" = "Adet döngüsü takibi";
+"menstrual_cycle_info" = "Adet döngüsü bilgileri";
+"menstrual_cycle_reminder" = "Hatırlatıcı ayarları";
+"menstrual_days" = "Adet günleri";
+"ovulation_days" = "Ovulasyon günleri";
+"next_estimated_menstrual_days" = "Bir sonraki tahmini adet günleri";
+"menstrual_cycle_add_complete" = "Tamamla";
+
+"later" = "sonra";
+"today" = "Bugün";
+"default" = "Varsayılan";
+
+//MARK: Watch V2 Feature
+"market" = "Market";
+"all" = "Tümü";
+"my_library" = "Kütüphanem";
+"new_arrivals" = "Yeni gelenler";
+"custom" = "Özel";
+"photo" = "Fotoğraf";
+"photodesc" = "Bileğinizi her kaldırdığınızda veya ekrana dokunduğunuzda, eklediğiniz favori fotoğraf saat kadranında görüntülenecektir.";
+"already_installed" = "Yüklenenler";
+"watchface" = "Saat Arayüzü";
+"current" = "Güncel";
+"add_and_install" = "Ekle ve İndir";
+"set_current" = "Güncel olarak Ayarla";
+"addphoto" = "Fotoğraf ekle";
+"changephoto" = "Fotoğrafı değiştir";
+"datetimecolor" = "Tarih & saat yazı rengi";
+"watchv2_nointernet_title" = "İnternet bağlantısı yok";
+"watchv2_nointernet_desc" = "Lütfen bağlantı ayarlarınızı kontrol edip tekrar deneyin.";
+"watchv2_camera" = "Kamera";
+"watchv2_gallery" = "Galeri";
+"watchv2_photoselect" = "Fotoğraf seçin...";
+"watchv2_warning" = "Uyarı";
+"watchv2_cameranotfound" = "Kamera bulunamadı!";
+"watchv2_cropphoto" = "Fotoğrafı Kırp";
+
+"auto_brightness_title" = "Otomatik Parlaklık";
+"auto_brightness_switch" = "Otomatik parlaklık";
+"auto_brightness_start_end_time" = "Başlangıç - bitiş saati";
+"auto_brightness_desc" = "Otomatik parlaklık, saatin ekran parlaklığı geceleri ortam ışığına bağlı olarak otomatik bir şekilde azalır ya da artar.";
+"downloading" = "İndiriliyor...";
+"watchv2_call_notification_title" = "Çağrı Bildirimi";
+"watchv2_call_notification" = "Çağrı bildirimi";
+"watchv2_call_notification_delay" = "3 saniye ertele";
+"watchv2_call_notification_desc" = "Çağrı bildirimi ile telefonuna gelen aramalar için saatine bir bildirim alırsın. Rahatsız etme modu etkinleştirildiğinde gelen aramaların bildirimi gelmez.";
+"watchv2Max_call_notification_desc" = "Çağrı bildirimi ile telefonuna gelen aramalar için saatine bir bildirim alırsın. 3 saniye ertele ile çağrı bildirimi 3 saniye ertelenir. Rahatsız etme modu etkinleştirildiğinde gelen aramaların bildirimi gelmez.";
+"watchv2_exercise_recognition_title" = "Aktivite Tanıma";
+"watchv2_exercise_recognition_run" = "Koşu";
+"watchv2_exercise_recognition_walk" = "Yürüyüş";
+"watchv2_exercise_recognition_desc" = "Aktivite tanıma, saat üzerinden manuel olarak herhangi bir aktivite başlatmadığında, seçtiğin aktiviteye göre yürüyüş veya koşu hareketini algılayıp aktivite başlatmanı önerir.";
+
+//MARK: WatchV2 FAQ Questions
+"watchv2_q1" = "Uzunluk birimi, sıcaklık birimi nasıl ayarlanır?";
+"watchv2_q2" = "Saat formatı, hafta başlangıç günü nasıl ayarlanır?";
+"watchv2_q3" = "Bluetooth bağlantısı neden sürekli kesiliyor?";
+"watchv2_q4" = "Verileri senkronize etmek neden bu kadar uzun sürer? Senkronizasyon neden başarısız oluyor?";
+"watchv2_q5" = "Uyku verilerini neden senkronize edemiyorum? Neden uyku verileri yanlış?";
+"watchv2_q6" = "Saatin su geçirmez özelliği var mı? Duşta kullanılabilir mi?";
+"watchv2_q7" = "Bileğimi kaldırdığımda neden ekran her zaman açılmıyor?";
+"watchv2_q8" = "Saatin arkasında neden yeşil ışık var?";
+"watchv2_q9" = "Neden SMS, uygulama ve çağrı bildirimleri gelmiyor?";
+"watchv2_q10" = "Saatimi nasıl şarj edebilirim?";
+"watchv2_q11" = "Daha iyi uyumluluk için uygulamanın hangi sürümünü kullanmalıyım?";
+"watchv2_q12" = "Arama bildirimleri nasıl kullanılır?";
+"watchv2_q13" = "Mesaj bildirimleri nasıl kullanılır?";
+"watchv2_q14" = "Verileri nasıl senkronize edebilirim?";
+"watchv2_q15" = "Saati takarken telefonumun bluetooth özelliğini her zaman etkinleştirmem gerek mi?";
+"watchv2_q16" = "Saat telefonuma bağlı değil iken veri depolayabilir mi?";
+"watchv2_q17" = "Saat neden adımları hemen sayamıyor?";
+"watchv2_q18" = "Gelen arama için saat titreşim gecikmesi ne kadardır?";
+"watchv2_q19" = "Çağrı hatırlatıcı etkin olduğu halde gelen aramalarda saatim neden titremiyor?";
+"watchv2_q20" = "Gelen arama bildirimlerinin titreşim sayısını değiştirebilir miyim? Max titreşim sayısı nedir?";
+"watchv2_q21" = "Uygulama bildirimlerini neden alamıyorum?";
+"watchv2_q22" = "Kalp atış hızının doğruluğunu etkileyen faktörler nelerdir?";
+"watchv2_q23" = "IP67 su geçirmezlik derecesi nedir?";
+"watchv2_q24" = "Adımın doğruluğunu hangi faktörler etkiler?";
+"watchv2_q25" = "Hava durumu verileri neden saatle senkronize edilmiyor? Hava durumu verileri neden yanlış görüntüleniyor?";
+"watchv2_q26" = "Bluetooth ile saate neden bağlanamıyorum?";
+
+//MARK: WatchV2 FAQ Answers
+"watchv2_a1" = "Cihazlarım > Vestel Akıllı Saat 2(Max) > Birimler menüsünden ihtiyacınız olan ünite buradan ayarlanır, tamamlandıktan sonra cihazla senkronize edilir.";
+"watchv2_a2" = "Cihazlarım > Vestel Akıllı Saat 2(Max) > Tarih & Saat menüsünden ihtiyacınız olan ünite buradan ayarlanır, tamamlandıktan sonra cihazla senkronize edilir.";
+"watchv2_a3" = "• Telefon ve saat arasındaki mesafenin 7 metreyi geçmediğinden emin olun.
+• Telefon ve saat arasında bir engel olmadığından emin olun (vücunuzda bulunan mücevher gibi metal nesneler sinyali engelleyebilir) Saat şarjının bluetoothu kullanmak için yeterli güce sahip olduğundan emin olun.
+• Telefonunuzun Bluetooth’unun çalıştığından emin olun. Tüm uygulamaları kapatın ve Bluetooth’u yeniden etkinleştirin.
+• Uygulama arka planda çalışıyorsa iOS uygulamayı otomatik olarak kapatabilir ve bu da Bluetooth’un bağlantısının kesilmesine neden olabilir.
+• Telefonunuz güç tasarruf modundaysa veya bir telefon yöneticisi uygulaması kullanıyorsanız otomatik olarak kesilebilir. Lütfen telefon ayarlarınızı kontrol ediniz ve tekrar deneyiniz.";
+"watchv2_a4" = "• Bluetooth bağlantısının sağlandığından emin olun. (Devam eden sorunlar için Bkz 3.soru)
+• Bluetooth bağlantısının zaman aşımına uğradığını kontrol ediniz.";
+"watchv2_a5" = "•Uyurken her zaman saati taktığınızdan emin olunuz. Aksi durumda saat Akıllı Sağlık uygulamasıyla senkronize ettiğinizde yeni veriler mevcut olmayacaktır.
+• Uyku durumu saat olarak tespit edilecektir. Bununla birlikte, uykunuz yalnızca 3 saatten fazla uyuyorsanız kaydedilecektir. 3 tür uyku vardır .derin uyku ,hafif uyku, ve REM uykusu. Uyandıktan sonra tekrar uyumak veya cep telefonu ile oynamak gibi faktörler uyku verilerinizin kaydını etkileyecektir.
+• Yatmadan önce saati takmazsanız veya kalktıktan hemen sonra saati çıkarırsanız, kaydedilen uyku süresi uzar veya yanlış olur.
+• Tüm gün kalp atış hızı algılama etkinleştirilmezse, algılama işlevi etkinleştirilmez. Yani cihazda gerçek zamanlı kalp atış hızı ölçümü açık durumda olacak ve bu da uyku algılamama veya hatalı veri ile sonuçlanmayacaktır.";
+"watchv2_a6" = "Akıllı saat su geçirmez özelliğe sahiptir. Duşta kullanılabilir ancak su sıcaklığı 40 derecenin altında olmalıdır.";
+"watchv2_a7" = "Bu özelliği, uyurken kollarınızı hareket ettirdiğinizde olduğu gibi ekranın kazara açılmasını önlemek için uyarladık. Ekranı açmak için bileğinizi ekran yukarı bakacak şekilde çevirin. En uygun eğim açısına sahip olun.";
+"watchv2_a8" = "Yeşil ışık kalp atış hızınızı ölçmek için kullanılır. Otomatik kalp atış hızı izlemeyi etkinleştirdiyseniz, ışık periyodik olarak açılır. Bu özelliği devre dışı bırakmak için manuel kalp atış hızı izlemeyi seçin. Akıllı saat kullanımı güvenli olarak onaylanmış endüstri standardı bir optik kalp atış hızı sensörüne sahiptir.";
+"watchv2_a9" = "• Çağrı bildirimi için Cihazlarım > Vestel Akıllı Saat 2(Max) > Çağrı Bildirimi menüsünden, SMS ve uygulama bildirimleri için Cihazlarım > Vestel Akıllı Saat 2(Max) > Mesaj Bildirimleri menüsünden bildirimleri etkinleştirmeniz gerekir. Ayarlar saate senkronize edilecektir. iOS sistemi için bluetooth eşleştirmesine izin vermeniz ve etkinleştirmeniz gerekir.
+• Bluetooth’un her zaman bağlı olduğundan emin olun. Bağlantı kesildiğinde saat mesaj veyaçağrı bildirimi alamaz.
+• Rahatsız etme modu etkin ise bildirimler gösterilmez. Bildirim alamazsınız.
+• Akıllı hatırlatıcıyı etkinleştirdikten sonra , telefona gelen bildirimler saatte görülür.";
+"watchv2_a10" = "• Saati bileğinizden çıkarın, USB adaptörüne bir USB kablosuyla bağlayın ve elektrik prizine takın (USB konektörünün doğru şekilde yönlendirildiğinden emin olun) saat ekran kapalı iken şarj oluyor ancak ekranı uyandırmak ve şarj ilerlemesini kontrol etmek için parmağınızı ekranda kaydırabilirsiniz.
+• Normal şartlar altında saat 1-2 saat içinde tamamen şarj edilebilir. Saat bekleme süresiyaklaşık 15-21 gün, ve normal hizmet süresi 5-7 gündür. Farklı modellerin pil dayanıklılığı değişebilir. Not : otomatik kalp atış hızı algılama etkinleştirilirse, saat daha fazla güç tüketir ve saatin pil ömrünü etkiler.
+• Akıllı saati şarj etmek için bir güç kaynağı seçin. PC'nizin USB bağlantı noktası veya cep telefonunuzun şarj cihazı aracılığıyla ( saatin nominal voltajı 3,7 V - 4,2 V'dir; USB bağlantı noktasının nominal voltajı genellikle 5V'dir, bu nedenle USB bağlantı noktası, en iyi güç kaynağıdır. USB bağlantı noktası aracılığıyla, saatin 1-2 saat içinde şarj edilmesi gerekir). Saatin kullanım ömrünü etkilememek için hızlı şarjlı bir güç kaynağı (9V) kullanmayın.";
+"watchv2_a11" = "• Uygulamanın en son sürümünü indirmenizi öneririz.
+• Uygulamayı yüklemek için, lütfen cep telefonunuzun işletim sisteminin iOS 9.0 ve üstü olduğundan emin olun.";
+"watchv2_a12" = "• Saatin bluetooth üzerinden telefonunuza bağlı olduğundan emin olun.
+• Sadece arama reddetmek için kullanabilir.
+• Arayan kişi sizde kayıtlı değil ise telefon numarası görüntülenir.";
+"watchv2_a13" = "• Akıllı saat; SMS, Takvim, Whatsapp, Instagram, Facebook, E-mail, Linkedin bildirimlerini destekler. Bunlar uygulama aracılığı ile yapılandırılabilir.
+• Akıllı saatin telefonunuza Bluetooth ile bağlı olduğundan emin olun.
+• Bir mesaj aldığınızda, bildirim simgesi cihaz bildirim sayısını görüntüler. Son 5 bildirimi
+görüntüleyebilirsiniz.
+• Kapatmak için bir bildirime dokunun ve basılı tutun.";
+"watchv2_a14" = "Akıllı Sağlık uygulamasını açtığınızda otomatik senkronize edilir.";
+"watchv2_a15" = "• Adım sayar ,uyku verilerini kaydetmek ve alarm özelliğini kullanmak için saatinizin telefona bağlı olması gerekmez. Örneğin saat kolunuzda iken egzersiz yapabilir ve daha sonra saatinizi telefonunuza bağlayabilir ve egzersiz verilerini görüntülemek için senkronizasyon yapabilirsiniz.
+• Alarm saatini yapılandırmak ve saatle senkronize etmek için uygulamayı kullanın. Alarm saatini yapılandırdıktan sonra ,saati telefonunuzdan ayırabilirsiniz.
+• Çağrı hatırlatıcı ve telefon bul özelliklerini kullanmak için telefonunuzun bluetooth özelliğiniaçmanız ve saati telefonunuza bağlamanız gerekir.";
+"watchv2_a16" = "• Egzersiz veya uyku verilerini depolamak için telefonunuza bağlı olmanız gerekmez.Saatten verileri senkronize etmek için telefonunuzda bluetoothu etkinleştirin ve saatin kapsama alanında olduğundan emin olun.
+• Saat normal kullanımda 7 günlük egzersiz ve uyku verilerini saklayabilir.";
+"watchv2_a17" = "Adım sayısı doğruluğunu iyileştirmek için , saatin minimum 10 adım eşiği vardır. Uygulamada gösterilen toplam adım sayısının yalnızca 10 dan fazla adım attığınızda değiştiği anlamına gelir. Saat 10 uncu adımdan itibaren veri kaydetmeye başlar yalnızca 30 adımı tamamladıktan sonra verileri kaydeder.";
+"watchv2_a18" = "Varsayılan gecikme 3 saniyedir. Uygulamada gecikme süresini tercihlerinize göre değiştirebilirsiniz.";
+"watchv2_a19" = "• Telefonunuzda Bluetooth’un etkinleştirildiğinden ve saatin bağlı olduğundan emin olun.
+• Uygulamanın arka planda çalıştığından emin olun.";
+"watchv2_a20" = "Gelen arama bildirimlerinin titreşim sayısı değiştirilemez. Bir aramayı yanıtlayana kadar veya reddedene kadar saat titrer. Gelen bir aramanız olduğunda, titreşimleri devre dışı bırakmak için dokunmatik tuşuna basabilirsiniz.";
+"watchv2_a21" = "• Telefonunuzda Bluetooth’un etkinleştirildiğinden ve saatin bağlı olduğundan emin olun.
+• Uygulamanın arka planda çalıştığından emin olun.
+• Uygulamada bildirim ayarlarının açık olduğundan emin olun.";
+"watchv2_a22" = "• Saatin kordonu bol olması yani bileğe tam oturmaması ,kolların sallanması,ve ya saati oynatmak gibi faktörler kalp atış hızının ölçümlerinin etkiler. Ayrıca saatin kordonunu çok sıkı takmak, kollarınızı kaldırmak veya yumruklarınızı sıkmak kan dolaşımını etkileyebilir. Bu durumda sensör performansını etkiler.
+• Kalp atış hızını test ederken kolunuzu düz tutmanız, hareketsiz kalmanız ve kaslarınızı gevşetmeniz önerilir. Saatin cildinizle yakın temas halinde kaldığından emin olun.";
+"watchv2_a23" = "IP67 Cep telefonu endüstrisinde kullanılan bir koruma derecesidir. Bir ürünün su ve toza maruz kalmaya karşı korumasını tanımlar. derecelendirme ‘’IP’’ harflerinden sonra iki sayıdan oluşur. İlk sayı toza karşı korumayı ifade eder ve 0’dan 6’ya kadar çalışır. ikinci sayı suya karşı direnci gösterir ve 0’ dan 9’ a kadar çalışır. IP67 cihazı tamamen toza karşı korumalıdır ve bir su kütlesine düşebilir. Yarım saat boyunca 1m derinliğe kadar korunabilir.";
+"watchv2_a24" = "• Doğru kişisel veriler sağlamalısınız. Örneğin; yanlış cinsiyet, boy, kilo, veya yaş girerseniz, yanlış adım sayımı, mesafe veya kalori gibi yanlış egzersiz verileriyle sonuçlanır.
+• Ayrıca kol sallamanız, adım, duruş, yol yüzeyi ve eğim gibi faktörlerde adım sayısını etkileyebilir.";
+"watchv2_a25" = "• Saat hava durumu verilerini doğrudan indirmez, hava durumu verilerini güncellemek için saati uygulamayla senkronize etmeniz gerekir.
+• Saatin uygulamaya bağlı olduğunda emin olun.
+• Cihazlarım > Vestel Akıllı Saat 2(Max) > Hava durumu bildirimi seçeneğinin etkinleştirildiğinden olduğundan emin olun.
+• Uygulamaya konum izni verilmiş ise uygulama konumunuzu otomatik olarak belirler.Uygulama konumunuzu belirleyemezse hava durumu verileri mevcut olmayacaktır. Daha iyi hizmet için GPS etkinleştirmeniz gerekir.
+• Saat ile telefon arasındaki bağlantı zayıf ise hava durumu verileri güncellenemeyebilir. Bu durumda eski veriler görüntülenir veya ‘’veri mevcut değil’’ mesajı görüntülenir.";
+"watchv2_a26" = "• Telefonunuzun iOS 9.0 ve üzeri olduğunu kontrol edin.
+• Uygulamanın en son sürümünü indirin.
+• Cep telefonunuzun Bluetooth’unun etkin olup olmadığını ve düzgün çalışıp çalışmadığını kontrol edin, bağlantıyı gerçekleştirmeden önce tüm programları kapatmanız ve Bluetooth’u yeniden başlatmanız önerilir.
+• Saat bir QR kodu ekranı gösteriyorsa, cihazı bağlamanın 2 yolu vardır.
+1. QR kodunu tarayın;
+2.bir cihaz ekleyin ve ardından MAC adresini seçin. Doğru ürün tipini seçtiğinizden emin olun.";
+
+//MARK: Watch v2 - health monitor
+"watchv2_healthmonitor" = "Sağlık Monitörü";
+"watchv2_hm_enabled" = "açık";
+"watchv2_hm_disabled" = "kapalı";
+"watchv2_hm_hearth" = "Kalp atış hızı monitörü";
+"watchv2_hm_stress" = "Stres monitörü";
+"watchv2_hm_water" = "Su içme hatırlatıcı";
+"watchv2_hm_sedentary" = "Yürüyüş hatırlatıcı";
+"watchv2_hm_menstrual" = "Adet döngüsü";
+"watchv2_hm_desc" = "Sağlık monitörü ile saatinin belirli aralıklarla otomatik olarak ölçüm yapmasını etkinleştirebilir ve saatine bildirimler gelmesi için  hatırlatıcılar kurabilirsin.";
+
+"watchv2_hm_hr_title" = "Kalp Atış Hızı Monitörü";
+"watchv2_hm_hr_desc" = "• Otomatik kalp atış hızı ölçümü ile saatin 5 saniyede bir kalp atış hızını ölçer.
+
+Otomatik kalp atış hızı özelliği;
+1. Doğru ölçümü sağlamak için akıllı saatini bilek kemiğinin en az bir parmak yukarısına takmalı ve bileğine tam oturduğundan emin olmalısın.
+2. Bu işlevin açık veya kapalı olmasına bakılmaksızın, bir egzersiz başlatıldığında kalp atış hızı varsayılan olarak gerçek zamanlı olarak ölçülecektir.
+
+• Manuel ölçüm ile kalp atış hızını kendin saatten ölçebilirsin.";
+
+"watchv2_hm_hr_auto" = "Otomatik ölçüm";
+"watchv2_hm_hr_manual" = "Manuel ölçüm";
+
+"watchv2_hm_stress_title" = "Stres Monitörü";
+"watchv2_hm_stress_desc" = "Otomatik stres seviyesi ölçümü ile saatin belirli aralıklarla stres seviyeni ölçer.
+
+Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stres sağlığı olumsuz yönde etkiler. 7x24 gerçek zamanlı stres izleme, stres durumunu takip etmene yardımcı olabilir.";
+"watchv2_hm_stress_zone" = "Stres seviyesi aralığı";
+"watchv2_hm_stress_relax" = "Rahat";
+"watchv2_hm_stress_normal" = "Normal";
+"watchv2_hm_stress_medium" = "Orta";
+"watchv2_hm_stress_high" = "Yüksek";
+
+"watchv2_hm_dr_title" = "Su İçme Hatırlatıcı";
+"watchv2_hm_dr_reminder" = "Su içme hatırlatıcı";
+"watchv2_hm_dr_startend" = "Başlangıç - bitiş saati";
+"watchv2_hm_dr_repeat" = "Tekrarla";
+"watchv2_hm_dr_duration" = "Hatırlatıcı zaman aralığı";
+"watchv2_hm_dr_desc" = "Su içme hatırlatıcı, belirlediğin saatler arasında hatırlatma zaman aralığına göre tekrar tekrar su içmen için bildirim gönderir.";
+"watchv2_hm_dr_settime" = "Başlangıç - bitiş saati";
+"watchv2_hm_dr_starttime" = "Başlangıç saati";
+"watchv2_hm_dr_endtime" = "Bitiş saati";
+"watchv2_hm_dr_reminderduration" = "Su içme hatırlatıcısı zaman aralığı";
+
+"watchv2_hm_war_title" = "Yürüyüş Hatırlatıcı";
+"watchv2_hm_war_reminder" = "Yürüyüş hatırlatıcı";
+"watchv2_hm_war_startend" = "Başlangıç - bitiş saati";
+"watchv2_hm_war_goal" = "Saat başına adım hedefi";
+"watchv2_hm_war_repeat" = "Tekrarla";
+"watchv2_hm_war_desc" = "Yürüyüş hatırlatıcısı, uzun bir süre hareketsiz kalırsan saat biraz hareket etmeni hatırlatmak için hafifçe titreyecektir. Belirlediğin saatler arasında eğer belirlediğin adım hedefine ulaşamadıysan, her saatin 50. dakikasında hareket etmen için bildirim gönderir.";
+"watchv2_hm_war_starttime" = "Başlangıç saati";
+"watchv2_hm_war_endtime" = "Bitiş saati";
+
+"watchv2_hm_mc_title" = "Adet Döngüsü";
+"watchv2_hm_mc_tracking" = "Adet döngüsü takibi";
+"watchv2_hm_mc_menstrual_settings" = "Adet döngüsü bilgileri";
+"watchv2_hm_mc_reminder_settings" = "Hatırlatıcı ayarları";
+"watchv2_hm_mc_desc" = "Bir sonraki adet ve doğurganlık dönemlerini takip edebilir ve hatırlatıcı kurabilirsin.";
+"watchv2_hm_mc_menstrual_length" = "Adet uzunluğu";
+"watchv2_hm_mc_menstrual_cycle_length" = "Adet döngüsü uzunluğu";
+"watchv2_hm_mc_last_menstrual_date" = "Son adet tarihi";
+"watchv2_hm_mc_menstrual_reminder" = "Adet hatırlatıcı";
+"watchv2_hm_mc_ovulation_reminder" = "Doğurganlık dönemi hatırlatıcı";
+"watchv2_hm_mc_notification_time" = "Bildirim saati";
+"watchv2_hm_mc_menstrual_reminder_desc" = "Yaklaşan adet ve doğurganlık dönemleri için hatırlatıcı kurabilir ve bildirim saatini belirleyebilirsin.";
+
+//MARK: Watch v2 - firmware
+"watchv2_firmware" = "Yazılım güncellemesi";
+"watchv2_firmware_title" = "Yazılım Güncellemesi";
+"watchv2_firmware_info" = "Önemli Uyarı:
+1. Cihazın pil seviyesinin %30'dan fazla olduğundan ve cihazın telefonu kapattığından emin olun.
+2. Güncelleme sırasında bu sayfadan ayrılmayın.";
+
+//MARK: Watch v2 - device info
+"watchv2_deviceinfo_title" = "Cihaz Bilgisi";
+"watchv2_deviceinfo_modelno" = "Model no:";
+"watchv2_deviceinfo_version" = "Versiyon:";
+"watchv2_deviceinfo_blename" = "Bluetooth ismi:";
+"watchv2_deviceinfo_mac" = "Mac:";
+"watchv2_deviceinfo_updatetime" = "Cihaz veri güncelleme zamanı:";
+
+"watchv2_alarm" = "Alarm";
+"watchv2_alarm_name" = "Alarm ismi";
+"watchv2_alarm_type" = "Alarm türü";
+"watchv2_alarm_snooze" = "Ertele";
+"scan_QR" = "QR Kodu Okut";
+"watchv2_restart_title" = "Akıllı Saati sıfırlamak istiyor musun?";
+"watchv2_reboot_title" = "Akıllı Saati yeniden başlatmak istiyor musun?";
+"watchv2_reboot_restart" = "Başlat";
+
+
+//MARK: watch v2 - shortcuts
+"show_functions" = "Fonksiyonları Göster";
+"hide_functions" = "Fonksiyonları Gizle";
+"health_data" = "Sağlık Verisi";
+"heartrate" = "Kalp Atışı Hızı";
+"stress_level" = "Stres Seviyesi";
+"last_activity" = "Son Aktivite";
+"weather" = "Hava Durumu";
+"music_control" = "Müzik Kontrolü";
+"shortcut_info" = "Sürüklemek için kartı basılı tutun. Cihaz 1 veya daha fazla kart görüntüler.";
+"music_control_info" = "Müziği kısayollarda kontrol edebilmek için bir önceki sayfadaki ''Müziği Kontrol Et'' seçeneğini aktive edin.";
+
+//MARK: watch v2 max - shortcuts
+"shortcut_v2max_info" = "Sürüklemek için kartı basılı tutun. Cihaz bir veya daha fazla kart görüntüler. Sağlık Verisi ve Kalp Atış Hızı fonksiyonları gizlenemez.";
+
+//MARK: watch v2 - activity display
+"outdoor_running" = "Dış Mekanda Koşu";
+"indoor_running" = "İç Mekanda Koşu";
+"outdoor_walking" = "Dış Mekanda Yürüyüş";
+"indoor_walking" = "İç Mekanda Yürüyüş";
+"hiking" = "Hiking";
+"outdoor_biking" = " Dış Mekanda Bisiklet";
+"indoor_bicycle" = "İç Mekanda Bisiklet";
+"cricket" = "Kriket";
+"pool_swim" = "Havuzda Yüzme";
+"swim" = "Açık suda yüzme";
+"v2_yoga" = "Yoga";
+"rowing" = "Kürek";
+"eliptic" = "Eliptik";
+"fitness" = "Egzersiz";
+
+//MARK: watch v2 - message notifications
+"watchv2_msg_notification_title" = "Mesaj Bildirimleri";
+"allow_notifications" = "Bildirimlere izin ver";
+"allow_notifications_desc" = "İzin verdiğin uygulamalara gelen bildirimlerde saat titreyecektir.";
+"APP_TYPE_SMS" = "SMS";
+"APP_TYPE_CALENDAR" = "Takvim";
+"APP_TYPE_WHATSAPP" = "Whatsapp";
+"APP_TYPE_INSTAGRAM" = "Instagram";
+"APP_TYPE_FACEBOOK" = "Facebook";
+"APP_TYPE_TWITTER" = "Twitter";
+"APP_TYPE_SKYPE" = "Skype";
+"APP_TYPE_GMAIL" = "E-mail";
+"APP_TYPE_MESSENGER" = "Messenger";
+"APP_TYPE_SNAPCHAT" = "Snapchat";
+"APP_TYPE_WECHAT" = "Wechat";
+"APP_TYPE_LINKEDIN" = "Linkedin";
+"APP_TYPE_TELEGRAM" = "Telegram";
+"APP_TYPE_SLACK" = "Slack";
+
+//MARK: watch v2 - do not disturb
+"duringDay" = "Gündüz boyunca rahatsız etme";
+"startEndTime" = "Başlangıç - bitiş saati";
+"duringNight" = "Gece boyunca rahatsız etme";
+"doNotDisturbDesc" = "Rahatsız etme modu etkinleştirildiğinde, belirlediğin saatler arasında gelen aramalar ve mesajlar için saatine bildirim gelmez.";
+"setStartEndTime" = "Gündüz boyunca başlangıç - bitiş saati ayarla";
+"startTime" = "Başlangıç saati";
+"endTime" = "Bitiş saati";
+"setStartEndTimeNight" = "Gece boyunca başlangıç - bitiş saati ayarla";
+
+//MARK: watch v2 - language
+"smartwatchv2_device_language_title" = "Cihaz Dili";
+"systemLanguage" = "Sistem Dili";
+"turkish" = "Türkçe";
+"english" = "İngilizce";
+"german" = "Almanca";
+"spanish" = "İspanyolca";
+"french" = "Fransızca";
+"italian" = "İtalyanca";
+"russian" = "Rusça";
+"portuguese" = "Portekizce";
+
+//MARK: watch v2 - datetime
+"timeformat" = "Saat formatı";
+"time12" = "12 saat";
+"time24" = "24 saat";
+"weekstart" = "Hafta başlangıç günü";
+"saturday" = "Cumartesi";
+"sunday" = "Pazar";
+"monday" = "Pazartesi";
+
+//MARK: watch v2 - units
+"lengthUnit" = "Uzunluk birimi";
+"tempratureUnit" = "Sıcaklık birimi";
+"mkm" = "Metre  |  Kilometre";
+"feetmile" = "Fit  |  Mil";
+"celcius" = "Celsius °C";
+"fahrenheit" = "Fahrenheit °F";
+
+//MARK: watch v2 - blood oxygen popup
+"bloodoxtitle" = "Kan oksijen seviyesi nedir?";
+"whatsbloddox" = "1. Kan oksijen seviyesi nedir?";
+"blooxoxdesc" = "Kan oksijen seviyesi (SpO₂), kanınızın oksijen taşıma kapasitesinin bir ölçüsüdür. Oksijene bağlanabilen toplam hemoglobini, yani kandaki oksijen konsantrasyonunu oluşturan, halihazırda kanda oksijene bağlı olan hemoglobinin yüzdesidir. Solunum sisteminin hayati bir fizyolojik parametresidir. İdeal olarak, normal bir kan oksijen seviyesi %95-100'dür, ancak rakıma, kişinin fiziksel durumuna ve bazı hastalıklara bağlı olarak değişebilir. Düşük kan oksijen seviyeleri risk oluşturabilir;";
+"risk" = "Risk";
+"low" = "Düşük";
+"normal" = "Normal";
+"precautions" = "2. Kan oksijen seviyesini ölçmek için hangi önlemleri almalısınız?";
+"precautionsdesc" = "1. Cihazından kan oksijen seviyenizi ölçebilirsin. Ölçüm doğruluğunu sağlamak için lütfen cihazı yönergelere uygun şekilde takın. 2. Dış etkenler (düşük kan perfüzyonu, aşırı kol kılları, dövmeler, kol sarkması, kol titremesi, saatin yanlış takılması ve düşük sıcaklık vb.) yanlış ölçüme hatta ölçüm hatasına neden olabilir.
+3. Bu ürün tıbbi bir cihaz değildir. Topladığı veriler ve sağlanan öneriler yalnızca referans amaçlıdır. Bunları klinik tanı ve tedavi için dikkate almayınız.";
+
+"watchv2_blenotconnected" = "Akıllı saatin Akıllı Sağlık uygulamasına bağlanması için telefonunuzun bluetooth özelliğini açın.";
+
+//MARK: watch v2 - sleep
+"dataSource" = "Veri kaynağı";
+"sleepRatio" = "Uyku oranı";
+"deepSleep" = "Derin uyku";
+"lightSleep" = "Hafif uyku";
+"rem" = "REM uykusu";
+"awake" = "Uyanık kalınan";
+"respiratoryQuality" = "Solunum kalitesi";
+"sleepScore" = "Uyku Skoru";
+"sleepScoreLower" = "Uyku skoru";
+"sleepPattern" = "Uyku Düzeni";
+"sleep_wake_up_times" = "Uyanma (Kez)";
+"leave_the_bed" = "Yataktan Ayrılma (Kez)";
+"score" = "skor";
+"dataSoruceCommonSelect" = "Uyku verisi yukarıdaki seçilen kaynaktan alınacaktır.";
+"sleepMusicTime" = "Uyku yardımcısı süresi";
+"scoreDesc" = "Düzenli egzersizler derin uykuya dalmanı kolaylaştırabilir. Lütfen yatmadan önce yorucu antrenmanlardan kaçının, aksi takdirde uykuya dalman zorlaşabilir.";
+"sleep_quality" = "Uyku Kalitesi";
+"sleep_respirator_detail_page_explanation" = "Yorulunca horlama, ağızdan nefes alma ve uyku apnesi sorunu yaşanabilir. Daha ciddi durumlarda, üst solunum yolu hastalıkları ve obezitesi olan kişilerde uyku sırasında sık sık apneler ve tekrarlayan uyanmalar meydana gelebilir ve kötü uyku kalitesi sağlık sorunlarına yol açabilir. Sağlıklı insanlar uykuda sabit nefes alma eğilimindedir. Yetişkinler uyku sırasında dakikada 12-20 kez nefes alır. Solunum hızının normal aralığın dışına çıkma sayısı ile bir saat içinde solunum hızının dalgalanma sayısının toplamı, solunum kalitesini belirtmek için kullanılır. Toplam 10'dan azsa, solunum kalitesi indeksi genellikle 80'den yüksektir; toplam 35'ten fazlaysa, nefes kalitesi indeksi genellikle 60'tan azdır.";
+"sleep_pattern_status" = "Durum";
+"sleep_pattern_regular" = "Düzenli";
+"sleep_pattern_irregular" = "Düzensiz";
+"sleep_pattern_wakeup_time" = "Uyanma Saati";
+"sleep_pattern_sleep_time" = "Uyuma Saati";
+
+//MARK: Watch V2/V2 Max - Connection Errors
+"unsuccessfulAddDevice" = "Cihaz ekleme başarısız";
+"unsuccessfulAddDeviceDesc" = "Yeni bir Vestel akıllı saate bağlanmak için mevcut akıllı saatini eşleştirilmiş cihazlarından kaldırmalısın.";
+///Device Connection Failed due to Pairing information
+"connection_failed_due_to_pairing_error_desc" = "Cihaz başka bir telefonun Bluetooth'una bağlı, cihazın Bluetooth ayarlarından eşleştirmesini kaldırın ve daha sonra tekrar deneyin.";
+///If user reject binding from watch
+"connection_failed_title" = "Cihaz bağlantısı başarısız!";
+"connection_failed_subtitle" = "Lütfen şu adımları takip edin ve tekrar deneyin:";
+"connection_failed_desc" = "• Bluetooth'u kapatıp açın
+• Cihazın yeterli güce sahip olduğundan ve telefonunuza yeterince yakın olduğundan emin olun.
+• Cihazda “Sıfırla“ya dokunun ve yeniden bağlanın
+• Cihaz başka bir telefonun Bluetooth'una bağlıysa, cihazın o telefonun Bluetooth ayarlarından eşleştirmesini kaldırın.";
+///Device corrupted: need to remove and reconnect again.
+"connection_failed_device_corrupted" = "Cihaz durumu bilinmiyor ve yeniden bağlanamıyor. Lütfen cihazı uygulamadan kaldırın ve ardından tekrar bağlayın.";
+
+//MARK: -
+//MARK: -  AIRPURIFIER
+"airpurifier_app_transition_title" = "Hava Temizleyici Uygulama Değişikliği";
+"airpurifier_app_transition_desc" = "**Vestel Akıllı Yaşam** uygulaması, VHT-402 Hava temizleyicinizin tüm özelliklerine erişmenizi ve kontrol etmenizi sağlayacak en güncel platformdur. Bu uygulamayı indirerek cihazınızı kullanmaya devam edebilirsiniz.";
+"go_to_app_store" = "App Store'a Git";
+
+//MARK: -
+//MARK: -  SLEEP TRACKER
+"smartSleepTracker" = "Vestel Akıllı Uyku Takip Bandı";
+"sleeptrackerStartConnectionDesc" = "Vestel Akıllı Uyku Takip Bandı, kalp atış hızı, solunum hızı ve vücut hareketlerinizi takip ederek uyku verilerinizi çıkartır. Uyku sürenizi, kalitenizi ve uyku döngünüzü (uyanıklık, hafif uyku, derin uyku) analiz ederek uyku iyileştirme önerileri sunar.";
+"sleeptrackerConnectionDesc" = "1. Cihazı prize tak ve ardından şilte ile çarşaf arasına yerleştir. \n\n2. Verilerin en iyi şekilde izlenmesi için uzandığında doğrudan göğsünün altına gelecek şekilde konumlandır. \n\n3. Kontrol kutusunu sabitlemek için ön tarafa bir manyetik anahtar takılıdır ve ürünün başarıyla başlatıldığını belirtmek için yeşil ışık yanar.";
+"sleeptrackerConnectionStep1" = "Adım 1: Ürün Kurulumu";
+"sleeptrackerConnectionStep2" = "Adım 2: Ağ Kurulumu";
+"sleeptrackerConnectionStep2Desc" = "Cihazını kurulum moduna almak için aşağıdaki yönlendirmeleri takip et.
+
+1. Manyetik kapağı aç ve kapat, 3 kez tekrarla.
+
+2. Akıllı Uyku Takibi ürünü kurulum moduna geçtiği zaman, gösterge ışığı 3 saniye kırmızı yanıp söner sonra yavaş yanıp sönmeye başlar.";
+
+"select_device_detail_distance_message" = "Mesafe verileri yukarıdaki öncelik sırasına göre seçilen kaynaktan alınacaktır.";
+
+"select_device_detail_step_message" = "Adım verileri yukarıdaki öncelik sırasına göre seçilen kaynaktan alınacaktır.";
+
+"justMinute" = "dk";
+"justHour" = "s";
+
+"sleep_movement_title" = "Hareket";
+"sleep_movement" = "Hareket Var";
+"sleep_mo_movement" = "Hareket Yok";
+"sleep_heartbeat" = "Kalp Atışı (BPM)";
+"sleep_respiratory_rate" = "Solunum Hızı (RPM)";
+"sleep_medium" = "Orta";
+"sleep_temperature" = "Sıcaklık";
+"sleep_moisture" = "Nem";
+"sleep_cellExp" = "Vestel akıllı cihazını senkronize ederek uyku düzenini ve uyku kaliteni (derin uyku, hafif uyku ve uyanık kalınan süre) takip edebilirsin. Veri kaynağı, en son senkronize edilen cihazın verilerini otomatik olarak gösterir, gerekirse başka bir cihaza manuel olarak değiştirilebilir.Dilersen paylaş butonuna tıklayarak sosyal medyada paylaşabilirsin.";
+
+"wireless_network_selection" = "Kablosuz ağ seçimi";
+"wireless_network_selection_desc" = "Cihazınızı bağlamak istediğin kablosuz ağı seç. Aşağıdaki listede 5GHz kablosuz ağları yer almamaktadır. Bağlanmak istediğin kablosuz ağın 2.4 GHz bandında olduğundan emin ol. Kablosuz ağ listesini güncellemek için sayfayı aşağı doğru kaydırın.";
+"remember_wifi_pass" = "Wi-Fi şifresini hatırla";
+"connecting_wifi" = "Kablosuz ağa bağlanılıyor...";
+"installation_complete" = "Tebrikler!\nKurulum Tamamlandı!";
+"change_wifi" = "Wi-Fi değiştir";
+"configFail" = "Kurulum Başarısız";
+"configFailDescTitle" = "Cihaz kurulumunun tamamlanması için aşağıdaki adımların uygulandığından emin olun ve tekrar deneyin.";
+"wifiChangeFailTitle" = "Wi-Fi Hatası";
+"wifiChangeFailDesc" = "Wi-Fi ağı değiştirilemedi. Cihazın Wi-Fi ağını değiştirmek için, aşağıda adımların uygulandığından emin olun ve tekrar deneyin.";
+"configFailDesc" = "• Cihazın prize takılı ve bağlı olduğundan emin olun.
+• Cihazın kurulum modunda olduğundan emin olun.
+• Bağlanmak istediğin Wi-Fi ağ sinyalinin güçlü olduğundan emin olun.
+• Wi-Fi ağ ve şifresinin doğru olduğundan ve yönlendiricinin bağlı olduğundan emin olun.
+• Telefon Bluetooth'unun açık olduğundan emin olun.
+• Bağlanmak istediğin kablosuz ağın 2.4 GHz bandında olması gerekmektedir.
+
+Yukarıda belirtilen çözümlerden sonra cihaz kurulumu yapılamıyorsa lütfen adaptörü çıkarın ve tekrar takın.";
+"importantInstructions" = "Önemli Talimatlar";
+
+"sleepTracker_installation_succeed_desc" = "Akıllı Uyku Takip Bandı’nı doğru şekilde çalıştırmak için cihaz sayfasındaki \"Önemli Talimatlar\" bölümünü inceleyebilirsiniz.";
+"sleepace_tips1_title" = "Daha İyi Bir Uyku İçin İpuçları";
+"sleepace_tip_desc" = "• Nazik yoga, kalp atış hızınızı yavaşlatır, böylece kolayca uykuya dalabilirsiniz. Ayrıca yogada kullanılan kontrollü nefes alma sayesinde vagus siniriniz uyarılır ve sindiriminiz düzenlenir.
+
+• Her gün aynı saatte uyumaya ve kalkmaya çalışın. Bu, vücudunuzun iç saatini ayarlamanıza ve uyku kalitenizi optimize etmenize yardımcı olur.
+
+• Yediklerinize ve içtiklerinize dikkat edin. Aç ya da tok olarak yatağa gitmeyin. Özellikle, yatmadan birkaç saat önce ağır veya büyük yemeklerden kaçının.
+
+• Günün geç saatlerinde kafein tüketmeyin. Sinir sisteminizi uyarır ve vücudunuzun geceleri doğal olarak gevşemesini engelleyebilir.
+
+• Düzensiz veya uzun gündüz şekerlemelerini azaltın. Kısa süreli olanlar faydalı olsa da, gün içinde uzun veya düzensiz şekerlemeler uykunuzu olumsuz etkileyebilir.
+
+• Akşamları mavi ışığa maruz kalmayı azaltın, çünkü mavi ışık vücudunuza gündüz olduğunu düşündürür. Yatağa gitmeden 2 saat önce TV izlemeyi bırakın ve parlak ışıkları kapatın.";
+
+"sleepace_tips1" = "Hafif bir yoga, kalp atışınızı yavaşlatarak kolayca uykuya geçmenizi sağlar.";
+
+"sleeptracker_q1" = "Akıllı Uyku Takibi cihazı çalışmıyor, nedenleri ve çözümleri nedir?";
+"sleeptracker_q2" = "Akıllı Uyku Takibi cihazı, akıllı telefondaki Akıllı Sağlık uygulamasında gözükmüyor, bağlantı kurulamıyor.";
+"sleeptracker_q3" = "Ağ kurulumu neden her seferinde başarısız oluyor?";
+"sleeptracker_q4" = "Uyku raporlarını nasıl senkronize edebilirim? Uzaktan senkronizasyon uyku raporlarını destekliyor mu?";
+"sleeptracker_q5" = "Gerçekten uyudum fakat Akıllı Uyku Takibi neden bir uyku raporu oluşturmadı?";
+"sleeptracker_q6" = "Rapor neden gerçek durumdan farklı?";
+"sleeptracker_a1" = "Cihaza enerji gitmiyor olabilir. Cihazın adaptörünün fişinin tip etiketine uygun bir prize takılı olduğundan emin olun. Adaptörün şarj kablosu da cihazın USB girişine takılı olmalıdır.";
+"sleeptracker_a2" = "Bağlantıda problem olabilir.Bulunduğunuz ortamdaki kablosuz modemin açık olduğundan ve çalıştığından emin olun. Akıllı telefon ile cihazınız aynı kablosuz bağlantıya bağlanmamış olabilir. Akıllı telefon ile cihazınızı aynı kablosuz bağlantıya bağlandığından emin olun.";
+"sleeptracker_a3" = "Lütfen önce cihazın kurulum modunda olduğundan emin olun ve ardından yönlendiricinin 2.4G'yi destekleyip desteklemediğini kontrol edin, değilse lütfen yönlendiriciyi sıfırlayın.";
+"sleeptracker_a4" = "Cihazın bağlı olduğu ağın blokesinin kaldırıldığından emin olarak, sabah yataktan kalktıktan bir saat sonra rapor otomatik olarak oluşturulacaktır. Uyku raporunuzu kontrol etmek için Akıllı Sağlık’ı açabilir ve ayrıca uzaktan kontrol edebilirsiniz.";
+"sleeptracker_a5" = "Akıllı Uyku Takibi’ni yerleştirmek için en iyi yer şilte ve çarşaf arasındadır ve uzanırken göğsünüzün altına yerleştirilmelidir. Aşağıdaki kullanımlardan herhangi biri geçerli bir uyku raporu oluşturulamamasına neden olabilir.
+1) Akıllı Uyku Takibi’nde oturuyorsanız
+2) Akıllı Uyku Takibi’nde uyumadınız veya sadece küçük bir kısmında uyuduysanız
+3) Çarşaf 5 cm'den daha büyük bir mat veya yatak ile kaplı ise
+4) Akıllı Uyku Takibi yatağın altına konur.";
+"sleeptracker_a6" = "Cihazın izleme prensibi, sensör aracılığıyla kalp atış hızınızın, solunum hızınızın ve vücut hareketinizin kapsamlı sinyallerini yakalamak ve ardından algoritmalar aracılığıyla uyku durumunu ve süresini analiz etmektir. Gecenin bir yarısı izleme alanından bilinçsizce ayrılırsanız, yataktan çıktığınızı yanlış analiz edecektir. Çamaşır makinesi, elektrikli vantilatör, dekorasyon veya uyuyan arkadaşlar vb. tarafından yapılan herhangi bir titreşim çıkarımı varsa, uykuya dalmak da yanlış olabilir. Akıllı Uyku Takibi cihazınızı talimatlara uygun olarak kullanmazsanız, uyku analizi sonuçları da gerçek durumla tutarsız olacaktır.";
+"sleeptracker_important_instructions" = "• Bu cihazın tıbbi veya ani ölümü önleyici bir cihaz olmadığını lütfen unutmayın. Kullanıcılar buna tamamen güvenmemeli ve izlenen kişiyi ihmal etmemelidir. Mevcut bir hastalığa sahip kullanıcılar için, aile üyeleri, izlenen kişinin durumunu zaman zaman kişisel olarak kontrol etmelidir.
+
+• Lütfen bu cihazın kalp pili takan kişiler için uygun olmadığını unutmayın.
+
+• Bu cihaz, 18 yaşın altındaki kişilerin uyku takibi için uygun değildir.
+
+• Monitör düz ve sabit bir yüzey için uygundur. Monitörün normal işlevlerini yerine getirmesini engelleyebileceğinden, monitörü hamak gibi hareketli bir yatağın üzerine koymayın.
+Monitörün üzerine bir minder koymayın, aksi takdirde hatalı izlemeye neden olabilir.
+
+• Sensörün, kullanıcının uyku durumunu doğru bir şekilde algılayabilmesi için lütfen cihazın yakınında herhangi bir titreşim kaynağı olmadığından emin olun. Elektrikli fanlar, çamaşır makineleri veya yüksek sesli müzikten kaynaklanan titreşimler bu cihazın yanlış değerlendirme yapmasına neden olabilir.
+
+• Lütfen yakınlarda yüksek güçlü veya yüksek radyasyona sahip elektrikli aletler ve cihazlar olmadığından emin olun. Buzdolapları, ısıtıcılar, dizüstü bilgisayar adaptörleri vb. hatalı izlemeye neden olabilir.
+
+• Monitör üzerinde büyük bir zıplama yapmayın, aksi takdirde cihaz arızasına neden olabilir.
+
+• Lütfen cihazın düşmesini önleyin, bu da cihaz arızasına neden olabilir.
+
+• Lütfen cihazı ağ sinyalinin iyi alındığı bir yere yerleştirmeye çalışın. Cihaz ile diğer metal nesneler (metal braketler, kapılar, pencereler vb.) arasındaki mesafe tercihen 25 cm'den, birden çok cihaz arasındaki mesafe ise tercihen 30 cm'den fazla olmalıdır.";
+"sleeptracker_firmware_update" = "Yazılım güncellemesi";
+"sleeptracker_firmware_update_title" = "Yazılım Güncellemesi";
+"sleeptracker_firmware_update_text" = "Yeni güncelleme mevcut";
+
+// Mark : SleepTracker Sleep Score
+"SleepTrackerSleepScoreViewController_celltitle" = "Aylık Uyku Skoru Oranları";
+"SleepTrackerSleepScoreViewController_bad" = "Kötü";
+"SleepTrackerSleepScoreViewController_moderate" = "Orta";
+"SleepTrackerSleepScoreViewController_good" = "İyi";
+"SleepTrackerSleepScoreViewController_very_good" = "Çok iyi";
+"SleepTrackerSleepScoreViewController_no_data" = "Veri Yok";
+
+"sleep_tracker_status_desc_extension_day" = "Bugün";
+"sleep_tracker_status_desc_extension_week" = "Bu hafta";
+"sleep_tracker_status_desc_extension_month" = "Bu ay";
+
+"sleep_tracker_status_bad_desc" = "uykun pek de iyi değildi.";
+"sleep_tracker_status_moderate_desc" = "uykun yeteri kadar iyiydi.";
+"sleep_tracker_status_good_desc" = "uykun oldukça iyiydi.";
+"sleep_tracker_status_verygood_desc" = "uykun çok iyiydi.";
+
+"SleepTrackerSleepScoreViewController_title" = "Uyku Skoru Nedir?";
+"SleepTrackerSleepScoreViewController_desc" = "Uyku verilerinize göre her gün size bir uyku skoru verilir. Bu skor uykunuzun kalitesini tanımlamak için kullanılır.";
+"SleepTrackerSleepScoreViewController_affect" = "Uyku Skorunu Etkileyen Faktörler";
+"SleepTrackerSleepScoreViewController_list1" = "- Uyku Düzensizliği";
+"SleepTrackerSleepScoreViewController_list2" = "- Yetersiz Uyku Verisi";
+"SleepTrackerSleepScoreViewController_list3" = "- Yetersiz Uyku";
+"SleepTrackerSleepScoreViewController_list4" = "- Bradikardi";
+"SleepTrackerSleepScoreViewController_list5" = "- Uyku Riskleri";
+"SleepTrackerSleepScoreViewController_list6" = "- Geç saatte uyumak";
+"SleepTrackerSleepScoreViewController_list7" = "- Sık sık uyanmak";
+"SleepTrackerSleepScoreViewController_list8" = "- Anormal Nefes Ritmi";
+"SleepTrackerSleepScoreViewController_list9" = "- Çok uzun uyku süresi";
+"SleepTrackerSleepScoreViewController_list10" = "- Çok kısa uyku süresi";
+"SleepTrackerSleepScoreViewController_list11" = "- Taşikardi";
+"SleepTrackerSleepScoreViewController_list12" = "- Derin uyku evresi eksikliği";
+"SleepTrackerSleepScoreViewController_list13" = "- Yataktan çokça kez çıkmak";
+"SleepTrackerSleepScoreViewController_list14" = "- Huzursuzluk";
+"SleepTrackerSleepScoreViewController_list15" = "- Uykuya dalmak uzun zaman alıyo";
+"SleepTrackerSleepScoreViewController_list16" = "- Aşırı uyku";
+"SleepTrackerSleepScoreViewController_list17" = "- Sağlıklı Uykunun Dağılımı";
+"SleepTrackerSleepScoreViewController_list18" = "- Bradipne";
+"SleepTrackerSleepScoreViewController_list19" = "- Ortalama yataktan kalkma miktarı";
+"SleepTrackerSleepScoreViewController_list20" = "- Haftalık ortalama kalp ritmi";
+"SleepTrackerSleepScoreViewController_list21" = "- Haftalık ortalama solunum ritminde artış";
+
+
+"SleepTrackerSleepScoreViewController_Sleep_1" = "Uyku Düzensizliği Nedir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_1" = "Düzensiz uykunun sonucu olarak endokrin düzensizliği meydana gelir ve bu da bitkinlik, aşırı yorgunluk, baş ağrıları, ve genel sağlık sorunları gibi problemlere yol açar.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_1" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_1" = "Lütfen uykunuzu bir düzene oturtun ve kendinize yeterince dinlenebilmeniz için zaman ayırın. Tatiller ve haftasonlarında da düzeninize sadık kalın.";
+
+
+"SleepTrackerSleepScoreViewController_Sleep_2" = "Yetersiz Uyku Verisi Nedir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_2" = "Uzun dönem düzenli uyku takibi ve olası sağlık risklerini teşhis edebilmek sağlık ve uyku kalitenizi daha isabetli analiz etmenizi sağlar. Düzenli takip yapılmazsa veride ve risk teşhislerinde tutarsızlık olur.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_2" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_2" = "Uykunuzu, uyku takip cihazıyla haftada en az 5 gece takip etmenizi öneririz.";
+
+"SleepTrackerSleepScoreViewController_Sleep_3" = "Yetersiz Uyku Nedir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_3" = "Yetersiz uyku yorgunluğa, dalgınlığa, hafıza kaybına, bağışıklık sisteminde bozulmalara ve erken yaşlanmaya sebep olabilir.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_3" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_3" = "Herhangi bir sebepten gece yeterince uyku uyuyamıyorsanız, gün içinde yarım saatlik kısa bir uyku uyumanızı öneririz. Bu sayede vücudunuz yenilenir ve daha enerjik hissedersiniz.";
+
+"SleepTrackerSleepScoreViewController_Sleep_4" = "Bradikardi nedir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_4" = "Normal yetişkin bir bireyde kalp dakikada 60-100 kere atar. Uyku esnasında bu adetler dakikada 50-60 arasındadır. Yaşlı bireylerde, ve düzenli egzersiz yapan bireylerde bu adetler düşüktür. Sporcularda, herhangi bir rahatsızlık yaşamadıkları taktirde dakikada 40 normaldir ve tedavi gerektirmez. Eğer kalp ritminiz normalden 30-40 az ise kalp çarpıntıları, nefes daralması, bitkinlik, baş dönmesi yaşayabilirsiniz. Bununla birlikte bulantı ve ani bayılma gibi ciddi semptomlar görülebilir.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_4" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_4" = "Uykunuzda bradikardi nöbeti yaşıyorsanız bunun sebebi fizyolojik bradikardi olabilir. Bu da düzenli spor yapan kişilerde veya ağır işlerde uğraşan kişilerde yaygındır. Bu koşullardaki bireyde bunun yaşanması normaldir ve korkacak bir durum değildir.";
+
+"SleepTrackerSleepScoreViewController_Sleep_5" = "Uyku riskleri nelerdir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_5" = "Anormal nefes ve kalp ritimleri, kalp ve akciğer bozuklukları yaşanma riskini arttırır. Uzun dönem yaşanan koşullar yüksek tansiyon, diyabet ve kalp hastalıklarını doğurur.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_5" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_5" = "Düzenli uykuyu, dengeli beslenmeyi, ve egzersiz yapmayı öneriyoruz. Eğer uyku riskleri belirlendiyse ve problem ciddiyse, derhal profesyonel tıbbi destek ve tedaviye başvurun.";
+
+"SleepTrackerSleepScoreViewController_Sleep_6" = "Geç saatte uyumak ne anlama gelir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_6" = "Vücut kendini toparlayıp yenilediği zaman aralığı gece yarısı ile sabah 4 arasıdır. Sağlığınıza olumsuz etkisi olduğu için gece geç saatlerde uyanık kalmamaya özen gösterin.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_6" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_6" = "Tavsiye edilen en uygun uykuya başlama saatleri
+Yazın: 22.00 - 23.00
+Kışın: 21.30 - 22.30";
+
+"SleepTrackerSleepScoreViewController_Sleep_7" = "Sık sık uyanmak ne anlama gelir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_7" = "Uykunuzda çok defa uyandığınız, yani düzensiz bir uykunuz var. Hafif uyku aşamasında çok zaman geçirdiniz ve bu zihinsel yorgunluk, migren, depresyon ve hafıza kaybına neden olur.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_7" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_7" = "Günlük egzersiz yapmanızı ve gününüzün 30dk - 1 saat kadarını dışarda geçirmenizi öneririz. Uyduğunuz ortamı düzenleyiniz. Oda sıcaklığını 16-28°C aralığına getiriniz. Rahatsız edici ışıkları kaldırınız. Yattığınız yerin rahatlığı de önemli bir faktördür.";
+
+"SleepTrackerSleepScoreViewController_Sleep_8" = "Anormal Nefes Ritmi ne anlama gelir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_8" = "Uyku apnesinde nefes alma 10 saniyeden fazla bir süre durur. Uyku apnesine horlama eşlik eder ve kişinin kanında oksijen seviyesi azalırken karbondioksit seviyesi artar. Aynı zamanda kişinin uyku düzeni bozulur ve gün içinde uyku haline, akciğer damar bozukluklarına, ve çoklu organ hasarlarına sebep olur. Uyku apnesi kişinin hayat kalitesini ve sağlığını etkileyen önemli bir durumdur";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_8" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_8" = "Uyku apnesi profesyonel tıbbi destek alınarak gözlemlenmelidir. Sigarayı, alkolü bırakın. Kilo verin. Uzun soluklu apne teşhis edildiyse ilaç tedavisine başlayın. Problem ciddiyse havalandırma cihazları kullanabilirsiniz.";
+
+"SleepTrackerSleepScoreViewController_Sleep_9" = "Çok uzun uyku süresi ne anlama gelir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_9" = "Aşırı uyku bitkinliğe, vücut yorgunluğuna, yavaş metabolizmaya ve hafıza kaybına sebep olabilir.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_9" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_9" = "Normal yetkişkin birey günde 7 veya 8 saat uyur. Düzenli spor yapmanızı ve yine düzenli bir şekilde uyumaya özen gösterin.";
+
+"SleepTrackerSleepScoreViewController_Sleep_10" = "Çok kısa uyku süresi ne anlama gelir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_10" = "Yetersiz uyku yorgunluğa, dalgınlığa, hafıza kaybına, bağışıklık sisteminde bozulmalara ve erken yaşlanmaya sebep olabilir.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_10" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_10" = "Normal yetkişkin birey günde 7 veya 8 saat uyur.Herhangi bir sebepten gece yeterince uyku uyuyamıyorsanız, gün içinde yarım saatlik kısa bir uyku uyumanızı öneririz. Bu sayede vücudunuz yenilenir ve daha enerjik hissedersiniz.";
+
+"SleepTrackerSleepScoreViewController_Sleep_11" = "Taşikardi nedir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_11" = "Normal yetişkin bir bireyde kalp dakikada 60-100 kere atar. Taşikardi teşhisli bireyde bu sayı 100'ü geçer. Sinüs aritmisi dakikada 140'ı geçmez. Taşikardi teşhisli bireylerin çoğunda kalp yetersizlikleri  ve herhangi bir rahatsızlık belirtisi görünmez. Ancak bazen küçük çarpıntılar, nefeste daralma gibi semptomlar gösterebilirler. Paroksimal supraventiküler taşikardi (PSVT), kalp ritminin dakikada 160-200 kere atmasıdır. PSVT nöbetleri belirsiz aralıklarla başlayıp biter ve kalp kulakçıklarının çok hızlı kasılmasıdır. Bu hastalıklar yapısal kalp hastalığı bulunanlarda ve yapısal kalp lezyonları bulunanlarda görünür.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_11" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_11" = "Gördüğünüz rüyalardan ötürü kalp ritminiz artmış olabilir. Endişe etmeyin. Eğer taşikardi devam ederse ve kalp ritminiz düşmezse tıbbi desteğe başvurun.";
+
+"SleepTrackerSleepScoreViewController_Sleep_12" = "Derin uyku evresi eksikliği nedir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_12" = "Etkili derin uyku yoksunluğu depresyona, migrene, kas ağrılarına, konsantrasyon bozukluğuna, bağışıklık sistemi zayıflıklarına, bulantıya, ve hastalıklara karşı direncin zayıflamasına yol açar.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_12" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_12" = "Yatağa gitmeden 6 saat içinde kafeinli içecek tüketmeyin. Alkolün derin uykuya dalmanıza olumsuz etkisi olduğundan alkolden uzak durun.";
+
+"SleepTrackerSleepScoreViewController_Sleep_13" = "Yataktan çokça kez çıkmak ne anlama gelir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_13" = "Devamlı olarak yataktan çıkmanın sebebi psikolojik, çok fazla su tüketmek, veya prostat; diyabet; hiperplazi; idrar yolu enfeksiyonu gibi patolojik unsurlar olabilir. Yaşlı, özellikle erkek, bireylerde yataktan sıkça çıkmak yaygındır. İlave olarak, cihaz menzil dışındaysa yanlış ölçüm yapılmış olabilir.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_13" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_13" = "Uykudan önce çok fazla su içmeyin. Daha çok egzersiz yapın. Uzun süre sabit oturmayın ve diyet yapın. Eğer devamlı ve uzun süre yataktan kalktığınızı düşünüyorsanız tıbbi desteğe başvurun.";
+
+"SleepTrackerSleepScoreViewController_Sleep_14" = "Huzursuzluk Nedir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_14" = "Aşırı vücut hareketliliği husuzsuzluk belirtisidir ve uyku kalitesini direkt etkiler.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_14" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_14" = "Uyku esnasında aşırı kıpraşmalar ve dönmeler yaşıyorsanız uyduğunuz ortamı düzenleyiniz. Oda sıcaklığını 16-28°C aralığına getiriniz. Yorucu egzersizlerden ve uyku öncesi aşırı beslenmeden kaçının";
+
+"SleepTrackerSleepScoreViewController_Sleep_15" = "Uykuya dalmak uzun zaman alıyor ne anlama gelir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_15" = "Sağlıklı bir uyku, normal uyku ile derin uykunun birleşimiyle olur. Bu gösterge, uyku kalitenizin iyi ya da kötü olduğunu gösterir ki bu vücudunuzun kendini yenilemesi ve enerjisini geri kazanması için kritik bir bilgidir. Bütün gece yaşanan huzursuzlukların sağlıklı bir uyku yaşamanızda direk etkisi vardır.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_15" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_15" = "Yatağa gitmeden 6 saat içinde kafeinli içecek tüketmeyin. Alkolün derin uykuya dalmanıza olumsuz etkisi olduğundan alkolden uzak durun.";
+
+"SleepTrackerSleepScoreViewController_Sleep_16" = "Aşırı uyku ne anlama gelir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_16" = "Aşırı uyku vücutta yorgunluk, yavaş metabolizma, bitkinlik veya hafıza kaybına sebep olabilir.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_16" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_16" = "Normal yetkişkin birey günde 6 veya 9 saat uyur. Düzenli spor yapmanızı ve yine düzenli bir şekilde uyumaya özen gösterin.";
+
+"SleepTrackerSleepScoreViewController_Sleep_17" = "Sağlıklı Uykunun Dağılımı ne anlama gelir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_17" = "Sağlıklı bir uyku, normal uyku ile derin uykunun birleşimiyle olur. Bu gösterge, uyku kalitenizin iyi ya da kötü olduğunu gösterir ki bu vücudunuzun kendini yenilemesi ve enerjisini geri kazanması için kritik bir bilgidir. Bütün gece yaşanan huzursuzlukların sağlıklı bir uyku yaşamanızda direkt etkisi vardır.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_17" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_17" = "Yatağa gitmeden 6 saat içinde kafeinli içecek tüketmeyin. Alkolün derin uykuya dalmanıza olumsuz etkisi olduğundan alkolden uzak durun.";
+
+"SleepTrackerSleepScoreViewController_Sleep_18" = "Bradipne nedir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_18" = "Sağlıklı bir yetişkin, dakikada 12-20 kere solunum gerçekleştirir. Bradipne olan bir kişide bu oran dakikada 12'den daha düşük olur.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_18" = "Uyku İpuçları ";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_18" = "Uyku esnasında solunum hızınız normal seviyelerin üstüne çıkar. Geçici artışların nedeni gördüğünüz rüyalar olabilir. Endişelenmeyin. Eğer solunum hızınız düşük seyretmeye devam ediyorsa, takibini sürdürün. Eğer uzun vadede devam ediyorsa doktora danışın.";
+
+"SleepTrackerSleepScoreViewController_Sleep_19" = "Ortalama yataktan kalkma miktarı ne anlama gelir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_19" = "Gece lavaboyu kullanmak için normalden çok fazla kalkmanın sebebi aşırı su tüketmek, böbrek yetersizliği veya prostat hastalıklarından kaynaklanıyor olabilir. Bu gösterge, bulunduğunuz haftada vücudunuzun kötü koşulda olduğunu belirtir.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_19" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_19" = "Uykudan önce çok fazla su içmeyin. Daha çok egzersiz yapın. Uzun süre sabit oturmayın ve diyet yapın. Eğer devamlı ve uzun süre yataktan kalktığınızı düşünüyorsanız tıbbi desteğe başvurun.";
+
+"SleepTrackerSleepScoreViewController_Sleep_20" = "Haftalık ortalama kalp ritmi ne anlama gelir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_20" = "Kalp ritminin olağandışı hızlanmasının sebebi aşırı çalışmak, hastalık, stres, duygu değişimleri olabilir. Bu gösterge, bulunduğunuz haftada vücudunuzun kötü koşulda olduğunu belirtir.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_20" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_20" = "Bu süre zarfında sağlıklı dinlenmenizi ve ağır fiziksel aktiviteden kaçınmanızı öneririz. Eğer kendinizi rahatsız hissederseniz veya hastalık belirmeye başlarsa, derhal bir doktora danışın.";
+
+"SleepTrackerSleepScoreViewController_Sleep_21" = "Haftalık ortalama solunum ritminde artış ne anlama gelir?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_21" = "Solunum ritminin normalden hızlanmasının sebebi solunum, kalp, ve akciğer hastalıklarına, veya duygusal durum değişikliklerine bağlı olabilir. Bu gösterge, bulunduğunuz haftada vücudunuzun kötü koşulda olduğunu belirtir";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_21" = "Uyku İpuçları";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_21" = "Bu süre zarfında sağlıklı dinlenmenizi ve ağır fiziksel aktiviteden kaçınmanızı öneririz. Eğer kendinizi rahatsız hissederseniz veya hastalık belirmeye başlarsa, derhal bir doktora danışın.";
+
+
+"sleeptracker_user_manual_first" = "1. Cihazın yerleşimini ayarlayın (Yattığınızda göğüs bölgenizin altında kalmalıdır), böylelikle en iyi ve doğru şekilde uyku gözlemi yapıldığından emin olun.";
+"sleeptracker_user_manual_second" = "2. Uyku Raporunuzu, ertesi gün uyku raporu sayfasında yer alan \"Verileri senkronize et\" butonuna tıklayarak görüntüleyebilirsiniz.";
+"humidity" = "Nem";
+"temperature" = "Sıcaklık";
+"sleepace_sync" = "Verileri senkronize et";
+"sleepace_device_banner_url" = "sleeptracker/sleepaceBannerTr";
+"sleepace_device_banner_url_weekly" = "sleeptracker/showSleepLight2Tr";
+"source" = "Kaynak:";
+
+// smartLightV2
+"smartLightV2" = "Vestel Akıllı Uyku Işığı";
+"smartLightV2Description" = "Vestel Akıllı Uyku Işığı’nı prize takarak ve Wi-Fi’ya bağlayarak cihazını kontrol edebilirsin.";
+"smartLightV2Info" = "Ürünün uyku yardımcısı özelliği sayesinde, daha huzurlu uyuyabilirsin. Farklı renk seçenekleriyle ortam ambiyansını değiştirebilirsin.";
+"smartLightV2DeviceId" = "Cihaz kimliği";
+"smartLightV2ConfigureTime" = "Saat dilimine göre senkronize et";
+"versionAllreadyUpdated" = "Cihaz yazılımı zaten güncel";
+"mainModule" = "Ana Modül:";
+"mcuModule" = "MCU Modül:";
+"smartLightV2Update" = "Yazılım güncellemesi";
+"smartLightV2FactoryReset" = "Fabrika ayarlarını sıfırla";
+"smartLightV2faq" = "S.S.S.";
+"smartLightV2faqQ1" = "Akıllı Uyku Işığı’nın Bluetooth hoparlöründen gürültü geliyor, neden?";
+"smartLightV2faqQ2" = "Akıllı Uyku Işığı’nın Bluetooth bağlantısı sağlandı fakat müzik dinleyemiyorum, neden?";
+"smartLightV2faqQ3" = "Cihazın sıfırlama(reset) butonuna bastıktan sonra bluetooth bağlantı gerçekleşmiyor, neden?";
+"smartLightV2faqQ4" = "Akıllı Uyku Işığı cihazımın alarmı çalmıyor, neden?";
+"smartLightV2faqQ5" = "Alarmın çalma sesi değiştirilemiyor, neden?";
+"smartLightV2faqA1" = "Bağlantıda problem olabilir. Cihazı sıfırlayın ve tekrar deneyin.";
+"smartLightV2faqA2" = "Bağlantıda ya da ses ayarlarında problem olabilir. Cihazı sıfırlayın ve tekrar deneyin. Ses ayarlarının açık olduğundan emin olun.";
+"smartLightV2faqA3" = "Bağlantı problemi olabilir. Akıllı telefonda uygulamadan cihaz(lar)ı silin, uygulamayı yeniden başlatın ve cihazı tekrar eşleştirin.";
+"smartLightV2faqA4" = "Ses seviyesi düşük olabilir ya da akıllı alarm seçilmiş olabilir. Uygulama ayarından sesin en düşük değere ayarlanmadığından emin olun. Alarmı ayarlarken akıllı alarm fonksiyonunu seçtiyseniz,
+        alarm sizin tam ayarladığınız zamanda çalmaz. Uykunuz en hafif olduğu aralıkta sizin ayarladığınız alarm zamanı ile belirlediğiniz aralıkta çalar.";
+"smartLightV2faqA5" = "Akıllı telefon internete bağlı olmayabilir. Akıllı telefonun internete bağlı olduğundan emin olun.";
+"resetFactorySettings" = "Fabrika Ayarlarını Sıfırla";
+"smartLightV2ResetFactorySettingsDescription" = " Eksi işaretine tıklayın ve 10 saniye boyunca basılı tutun. Ekranda 88:88 belirdiği ve 3 kere yanıp söndüğü zaman fabrika ayarlarının sıfırlandığını anlayabilirsin. \n\n Cihazını sıfırladıktan sonra cihazı uygulamadan kaldırıp yeniden kurman gerekebilir.";
+"userManual" = "Kullanım Kılavuzu";
+"smartLightV2FirmwareUpdateText" = "Yeni güncelleme mevcut";
+"smartLightV2UserManualQ1" = "Işık Açma/Kapama";
+"smartLightV2UserManualQ2" = "Uyku Yardımı Modu";
+"smartLightV2UserManualQ3" = "Işık Rengi Ayarı";
+"smartLightV2UserManualQ4" = "Parlaklık Ayarı";
+"smartLightV2UserManualQ5" = "Işık Döngüsü Modu Ayarı";
+"smartLightV2UserManualQ6" = "Zaman Ayarı";
+"smartLightV2UserManualQ7" = "Alarm Ayarı";
+"smartLightV2UserManualQ8" = "Erteleme Modu ve Alarm Kapatma";
+"smartLightV2UserManualQ9" = "Bluetooth ile Müzik";
+"smartLightV2UserManualA1" = "Işığı açmak/kapatmak için üst kısımdaki “Dokunmatik Tuşa” dokunun.";
+"smartLightV2UserManualA2" = "Uyku yardımı modunu açmak için üst kısımdaki “Dokunmatik Tuşa” dokunun. Bu modu kapatmak için 'Dokunmatik Tuşa' tekrar dokunun.";
+"smartLightV2UserManualA3" = "• Işık rengi ayarlama moduna girmek için 'Renk/ Parlaklık Butonuna' 2 saniye basılı tutun. Ekranda renk kodu görüntülenir. Rengi döngü halinde değiştirmek için '+ Butonuna/-Butonuna' kısa basın.
+• Alt kısımdaki 'Renk/Parlaklık Butonuna' tekrar 2 saniye basılı tuttuğunuzda ekranda saat görüntülenir.";
+"smartLightV2UserManualA4" = "Işığı aşın ve 'Renk/Parlaklık Butonuna' basarak parlaklığı ayarlayın. Bir döngüde 5 parlaklık seviyesi bulunur.";
+"smartLightV2UserManualA5" = "• Işığın rengini ayarlamak için 'Renk/Parlaklık Butonuna' 2 saniye boyunca basılı tutun. Ekranda ışığın renk kodu görüntülenir. 10 sayısı görüntülenene kadar '+ Butonuna/-Butonuna' basın.
+ • 'Renk/Parlaklık Butonuna' tekrar 2 saniye basılı tuttuğunuzda ışık döngüsü modu otomatik olarak etkinleşir.";
+"smartLightV2UserManualA6" = "• 'Zaman Butonuna' basarak 24 Saatlik ile 12 Saatlik Format arasında geçiş yapabilirsiniz. LED Ekranda AM/PM (Öğleden Önce/Öğleden Sonra) Sembolü görüntülendiğinde 12 Saatlik format geçerli demektir.
+ • 'Zaman Butonuna' 2 saniye basılı tutun. LED Ekranda “Saat” ya- nıp söner. Ardından, + / - Butonuna basarak saati ayarlayabilirsiniz.
+ • 'Zaman Butonuna' tekrar basın. LED Ekranda “Dakika” yanıp söner. Ardından, + / - Butonuna basarak dakikayı ayarlayabilirsiniz.
+ Onaylamak için 'Zaman Butonuna' 2 saniye basılı tutun. Ayar sonlanır ve LED Ekranın yanıp sönmesi durur.";
+"smartLightV2UserManualA7" = "• Alarm kurmak için uyanma saatinizi ve alarm sesinizi seçin. LED Ekranda Alarm Sembolü görüntüleniyorsa alarm açıktır.
+ • 'Alarm Butonuna' 2 saniye basılı tutun. LED Ekranda “Saat” yanıp söner. Ardından, + / - butonuna basarak saati ayarlayabilirsiniz.
+ • 'Alarm Butonuna' tekrar basın. LED Ekranda “Dakika” yanıp söner. Ardından, + / - Butonuna basarak dakikayı ayarlayabilirsiniz.
+ • 'Alarm Butonuna' tekrar basın. LED Ekranda alarm döngüsü görüntülenir. Ardından, + / - Butonuna basarak alarm döngüsünü ayarlayın.
+ • 'Alarm Butonuna' tekrar basarak alarm sesi ayarlama moduna girin. + / - Butonuna basarak alarm sesini seçin.  Onaylamak için 'Alarm Butonuna' 2 saniye basılı tuttuğunuzda alarm ayarı sonlanır. LED Ekranın yanıp sönmesi sona erer ve Alarm Sembolü görüntülenir. 6. Alarmı açmak/kapatmak için 'Alarm Butonuna' basın.";
+"smartLightV2UserManualA8" = "• Üst kısımdaki 'Dokunmatik Tuşa' bastığınızda LED Ekranda semboller yanıp söner ve ürün, erteleme moduna girer. Alarm 5 dakika içinde tekrar çalar. 3 kez erteleme yapıldıktan sonra cihaz Erteleme Modundan otomatik olarak çıkar ve alarm bir daha çalmaz.
+ • 'Dokunmatik Tuşa' uzun bastığınızda LED Göstergedeki semboller yanıp sönmeyi durdurur, alarm kapanır ve tekrar çalmaz.";
+"smartLightV2UserManualA9" = "• Cihazı açın. Akıllı telefonun bağlanabilir bluetooth cihazlar listesinden 'VESTEL AKILLI UYKU IŞIĞI 2' yi seçin. Telefon bluetooth bağlantı sağlanacaktır.
+ • Başarılı bir şekilde bağlantı kurulduktan sonra, cihaz, bir 'bip' sesi çıkararak Bluetooth hoparlörün kullanıma hazır olduğunu belirtir.
+ • Akıllı Sağlık uygulamasında veya başka müzik çalarlarda tüm müzikleri oynatabilirsiniz.";
+"smartLightV2SpeakerBluetoothConnect" = "Akıllı Uyku Işığı ürününü aynı zamanda bluetooth’a bağlayarak hoparlör özellliğini de kullanabilirsin. Ürünü ‘Vestel Akıllı Uyku Işığı’ ismiyle bluetooth bağlantılarında görebilirsiniz.";
+"connectBluetooth" = "Bluetooth’a Bağlan";
+"notNow" = "Şimdi değil";
+"smartLightV2LightingSettings" = "Işık Ayarları";
+"smartLightV2TimeSettings" = "Saat Gizleme Ayarları";
+"smartLightV2TimeSettingsDescription" = "Cihaz üzerindeki saati gizlemenizi sağlar.";
+"smartLightV2TimeSettingHide" = "Saati gizle";
+"smartLightV2TimeSettingHidePeriod" = "Gizleme süresi";
+"smartLightV2SleepAssistant" = "Uyku Yardımcısı";
+"smartLightV2SleepAssistantSwitch" = "Uyku yardımcısı";
+"smartLightV2SleepAssistantSettings" = "Uyku yardımcısı ayarları";
+"smartLightV2SleepAssistantDuration" = "Çalışma Süresi";
+"smartLightV2SleepAssistantDurationText" = "Işığın ve müziğin açık kalma süresini ayarla.";
+"smartLightV2SleepAssistantDurationButton" = "Uyku yardımcısı süresi";
+"smartLightV2Light" = "Işık";
+"nearestAlarm" = "En Yakın Alarm";
+"weekdays" = "Hafta İçi";
+"alarms" = "Alarmlar";
+"smartLightV2HowToCloseAlarm" = "Alarmı nasıl kapatırım?";
+"smartLightV2HowToCloseAlarmTitle" = "Erteleme Modu";
+"smartLightV2HowToCloseAlarmTitleDescription" = "Alarm çaldığında, erteleme moduna girmek için üst kısma dokun. Alarm 5 dakika sonra tekrar çalacaktır. 3 ertelemeden sonra alarm otomatik olarak kapanacaktır.";
+"closeAlarm" = "Alarmı Kapat";
+"closeAlarmDescription" = "Erteleme modunu açtıktan sonra alarmı kapatmak için üst kısmı basılı tut. Erteleme modu kapalıysa, üst kısma dokunarak veya uzun süre dokunarak alarm kapatılabilir.";
+"firstMusic" = "Sabah Şarkısı";
+"secondMusic" = "Fısıltı";
+"thirdMusic" = "Didi";
+"fourthMusic" = "Tembel Sabah";
+"fifthMusic" = "Müzik Kutusu";
+"sixthMusic" = "Bahar";
+"alarmSound" = "Alarm sesi";
+"musicTitleFirst" = "Rahatlatıcı Sesler";
+"musicTitleFirstInfo1" = "Dalga";
+"musicTitleFirstInfo2" = "Yağmur";
+"musicTitleFirstInfo3" = "Ateş";
+"musicTitleFirstInfo4" = "Müzik Kutusu";
+"musicTitleSecond" = "Piyano";
+"musicTitleSecondInfo1" = "Anı";
+"musicTitleSecondInfo2" = "Ay Işığı";
+"musicTitleSecondInfo3" = "Yavaş";
+"musicTitleSecondInfo4" = "Yolculuk";
+"musicTitleThird" = "Ninni";
+"musicTitleThirdInfo1" = "Savrulan Yaprak";
+"musicTitleThirdInfo2" = "Çocuk Şarkısı";
+"musicTitleThirdInfo3" = "Ninni";
+"musicTitleThirdInfo4" = "Yıldızlı Gökyüzü";
+"musicList" = "Müzik Listesi";
+"batteryLevel" = "Kalan Batarya: ";
+"battery" = "Batarya: ";
+"watchV2connectionError" = "Lütfen cihaz bağlantısını kontrol edin.";
+"control_smartlightv2_title" = "Kontrol et - Vestel Akıllı Uyku Işığı";
+
+"wifi_credentials_changing" = "Wi-Fi ağı değiştiriliyor";
+"wifi_credentials_change_success" = "Wi-Fi ağı başarıyla değiştirildi";
+"wifi_credentials_change_failed" = "Wi-Fi ağı değiştirilemiyor";
+"wifi_credentials_change_failed_desc" = "Cihazın Wi-Fi ağını değiştirmen için Bluetooth’un açık olması gerekmektedir. Telefonun Ayarlar menüsünden Blueooth’u açın.";
+
+//MARK: - IDO ERRORS
+"idoSuccess" = "İşlem başarıyla tamamlandı.";
+"idoUnrecoveredError" = "Beklenmeyen bir cihaz durumu tespit edildi. Lütfen cihazı aygıttan ayırın ve tekrar bağlayın. Sorun devam ederse, cihazı sıfırlayın veya destek için iletişime geçin.";
+"idoUnknown" = "Bilinmeyen bir hata oluştu. Lütfen daha sonra tekrar deneyin.";
+"idoNotFound" = "İstenen kaynak bulunamadı.";
+"idoNotSupported" = "Bu özellik cihazınızda desteklenmiyor.";
+"idoInvalidParameter" = "Geçersiz parametre sağlandı. Lütfen girdilerinizi kontrol edip tekrar deneyin.";
+"idoInvalidState" = "Geçersiz durum tespit edildi. Lütfen cihazınızın bu işlem için doğru durumda olduğundan emin olun.";
+"idoInvalidDataLength" = "Geçersiz veri uzunluğu. Lütfen veriyi kontrol edip tekrar deneyin.";
+"idoInvalidFlags" = "Geçersiz bayraklar. Lütfen sağlanan bayrakları kontrol edip tekrar deneyin.";
+"idoInvalidData" = "Geçersiz veri. Lütfen veriyi doğrulayıp tekrar deneyin.";
+"idoWrongDataSize" = "Hatalı veri boyutu. Lütfen doğru veri boyutunun kullanıldığından emin olun.";
+"idoTimeout" = "İşlem beklenenden uzun sürüyor. Lütfen bağlantınızı kontrol edip tekrar deneyin.";
+"idoTimeoutToast" = "Bekleyin. İşlem devam ediyor...";
+"timeoutOperation" = "İşlem zaman aşımına uğradı. Lütfen daha sonra tekrar deneyin.";
+"idoEmptyData" = "Boş veri. Lütfen geçerli bir veri sağlayın.";
+"idoForbidden" = "Erişim reddedildi. Bu işlemi gerçekleştirmek için izniniz yok.";
+"idoSystemBusy" = "Sistem şu anda meşgul. Lütfen daha sonra tekrar deneyin.";
+"idoBatteryTooLow" = "Pil seviyesi çok düşük. Lütfen cihazınızı şarj edin.";
+"idoBluetoothDisconnect" = "Lütfen Bluetooth'u aç/kapa ve cihazınızın telefonunuza yakın olduğundan emin olun. Ardından tekrar deneyin.";
+"idoBluetoothDisconnectCurrentOTA" = "Bluetooth bağlantısı, OTA sırasında kesildi. Lütfen OTA güncellemeleri sırasında istikrarlı bir Bluetooth bağlantısı olduğundan emin olun.";
+"idoBluetoothDisconnectDeviceSyncing" = "Bluetooth bağlantısı kesildi, cihaz senkronize ediliyor. Lütfen senkronizasyon işlemi tamamlanana kadar bekleyin.";
+"idoUnorganizedSpace" = "Düzensiz alan. Lütfen alanınızı düzenleyip tekrar deneyin.";
+"idoSpaceBeingOrganized" = "Alan düzenleniyor. Lütfen alanınızın düzenlenmesini tamamlanmasını bekleyin.";
+"idoModelDataError" = "Model veri hatası.";
+"idoCurrentOTA" = "Mevcut OTA işlemi devam ediyor.";
+"idoSyncingDeviceError" = "Cihaz senkronizasyon hatası.";
+"idoWrongAuthCode" = "Yanlış yetkilendirme kodu sağlandı.";
+"idoPairingCancelled" = "Eşleştirme işlemi iptal edildi.";
+"idoPairingUnknownTimeout" = "Eşleştirme işlemi zaman aşımına uğradı. Lütfen daha sonra tekrar deneyin.";
+"idoPairingReconnectionFailed" = "Eşleştirme yeniden bağlantı hatası.";
+"idoOTAReconnectionFailed" = "OTA yeniden bağlantı hatası.";
+"idoFileNotExist" = "Dosya mevcut değil.";
+"idoFileTransferFailed" = "Dosya transfer hatası.";
+"idoWrongAlarmId" = "Hatalı alarm kimliği sağlandı.";
+"idoPairingTimeout" = "Eşleştirme işlemi zaman aşımına uğradı. Lütfen eşleştirme işlemini yeniden başlatın.";
+"idoConfigError" = "Yapılandırma hatası. Lütfen yapılandırma ayarlarınızı kontrol edip tekrar deneyin.";
+"idoDataMigrationError" = "Veri taşıma hatası. Lütfen geçerli bir veri taşıma işlemi olduğundan emin olun.";
+"idoBluetoothPairingError" = "Bluetooth eşleştirme hatası. Lütfen Bluetooth eşleştirme ayarlarınızı kontrol edin.";
+"idoDeviceNotBound" = "Cihaz bağlı değil. Devam etmek için cihazınızı bağlayın.";
+"idoGPSRunning" = "GPS çalışıyor. Lütfen GPS işlemi tamamlanana kadar bekleyin.";
+"idoSyncItemError" = "Senkronizasyon öğesi hatası. Lütfen öğeyi kontrol edip tekrar deneyin.";
+"idoTransferringFileError" = "Dosya transfer hatası. Lütfen dosyayı kontrol edip tekrar deneyin.";
+"idoMethodDeprecated" = "Bu yöntem artık kullanımdan kaldırıldı. Lütfen alternatif bir yöntem kullanın.";
+"idoWrongAlarmName" = "Hatalı alarm adı sağlandı. Lütfen geçerli bir alarm adı sağlayın.";
+"idoEncryptedAuthCode" = "Şifrelenmiş yetkilendirme kodu. Lütfen doğru yetkilendirme kodunu sağlayın.";
+"idoWriteDataError" = "Veri yazma hatası.";
+"idoSyncDataEmptyError" = "Senkronizasyon verisi boş.";
+"idoSyncGPSDataEmptyError" = "Senkronizasyon GPS verisi boş.";
+"idoWatchfaceFeatureUnsupported" = "Bu saat, watchface özelliğini desteklemiyor. Bu özelliği kullanabilmek için saatinizi en son modele yükseltmeniz gerekmektedir.";
+"idoWatchfaceLoadError" = "Akıllı saatinizden saat yüzleri senkronize edilemedi. Lütfen bağlantıyı kontrol edip tekrar deneyin.";
+"idoWatchfaceInstallError" = "Saat yüzü akıllı saatinize yüklenemedi. Lütfen saati sıfırlayın ve tekrar deneyin. Sorun devam ederse, destek için bizimle iletişime geçin.";
+"idoWatcheNotEnoughSpaceError" = "Saatinizde yeni saat yüzünü yüklemek için yeterli alan yok. Lütfen mevcut bir saat yüzünü silin veya devam etmek için saati sıfırlayın.";
+//MARK: - IDO ERRORS - WATCHFACE
+"idoWFInitializing" = "Başlatılıyor...";
+"idoWFCheckingSpace" = "Alan Kontrol Ediliyor...";
+"idoWFCleanupSpace" = "Alan Temizleniyor...";
+"idoWFDownloading" = "Saat Arayüzü İndiriliyor...";
+"idoWFTransferring" = "Saat Arayüzü Aktarılıyor...";
+"idoWFActivating" = "Saat Arayüzü Etkinleştiriliyor...";
+"idoWFInstalled" = "Saat arayüzü başarıyla yüklendi.";

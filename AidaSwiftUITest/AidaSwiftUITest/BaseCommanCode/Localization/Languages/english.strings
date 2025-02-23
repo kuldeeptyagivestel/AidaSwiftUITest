@@ -1,0 +1,2002 @@
+"company_name" = "Vestel";
+"app_name" = "Smart Health";
+"welcome" = "Welcome";
+"email" = "E-mail";
+"password" = "Password";
+"forget_password" = "Forgot Password";
+"login" = "Sign In";
+"or" = "—— or ——";
+"login_with_vestel" = "Sign in with Vestel";
+"login_with_google" = "Sign in with Google";
+"login_with_apple" = "Sign in with Apple";
+"register" = "Sign Up";
+"no_target_set" = "No goal set";
+"register_link" = "You can sign in with your Vestel.com.tr membership.";
+"playingMusic" = "Playing music";
+"privacy_and_terms" = "Privacy and Terms";
+"privacy_and_conditions" = "Privacy and Conditions";
+"activation" = "Activation";
+"account_created" = "Account Created";
+"successful" = "Successful";
+"activation_email" = "Your activation email has been resent.";
+"re_entry" = "The e-mail address entered is used. Please re-enter your e-mail address.";
+"confirm_terms_and_policy" = "Please confirm the terms of use and privacy policy." ;
+
+"enter_valid_password" = "Enter a valid password.";
+"error_password_not_found" = "Password field cannot be empty";
+"error_name_not_found" = "Name field cannot be empty";
+"error_surname_not_found" = "Surname field cannot be empty";
+"error_email_not_found" = "Email field cannot be empty";
+"placeholder_current_password" = "Current password";
+"placeholder_new_password" = "New password";
+"placeholder_new_password_re" = "New password again";
+"change_password_title" = "Change Password";
+"change_password_success" = "Change password success";
+"change_password_old_password_incorrect" = "Old password is incorrect.Please try again.";
+"change_password_error" = "Make sure you use the link in the last email sent to you.";
+"user_activation_already_activated" = "User is already activated";
+"user_activation_generic_error" = "Activation problem.Please try again later.";
+"error_email_not_valid" = "Enter a valid e-mail.";
+"error_name_not_valid" = "Please type a valid name";
+"error_surname_not_valid" = "Please type a valid surname";
+"error_password_contains_number" = "Password must contain number";
+"error_password_contains_uppercase" = "Password must contain at least 1 uppercase character";
+"error_password_contains_special_char" = "Password must contain at least 1 special character";
+"error_password_contains_length" = "Password cannot be less than 8 characters";
+"error_password_dont_match" = "Passwords do not match, please retype";
+
+//MARK: CRM COGNITO ERROR:
+"error_to_get_jwt_token" = "An unexpected error occurred while generating JWT tokens. Please try again or contact support for assistance.";
+"error_unable_to_login" = "An unexpected error occurred while signin. Please try again or contact support for assistance.";
+"cannot_migrate_user" = "We encountered an error while migrating your account. Please try again later or contact support for assistance.";
+//"incorrect_user_credentials" = "Incorrect email or password. Please enter the correct credentials. If you don't have an account, you can register to create one.";
+//We need better text, we can use above. let wait from design team response
+"incorrect_user_credentials" = "Email or password is incorrect.";
+
+//MARK: - PASSWORD ERROR
+"incorrect_password" = "Incorrect password. Please try again.";
+"password_reset_error" = "Please reset your password and try again later. If you encounter any issues, please reach out to our support team for assistance.";
+
+//MARK: - ACCOUNT VALIDATION ERROR
+"account_setup_error" = "Unexpected error encountered while setting up your account. Please try again or contact support for assistance.";
+"account_disabled" = "Your account has been disabled. Please try again or contact support for assistance.";
+"account_not_Active" = "This account is not active. Please try again or contact support for assistance.";
+"not_accepted_agreement" = "You need to accept the agreement to proceed.";
+"agreement_error" = "There was an error with the agreement. Please try again later.";
+"account_blocked" = "Your account is blocked. Please contact support.";
+"account_confirmation_error" = "Kindly confirm your account and try again later. If you encounter any issues, please reach out to our support team for assistance.";
+"you_are_all_set" = "You are all set!";
+"register_account_create_success_continue" = "Get started with Smart Health";
+
+//MARK: - UPDATE PROFILE
+"unable_update_profile" = "Unable to update profile. Please try again later.";
+"account_verification_failed" = "Account verification failed.";
+"unable_update_profile_photo" = "Unable to update profile profile. Please try again later.";
+
+//MARK: - DELETE ACCOUNT
+"delete_account" = "Delete Account";
+"delete_account_popup_title" = "Are you sure you want to delete your user account?";
+"delete_account_popup_desc" = "Deleting your account is a permanent action and the deleted account cannot be accessed again. We would like to point out that you will no longer be able to login to websites and applications associated with this account.";
+
+"delete_account_success_popup_title" = "Your request to delete your user account successfully received";
+"delete_account_success_popup_desc" = "Your account will be inactive for 10 days and if you log in to our systems during this period, your account deletion request will be canceled and your account will be actived again.";
+
+"delete_account_fail_popup_title" = "Request failed!";
+"delete_account_fail_popup_desc" = "Your request to delete your user account failed due to a technical reason. Please try again.";
+
+//MARK: - NETWORK API ERRORS
+"unknown_error" = "An unexpected error occurred. Please try again later or contact support for assistance.";
+"unexpected_state_error" = "Unexpected state encountered. Please try again or contact support for assistance.";
+"no_internet" = "No internet connection. Please check your internet settings and try again.";
+"request_failed" = "The request to the server failed. Please try again or contact support for assistance.";
+"invalid_response" = "An invalid response received from the server. Please try again later or contact support for assistance.";
+"decoding_error" = "An error occurred while processing response. Please try again later or contact support for assistance.";
+"authentication_error" = "Unauthorized access. Please log in again.";
+"server_unavailable" = "The server is currently unavailable. Please try again later.";
+"file_upload_failed" = "Failed to upload the file. Please try again.";
+"file_download_failed" = "Failed to download the file. Please try again later or contact support for assistance.";
+"session_expired" = "Your session has expired. Please sign in again to continue.";
+"timeout" = "The request timed out. Please check your internet connection and try again.";
+
+//MARK: - FIREBASE DATASTORE API ERRORS
+"fb_user_not_found" = "User data not found.";
+"fb_no_record_found" = "No records found.";
+"fb_authentication_error" = "Authentication failed. Please logout and try again later. If the issue persists, please contact support for assistance.";
+"fb_permission_denied" = "Permission denied. You don't have access to this resource. Please contact support for assistance.";
+"fb_resource_not_found" = "Resource not found. Please contact support for assistance.";
+"fb_resource_already_exists" = "Resource already exists. Please use a different identifier.";
+"fb_cancelled" = "The operation was cancelled. Please try again later or contact support for assistance.";
+"fb_deadline_exceeded" = "The operation timed out. Please try again later or contact support for assistance.";
+"fb_service_unavailable" = "The service is currently unavailable. Please try again later or contact support for assistance.";
+"fb_data_loss" = "Data loss occurred. Please contact support for assistance.";
+
+//MARK: - FIREBASE STORAGE ERRORS
+"firebaseDownloadError" = "Failed to download the file from the cloud. Please check your internet connection and try again.";
+"firebaseSaveError" = "Failed to save the file locally. Please ensure there is enough storage space and try again.";
+"firebaseFileNotFound" = "The requested file could not be found on the server. Please contact support for assistance.";
+"firebasePermissionError" = "Permission to access the file was denied. Please verify your account credentials and try again.";
+
+//MARK: - DATABASE CRUD OPs ERRORS
+"db_create_record_error" = "Error while creating the record. Please try again, and if the issue persists, contact support for assistance.";
+"db_read_record_error" = "Unable to fetch the required information. Please try again later. If the problem persists, contact support for help.";
+"db_update_record_error" = "Couldn't update the information as requested. Please try again, and if the issue persists, contact support for assistance.";
+"db_delete_record_error" = "An error occurred while deleting the selected item. Please try again, and if the issue persists, contact support for assistance.";
+"db_cleanup_error" = "Error occurred while deleting all user's data. Please try again, and if the issue persists, contact support for assistance.";
+
+//MARK: - BUTTON TITLE
+"done" = "Done";
+
+//MARK: - REGISTER PPTC
+"login_already_have" = "Already have an account? Sign in";
+"no_target_set" = "No goal set";
+"register_name" = "Name";
+"register_surname" = "Surname";
+"register_email" = "E-mail";
+"register_password" = "Password";
+"register_password_requirements" = "Password must contain at least 8 character, uppercase, lowercase letters, numbers and special character.";
+"register_password_continue" = "Continue";
+"register_step_1" = "Step 1";
+"register_step_2" = "Step 2";
+"register_step_3" = "Step 3";
+"register_step_4" = "Step 4";
+"valid_email" = "Please enter a valid email";
+"register_approve_privacy" = "I have read and agree to Privacy Policy.";
+"register_privacy" = "Privacy Policy";
+"register_approve_usage" = "I have read and agree to Terms&Conditions.";
+"register_terms" = "Terms of Use";
+"checkEmail" = "Check your e-mail address.";
+"sendLinkEmail" = "We send a link to your email address for reset your password. Click on the link and enter new password.";
+"noUserFound" = "No user found with the email you entered.";
+"resetPassword" = "Reset your password";
+"confirmPassword" = "Confirm New Password";
+"register_email_activation_title" = "Your activation e-mail sent.";
+"register_email_activation_desc" = "To complete your registiration, please check the confirmation link.";
+"register_email_activation_not_received" = "Did not receive the e-mail? Send Again";
+
+"register_account_create_success_title" = "Your account has been created.";
+"register_account_create_success_desc" = "Your account information has been sent to your e-mail address.";
+
+//MARK: - CONSENT MANAGEMENT
+"consent_mgmt_title" = "Communication Consents";
+"consent_mgmt_message_title" = "The Centralized Commercial Message Management System";
+"consent_mgmt_whatsapp_title" = "Whatsapp Communication";
+"consent_mgmt_approve_message_consent" = "I have read and agree to The Centralized Commercial Message Management System.";
+"consent_mgmt_approve_whatsapp_consent" = "I have read and agree to Whatsapp Communication.";
+"consent_mgmt_sms" = "SMS";
+"consent_mgmt_phone" = "Phone";
+"consent_mgmt_email" = "E-mail";
+
+//MARK: - COGNITO POPUPs
+"login_cognito_verify_contact_info_title" = "Verify Your Contact Information";
+"login_cognito_verify_contact_info_desc" = "To use the application with our renewed system, you need to verify your contact information on the Vestel website from “My Membership Information” section.";
+"login_cognito_verify_button" = "Verify";
+"login_cognito_system_change_title" = "System Change";
+"login_cognito_system_change_desc" = "As of dd.mm.yyyy, we are moving to the new system to provide you with a better service. You will now be able to log in to our websites and applications with a single membership.\n\nAfter the transition to this new system, it will be enough to update your application and renew your password.\n\nFor more detailed information, you can visit the new system information text page on the Vestel website.";
+"login_cognito_system_change_bold_part" = "dd.mm.yyyy";
+"login_cognito_system_change_password" = "With the change on our system, you will be able to log in to Vestel websites and applications with a single membership.\n\nYou need to renew your password to be able to log in to Smart Health with this system change.";
+"login_cognito_system_change_password_button" = "Renew Password";
+
+"emailAlert" = "Do not worry! Enter your email address in the line below to help us.";
+"goal" = "goal";
+
+"profile_detail_text" = "You should enter your personal information to get more accurate results for your health.";
+"profile_gender_update" = "What is your gender?";
+"profile_weight_update" = "How much do you weight?";
+"profile_height_update" = "How much do you height?";
+"profile_birthday_update" = "When is your birth date?";
+"profile_detail" = "Profile Details";
+
+"onboard_step_1_title" = "Drinking water is a good start";
+"onboard_step_1_desc" = "You can set daily intake of water goal for your body needs and follow your water consumption with Smart Health";
+"onboard_step_2_title" = "Get move, get out of the routine";
+"onboard_step_2_desc" = "You can set daily steps goal, start activity with smart band or smart watch and view your distance, speed and burned calorie with Smart Health";
+"onboard_step_3_title" = "Sleep regularly, stay fresh";
+"onboard_step_3_desc" = "You can synchronize smart device to view your sleeptime and sleep quality with Smart Health";
+"onboard_step_3_button" = "Get Started";
+
+"set_goals_title" = "Set Goals";
+"set_goals_desc" = "Set steps, intake water, distance and calorie goals on daily basis. Also you can set your target weight. When you reach your goals, Smart Health notifies you.";
+"set_goals_weight" = "Target weight";
+
+"profile_name" = "Name";
+"profile_surname" = "Surname";
+"profile_gender" = "Gender";
+"profile_birthdate" = "Date of birth";
+"profile_height" = "Height";
+"profile_weight" = "Weight";
+"profile_target_weight" = "Target weight";
+"profile_edit_desc" = "You will edit your profile information above on the Vestel website.";
+"profile_desc" = "Make sure you enter your personal information to get more accurate results for your health.";
+
+"height" = "Height";
+"weight" = "Weight";
+"set_target_weight" = "Set target weight";
+"bmi" = "BMI";
+
+//Weight
+
+"bmi_desc" = "BMI, Body Mass Index , is commonly used in the world to measure the obesity and health, mainly for statistical analysis.BMI = body weight/ height square ( international unit kg / m² )";
+"bmi_title" = "Body mass index";
+"bmi_value_underweight" = "Underweight";
+"repeat_days_not_found" = "No repeat days";
+"bmi_value_normal" = "Normal";
+"bmi_value_owerweight" = "Owerweight";
+"bmi_value_obese" = "Obese";
+
+"body_fat_title" = "Body Fat";
+"body_fat_desc" = "Body fat rate refers to the body fat weight in the proportion of the total body weight, it is also called body fat percentage, it indicated the amount of fat in the body. Weight is not equal to fat, but the body fat rate is signal of fat, the essence of weight loss is fat reduction.";
+"body_fat_inadequate" = "Inadequate";
+"body_fat_low" = "Low";
+"body_fat_normal" = "Normal";
+"body_fat_fat" = "Fat";
+"body_fat_too_fat" = "Too Fat";
+"family_members" = "Family Members";
+"muscle_title" = "Muscle";
+"muscle_desc" = "Muscle rate is based on the total muscle and body weight, height and other combined to get a proportion of the human body, it identifies a person’s health status and strength. The higher the muscle rate is, the greater yhe BMP is, the more calories consumed, the easier to loss weight.";
+"muscle_inadequate" = "Inadequate";
+"muscle_normal" = "Normal";
+"muscle_perfect" = "Perfect";
+
+"body_water_title" = "Body Water";
+"body_water_desc" = "Body water refers yo the water percentage of the body weight. Enough water can promote the body metabolism.";
+"body_water_inadequate" = "Inadequate";
+"body_water_normal" = "Normal";
+"body_water_perfect" = "Perfect";
+
+"bodysalts_title" = "Bodysalts";
+"bodysalts_desc" = "Body mass refers to the weight of the bone tissue in the body, representing the health of the bones. Bone tissue is composed of cells, fibers and matrix, the fibes is bone glue, the matrix contains a large number of solid inorganic salts.";
+"bodysalts_inadequate" = "Inadequate";
+"bodysalts_normal" = "Normal";
+"bodysalts_perfect" = "Perfect";
+
+"visceral_fat_title" = "Visceral Fat";
+"visceral_fat_desc" = "Visceral fat is a body fat, it is different from subcutaneous fat, it is around the human organs, mainly in the abdominal cavity. A certain amount of visceral fat is essensial to the human body. It supports, stabilizes and protects the internal organs.";
+"visceral_fat_normal" = "Normal";
+"visceral_fat_fat" = "Fat";
+"visceral_fat_danger" = "Danger";
+"unattended_weights" = "All Data";
+"bmr_title" = "BMR";
+"bmr_desc" = "BMR, Basal Metabolism Rate, refers to energy metabolism when the body in a sober and extremely quiet state, not be impacted from muscle activity, ambient temperature, food and mental stress.";
+"bmr_slow" = "Slow";
+"bmr_fast" = "Fast";
+"edit" = "Edit";
+"delete" = "Delete";
+"heartRate_low" = "Low";
+"heartRate_normal" = "Normal";
+"heartRate_high" = "High";
+"hr_measure" = "Measure heart rate";
+"hr_minvalue" = "Minimum";
+"hr_maxvalue" = "Maximum";
+"hr_avgvalue" = "Average";
+
+//UnattendendWeightFoundController
+"unattendend_weight_title" = "New weight data found.Do you want to view?";
+"unattendend_weight_desc" = "You can edit data later from the Vestel Smart Scale on the Devices screen.";
+"unattendend_weight_cancel" = "Not now";
+"unattendend_weight_show" = "View";
+
+"add_new_family_member" = "Add New Member";
+"update_family_member" = "Update Member";
+"family_member_desc" = "Make sure you enter family member’s personal information to get more accurate results for member’ s health.";
+"edit_data" = "Edit Weight";
+"devices_add_device" = "Add Device";
+"devices_title" = "Devices";
+"search_device" = "Searching Devices";
+"device_banner_url" = "devices/devicebannerEN";
+"device_paired" = "Paired Devices";
+
+"device_activate_bluetooth" = "Activate Bluetooth";
+"device_turnon_bluetooth" = "Turn on bluetooth!";
+
+"device_connect_connecting_title" = "Connecting";
+"device_not_connect_connecting_title" = "Will Be Deleted..";
+
+"device_connect_approve_title" = "Verify";
+"device_connect_approve_desc" = "Please touch the smart band to verify";
+
+"smartwatchv2_binding_title_p1" = "Please tap ";
+"smartwatchv2_binding_title_p2" = " on the device to complete the pairing";
+
+"smartwatchv2_connecting_title" = "Connecting...";
+"smartwatchv2_connecting_desc" = "Keep device close to phone when connecting and do not close the app.";
+
+///Remove Device Screen Texts
+"smartwatch_removed_device_succeed" = "Remove device succeed!";
+"smartwatch_removed_device_subtitle" = "To reconnect the device, you need to unpair the device on your phone's Bluetooth settings.\nTo do this;";
+
+"smartwatch_removed_device_option1" = "1. Go to “Settings > Bluetooth” and find your device.";
+
+"smartwatch_remove_option2_part_one" = "2. Tap the ";
+"smartwatch_remove_option2_part_part_two" = " button next to your device and select the “Forget this device” option.";
+
+"device_connect_complete_title" = "Connection succeed";
+"device_connect_fail_title" = "Connection failed";
+"device_connect_fail_desc" = "Make sure that your device is within range and plugged, also that your phone's bluetooth is turned on.";
+
+"device_disconnected" = "Disconnected Device";
+
+"device_sync" = "Synchronize";
+"device_sync_progress" = "Progress...";
+
+"smartwatchv2_call_notification" = "Call notification";
+"smartwatchv2_message_notification" = "Message notifications";
+"smartwatchv2_health_monitor" = "Health monitor";
+"smartwatchv2_dont_disturb" = "Do not disturb mode";
+"smartwatchv2_exercise_recognition" = "Exercise recognition";
+"smartwatchv2_emergency" = "Emergency";
+"smartwatchv2_find_my_phone" = "Find my phone";
+"smartwatchv2_music_control" = "Music control";
+"smartwatchv2_wristup" = "Wrist up time display";
+"smartwatchv2_weather_notification" = "Weather notification";
+"smartwatchv2_auto_brightness" = "Automatic brightness at night";
+"smartwatchv2_shortcuts" = "Shortcuts";
+"smartwatchv2_activity_display" = "Activity display";
+"smartwatchv2_units" = "Units";
+"smartwatchv2_device_language" = "Device language";
+"smartwatchv2_date_time" = "Date & Time";
+"smartwatchv2_faq" = "F.A.Q";
+"smartwatchv2_device_info" = "Device info";
+"smartwatchv2_reset" = "Reset smartwatch settings";
+"smartwatch_v2_restart" = "Restart smartwatch";
+
+"smartwatchv2max_activity_recognition" = "Activity recognition";
+"smartwatchv2max_weather_display" = "Weather display";
+"smartwatchv2max_reset" = "Reset Smart Watch settings";
+"smartwatchv2max_restart" = "Restart Smart Watch";
+
+"restarted_successfully" = "Restarted successfully";
+
+"smartband_calling_notifications" = "Calling notifications";
+"smartband_message_notifications" = "Message notifications";
+"smartband_find_my_phone" = "Find my phone";
+"smartband_anti_lost" = "Anti-lost";
+"smartband_control_music" = "Control music";
+"smartband_wrist_up_time_display" = "Wrist up time display";
+"smartband_hr_display" = "Heart rate monitor";
+"smartband_hr_display_title" = "Heart Rate Monitor";
+"smartband_find_my_band" = "Find my band";
+"smartband_alarm" = "Alarm";
+"smartband_app_notifications" = "App notifications";
+"smartband_app_notifications_title" = "App Notifications";
+"smartband_take_photo" = "Take photo";
+"smartband_sedentary" = "Sedentary reminder";
+"smartband_sedentary_title" = "Sedentary Reminder";
+"smartband_reset_alert_title" = "Are you sure you want to reset band settings?";
+"smartband_reset_alert_detail" = "This will reset your band settings.All data will be deleted.";
+"pair_problem" = "Please match the smartband.";
+"smartband_repeat_alarm" = "Repeat";
+
+"smartwatch_scan_imgage_link" = "smartwatch/device_bigEN";
+"smartwatchv2_scan_imgage_link" = "smartwatchv2/device_bigEN";
+"smartwatch_calling_notifications" = "Calling notifications";
+"smartwatch_message_notifications" = "Message notifications";
+"smartwatch_find_my_phone" = "Find my phone";
+"smartwatch_anti_lost" = "Anti-lost";
+"smartwatch_control_music" = "Control music";
+"smartwatch_wrist_up_time_display" = "Wrist up time display";
+"smartwatch_hr_display" = "Heart rate monitor";
+"smartwatch_hr_display_title" = "Heart Rate Monitor";
+"smartwatch_alarm" = "Alarm";
+"smartwatch_app_notifications" = "App notifications";
+"smartwatch_app_notifications_title" = "App Notifications";
+"smartwatch_sedentary" = "Sedentary reminder";
+"smartwatch_sedentary_title" = "Sedentary Reminder";
+"smartwatch_firmware_update" = "Firmware update";
+"smartwatch_sos" = "Emergency";
+
+"smartwatch_reset_failure_title" =  "Resetting smartwatch settings has failed.";
+
+"smartwatch_same_alarm_title" = "Alarm could not be saved";
+"smartwatch_same_alarm_desc" = "This alarm has already been saved.";
+
+"repeat_title" = "Repeat";
+"time_interval_not_set" = "No range selected yet";
+
+"sedentary_title" = "Sedentary Reminder";
+"sedentary_reminder_choice" = "Sedentary reminder";
+"sedentary_time" = "Sedentary time";
+"sedentary_start_end_time" = "Start-end time";
+"sedentary_desc" = "If there is no activity for a long time, the band will vibrate slightly to remind you to do some exercise. The band will not vibrate on sleep mode.";
+
+"hrmonitor_measure" = "Auto measure";
+"hrmonitor_reminder" = "Heart rate reminder";
+"hrmonitor_reminderinfo" = "Your band will vibrate when your heart rate exceed the value you set.";
+"hrmonitor_desc" = "• Auto measure measures and records your heart rate in each 15 minutes. Auto measure can affect your band’s battery life. \n • With the help of heart rate reminder, your band will vibrate when your heart rate exceed the value you set.";
+"hrmonitor_unit" = "bpm";
+
+"photo_title" = "Saved";
+"photo_desc" = "Your image has been saved";
+
+"contacts_permission_title" = "Smart Health need contatcts access.";
+"contacts_permission_desc" = "Allow to send help emergency messages to the people you selected.";
+"location_permission_title" = "Smart Health need location access.";
+"location_permission_desc" = "Allow to get your location data to send help emergency messages to the people you selected.";
+"camera_permission_title" = "Smart Health need camera access.";
+"camera_permission_desc" = "Camera access is required to use this feature.";
+"camera_permission_desc_qr_scan" = "To scan QR codes, the app requires access to your camera. Please go to Settings and enable camera permissions to continue using this feature.";
+"photos_permission_title" = "Smart Health need photos access.";
+"photos_permission_desc" = "Photo access is required.";
+"camera_loading" = "Band Loading...";
+"settings_loading" = "Settings Loading";
+"no_device_connected" = "No connected device found. Tap to reconnect";
+"settings_title" = "Settings";
+"settings_notifications" = "Notifications";
+"settings_password" = "Password";
+"settings_backup" = "Restore backup";
+"settings_language_title" = "Language";
+"settings_faq" = "F.A.Q.";
+"settings_about" = "About";
+"settings_logout" = "Log Out";
+"hour_short" = "hr";
+"minute_short" = "min";
+"male" = "Male";
+"female" = "Female";
+"other" = "Other";
+"go_to_settings" = "Go to Settings";
+
+"settings_notifications_desc" = "Smart Health will send you notifications when you reach your activated goals.";
+"settings_notifications_daily_step" = "Daily steps";
+"settings_notifications_water_intake" = "Daily intake water";
+"settings_notifications_distance" = "Daily distance";
+"settings_notifications_calorie" = "Daily calories";
+"settings_notifications_target_weight" = "Target weight";
+
+"settings_change_password" = "Change Password";
+"settings_password_desc" = "You will be directed to the Vestel website for the password change process.\n\nAre you sure you want to continue?";
+
+"alarm_list" = "Alarm List";
+"add_device_title" = "Add Device";
+"continueText" = "Continue";
+"finish" = "Finish";
+"guest" = "Guest";
+"add_family_member" = "Add family member";
+"weight_details" = "Weight Details";
+"add_device_smartband_name" = "Vestel Smart Band";
+"add_device_smartband_desc" = "Vestel Smart Band has pedometer, sleep tracking, heart rate and calorie measurements, call and message vibration alarm features.";
+
+"add_device_smartwatch_name" = "Vestel Smart Watch";
+"add_device_smartwatch_desc" = "Vestel Smart Watch has pedometer, sleep tracking, heart rate and calorie measurements, call and message vibration alarm features.";
+
+"add_device_smartwatchv2_name" = "Vestel Smart Watch 2";
+"add_device_smartwatchv2_desc" = "Vestel Smartwatch 2 has sleep tracking, pedometer, stress measurement, blood oxygen level measurement, heart rate measurement, menstrual cycle tracking, activity tracking, weather indicator, call and message notification.";
+
+"add_device_smartwatchv2max_name" = "Vestel Smart Watch 2 Max";
+"add_device_smartwatchv2max_desc" = "Vestel Akıllı Saat 2 Max has sleep tracking, pedometer, stress measurement, blood oxygen level measurement, heart rate measurement, menstrual cycle tracking, activity tracking, weather indicator, call and message notification.";
+
+"add_device_smartwatchv3_name" = "Vestel Smart Watch 3";
+"add_device_smartwatchv3_desc" = "Vestel Akıllı Saat 3 has sleep tracking, pedometer, stress measurement, blood oxygen level measurement, heart rate measurement, menstrual cycle tracking, activity tracking, weather indicator, call and message notification.";
+
+"add_device_scale_name" = "Vestel Smart Scale";
+"add_device_scale_desc" = "Vestel Smart Scale measures your current weight, body mass index, body fat, muscle, body water, bonysalts, visceral fat, basal metabolism rate. ";
+
+"add_device_light_name" = "Vestel Smart Light";
+"add_device_light_desc" = "Vestel Smart Light suggests improving your sleeping experience. It has a bluetooth speaker and gesture control function.";
+"add_device_light_plugged" = "When you plug in the power cable, the light will blink 3 times.";
+"scan_device_desc" = "Tap the device you want to connect.";
+"scan_device_no_found" = "No devices found. Make sure the device is turn on and in range.";
+"try_following_pair_again" = "Try the folllowing and pair again:";
+"turn_on_bluetooth_pair_again" = "Turn the phone’s Bluetooth off and then on again. Make sure the devices has sufficient power. Reset the device to factory settings and pair again.";
+"scan_again" = "Search again";
+"reached_goal" = " you have reached your goal!";
+"update_goal" = "Update goal";
+"keep_goal" = "Keep goal";
+
+//MARK: -
+//MARK: - REPORT A PROBLEM MODULE
+"report_a_problem" = "Report a Problem";
+"send" = "Send";
+"tell_us_your_problem" = "Tell us your problem briefly.";
+"device_model" = "Device Model";
+"none" = "None";
+"choose_device_Error_title" = "Please choose device to continue.";
+"empty_text" = "";
+"report_sent_popup_title" = "Your report has been sent.";
+"report_sent_popup_desc" = "Thank you for helping us with troubleshooting process.";
+"smartband_name_beauty" = "Vestel Smart Band";
+"smartwatch_name_beauty" = "Vestel Smart Watch";
+"smartwatchv2_name_beauty" = "Vestel Smart Watch 2";
+"smartscale_name_beauty" = "Vestel Smart Scale";
+"smartwatchv2max_name_beauty" = "Vestel Smart Watch 2 Max";
+"smartwatchv3_name_beauty" = "Vestel Smart Watch 3";
+"smartlight_name_beauty" = "Vestel Smart Light";
+"airpurifier_name_beauty" = "Vestel Air Purifier";
+"sleeptracker_name_beauty" = "Vestel Smart Sleep Tracker";
+"smartlightv2_name_beauty" = "Vestel Smart Sleep Light";
+"just_phone" = "Mobile Phone";
+
+//Step
+"step" = "steps";
+"step_title" = "Steps";
+"step_desc" = "You can view steps you take and set daily steps goal to stay active. Scynchronize with Vestel smart device to get accurate data. You can share on social media by clicking the share button.";
+
+//Sleep
+"sleep_title" = "Sleep";
+"sleep_desc" = "Scynchronize with Vestel smart device follow your sleep quality and sleep states (deep sleep, light sleep and awake duration). The data source automatically shows the data of the last synced device, it can be manually changed to another device if needed. You can share on social media by clicking the share button.";
+"sleep_deep_sleep" = "Deep Sleep";
+"sleep_light_sleep" = "Light Sleep";
+"sleep_rem_sleep" = "REM Sleep";
+"sleep_awake" = "Awake";
+
+"sleep_time_daily" = "Bedtime";
+"wake_time_daily" = "Wake up time";
+"sleep_full_time_daily" = "Sleeptime";
+
+"sleep_deep_sleep_graph" = "Deep";
+"sleep_light_sleep_graph" = "Light";
+"sleep_rem_sleep_graph" = "REM";
+"sleep_awake_graph" = "Awake";
+
+"sleep_avg_light" = "Avg. Light sleep";
+"sleep_avg_deep" = "Avg. Deep sleep";
+"sleep_avg_sleeptime" = "Avg. Sleep time";
+"sleep_add" = "Add sleeptime";
+"sleep_total" = "Total sleeptime";
+"sleep_add_time" = "Add sleeptime";
+"sleep_start_time" = "Start time";
+"sleep_end_time" = "End time";
+"sleep_added" = "Sleeptime added.";
+"sleep_add_alert" = "The end time must be greater than the start time.";
+"sleep_future_alert" = "You can not add sleep for after current moment.";
+"sleep_quality" = "Sleep Quality";
+"sleep_pattern_status" = "Status";
+"sleep_pattern_regular" = "Regular";
+"sleep_pattern_irregular" = "Irregular";
+"sleep_pattern_wakeup_time" = "Wake-up time";
+"sleep_pattern_sleep_time" = "Sleep time";
+
+"tab1" = "Home Page";
+"tab2" = "Profile";
+"tab3" = "Devices";
+"tab4" = "Settings";
+
+"sleep_respirator_detail_page_explanation" = "You may have snoring, mouth breathing, and apnea if you sleep in fatigue or after excessive drinking. In more serious conditions, frequent apneas and repeated wake-ups during sleeep may occur in people with upper airway diseases and obesity, and the poor sleep quality may lead to health problems.  Healthy people tend to have stable breathing in sleep. Adults breathe 12-20 times per minute during sleep. The sum of the number of time that the respiratory rate gets out the normal range and the number of times that the respiratory rate fluctuates in one hour is used to indicate the breathing quality. If the sum is less than 10, the breathing quality index is generally higher that 80; if the sum is more than 35, the breating quality index is generally less than 60.";
+//Water
+"water_title" = "Water";
+"water_desc" = "You can select the intake of water you consume during the day by pressing the “Add” button. You can set daily intake of water goal for your body needs. You can share your steps on social media by clicking the share button.";
+"water_total_intake" = "Total intake";
+"water_intake_added" = "Intake water has been added.";
+"water_average_intake" = "Average intake";
+
+//Calorie
+"calorie_title" = "Calorie";
+"calorie_desc" = "You can view calorie you burned and set daily calorie  goal to stay active. Scynchronize with Vestel smart device to get accurate data. You can share on social media by clicking the share button.";
+
+//Hearthrate
+"hr_title" = "Heart Rate";
+"hr_desc" = "Scynchronize with Vestel smart device, you follow your heart rate and lastest measure details. You can view heart rate. You can share on social media by clicking the share button.";
+
+//Distance
+"distance_title" = "Distance";
+"distance_desc" = "You can view distance you take and set daily distance goal to stay active. Synchronize with Vestel smart device to get accurate data. You can share on social media by clicking the share button.";
+
+//Weight
+"weight_title" = "Weight";
+"add_weight" = "Add weight";
+"weight_desc" = "You should be weighed barefoot to learn about your body fat, muscle, body water, bonysalts, visceral fat, basal metabolism rate. Also view minimum and maximum weight on week and month basis. Set and view target weight. You can share on social media by clicking the share button.";
+"weight_latest" = "Lastest";
+"weight_my_data" = "My data";
+"weight_added" = "Weight has been added.";
+"barefoot_text" = "Step on the scale barefoot";
+"barefoot_detail_text" = "You should be weighed barefoot to learn about your body fat, muscle, body water, bonysalts, visceral fat, basal metabolism rate.";
+"unit_step" = "Steps";
+"unit_sleep" = "Hours";
+"unit_water" = "Lt";
+"unit_weight" = "Kg";
+"cancel" = "Cancel";
+
+"water_glass_water_text" = "0.2 lt is a water glass.";
+"beverage_glass_water_text" = "0.33 lt is a beverage glass.";
+"bottle_water_text" = "0.5 lt is a bootle water.";
+"carafe_water_text" = "1 lt is a carafe.";
+"add_water" = "Add";
+"no_backup_found" = "No backup data found";
+
+"feature_data_not_found_title" = "No recorded data";
+"feature_data_not_found_desc" = "Synchronize band to display data.";
+"feature_data_not_found_desc_step" = "You haven’t taken steps yet.";
+"feature_data_not_found_desc_calorie" = "You haven’t burnt calorie yet.";
+"feature_data_not_found_desc_distance" = "You haven’t taken steps yet.";
+"feature_data_not_found_desc_weight" = "Add your current weight manually or scynchronize scale to view data.";
+"feature_data_not_found_desc_heartrate" = "Scynchronize Vestel smart device to view data.";
+"feature_data_not_found_desc_water" = "You haven’t added water consumption yet.";
+"feature_data_not_found_desc_sleep" = "Synchronize your smart device or add your sleep time to view the data.";
+"feature_data_not_found_desc_stress" = "Auto stress level measurement is not enabled or you haven’t measure your stress level yet.";
+"feature_data_not_found_desc_o2level" = "You haven’t measure your blood oxygen level yet.";
+
+"feature_maximum_in_today" = "Maximum in Today";
+"feature_minimum_in_today" = "Minimum in Today";
+"feature_time_between" = "Time between";
+"feature_minimum" = "Minimum";
+"feature_maximum" = "Maximum";
+"feature_last_update" = "Last Update";
+"feature_average" = "Average";
+"feature_average_graph" = "Average:";
+"hoursGraphLabel" = "12 hours";
+"feature_daily" = "Daily";
+"feature_weekly" = "Weekly";
+"feature_monthly" = "Monthly";
+"update_alarm" = "Edit Alarm";
+"alarm_retry_day_none" = "Day is not selected yet.";
+"enable" = "Enabled";
+"disabled" = "Disabled";
+"update" = "Update";
+"update_profile_popup_title" = "Let's get to know you better";
+"update_profile_popup_desc" = "To get more accurate results from step, calorie and distance information from your smart wristband, you need to enter your personal information.";
+"update_profile_ok_button" = "Enter Profile Details";
+"update_profile_not_now" = "Not now, thanks";
+"lastUpdate" = "Last update:";
+
+//Alert
+"error" = "Error";
+"warning" = "Warning";
+"info" = "Info";
+"alert" = "Alert";
+"alert_no_user_found" = "No user found with the email and password";
+"incorrect_email_and_pass" = "E-mail or password is incorrect please try again or reset your password";
+"confirm_email_title" = "Unactivated account";
+"confirm_email" = "We sent activation link to the email address you are signed up to activate your account. You can activate your account by clicking on the link in the inbox.";
+"general_login_fail" = "Please try again later";
+"too_many_bad_password_Try" = "Your account has been frozen for security reasons due to too many incorrect password attempts. You need to get a new password by clicking 'Forgot Password' and activate your account.";
+"no_update_today" = "Unavailable";
+"smartband_reset" = "Reset smartband settings";
+"set" = "Set";
+"set_step" = "Daily goal";
+"set_step_text" = "Set Steps Goal";
+"set_water" = "Daily Intake Water";
+"set_water_text" = "Set Intake Water Goal";
+"set_distance" = "Daily Distance";
+"set_distance_text" = "Set Distance Goal";
+"set_calorie" = "Daily Calorie";
+"set_calorie_text" = "Set Calorie Goal";
+"save" = "Save";
+"clear" = "Clear";
+"reset" = "Reset";
+"app_version_title" = "App version";
+"privacy_policy_title" = "Privacy Policy";
+"terms_and_conditions_title" = "Terms & Conditions";
+"privacy_policy_nointernet_title" = "Privacy Policy cannot be displayed";
+"privacy_policy_nointernet_desc" = "Slow or no internet connection.
+Please check your internet settings and try again to view the Privacy Policy.";
+"terms_and_conditions_nointernet_title" = "Terms & Conditions cannot be displayed";
+"terms_and_conditions_nointernet_desc" = "Slow or no internet connection.
+Please check your internet settings and try again to view the Terms & Conditions";
+"logout_are_you_sure" = "Are you sure you want to logout?";
+
+//ERROR Alert
+//MARK: - ERROR
+"brightness_sync_failure" = "Brightness Sync Failure";
+"brightness_sync_failure_details" = "Auto brightness sync failed. Please try again.";
+
+"not_connected_step_title" = "Step into a good day";
+"not_connected_step_desc" = "To view your steps, tap the “Connect” button to scynchronize Vestel smart device.";
+
+"not_connected_calorie_title" = "Be active, burn calories";
+"not_connected_calorie_desc" = "To view your burned calories, tap the “Connect” button to scynchronize Vestel smart device.";
+
+"not_connected_sleep_title" = "Sleep regularly, stay fresh";
+"not_connected_sleep_desc" = "For view sleeptime and sleep quality tap the “Connect” button to scynchronize Vestel smart device.";
+"not_connected_sleep_additional_desc" = "";
+
+"not_connected_distance_title" = "Get move, get out of the routine";
+"not_connected_distance_desc" = "To view your distance, tap the “Connect” button to scynchronize Vestel smart device.";
+
+"not_connected_hr_title" = "Catch the heart beat";
+"not_connected_hr_desc" = "For view current heart rate and lastest measure details tap the “Connect” button to scynchronize your Vestel smart device.";
+
+"not_connected_water_title" = "Drinking water is a good start";
+"not_connected_water_desc" = "You haven’t added water consumption yet. Select the amount of water you're consuming, tap “Add” button to save your water consumption.";
+
+"not_connected_weight_title" = "Get more info about your body";
+"not_connected_weight_desc" = "Tap the “Connect” button sync smart scale and learn your current weight, bmi, body fat, body muscle,body water, body bone, visceral fat and basal metabolism rate. Also add your weight manually.";
+"not_connected_weight_additional_desc" = " To add your weight manually tap the “Add weight” button.";
+
+"not_connected_stress_title" = "Learn your stress level";
+"not_connected_stress_desc" = "For view current stress level, tap the “Connect” button to synchronize Vestel Smartwatch 2.";
+
+"not_connected_bloodox_title" = "Learn your blood oxygen level";
+"not_connected_bloodox_desc" = "For view current blood oxygen level, tap the “Connect” button to synchronize Vestel Smartwatch 2.";
+
+"not_connected_menstrual_cycle_title" = "Track your menstrual cycle";
+"not_connected_menstrual_cycle_desc" = "You can track your next menstruation and ovulation periods and set reminders for them. You should to enter your menstrual information for your next menstrual and ovulation prediction.";
+"add_menstrual_cycle" = "Enter your menstrual information";
+
+"connect_smartband" = "Connect";
+"not_connected_skip" = "Skip";
+
+"sedentary_start_end_title" = "Set start-end time";
+"sedentary_start_end_desc" = "The wristband will vibrate slightly between the hours you set to remind you to do the activity.";
+"sedentary_start_time" = "Start time";
+"sedentary_end_time" = "End time";
+"battery_info" = "Battery Information";
+"connected" = "Connected";
+"not_connected" = "Not Connected";
+"device_connect" = "Connected";
+"app_notifications_desc" = "The band will vibrate when you receive notifications for allowed applications.";
+"add_alarm" = "Add Alarm";
+"set_alarm_label" = "Set alarm";
+"set_alarm" = "Set Alarm";
+"add_alarm_backbtn_title" = "Set Alarm";
+"alarm_time" = "Alarm Time";
+"unit_sedentary" = "Minute";
+
+"ok" = "OK";
+"select_from_gallery" = "Select From Gallery";
+
+"data_sync_progress" = "Data Sync In Progress";
+"backup_progress" = "Backup In Progress";
+"backup_completed" = "Backup completed";
+
+"bluetooth_access_denied_title" = "Bluetooth Access Denied";
+"bluetooth_access_denied_Desc" = "Please grant Bluetooth Permission in Device Settings.";
+
+//Reach Goal Popup
+"target_weight" = "You have reached your target weight.";
+"target_steps" = "You have reached your daily goal step.";
+"target_distance" = "You have reached your daily goal distance.";
+"target_calorie" = "You have reached your daily goal calorie.";
+"target_water" = "You have reached your daily target water intake.";
+"congratulations" = "Congratulations";
+"scale_not_found" = "Vestel Smart Scale not found. Please try again.";
+
+//Notifications
+"notification" = "Notification";
+"no_notifications" = "No Notifications";
+"no_notifications_desc" = "You don’t have any notifications. Smart Health nofities when you reachs your goal and gives a motivation.";
+"open_notifications" = "Follow your health closely";
+"open_notifications_desc" = "Smart Health notifies when you reach your goals and sends motivational messages. Turn on Smart Health notifications to track your health.";
+"turn_on_notifications" = "Turn on Notifications";
+
+//Scale
+"scale_vfit" = "Vestel Smart Scale";
+"scale_all_data" = "All Data";
+"scale_delete_data" = "Delete selected";
+"scale_family_members" = "Family Members";
+"scale_pregnancy_mode" = "Pregnancy Mode";
+"scale_pregnancy_desc" = "When you active the pregnancy mode feature, the device does not send electricity. Therefore, body fat, muscle, body water, bonesalts, visceral fat and basal metabolism rate information cannot be obtained.\n\n*Pregnant women should use the device with socks.";
+
+//Smart scale onboarding
+"scale_step_1_title" = "Step on the scale barefoot";
+"scale_step_1_desc" = "You should be weighed barefoot to learn about your body fat, muscle, body water, bonysalts, visceral fat, basal metabolism rate.";
+"scale_step_2_title" = "Add family members";
+"scale_step_2_desc" = "You can add family members, set target weight for them and track their weight.";
+"scale_step_3_title" = "Pregnancy mode feature";
+"scale_step_3_desc" = "When you activate the pregnancy mode feature, the device does not send electricity. Therefore, body fat, muscle, body water, bonysalts, visceral fat and basal metabolism rate information cannot be obtained.";
+"scale_step_4_title" = "View guest details";
+"scale_step_4_desc" = "You can view guest’s details temporarily.";
+"scale_step_4_button" = "Start";
+
+"scale_viewdetail" = "View details";
+"scale_guestdetail" = "View guest details";
+"scale_guestinfo" = "Guest Info";
+"scale_guestdetail_desc" = "To view temporarily the guest’s detail, you should enter the guest's gender, date of birth and height. This information is not saved for later.";
+"scale_guestdetail_button" = "Enter Guest Information";
+
+"share" = "Share";
+
+//SmartWatch
+"smartwatch_time_date" = "Time & Date";
+"smartwatch_not_disturb" = "Not Disturb";
+"smartwatch_activity_display" = "Activity Display";
+
+"time_format" = "Time Format";
+"not_disturb" = "Not Disturb";
+"time_format_12" = "12 hour";
+"time_format_24" = "24 hour";
+
+"swhrmonitor_desc" = "• Auto measure measures and records your heart rate in each 5 minutes. Auto measure can affect your watch’s battery life.";
+"app_notifications_desc_for_smartwatch" = "The watch will vibrate when you receive notifications for allowed applications.";
+"smartwatch_sedentary_desc" = "If there is no activity for a long time, the watch will vibrate slightly to remind you to do some exercise. The watch will not vibrate on sleep mode.";
+
+//Activity Display
+"add_activity" = "Add Activity";
+"walk" = "Walk";
+"run" = "Run";
+"hike" = "Hike";
+"climbing" = "Climbing";
+"bike" = "Bike";
+"treadmill" = "Treadmill";
+"spinning" = "Spinning";
+"yoga" = "Yoga";
+"dance" = "Dance";
+"workout" = "Workout";
+"badminton" = "Badminton";
+"football" = "Football";
+"basketball" = "Basketball";
+"tennis" = "Tennis";
+"no_selected_activity" = "All activities cannot be removed.";
+
+//Menstrual Tracking
+"menstrual_length" = "Menstrual Lenght";
+"menstrual_length_desc" = "Menstrual length is the number of days between start and end dates.";
+"menstrual_cycle_length" = "Menstrual Cycle Lenght";
+"menstrual_cycle_length_desc" = "Menstrual cycle length is the number of days between the first day of menstruation and the first day of the next menstruation.";
+"last_menstrual_date" = "Last Menstrual Date";
+"last_menstrual_date_desc" = "Last menstrual date is starting date of your last menstrual date.";
+"menstrual_reminder" = "Menstrual Reminder";
+"menstrual_reminder_desc" = "Set a reminder to get a notification for your upcoming prediction menstrual date, before the number of days you set.";
+"ovulation_reminder" = "Ovulation Reminder";
+"ovulation_reminder_desc" = "Set a reminder to get a notification for your upcoming prediction ovulation date, before the number of days you set.";
+"notification_time" = "Notification Time";
+"notification_time_desc" = "Schedule time for your menstrual and ovulation reminders.";
+"smartwatch_menstrual_tracking_desc" = "You can track your next menstruation and ovulation periods and set reminders for them.";
+"smartwatch_menstrual_tracking_title" = "Menstrual Tracking";
+"smartwatch_menstrual_tracking_info" = "Menstrual Settings";
+"smartwatch_menstrual_tracking_notification" = "Notification Settings";
+"smartwatch_menstrual_tracking_info_desc" = "Menstrual length and cycle length days are important for your next menstrual prediction.";
+"smartwatch_menstrual_tracking_notification_desc" = "You can set reminders for your upcoming menstrual and ovulation and schedule notification for them.";
+"days" = " days";
+"days_in_advance" = " days in advance";
+
+//Days
+
+"mon" = "Mon";
+"tue" = "Tue";
+"wed" = "Wed";
+"thu" = "Thu";
+"fri" = "Fri";
+"sat" = "Sat";
+"sun" = "Sun";
+"once" = "Once";
+
+"sleep_type_wakeup" = "Wake up";
+"sleep_type_appoinment" = "Appointment";
+"sleep_type_exercise" = "Exercise";
+"sleep_type_medicine" = "Medicine";
+"sleep_type_meetup" = "Meetup";
+"sleep_type_party" = "Party";
+"sleep_type_sleep" = "Sleep";
+"sleep_type_title" = "Alarm Type";
+
+"alarm_type_getup" = "Get up";
+"alarm_type_appointment" = "Appointment";
+"alarm_type_workout" = "Workout";
+"alarm_type_medicine" = "Medicine";
+"alarm_type_meeting" = "Meeting";
+"alarm_type_party" = "Party";
+"alarm_type_go_to_bed" = "Go to bed";
+
+"device_not_found_go_settings" = "No devices found. Make sure the device is turn on and in range. If device is connected previously go to your iPhone's bluetooth menu via 'Settings -> Bluetooth' then select your device and tap on 'Forget This Device'.";
+
+"smartwatch_remove_fail_title" = "Failed to remove device.";
+"smartwatch_remove_fail_detail" = "Please connect and try again.";
+
+"not_activated_account" = "Unactivated account";
+"not_activated_account_desc" = "In order to use the “Forgot Password” feature, you need to activate your account. You can reach the activation link from your registered e-mail address.";
+
+//Alert
+"internet_connection" = "Please check your internet connection";
+"error_occured" = "An error occured. Please try again later";
+
+//Wallpaper Add Photo missing
+"error_photo_missing_title" = "Photo not found";
+"error_photo_missing_desc" = "Please add photo to continue.";
+
+//All alarm set error
+"error_alarm_max" = "More than 10 alarms can not be added.";
+
+//Smart light onboarding
+"light_step_1_title" = "Adjust the Volume";
+"light_step_1_desc" = "Tap the left side to turn down volume and tap the right side to turn up volume.";
+"light_step_2_title" = "Light Button and Brightness Control";
+"light_step_2_desc" = "Touch for a longer time the lower part on the left side to reduce brightness or touch for a longer time the lower part on the right side to increase the brightness.";
+"light_step_3_title" = "Disable Alarm";
+"light_step_3_desc" = "When the alarm sounds, touch to stop the alarm.";
+"light_step_4_title" = "Using the Speaker";
+"light_step_4_desc" = "Pair your phone’s bluetooth with “Vestel Akıllı Işık” and use it as a speaker.";
+
+"smartlight_connected" = "Connected";
+"smartlight_sleep_reminder" = "Sleep reminder";
+"smartlight_gesture_control" = "Gesture control";
+"smartlight_program" = "Schedule";
+"smartlight_night_light" = "Night light";
+"smartlight_device_id" = "Device ID";
+"smartlight_firmware_update" = "Firmware update";
+"smartlight_user_manual" = "User manual";
+"smartlight_faq" = "FAQ";
+"smartlight_reset" = "Reset device settings";
+"smartlight_reset_alert_title" = "Are you sure you want to reset light settings?";
+"smartlight_reset_alert_detail" = "This will reset your light settings. All data will be deleted.";
+"smartlight_control_device" = "Control Device";
+"disconnect" = "Disconnect";
+"smartlight_program_add" = "Add Schedule";
+"smartlight_program_backbtn_title_add" = "Schedule";
+"smartlight_noprogram_title" = "No Schedule";
+"smartlight_noprogram_desc" = "You don’t have any Schedule for Smart Light yet. With the Schedule feature, the light turns on with the selected color and music at the day and time you set.";
+"smartlight_program_light" = "Lighting configuration";
+"smartlight_autoturnoff" = "Auto turn off";
+"smartlight_autoturnoff_duration" = "Auto turn off duration";
+"smartlight_autoturnoff_desc" = "Smart Light automatically turns off after the time you set.";
+"smartlight_program_volume" = "Music volume";
+"smartlight_program_name" = "Schedule name";
+"smartlight_program_maxcount" = "You reach the maximum number of schedule.";
+
+//Smart light user manual
+"light_user_manual_1" = "Press the button to turn on/off the light.";
+"light_user_manual_2" = "Wave your hand over the button to choose the light color/music.";
+"light_user_manual_3" = "Tap the left side to turn down volume and tap the right side to turn up volume.";
+"light_user_manual_4" = "Touch for a longer time the lower part on the left side to reduce brightness or touch for a longer time the lower part on the right side to increase the brightness.";
+"light_user_manual_5" = "When the alarm sounds, touch to stop the alarm.";
+"light_user_manual_6" = "When the alarm sounds, wave your hand over the button to snooze the alarm.";
+
+"set_time" = "Set time";
+"set_time_desc" = "Set sleep reminder time";
+"sleep_reminder_desc" = "Sleep reminder feature will remind you to sleep at the time you set.";
+"night_light_desc" = "The button on your light will use color and brightness settings during the period you set with the night light feature.";
+"nightlight_title_start_end_title" = "Start - end time";
+"nightlight_title_configuration" = "Lighting configuration";
+"music" = "Music";
+
+"firmware_update_desc" = "Important Notice: After the firmware is upgraded, please turn off bluetooth of the mobile phone and turning it on.";
+"firmware_upgrade" = "Upgrade";
+"firmware_wait" = "Firmware is updating...";
+"firmware_updated" = "Firmware updated";
+"firmware_updated_desc" = "To continue with the latest version updated, turn your phone's bluetooth off and on again.";
+"firmware_failed" = "Firmware update failed";
+"firmware_failed_desc" = "Please try again.";
+"firmware_already_updated" = "Firmware is already up to date";
+"firmware_found" = "Watch Update Found";
+"firmware_found_desc" = "To update be sure your phone and smartwatch battery is over 30% and device is paired. You can update from 'Firmware update' menu.";
+"firmware_found_desc_light" = "To update be sure your phone battery is over 30% and device is near your phone. You can update from 'Firmware update' menu.";
+"firmware_found_light" = "Light Update Found";
+
+//Smart light alarm
+"wakeup_light" = "Wake up light";
+"set_alarm_music1" = "Chirping Birds";
+"set_alarm_music2" = "Waking Up Happy";
+"set_alarm_music3" = "Romantic Morning";
+"set_alarm_music4" = "It’s a Beautiful Day";
+"set_alarm_music5" = "Sun’s Up";
+"set_alarm_music6" = "Morning Glory";
+"set_alarm_music7" = "Morning By The Lake";
+"set_alarm_music8" = "Wake Up, Sweetie";
+"set_alarm_music9" = "Good Morning, World";
+"sleepAssistantDuration" = "min";
+
+"every_mon" = "Every Monday";
+"every_tue" = "Every Tuesday";
+"every_wed" = "Every Wednesday";
+"every_thu" = "Every Thursday";
+"every_fri" = "Every Friday";
+"every_sat" = "Every Saturday";
+"every_sun" = "Every Sunday";
+
+"snooze_alarm_title" = "Snooze";
+"snooze_alarm_duration" = "Snooze duration";
+"snooze_alarm_count" = "Snooze count";
+"snooze_min" = "min";
+"snooze_times" = "times";
+"on" = "On";
+"off" = "Off";
+
+"alarm_volume" = "Alarm Volume";
+"alarm_preview" = "Preview";
+"stop_alarm_preview" = "Stop Preview";
+"nomore_than_five" = "More than 5 alarms can not be added.";
+"cannot_off_music_and_light_features" = "Music and lights can not be switched off at the same time.";
+
+"sl_alarm_title" = "Set Alarm";
+"sl_alarm_repeat" = "Repeat";
+"sl_alarm_snooze" = "Snooze";
+"sl_alarm_music" = "Music";
+"sl_alarm_wakeup_light" = "Wake-up light";
+"sl_alarm_wakeup_music" = "Wake-up music";
+"sl_alarm_howto_close" = "How to close alarm?";
+
+"brightness" = "Light Brightness";
+"gesture_control_wave" = "Wave";
+"gesture_control_wave_information" = "Tap View to view the colors.";
+"gesture_control_hover" = "Hover";
+"gesture_control_disable" = "Disable";
+"gesture_control_switch_music" = "Switch Music";
+"gesture_control_switch_light_color" = "Change Light Color";
+"gesture_control_switch_light_color_title" = "Colors of Light";
+"gesture_control_switch_light_color_information" = "Those colors will be shown respectively. To change this color circle, tap Edit. You can change color order by dragging.";
+"gesture_control_switch_light_color_favorites" = "Favorites";
+"gesture_control_switch_light_color_toast" = "To save changes, you need to select at least 3 colors.";
+"gesture_control_switch_play_pause_music" = "Play/Pause music";
+"light" = "Light";
+"change_light_settings" = "Change Light Settings";
+"now_playing" = "Now playing";
+"stopped" = "Stopped";
+"smartlight_faq_sl" = "FAQ Smart Light";
+"question1" = "What are the reasons and solutions for Vestel Smart Light connection problems?";
+"question2" = "Why doesn't my music play on Vestel Smart Light when it is playing on my phone?";
+"question3" = "Can I play songs from Spotify or Apple Music on Vestel Smart Light?";
+"question4" = "Why don’t I change the light color / music when I wave my hand ?";
+"question5" = "Why doesn’t the music play / pause work when I show my hand ?";
+"question6" = "Can I control Vestel Smart Light remotely?";
+"question7" = "Can I turn off my phone when I am using?";
+"question8" = "Can I use gesture control to change the light color?";
+
+"answer1" = "When connecting your device, please make sure that:
+
+1. Vestel Smart Light is powered on
+2. Mobile Bluetooth is on
+3. The distance between Vestel Smart Light and your phone is less than 5 meters
+4. 'Vestel Akıllı Işık' is not connected with another device
+
+If none of the above mentioned solutions work, please restart the device and the app.";
+"answer2" = "You need to connect your phone to 'Vestel Akıllı Işık' after enabling it by following System > Settings > Bluetooth.";
+"answer3" = "Yes. You need to connect your phone’s bluetooth to “Vestel Akıllı Işık” to play songs from Spotify or Apple Music.";
+"answer4" = "If “Wave Your Hand“ control is disabled, the light color / music doesn’t change. To change the light color / music, select the feature you want to control by following Devices > Vestel Smart Light > Gesture Control > Wave Your Hand.";
+"answer5" = "If 'Show Your Hand' control is disabled, play / pause music doesn’t work. To play / pause music, select the feature by following Devices > Vestel Smart Light >  Gesture Control > Show Your Hand.";
+"answer6" = "No. Vestel Smart Light must be connected with your phone via Bluetooth 4.0. There should be maximum 5-meter distance between your phone and Vestel Smart Light to receive control signals.";
+"answer7" = "Yes, you can turn it off.";
+"answer8" = "Yes. To use ”Wave Your Hand” gesture control for changing the light color, select Change light color by following Devices > Vestel Smart Light > Gesture Control > Wave Your Hand.";
+
+"smartlight_tab_white" = "White";
+"smartlight_tab_color" = "Color";
+"smartlight_tab_color_cycle" = "Color Cycle";
+"smartlight_tab_favorite" = "Favorite";
+"smartlight_add_fav" = "Add selected color as favorite";
+"smartlight_add_popup_desc" = "Added your selection as your favorite color.";
+"light_settings" = "Light Settings";
+"smartlight_name" = "Device Name";
+"smartlight_name_desc" = "Name your device.";
+"smartlight_config" = "Device Configuration";
+"smartlight_config_name_title" = "Choose device name";
+"smartlight_config_desc" = "Your device will be displayed with the given name in mobile app. It is recommended to name your devices according to its function or use context.";
+"smartlight_device_name" = "Device Name";
+"smartlight_device_name_error"= "Device name cannot be blank!";
+"smartlight_fav_title" = "No favorite color";
+"smartlight_fav_desc" = "You haven't added any favorite colors yet. You can add your favorite color from the 'Color' menu.";
+"device_network" = "WiFi Password";
+"device_network_name" = "Wi-Fi Name";
+"device_network_password" = "Password";
+
+"sea" = "Sea";
+"wind" = "Wind";
+"rain" = "Rain";
+"solo" = "Solo";
+"star" = "Star";
+"summer" = "Summer";
+"sun_" = "Sun";
+"control_smartlight_title" = "Control - Vestel Smart Light";
+"color_cycle_text" = "Color changes automatically.";
+"push_noti_title" = "Time for bed";
+
+"smartlight_firmware_version" = "Version:";
+"smartlight_firmware_old_version" = "and it must be updated.";
+"smartlight_firmware_latest_version" = "This is the latest version.";
+
+//Force update
+"forceUpdateTitle" = "New version available";
+"forceUpdateDesc" = "Please update app to new version to continue using with the last features.";
+"forceupdateButton" = "Update";
+"updateDescFromRemote" = "update_descEN";
+"updatedTermsAndConditionsTitle" = "Terms & Conditions has been updated.";
+"updatedTermsAndConditionsDesc" = "To continue with the latest version, please read and accept.";
+"updatedPrivacyPolicyTitle" = "Privacy Policy has been updated.";
+"updatedPrivacyPolicyDesc" = "To continue with the latest version, please read and accept.";
+"updatedTCAndPPTitle" = "Terms & Conditions and Privacy Policy have been updated.";
+"updatedTCAndPPDesc" = "To continue with the latest version, please read and accept.";
+"updatedTCStep" = "1. Terms & Conditions";
+"updatedPPStep" = "1. Privacy Policy";
+"updatedTCAndPPSecondStep" = "2. Privacy Policy";
+"updatedAccept" = "Accept";
+"updatedWarningTCAndPPTitle" = "Terms of Use and Privacy Policy are updated";
+"updatedWarningTCTitle" = "Terms of Use is updated";
+"updatedWarningPPTitle" = "Privacy Policy is updated";
+"updatedWarningTCAndPPDesc" = "Slow or no internet connection. Please check your internet settings and try again to view the updated Term of Use and Privacy Policy.";
+"updatedWarningTCDesc" = "Slow or no internet connection. Please check your internet settings and try again to view the updated Term of Use.";
+"updatedWarningPPDesc" = "Slow or no internet connection. Please check your internet settings and try again to view the updated Privacy Policy.";
+
+//Smartlight Sleep Mode
+"versionAllreadyUpdated" = "Firmware is already up to date";
+"mainModule" = "Main Module:";
+"mcuModule" = "MCU Module:";
+"sleep_mode" = "Sleep mode";
+"sleep_mode_settings" = "Sleep mode settings";
+"sleep_mode_settings_title" = "Sleep Mode Settings";
+"sleep_mode_duration" = "Duration";
+"sleep_mode_desc" = "When you start Sleep Mode, music and light will stop automatically after the duration you set.";
+
+//AIRPURIFIER
+"add_device_airpurifier_name" = "Vestel Air Purifier";
+"add_device_airpurifier_desc" = "With the Air Purifier, you can view the air quality in your environment and change the air in the environment with manual, automatic and sleep modes. You can control your device over WiFi.";
+"airpurifier_device_conf" = "Device Configuration";
+"connection_failed" = "Connection Failed!";
+"try_again" = "Try again";
+"please_wait" = "Please wait...";
+"please_wait_syncing" = "Syncing your device... Please wait.";
+"device_name" = "Device Name";
+"wifi_access" = "Wi-Fi Password";
+"wifi_password" = "Wi-Fi Password";
+"device_info" = "Device Info";
+"check_device_network" = "Device Network";
+"remove_device" = "Remove Device";
+"unbind_alert_detail" = "The device will be removed and all data will be deleted.";
+"device_remove_confirm_title" = "Are you sure you want to remove the device?";
+"device_remove_confirm_desc" = "The device will be unpaired and deleted from the list of devices.";
+"device_remove_confirm_btn_text" = "Remove";
+"device_remove_confirm_title_v2watch" = "Are you sure you want to remove the Smart Watch?";
+"device_remove_confirm_desc_v2watch" = "The device will be removed and all data will be deleted.";
+"confirm" = "Confirm";
+
+"sosContact" = "S.o.S Contact";
+"sosMessage" = "S.o.S Messages";
+"sosDesc" = "When you press long to the right button on your smartwatch, Emergency feature sends help messages to the people you selected. To use this feature:
+•  The version on your smart watch must support the feature.
+•  The application must be open in the foreground or background.
+•  The watch and phone must be connected.
+•  Your phone must be connected to the internet.
+•  The Emergency feature can only be activated if the watch display is awake. Therefore, you should wake up your watch once before pressing the button for Emergency.
+•  The help message can only be sent for mobile phone numbers starting with +90.";
+"sosImageDesc" = "Long Press";
+"sosEmptyContactTitle" = "No Selected Contacts";
+"sosEmptyContactDesc" = "You don’t have contact person yet. You can add 5 people to your contact list.";
+"sosAddContact" = "Add Contact";
+"search_on_contact" = "Search Contact";
+"sosmax_contact" = "You can add maximum 5 people to your contact list.";
+"sos_contact_added" = "Contact person that you selected is added to the emergency contact list.";
+"sos_addedlist_desc" = "You can add 5 people to your contact list.";
+"already_registered" = "Already have an account? Sign in";
+"activation_error" = "Activation Failed";
+"activation_error_title" = "The activation link is invalid or used before. You need to enter your e-mail address for the new activation link.";
+"send_activation_link" = "Send activation link";
+"not_activated_user" = "Unactivated account";
+"not_activated_user_desc" = "We sent activation link to the email address you are signed up to activate your account. You can activate your account by clicking on the link in the inbox.";
+
+//MARK: -
+//MARK: - HOME DASHBOARD PAGES
+"no_data_available_to_display" = "No data available to display.";
+
+//MARK: -
+//MARK: - WATCH SETTINGS PAGES: V2 - V2MAX
+
+//MARK: Stress
+"stress_title" = "Stress Level";
+"stress_range" = "Stress range";
+"stress_automeasure" = "Auto measurement";
+"stress_desc" = "When the auto stress level measurement is enabled, the smartwatch regularly measures your stress level.";
+"stress_weekly_infotext" = "Stress analysis of the week moderate stress can help concentrate and devote you to solve problems; please continue to maintain effective stress regulation.";
+"stress_monthly_infotext" = "Stress analysis of the week moderate stress can help concentrate and devote you to solve problems; please continue to maintain effective stress regulation.";
+
+//MARK: Blood oxygen
+"blood_title" = "Blood Oxygen Level";
+"blood_what_is" = "What is blood oxygen level?";
+
+//MARK: Menstrual Cycle
+"menstrualCycle_title" = "Menstrual Cycle";
+"menstrualCycleUpdate" = "Last menstrual date:";
+"menstrual_cycle_add_step1" = "Step 1";
+"menstrual_cycle_add_step2" = "Step 2";
+"menstrual_cycle_add_step3" = "Step 3";
+"menstrual_cycle_add_step4" = "Step 4";
+"menstrual_cycle_add_step5" = "Step 5";
+"menstrual_cycle_add_last_menstrual_date" = "Last menstrual date";
+"menstrual_cycle_add_last_menstrual_date_desc" = "Last menstrual date is the starting date of your last menstrual date.";
+"menstrual_cycle_add_menstrual_length" = "Menstrual length";
+"menstrual_cycle_add_menstrual_length_desc" = "Menstrual length is the number of days between start and end dates.";
+"menstrual_cycle_add_menstrual_cycle_length" = "Menstrual cycle length";
+"menstrual_cycle_add_set_reminder" = "Set Reminder";
+"menstrual_cycle_add_set_reminder_desc" = "Set a reminder to get a notification for your upcoming prediction menstrual and ovulation date, before the number of days you set.";
+"menstrual_cycle_add_set_notification_time" = "Set Notification Time";
+"menstrual_cycle_add_set_notification_time_desc" = "Set notification time for your menstrual and ovulation reminders.";
+"last_menstrual" = "Last menstrual";
+"ovulation" = "Ovulation";
+"cycle_length" = "Cycle length";
+"menstrual_tracking" = "Menstrual tracking";
+"menstrual_cycle_info" = "Menstrual settings";
+"menstrual_cycle_reminder" = "Reminder settings";
+"menstrual_days" = "Menstrual days";
+"ovulation_days" = "Ovulation days";
+"next_estimated_menstrual_days" = "Next extimated mentrual days";
+"menstrual_cycle_add_complete" = "Complete";
+
+"later" = "later";
+"today" = "Today";
+"default" = "Default";
+
+//MARK: Watch V2 Feature
+"market" = "Market";
+"all" = "All";
+"my_library" = "My Library";
+"new_arrivals" = "New arrivals";
+"custom" = "Custom";
+"photo" = "Photo";
+"photodesc" = "Every time raising your wrist or tapping the screen, the favorite photo you have configurated will be displayed on the watch face.";
+"already_installed" = "Already installed";
+"watchface" = "Watch Face";
+"current" = "Current";
+"add_and_install" = "Add and Install";
+"addphoto" = "Add photo";
+"changephoto" = "Change photo";
+"datetimecolor" = "Date & time text color";
+"set_current" = "Set as Current";
+"watchv2_nointernet_title" = "No internet connection";
+"watchv2_nointernet_desc" = "Please check your internet settings and try again.";
+"watchv2_camera" = "Camera";
+"watchv2_gallery" = "Gallery";
+"watchv2_photoselect" = "Select photo...";
+"watchv2_warning" = "Warning";
+"watchv2_cameranotfound" = "Camera not found!";
+"watchv2_cropphoto" = "Crop photo";
+
+"auto_brightness_title" = "Automatic Brightness";
+"auto_brightness_switch" = "Automatic brightness at night";
+"auto_brightness_start_end_time" = "Start-end time";
+"auto_brightness_desc" = "With automatic brightness, watch’s screen brightness automatically increases or decreases when lighting changes at nights.";
+"downloading" = "Installing...";
+"watchv2_call_notification_title" = "Call Notification";
+"watchv2_call_notification" = "Call notification";
+"watchv2_call_notification_delay" = "3 second delay";
+"watchv2_call_notification_desc" = "With call reminder, you will receive a notification on the watch when your phone receives a call. When do not disturb mode is enabled, incoming calls will not be reminded.";
+"watchv2Max_call_notification_desc" = "With the call notification, you will receive a notification on your watch for incoming calls on your phone. With 3 seconds delay, the call notification is delayed for 3 seconds. Notification of incoming calls when do not disturb mode is activated does not come.";
+"watchv2_exercise_recognition_title" = "Activity Recognition";
+"watchv2_exercise_recognition_run" = "Running";
+"watchv2_exercise_recognition_walk" = "Walking";
+"watchv2_exercise_recognition_desc" = "Activity recognition, when you do not start any activity manually on the watch, it detects your walking or running movement according to the activity you choose and suggests you to start an activity.";
+
+//MARK: WatchV2 FAQ
+"watchv2_q1" = "How the measurement and temperature unit is adjusted?";
+"watchv2_q2" = "How do I set up time, start day of the week?";
+"watchv2_q3" = "Why do Bluetooth connection always disconnect";
+"watchv2_q4" = "Why does it take to long to syncronize the data? Why does the synronization fail?";
+"watchv2_q5" = "I cannot syncronize my sleep data. Why is the sleep data wrong?";
+"watchv2_q6" = "Is the watch water-proof? Can I use it in the shower?";
+"watchv2_q7" = "Why does the screen not open when I hold up my wrist?";
+"watchv2_q8" = "Why is there a green light behind the watch?";
+"watchv2_q9" = "Why can't I receive SMS, apps or call notifications?";
+"watchv2_q10" = "How can I charge my watch?";
+"watchv2_q11" = "Which version should I use for more compatibility?";
+"watchv2_q12" = "How are call notifications used?";
+"watchv2_q13" = "How are message notifications used?";
+"watchv2_q14" = "How can I syncronize data?";
+"watchv2_q15" = "Should I always activate Bluetooth of my phone while wearing my watch?";
+"watchv2_q16" = "Can the watch store data when not connected to the phone?";
+"watchv2_q17" = "Why can't the watch count the steps at once?";
+"watchv2_q18" = "How long is the time vibration delay for incoming calls?";
+"watchv2_q19" = "Why does my watch not vibrate although call reminder is activated for incoming calls?";
+"watchv2_q20" = "Can I change the number of vibrations for incoming calls? What is the number of max vibration?";
+"watchv2_q21" = "Why can't I receive apps notifications?";
+"watchv2_q22" = "What are the factors affecting the accuracy of heart rate?";
+"watchv2_q23" = "What is IP67 water-proof level?";
+"watchv2_q24" = "What factors affect the accuracy of the steps?";
+"watchv2_q25" = "Why can't weather data be syncronized with the watch?Why is weather data viewed wrong?";
+"watchv2_q26" = "Why can't I connect to the watch with Bluetooth?";
+
+"watchv2_a1" = "You can adjust the units from My devices> Vestel Smart Watch V2>Units and
+upon completion it is syncronized with the device";
+"watchv2_a2" = "You can adjust the units from My devices> Vestel Smart Watch V2 >Date&Time menu,and
+upon compleion it is syncronized with the device";
+"watchv2_a3" = "Make sure that the distance between the phone and the watch does not exceed 7 meters.
+Make sure there are no obstruction between the phone and the watch (metal objects such as jewelry on your body may interfere with the signal) Make sure the watch charger has enough power to use the bluetooth.
+Make sure your phone's Bluetooth is working. Close all apps and re-activate the Bluetooth.
+If the app is running in the background, iOS may close the app automatically, causing the Bluetooth to disconnect.
+If your phone is on power saving mode or if you are using a phone manager app, it may disconnect automatically. Please check your phone settings and try again.";
+"watchv2_a4" = "Make sure the Bluetooth connection is established. (See question 3 for ongoing issues)
+Check if the Bluetooth connection has timed out.";
+"watchv2_a5" = "Make sure you always wear the watch while you sleep. Otherwise, the new data will not be available when you sync the watch with the Smart Health app.
+Your sleep status will be detected in hours. However, it will only be recorded if you sleep for more than 3 hours. There are 3 types of sleep: deep sleep, light sleep, and REM sleep. Factors such as going back to sleep or playing with a cell phone after waking up will affect the recording of your sleep data.
+If you do not wear the watch before going to bed or remove the watch immediately after getting up, the recorded sleep time will be longer or inaccurate.
+If all-day heart rate detection is not activated, the detection function fails to function. This means that real-time heart rate measurement will be on on the device, which does not result in sleep detection or incorrect data.";
+"watchv2_a6" = "The smart watch is waterproof. It can be used in the shower, but the water temperature should be below 40 degrees.";
+"watchv2_a7" = "We adapted this feature to prevent the screen from turning on accidentally, such as when you move your arms while you sleep.
+To turn on the screen, turn your wrist so that the screen is facing up. Have the most suitable tilt angle.";
+"watchv2_a8" = "Green light is used to measure your heart rate. If you activate automatic heart rate monitoring, the light turns on periodically.
+Select manual heart rate monitoring to disable this feature. The smartwatch features an industry-standard optical heart rate sensor that is certified safe to use.";
+"watchv2_a9" = "You need to enable notifications from My Devices > Vestel Smart Watch V2 > Call Notification menu for call notification, and from My Devices > Vestel Smart Watch V2 > Message Notifications menu for SMS and apps notifications. The settings will be syncronized to the clock. For iOS system, you need to allow and enable bluetooth pairing.
+Make sure Bluetooth is always connected. Watch cannot receive messages or call notifications when disconnected
+Notifications are not shown if do not disturb mode is activated. You cannot receive notifications.
+After activating smart reminder, notifications on the phone will appear on the watch.";
+"watchv2_a10" = "Remove the watch from your wrist, connect it to the USB adapter with a USB cable and plug it into a power outlet (make sure the USB connector is oriented correctly); the watch charges when the screen is off, but you can swipe on the screen to wake up the screen and check the charging progress.
+Under normal circumstances, the watch can be fully charged within 1-2 hours. The  standby time is about 15-21 days, and the normal service time is 5-7 days. Battery durability of different models may vary. Note : if automatic heart rate detection is enabled, the watch consumes more power and this affects the watch's battery life.
+Select a power source to charge the smartwatch. Via your PC's USB port or your mobile phone's charger ( the rated voltage of the watch is 3.7 V - 4.2 V; the rated voltage of the USB port is usually 5V, so the USB port is the best power source. Through the USB port, the watch needs to be charged in 1-2 hours). Do not use a fast-charging power supply (9V) so as not to affect the lifespan of the watch.";
+"watchv2_a11" = "We recommend downloading the latest version of the app.
+To install the app, please make sure your mobile's operating system is iOS 9.0 and above";
+"watchv2_a12" = "Make sure the watch is connected to your phone via bluetooth.
+It can only use to decline calls
+If the caller is not in your list, the phone number will be displayed.";
+"watchv2_a13" = "Smart watch supports SMS, Calendar, Whatsapp, Instagram, Facebook, E-mail, Linkedin notifications. These can be configured via the app.
+Make sure the smartwatch is connected to your phone via Bluetooth.
+When you receive a message, the notification icon displays the device notification count. You can view the last 5 notifications.
+Tap and hold a notification to dismiss it.";
+"watchv2_a14" = "It syncs automatically when you open the Smart Health app.";
+"watchv2_a15" = "Your watch does not need to be connected to the phone to record pedometer, sleep data and use the alarm feature. For example, you can exercise while wearing the watch, and then connect the watch to your phone and sync to view the exercise data.
+Use the app to configure and synchronize the alarm with the watch. After configuring the alarm, you can disconnect the watch from your phone.
+To use call reminder and find phone features, you need to turn on your phone's Bluetooth and connect the watch to your phone.";
+"watchv2_a16" = "The watch doesn't need to be connected to your phone to store exercise or sleep data. To sync data from the watch, enable bluetooth on your phone and make sure the watch is within range.
+The watch can store 7 days of exercise and sleep data in normal use.";
+"watchv2_a17" = "To improve step count accuracy, the watch has a minimum threshold of 10 steps. It means that the total number of steps shown in the app changes only when you take more than 10 steps. The watch starts recording data from step 10, saves data only after completing 30 steps.";
+"watchv2_a18" = "The default delay is 3 seconds. You can change the delay time in the app according to your preferences.";
+"watchv2_a19" = "Make sure your phone has Bluetooth enabled and the watch is connected.
+Make sure the app is running in the background.";
+"watchv2_a20" = "The number of vibrations for incoming call notifications cannot be changed. The clock vibrates until you answer or decline a call. When you have an incoming call, you can press the touch key to disable vibrations.";
+"watchv2_a21" = "Make sure your phone has Bluetooth enabled and the watch is connected.
+Make sure the app is running in the background.
+Make sure notification settings are turned on in the app.";
+"watchv2_a22" = "Some factors such as the loose band of the watch, that is, it does not fit the wrist properly, the shaking of the arms, or the movement of the watch affect the measurements of the heart rate. Also, tightening the watch, raising your arms, or clenching your fists can affect blood circulation. In this case, it affects the sensor performance.
+It is recommended that you keep your arm straight, stay still, and relax your muscles while testing the heart rate. Make sure the watch stays in close contact with your skin.";
+"watchv2_a23" = "IP67 is a degree of protection used in the mobile phone industry. It defines the protection of a product against exposure to water and dust. The rating consists of two digits following the letters 'IP'. The first digit denotes dust protection and works from 0 to 6. The second digit indicates water resistance and works from 0 to 9. The IP67 device is completely dustproof and can be dropped into water. It can be maintained to a depth of 1m for half an hour.";
+"watchv2_a24" = "You must provide accurate personal data. E.g; If you enter the wrong gender, height, weight, or age, it will result in incorrect exercise data such as incorrect step count, distance, or calories.
+In addition, factors such as arm swinging, steps, road surface and inclination can affect the number of steps.";
+"watchv2_a25" = "The watch does not download the weather data directly, you need to sync the watch with the app to update the weather data.
+Make sure the watch is connected to the app.
+Make sure that My Devices > Vestel Smart Clock V2 > Weather notification option is enabled.
+If the app is granted location permission, the app automatically determines your location. Weather data will not be available if the app cannot determine your location. You need to enable GPS for better service.
+Weather data may not be updated if the connection between the watch and the phone is poor. In this case, old data is displayed or the message 'data not available' is displayed.";
+"watchv2_a26" = "Check that your phone is iOS 9.0 and above.
+Download the latest version of the app.
+Check if your mobile phone's Bluetooth is enabled and working properly, it is recommended to close all programs and restart Bluetooth before making the connection.
+If the watch shows a QR code screen, there are 2 ways to connect the device.
+1. Scan the QR code;
+2. Add a device and then select the MAC address. Make sure you choose the right product type.";
+
+//MARK: Watch v2 - health monitor
+"watchv2_healthmonitor" = "Health Monitor";
+"watchv2_hm_enabled" = "enabled";
+"watchv2_hm_disabled" = "disabled";
+"watchv2_hm_hearth" = "Heart rate monitor";
+"watchv2_hm_stress" = "Stress monitor";
+"watchv2_hm_water" = "Drinking reminder";
+"watchv2_hm_sedentary" = "Walk-around reminder";
+"watchv2_hm_menstrual" = "Menstrual cycle";
+"watchv2_hm_desc" = "With health monitor, you can enable the watch to measure automatically and set reminders to receive notifications on your smartwatch.";
+
+"watchv2_hm_hr_title" = "Heart Rate Monitor";
+"watchv2_hm_hr_desc" = "With auto heart rate measurement, the smartwatch measures your heart rate every 5 seconds.
+
+Auto heart rate measurement;
+1. To ensure accurate measurement, wear your smartwatch at least one finger above your wrist bone and make sure it is snug on your wrist.
+2. Whether this function is on or off, heart rate will be measured in real time by default when an exercise is initiated.
+
+• With manual measurement, you can measure your heart rate yourself from the watch.";
+
+"watchv2_hm_hr_auto" = "Auto measurement";
+"watchv2_hm_hr_manual" = "Manual measurement";
+
+"watchv2_hm_stress_title" = "Stress Monitor";
+"watchv2_hm_stress_desc" = "When the auto stress level measurement is enabled, the smartwatch regularly measures your stress level.
+
+Appropriate stress is beneficial to physical and mental health, but too much stress will affect health adversely. 7X24 hours of real-time stress monitoring can help you keep track of your stress status.";
+"watchv2_hm_stress_zone" = "Stress zone";
+"watchv2_hm_stress_relax" = "Relax";
+"watchv2_hm_stress_normal" = "Normal";
+"watchv2_hm_stress_medium" = "Medium";
+"watchv2_hm_stress_high" = "High";
+
+"watchv2_hm_dr_title" = "Drinking Reminder";
+"watchv2_hm_dr_reminder" = "Drinking reminder";
+"watchv2_hm_dr_startend" = "Start-end time";
+"watchv2_hm_dr_repeat" = "Repeat";
+"watchv2_hm_dr_duration" = "Reminder duration";
+"watchv2_hm_dr_desc" = "Drinking reminder sends you notifications to remind you to drink water. During the start-end time period you have set, you will be reminded to drink water repetatly according to your reminder duration setting.";
+"watchv2_hm_dr_settime" = "Set start - end time";
+"watchv2_hm_dr_starttime" = "Start time";
+"watchv2_hm_dr_endtime" = "End time";
+"watchv2_hm_dr_reminderduration" = "Drinking reminder duration";
+
+"watchv2_hm_war_title" = "Walk-around Reminder";
+"watchv2_hm_war_reminder" = "Walk-around reminder";
+"watchv2_hm_war_startend" = "Start-end time";
+"watchv2_hm_war_goal" = "Steps goal per hour";
+"watchv2_hm_war_repeat" = "Repeat";
+"watchv2_hm_war_desc" = "If you don’t want to live a sedentary daily life, the watch will vibrate slightly to remind you to move around. During the start-end time period you have set, you will be reminded at the 50th minute of each hour to get up and walk around if your steps goal has not been reached.";
+"watchv2_hm_war_starttime" = "Start time";
+"watchv2_hm_war_endtime" = "End time";
+
+"watchv2_hm_mc_title" = "Menstrual Cycle";
+"watchv2_hm_mc_tracking" = "Menstrual tracking";
+"watchv2_hm_mc_menstrual_settings" = "Menstrual settings";
+"watchv2_hm_mc_reminder_settings" = "Reminder settings";
+"watchv2_hm_mc_desc" = "You can track your next menstruation and ovulation periods and set reminders for them.";
+"watchv2_hm_mc_menstrual_length" = "Menstrual length";
+"watchv2_hm_mc_menstrual_cycle_length" = "Menstrual cycle length";
+"watchv2_hm_mc_last_menstrual_date" = "Last menstrual date";
+"watchv2_hm_mc_menstrual_reminder" = "Menstrual reminder";
+"watchv2_hm_mc_ovulation_reminder" = "Ovulation reminder";
+"watchv2_hm_mc_notification_time" = "Notification time";
+"watchv2_hm_mc_menstrual_reminder_desc" = "You can set reminders for your upcoming menstrual and ovulation and schedule notification for them.";
+
+//MARK: Watch v2 - firmware
+"watchv2_firmware" = "Firmware update";
+"watchv2_firmware_title" = "Firmware Update";
+"watchv2_firmware_info" = "Important Notice:
+1. Make sure the device’s battery level is more than 30% and the device is close the phone.
+2. Do not leave this page during update.";
+
+//MARK: Watch v2 - device info
+"watchv2_deviceinfo_title" = "Device Info";
+"watchv2_deviceinfo_modelno" = "Model no:";
+"watchv2_deviceinfo_version" = "Version:";
+"watchv2_deviceinfo_blename" = "Bluetooth name:";
+"watchv2_deviceinfo_mac" = "Mac:";
+"watchv2_deviceinfo_updatetime" = "Device data update time:";
+
+"watchv2_alarm" = "Alarm";
+"watchv2_alarm_name" = "Alarm name";
+"watchv2_alarm_type" = "Alarm type";
+"watchv2_alarm_snooze" = "Snooze";
+"scan_QR" = "Scan QR Code";
+"watchv2_restart_title" = "Are you sure you want to reset Smartwatch settings?";
+"watchv2_reboot_title" = "Are you sure you want to restart Smartwatch?";
+"watchv2_reboot_restart" = "Restart";
+
+//MARK: watch v2 - shortcuts
+"show_functions" = "Show Functions";
+"hide_functions" = "Hide Functions";
+"health_data" = "Health Data";
+"heartrate" = "Heart Rate";
+"stress_level" = "Stress Level";
+"last_activity" = "Last Activity";
+"weather" = "Weather";
+"music_control" = "Music Control";
+"shortcut_info" = "Press and hold the card to drag it. The device displays 1 or more cards.";
+"music_control_info" = "Activate the ''Music Control'' option on the previous page to be able to control the music in shortcuts.";
+
+//MARK: watch v2 max - shortcuts
+"shortcut_v2max_info" = "Press and hold the card to drag it. The device displays one or more cards. Health Data and Heart Rate functions cannot be hidden.";
+    
+//MARK: watch v2 - activity display
+"outdoor_running" = "Outdoor Running";
+"indoor_running" = "Indoor Running";
+"outdoor_walking" = "Outdoor Walking";
+"indoor_walking" = "Indoor Walking";
+"hiking" = "Hiking";
+"indoor_bicycle" = "Indoor Bicycle";
+"outdoor_biking" = "Outdoor Biking";
+"cricket" = "Cricket";
+"pool_swim" = "Pool Swim";
+"swim" = "Open water swim";
+"v2_yoga" = "Yoga";
+"rowing" = "Rowing";
+"eliptic" = "Eliptic";
+"fitness" = "Fitness";
+
+//MARK: watch v2 - message notifications
+"watchv2_msg_notification_title" = "Message Notifications";
+"allow_notifications" = "Allow notifications";
+"allow_notifications_desc" = "The watch will vibrate when you receive notifications for allowed ones.";
+"APP_TYPE_SMS" = "SMS";
+"APP_TYPE_CALENDAR" = "Calendar";
+"APP_TYPE_WHATSAPP" = "Whatsapp";
+"APP_TYPE_INSTAGRAM" = "Instagram";
+"APP_TYPE_FACEBOOK" = "Facebook";
+"APP_TYPE_TWITTER" = "Twitter";
+"APP_TYPE_SKYPE" = "Skype";
+"APP_TYPE_GMAIL" = "E-mail";
+"APP_TYPE_MESSENGER" = "Messenger";
+"APP_TYPE_SNAPCHAT" = "Snapchat";
+"APP_TYPE_WECHAT" = "Wechat";
+"APP_TYPE_LINKEDIN" = "Linkedin";
+"APP_TYPE_TELEGRAM" = "Telegram";
+"APP_TYPE_SLACK" = "Slack";
+
+//MARK: watch v2 - do not disturb
+"duringDay" = "Do not disturb during the day";
+"startEndTime" = "Start-end time";
+"duringNight" = "Do not disturb at night";
+"doNotDisturbDesc" = "When do not disturb mode is enabled, your watch will not receive notifications for incoming calls and messages between the time you set.";
+"setStartEndTime" = "Set start - end time during the day";
+"startTime" = "Start time";
+"endTime" = "End time";
+"setStartEndTimeNight" = "Set start - end time during the night";
+
+//MARK: watch v2 - language
+"smartwatchv2_device_language_title" = "Device Language";
+"systemLanguage" = "Follow system";
+"turkish" = "Turkish";
+"english" = "English";
+"german" = "German";
+"spanish" = "Spanish";
+"french" = "French";
+"italian" = "Italian";
+"russian" = "Russian";
+"portuguese" = "Portuguese";
+
+//MARK: watch v2 - datetime
+"timeformat" = "Time Format";
+"time12" = "12 hour";
+"time24" = "24 hour";
+"weekstart" = "Week start day";
+"saturday" = "Sun";
+"sunday" = "Sat";
+"monday" = "Mon";
+
+//MARK: watch v2 - units
+"lengthUnit" = "Set units for length";
+"tempratureUnit" = "Set units for temperature";
+"mkm" = "Meter  |  Kilometer";
+"feetmile" = "Feet  |  Mile";
+"celcius" = "Celsius °C";
+"fahrenheit" = "Fahrenheit °F";
+
+//MARK: watch v2 - blood oxygen popup
+"whatsbloddox" = "1. What is blood oxygen level?";
+"bloodoxtitle" = "What is blood oxygen level?";
+"blooxoxdesc" = "Blood oxygen level (SpO₂) is a measure of your blood’s oxygen-carrying capacity. It is the percentage of hemoglobin which is currently bound to oxygen in the blood that accounts for the total hemoglobin that can be bound to oxygen, i.e., the oxygen concetration in blood. It is a vital physiological parameter of the respiratory system. Ideally, a normal blood oxygen level is 95%-100%, but it may vary depending on the altitude, an individual’s physical condition and certain diseases. Low blood oxygen levels may indicate certain risk;";
+"risk" = "Risk";
+"low" = "Low";
+"normal" = "Normal";
+"precautions" = "2. Precautions for measuring blood oxygen level";
+"precautionsdesc" = "1. You can measure your blood oxygen level from your device. To ensure measurement accuracy, please wear device properly as per the guidelines.
+2. External factors (such as low blood perfusion, excessive arm hair, tattoos, arm drooping, arm shaking, improper wearing of watch and low temperature, etc.) may lead to an inaccurate measurement, or even a measurement failure.
+3. This product is not a medical device. Data collected by it and suggestions provided are for reference purpose only. Do not take them as the basis for clinical diagnosis and treatment.";
+
+"watchv2_blenotconnected" = "Turn on bluetooth to allow connect to accessories.";
+
+//MARK: watch v2 - sleep
+"dataSource" = "Data source";
+"sleepRatio" = "Sleep ratio";
+"deepSleep" = "Deep sleep";
+"lightSleep" = "Light sleep";
+"rem" = "REM";
+"awake" = "Awake";
+"respiratoryQuality" = "Respiratory Quality";
+"sleepScore" = "Sleep Score";
+"sleepScoreLower" = "Sleep score";
+"sleepPattern" = "Sleeping Pattern";
+"sleep_wake_up_times" = "Wake-up (Time)";
+"leave_the_bed" = "Getting Out of Bed (Time)";
+"score" = "score";
+"dataSoruceCommonSelect" = "The sleep data will be taken from the selected source above.";
+"scoreDesc" = "Regular trainings can faciliate deep sleep. Smart devices can record your training data. Please avoid strenuous training before going to bed, or the excited limbs and high body temperature may effect your ability to fall asleep.";
+"sleepMusicTime" = "Sleep asistant duration";
+
+//MARK: Watch V2/V2 Max - Connection Errors
+"unsuccessfulAddDevice" = "Add device failed";
+"unsuccessfulAddDeviceDesc" = "To connect to a new Vestel smartwatch, you should remove your current smartwatch from your paired devices.";
+///Device Connection Failed due to Pairing information
+"connection_failed_due_to_pairing_error_desc" = "Device is connected to another phone's Bluetooth, unpair the device from that phone's Bluetooth settings and then try again later.";
+///If user reject binding from watch
+"connection_failed_title" = "Device connection failed!";
+"connection_failed_subtitle" = "Please follow these steps and try again:";
+"connection_failed_desc" = "• Turn on Bluetooth again
+• Make sure the device has sufficient power and close enough to the phone
+• Tap “Reset” on the device and reconnect
+• If the device is connected to another phone's Bluetooth, unpair the device from that phone's Bluetooth settings.";
+///Device corrupted: need to remove and reconnect again.
+"connection_failed_device_corrupted" = "Device status is unknown and cannot be reconnected. Please remove the device from the app and then reconnect it.";
+
+//MARK: -
+//MARK: -  AIRPURIFIER
+"airpurifier_app_transition_title" = "Air Purifier App Transition";
+"airpurifier_app_transition_desc" = "The **Vestel Smart Life** app is the latest platform that allows you to access and control all features of your VHT-402
+Air Purifier. You can continue using your device by downloading this app.";
+"go_to_app_store" = "Go to App Store";
+
+//MARK: -
+//MARK: -  SLEEP TRACKER
+"smartSleepTracker" = "Vestel Smart Sleep Tracker";
+"sleeptrackerStartConnectionDesc" = "Smart Sleep Tracker monitors your heart rate, respiratory rate, and body movements and extracts your sleep data. It provides sleep improvement suggestions by analyzing your sleep duration, quality, and sleep cycle (wakefulness, light sleep, deep sleep).";
+"sleeptrackerConnectionDesc" = "1. Plug the device in and then, place it between
+the blanket and bed sheet.
+
+2. For the best tracking of data, position it directly under your chest when lying down.
+
+3. There is a magnetic key attached on the front in order to fix the control box and a green light is on in order to indicate that the product is successfully started.";
+"sleeptrackerConnectionStep1" = "Step 1: Product Installation";
+"sleeptrackerConnectionStep2" = "Step 2: Network Installation";
+"sleeptrackerConnectionStep2Desc" = "Follow the instructions below to put your device into installation mode.
+
+1. Open the magnetic cover and close it, repeat 3 times.
+
+2. When Smart Sleep Tracker product switches to installation mode, the indicator light flashes red for 3 seconds, then starts to flash slowly.";
+
+"select_device_detail_distance_message" = "The distance data will be taken from the source selected according to the priority order above";
+
+"select_device_detail_step_message" = "The steps data will be taken from the source selected according to the priority order above";
+
+"justMinute" = "min";
+"justHour" = "h";
+
+"sleep_movement_title" = "Movement";
+"sleep_movement" = "Movement";
+"sleep_mo_movement" = "No movement";
+"sleep_heartbeat" = "Heartbeat (BPM)";
+"sleep_respiratory_rate" = "Respiratory Rate (RPM)";
+"sleep_medium" = "Medium";
+"sleep_temperature" = "Temperature";
+"sleep_moisture" = "Moisture";
+"sleep_cellExp" = "Scynchronize with Vestel Smart Sleep Tracker device follow your sleep quality and sleep states (deep sleep, light sleep and awake duration). The data source automatically shows the data of the last synced device, it can be manually changed to another device if needed. You can share on social media by clicking the share button.";
+
+"wireless_network_selection" = "Wireless network selection";
+"wireless_network_selection_desc" = "Select the wireless network you want to connect your device. There are 5GHz wireless networks in the list below. Make sure that the wireless network you want to connect is in 2.4 GHz band. Scroll the page down to update the wireless network list.";
+"remember_wifi_pass" = "Remember Wi-Fi password";
+"connecting_wifi" = "Connecting to a wireless network...";
+"installation_complete" = "Congratulations\n Installation is Completed!";
+"change_wifi" = "Change Wi-Fi";
+"configFail" = "Configuration Failed";
+"configFailDescTitle" = "Make sure to follow the below steps for complete the device configuration, and try again.";
+"wifiChangeFailTitle" = "Wi-Fi Failed";
+"wifiChangeFailDesc" = "Wi-Fi network couldn’t change. Make sure to follow the below steps to change the device's Wi-Fi network,  and try again.";
+"configFailDesc" = "• Make sure the device is plugged in and connected.
+• Make sure the device is in config mode.
+• Make sure your Wi-Fi network and password are correct and your router is connected.
+• Make sure the Wi-Fi network signal you want to connect is strong and stable.
+• Make sure your phone’s Bluetooth turned on.
+• Make sure that the Wi-Fi network you want to connect is in 2.4 GHz band.
+
+If the device cannot be configured after the above-mentioned solutions, please unplug the adapter and plug it back in.";
+"importantInstructions" = "Important Instructions";
+
+"sleepTracker_installation_succeed_desc" = "To properly operate the Smart Sleep Tracker, you can check the \"Important Instructions\" section on the device page.";
+"sleepace_tips1_title" = "Tips For a Better Sleep";
+"sleepace_tip_desc" = "• Gentle yoga slows your heart rate so you can fall asleep easily. In addition, due to the controlled breathing used in yoga, your vagus nerve is stimulated and your digestion improves.
+
+• Try to go to sleep and wake up at the same time every day. This helps set your body's internal clock and optimize your sleep quality.
+
+• Pay attention to what you eat and drink. Do not go to bed hungry or full. In particular, avoid heavy or large meals a few hours before bedtime.
+
+• Do not consume caffeine late in the day. It stimulates your nervous system and can prevent your body from naturally relaxing at night.
+
+• Reduce irregular or long daytime naps. While short-term ones are beneficial, long or irregular naps during the day can negatively affect your sleep.
+
+• Reduce exposure to blue light in the evening, because it makes your body think it's daytime. Stop watching TV and turn off bright lights 2 hours before going to bed.";
+
+"sleepace_tips1" = "A gentle yoga slows your heart rate so you can fall asleep easily.";
+
+"sleeptracker_q1" = "Smart Sleep Tracker does not work, what are the causes and solutions?";
+"sleeptracker_q2" = "The Smart Sleep Tracker does not appear in the Smart Health application on the smartphone, the connection cannot be configurated.";
+"sleeptracker_q3" = "Why does it always fail to configure the network?";
+"sleeptracker_q4" = "How can I synchronize sleep reports? Does it support remote synchronize sleep reports?";
+"sleeptracker_q5" = "I actually slept, why didn't the Smart Sleep Tracker generate a sleep report?";
+"sleeptracker_q6" = "Why does the report differ from the actual situation?";
+"sleeptracker_a1" = "The device may not be getting power. Make sure that the adapter of the device is plugged into a socket suitable for the type of label. The charging cable of the adapter should also be plugged into the USB port of the device.";
+"sleeptracker_a2" = "There may be a problem with the connection. Make sure that the wireless modem in your environment is turned on and working. Your smartphone and device may not be connected to the same wireless connection. Make sure your smartphone and device are connected to the same wireless connection.";
+"sleeptracker_a3" = "Please first make sure whether the device enters the configuration mode, and then check whether the router supports 2.4G, if not, please reset the router.";
+"sleeptracker_a4" = "Ensuring that the network to which the device is connected is unblocked, the report will be automatically generated one hour after you get out of bed in the morning. You can open the Smart Health to check your sleep report, and you can also check it remotely.";
+"sleeptracker_a5" = "The best location to place the Smart Sleep Tracker is between the mattress and the sheets, and it should be placed under your chest when lying down. Any of the following usages may cause failure to generate a valid sleep report.
+1) You sit on the Smart Sleep Tracker
+2) You didn't sleep on the Smart Sleep Tracker, or sleep only on a small part of it
+3) The bed sheet is covered with a mat or bedding of more than 5 cm
+4) The Smart Sleep Tracker is placed under the mattress.";
+"sleeptracker_a6" = "The monitoring principle of the device is to capture the comprehensive signals of your heart rate, respiratory rate, and body movement through the sensor, and then analyze the sleep state and time through algorithms. If you leave the monitoring range unconsciously in the middle of the night, it will misjudge that you have been out of bed. If there is any vibration inference made by a washing machine, an electric fan, the decoration or sleeping friends, etc.., it also may misjudge to fall asleep. If you do not use the Smart Sleep Tracker in accordance with the instructions, the sleep analysis results will also be inconsistent with the actual situation.";
+"sleeptracker_important_instructions" = "• Please keep in mind that this device is neither a medical device nor a device to prevent sudden death. Users should not completely rely on it and neglect the monitored person. For users with pre-existing conditions, family members should check the condition of the monitored person personally from time to time.
+
+• Please bear in mind that this device is not suitable for people who wear pacemakers.
+
+• This device is not suitable for sleep monitoring of people under 18 years of age.
+
+• The monitor is suitable for a flat and stable surface. Do not place the monitor on a movable bed, such as a hammock, as it may prevent the monitor from performing its normal functions.
+
+• Do not place a mat on top of the monitor, or it may cause inaccurate monitoring.
+
+• Please make sure that no vibration source is close to the device to ensure that the sensor can accurately detect the user's sleep status. Vibrations caused by electric fans, washing machines, or loud music may lead to misjudgment of this device.
+
+• Please make sure that there are no electric appliances and devices with high power or strong radiation nearby. Refrigerators, heaters, laptop adapters, etc. may cause inaccurate monitoring.
+
+• Do not do a big jump on the monitor, or it may cause device failure.
+
+• Please prevent the device from falling off, which may cause device failure.
+
+• Please try to place the device in a location where the network signal is well received. The distance between the device and other metal objects (such as metal brackets, doors, windows, etc.) is preferably greater than 25cm, and the distance among multiple devices is preferably greater than 30cm.";
+"sleeptracker_firmware_update" = "Firmware update";
+"sleeptracker_firmware_update_title" = "Firmware Update";
+"sleeptracker_firmware_update_text" = "New update is available";
+
+// Mark : SleepTracker Sleep Score
+"SleepTrackerSleepScoreViewController_celltitle" = "Monthly Sleep Score Rates";
+"SleepTrackerSleepScoreViewController_bad" = "Bad";
+"SleepTrackerSleepScoreViewController_moderate" = "Moderate";
+"SleepTrackerSleepScoreViewController_good" = "Good";
+"SleepTrackerSleepScoreViewController_very_good" = "Very good";
+"SleepTrackerSleepScoreViewController_no_data" = "No Data";
+
+"sleep_tracker_status_desc_extension_day" = "today.";
+"sleep_tracker_status_desc_extension_week" = "this week.";
+"sleep_tracker_status_desc_extension_month" = "this month.";
+
+"sleep_tracker_status_bad_desc" = "Your sleep was not pretty good";
+"sleep_tracker_status_moderate_desc" = "Your sleep was good enough";
+"sleep_tracker_status_good_desc" = "Your sleep was quite well";
+"sleep_tracker_status_verygood_desc" = "Your sleep was very well";
+
+"SleepTrackerSleepScoreViewController_title" = "What is Sleep Score?";
+"SleepTrackerSleepScoreViewController_desc" = "You will get one sleep score every day according to your sleep data. This score is used to define the quality of your sleep.";
+"SleepTrackerSleepScoreViewController_affect" = "Factors Affecting Sleep Score";
+"SleepTrackerSleepScoreViewController_list1" = "- Sleep Irregularity";
+"SleepTrackerSleepScoreViewController_list2" = "- Insufficient Sleep Data";
+"SleepTrackerSleepScoreViewController_list3" = "- Insufficient sleep";
+"SleepTrackerSleepScoreViewController_list4" = "- Bradycardia";
+"SleepTrackerSleepScoreViewController_list5" = "- Sleep Risks";
+"SleepTrackerSleepScoreViewController_list6" = "- Went to sleep late";
+"SleepTrackerSleepScoreViewController_list7" = "- Waking up too often";
+"SleepTrackerSleepScoreViewController_list8" = "- Abnormal Breath Rate";
+"SleepTrackerSleepScoreViewController_list9" = "- Sleeping time too long";
+"SleepTrackerSleepScoreViewController_list10" = "- Sleeping time too short";
+"SleepTrackerSleepScoreViewController_list11" = "- Tachycardia";
+"SleepTrackerSleepScoreViewController_list12" = "- Lack of deep sleep period";
+"SleepTrackerSleepScoreViewController_list13" = "- Left bed multiple times";
+"SleepTrackerSleepScoreViewController_list14" = "- Restlessness";
+"SleepTrackerSleepScoreViewController_list15" = "- Falling asleep takes too long";
+"SleepTrackerSleepScoreViewController_list16" = "- Excessive Sleep";
+"SleepTrackerSleepScoreViewController_list17" = "- Distribution of Healthy Sleep";
+"SleepTrackerSleepScoreViewController_list18" = "- Bradypnea";
+"SleepTrackerSleepScoreViewController_list19" = "- Average Number of Times You Got Out of Bed";
+"SleepTrackerSleepScoreViewController_list20" = "- Weekly Average Rise in Heart Rate";
+"SleepTrackerSleepScoreViewController_list21" = "- Increase in average weekly respiratory rhythm";
+
+
+"SleepTrackerSleepScoreViewController_Sleep_1" = "What is Sleep Irregularity?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_1" = "Irregular sleep patterns can easily lead to endocrine disorders which may in turn trigger conditions, such as, fatigue and severe tiredness, backaches and general poor health.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_1" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_1" = "Please maintain a regular sleep schedule and allow yourself enough time to rest. Days off and weekends should be treated the same as any other day.";
+
+"SleepTrackerSleepScoreViewController_Sleep_2" = "What is Insufficient Sleep Data?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_2" = "Long term regular sleep monitoring and being able to identify health risks will help you more accurately analyze your health and sleep quality. If regular monitoring is not observed, this may lead to inaccuracies in data or risk identification.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_2" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_2" = "We recommend that you monitor your sleep using sleep monitoring device at least 5 nights a week.";
+
+"SleepTrackerSleepScoreViewController_Sleep_3" = "What is Insufficient Sleep?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_3" = "Insufficient sleep may lead to exhaustion, unresponsiveness, memory loss, immune system deficiencies and even premature aging.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_3" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_3" = "If for some reason you are unable to get enough sleep at night, it is highly recommended that you take a half-hour nap during the day to help you recover and re-energize yourself";
+
+"SleepTrackerSleepScoreViewController_Sleep_4" = "What is Bradycardia?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_4" = "The heart rate of a normal person is 60-100 beats/min. During a state of sleep, the heart rate is reduced to about 50-60 beats/min. For elderly persons and those who exercise regularly it is lower. Athletes who are vigorous and without any discomfort won't need treatment, even if their heart rate is 40 beats/min. If your heart rate is 30-40 lower than normal, it may easily lead to heart palpitations, shortness of breath and symptoms of dizziness and fatigue; all of which may be accompanied by brain nausea or sudden fainting episodes if the condition is serious";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_4" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_4" = "If a period of bradycardia occurred during your sleep, it could be physiological bradycardia which is very common among those who regularly exercise or are involved in heavy manual labor. This is a normal reaction during sleep and therefore you do not need to worry too much";
+
+"SleepTrackerSleepScoreViewController_Sleep_5" = "What is Sleep Risks?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_5" = "Serious conditions of abnormal breathing or abnormal heart rate will lead to increased risk for heart and lung function damage. Long term conditions may lead to high blood pressure, diabetes and heart disease.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_5" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_5" = "It is highly recommended that you maintain a regular sleep routine, a regular and balanced diet and regular exercise schedule. If sleep risks are identified and problems are serious, please seek immediate professional medical advice and treatment.";
+
+"SleepTrackerSleepScoreViewController_Sleep_6" = "What is went to sleep late?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_6" = "Serious conditions of abnormal breathing or abnormal heart rate will lead to increased risk for heart and lung function damage. Long term conditions may lead to high blood pressure, diabetes and heart disease.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_6" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_6" = "It is highly recommended that you maintain a regular sleep routine, a regular and balanced diet and regular exercise schedule. If sleep risks are identified and problems are serious, please seek immediate professional medical advice and treatment.";
+
+"SleepTrackerSleepScoreViewController_Sleep_7" = "What is waking up too often?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_7" = "You woke up too many times during sleep, meaning that your sleep is not stable. You spent too much time in the light sleep stage which can result in mental fatigue, migraines, and can easily lead to depression and memory loss.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_7" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_7" = "We recommend you maintain a good level of daily exercise and spend between 30 minutes to 1 hour outdoors. Please adjust your sleeping environment accordingly and ensure that an optimal room temperature of 60-82.4℉ (16-28℃) is maintained. Remove any strong light sources; comfortable bedding may also be an important factor!";
+
+"SleepTrackerSleepScoreViewController_Sleep_8" = "What is Abnormal Breath Rate?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_8" = "With central sleep apnea, the breathing stops for more than 10 seconds. It is usually accompanied by snoring, abnormally low concentration of oxygen in the blood, abnormally elevated carbon dioxide (CO2) levels in the blood and sleep disruptions, which may lead to daytime sleepiness, pulmonary vascular complications, or even multi organ damage. Centric apnea can have a strong impact on patients’ health and quality of living";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_8" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_8" = "Sleep apnea should be observed further and it is recommended that you seek professional medical advice. Quit smoking, drinking alcohol, and lose weight, if you are obese. If long-term signs of apnea are detected, please seek timely medical treatment. If the problem is serious, you may need to install a ventilator for sleeping.";
+
+"SleepTrackerSleepScoreViewController_Sleep_9" = "What is sleeping time too long?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_9" = "Excessive sleep may cause fatigue, body tiredness, a slow metabolic rate or memory loss.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_9" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_9" = "A normal sleep for adults is about 7 or 8 hours/night. We recommend that you exercise regularly, go to bed on time and maintain consistent patterns of sleep and rest.";
+
+"SleepTrackerSleepScoreViewController_Sleep_10" = "What is sleeping time too short?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_10" = "Insufficient sleep may lead to exhaustion, unresponsiveness, memory loss, immune system deficiencies and even premature aging.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_10" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_10" = "A normal sleep for adults is about 7 or 8 hours/night. If for some reason you are unable to get enough sleep at night, it is highly recommended that you take a half-hour nap during the day to help you recover and re-energize yourself.";
+
+"SleepTrackerSleepScoreViewController_Sleep_11" = "What is Tachycardia?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_11" = "The heart rate of a normal adult is 60-100 beats/min. A tachycardia heart rate is a heart rate of more than 100 beats/min. Sinus arrhythmia will not exceed 140 beats per minute. The majority of patients do not have cardiac insufficiencies and usually display no obvious signs of discomfort, but can sometimes experience small palpitations or shortness of breath, among other symptoms. Paroxysmal supraventricular tachycardia (PSVT) is an abnormal heart rate occurring at 160 to 200 beats per minute. PSVT is an episodic condition with an abrupt onset and termination, caused by electrical abnormalities that cause the atrium to beat too quickly. The condition may occur in patients with structural heart disease and also in patients with the absence of structural heart lesions.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_11" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_11" = "Your night time transient heart rate exceeded the normal rate (occured less than 10 mins), possibly caused by dreaming. Don't be alarmed. If tachycardia continues to persist and your heart rate remains too high (more than 140 beats/min), please identify the causes and seek early medical treatment";
+
+"SleepTrackerSleepScoreViewController_Sleep_12" = "What is lack of deep sleep period?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_12" = "The lack of effective deep sleep may lead to depression, migraines, nausea, muscle pains, the inability to concentrate, immune system deficiencies and increased vulnerability to illnesses.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_12" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_12" = "Do not consume caffeinated beverages six hours before going to bed. Also, avoid drinking alcohol as it may inhibit your deep sleep periods.";
+
+"SleepTrackerSleepScoreViewController_Sleep_13" = "What is left bed multiple times?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_13" = "The reasons for frequently leaving bed could be physiological, like drinking too much water before bed, or pathological, like prostate hyperplasia, diabetes, urinary tract infections, kidney defects and other conditions. It is common for elderly people, especially men to leave bed frequently during the night. In addition, faulty monitoring may occur if the device is out of range.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_13" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_13" = "Please try to avoid drinking too much water before sleep. Exercise more often, maintain a light diet and do not sit down for long periods. If you find that you are getting out of bed too often over a long period of time, please seek timely medical advice or treatment.";
+
+"SleepTrackerSleepScoreViewController_Sleep_14" = "What is Restlessness?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_14" = "Excessive body movement is a sign of restlessness and will seriously affect your sleep quality.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_14" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_14" = "During sleep, excessive turning over and body movement occurred more frequently than normal. Please adjust your sleeping environment accordingly and ensure an optimal room temperature of 60.8-82.4℉ (16-28℃) is maintained. Please avoid strenuous exercise or eating too much before bedtime.";
+
+"SleepTrackerSleepScoreViewController_Sleep_15" = "What is falling asleep takes too long?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_15" = "Healthy sleep should be a combination of medium sleep and deep sleep. This part reflects whether your sleep quality is good or bad, as it is a critical period for your body's self-healing and energy recovery. Restlessness for a whole night has a direct impact on your healthy sleep.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_15" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_15" = "Do not consume caffeinated beverages six hours before going to bed. Also, avoid drinking alcohol as it may inhibit your deep sleep periods.";
+
+"SleepTrackerSleepScoreViewController_Sleep_16" = "What is Excessive Sleep?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_16" = "Excessive sleep may cause fatigue, body tiredness, a slow metabolic rate or memory loss.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_16" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_16" = "A normal sleep for adults is between 6-9 hours/night. We recommend that you exercise regularly, go to bed on time and maintain consistent patterns of sleep and rest.";
+
+"SleepTrackerSleepScoreViewController_Sleep_17" = "What is Distribution of Healthy Sleep?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_17" = "Healthy sleep should be a combination of medium sleep and deep sleep. This part reflects whether your sleep quality is good or bad, as it is a critical period for your body's self-healing and energy recovery. Restlessness for a whole night has a direct impact on your healthy sleep";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_17" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_17" = "Do not consume caffeinated beverages six hours before going to bed. Also, avoid drinking alcohol as it may inhibit your deep sleep periods.";
+
+"SleepTrackerSleepScoreViewController_Sleep_18" = "What is Bradypnea?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_18" = "Respiratory rate of a normal adult is 12-20 Mmes/min. A bradypnea respiratory rate is that the respiratory rate is less than 12 times/min.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_18" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_18" = "During sleep, your respiratory rate exceeded normal levels. Your night time transient respiratory rate exceeded the normal rate( occurred less than 10 mins), possibly caused by dreaming. Don't be alarmed. If low respiratory rates continue to persist, then furher observations are required. If the condition persists long-term, please seek.";
+
+"SleepTrackerSleepScoreViewController_Sleep_19" = "What is the Average Number of Times You Got Out of Bed?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_19" = "Getting up in the night to use the bathroom more frequently than usual may be due to drinking too much water, kidney deficiency or prostate diseases. This may mean that your body is in a state of poor health.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_19" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_19" = "Please try to avoid drinking too much water before sleep. Exercise more often, maintain a light diet and do not sit down for long periods. If you find that you are getting up too often over a long period of time, please seek timely medical advice or treatment.";
+
+"SleepTrackerSleepScoreViewController_Sleep_20" = "What is Weekly Average Rise in Heart Rate?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_20" = "A faster than usual heart rate may be due to overworking, illness, stress or mood swings. As a result, your body may be in poor health this week.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_20" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_20" = "We highly recommend that during this period you maintain a healthy rest and avoid engaging in excessive physical activity. If you start to feel uncomfortable or other symptoms of illness appear, please seek immediate medical attention.";
+
+"SleepTrackerSleepScoreViewController_Sleep_21" = "What is a Rise in Your Weekly Average Respiratory Rate?";
+"SleepTrackerSleepScoreViewController_Sleep_Desc_21" = "The reason that your respiratory rate is faster than usual may be due to respiratory diseases, heart and lung diseases or a change in emotional state. This may mean that your body is in a state of poor health this week.";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_21" = "Sleep Tips";
+"SleepTrackerSleepScoreViewController_Sleep_Tips_Desc_21" = "We highly recommend that during this period you maintain a healthy rest and avoid engaging in excessive physical activity. If you start to feel uncomfortable or other symptoms of illness appear, please seek immediate medical attention.";
+
+
+
+"sleeptracker_user_manual_first" = "1. Arrange the placement of device (It should be under your chest area when you lie down.), so make sure that the best and most accurate sleep tracking is done.";
+"sleeptracker_user_manual_second" = "2. You can view your Sleep Report on the next day by clicking on \"Sync the data\" button in the sleep report page.";
+"humidity" = "Humidity";
+"temperature" = "Temperature";
+"sleepace_sync" = "Sync the data";
+"sleepace_device_banner_url" = "sleeptracker/sleepaceBannerEn";
+"sleepace_device_banner_url_weekly" = "sleeptracker/showSleepLight2En";
+"source" = "Source:";
+
+// smartLightV2
+"smartLightV2" = "Vestel Smart Sleep Light";
+"smartLightV2Description" = "You can control the device by plugging in Vestel Smart Sleep Light and connecting it to Wi-Fi.";
+"smartLightV2Info" = "Thanks to sleep assistant feature of the product, you can sleep more peacefully. With the diverse color options, you can change the ambience.";
+"smartLightV2DeviceId" = "Device ID";
+"smartLightV2ConfigureTime" = "Sync by time zone";
+"smartLightV2Update" = "Firmware Update";
+"smartLightV2FactoryReset" = "Reset factory settings";
+"smartLightV2faq" = "F.A.Q.";
+"smartLightV2faqQ1" = "There is noise coming from the Bluetooth speaker of the Smart Sleep Light, why?";
+"smartLightV2faqQ2" = "Smart Sleep Light has a Bluetooth connection but I can't listen to music, why?";
+"smartLightV2faqQ3" = "After pressing the reset button of the device, the bluetooth connection does not take place, why?";
+"smartLightV2faqQ4" = "Why is the Smart Sleep Light\'s alarm not working?";
+"smartLightV2faqQ5" = "Unable to change alarm ringing volume, why?";
+"smartLightV2faqA1" = "There may be a problem with the connection. Reset the device and try again.";
+"smartLightV2faqA2" = "There may be a problem with the connection or sound settings. Reset the device and try again. Make sure the sound settings are turned on.";
+"smartLightV2faqA3" = "There may be a connection problem. On the smartphone, delete the device(s) from the app, restart the app and pair the device again.";
+"smartLightV2faqA4" = "The volume may be low or the smart alarm may be selected. Make sure the volume is not set to the lowest value in the app setting. If you selected the smart alarm function when setting the alarm,
+        the alarm will not sound at the exact time you set. It rings at the interval you set with the alarm time you set, when your sleep is at its lightest.";
+"smartLightV2faqA5" = "The smartphone may not be connected to the Internet. Make sure the smartphone is connected to the internet.";
+"resetFactorySettings" = "Reset Factory Settings";
+"smartLightV2ResetFactorySettingsDescription" = "Click on minus sign and hold down for 10 seconds. Once 88:88 appears and flashes 3 times on the screen, you can understand that the factory settings are reset. \n\n After resetting your device, you may need to remove the device from the app and reconfigure again.";
+"smartLightV2FirmwareUpdateText" = "New update is available";
+"userManual" = "User Manual";
+"smartLightV2UserManualQ1" = "Turn On/Off Light";
+"smartLightV2UserManualQ2" = "Sleep-Aid Mode";
+"smartLightV2UserManualQ3" = "Adjust Light’s Color";
+"smartLightV2UserManualQ4" = "Adjust Brightness";
+"smartLightV2UserManualQ5" = "Adjust Light-cycling Mode";
+"smartLightV2UserManualQ6" = "Time Settings";
+"smartLightV2UserManualQ7" = "Alarm Setting";
+"smartLightV2UserManualQ8" = "Snooze Mode and Turn Off the Alarm";
+"smartLightV2UserManualQ9" = "Music via Bluetooth";
+"smartLightV2UserManualA1" = "Touch the “Touch Key” on the top to turn on/off the light.";
+"smartLightV2UserManualA2" = "Long touch the “Touch Key” on the top to turn of sleep-aid mode, touch the “Touch Key” again to turn off sleep-aid mode.";
+"smartLightV2UserManualA3" = "• Long press the “Color/Brightness Button” on the bottom for about 2 seconds to enter the light color adjustment mode, the display will show the color code. Short press “+ Button/ - Button” to switch the color in a loop.
+• Long press the “Color/Brightness Button” on the bottom again for 2 seconds, and the display will display the clock.";
+"smartLightV2UserManualA4" = "Turn on the light and press the “Color/Brightness Button” to adjust the brightness -, there are 5 levels of brightness in a loop to switch.";
+"smartLightV2UserManualA5" = "• Long press the “Color/Brightness Button” for about 2 seconds to adjust the light’s color, the display will show the light’s color code. Press “+ Button/ - Button” until Number 10 appears.
+• Long press the “Color/Brightness Button” again for 2 seconds, the light-cycling mode will be activated automatically.";
+"smartLightV2UserManualA6" = "• Press the “Time Button” to switch between 24/12H format. When the LED display shows AM/PM icon, it means 12H format in current.
+• Long press the “Time Button” for 2 seconds, the “Hour” in the LED display will blink, then press the + / - button to set the hour.
+• Press the “Time Button” again, the “Minute” in the LED display will blink press + / - button to set the minute.
+• Long press the “Time Button” for 2 seconds as confirmation, the time setting is finished, and the LED display will stop blinking.";
+"smartLightV2UserManualA7" = "• To set an alarm, please select your wake-up time and ringtone. When the Alarm Icon is shown in the LED display, it means that the alarm is on.
+• Long press the “Alarm Button” for 2 seconds, the “Hour” in the LED display will blink, then press the + / - button to set the hour.
+• Press the “Alarm Button” again, the “Minute” in the LED display will blink, then press the + / - button to set the minute.
+• Press the “Alarm Button” again, the LED display will show the alarm cycle, then press the + / - button to set the alarm cycle.
+• Press the “Alarm Button” again to enter ringtone selection mode, please press the + / - button to select the ringtone.
+• Long press the “Alarm Button” for 2 seconds as confirmation, the alarm setting is finished. The LED display will stop blinking and show the Alarm Icon.
+• Press the “Alarm Button” to turn on/off the alarm.";
+"smartLightV2UserManualA8" = "• Press the “Touch Key” on the top, icons in the LED display will blink and enter the snooze mode. The alarm will ring again in 5 minutes. The device will exit Snooze Mode automatically after 3 times of snoozing and the alarm will not ring again.
+• Long press the “Touch Key”, the icons in the LED display will stop blinking, the alarm is off and will not ring again.";
+"smartLightV2UserManualA9" = "• Turn on the device. Select 'Vestel Smart Sleep Light' from the list of connectable Bluetooth devices of the smartphone. The phone will be connected to Bluetooth.
+• After successful connection, the device will beep, indicating that the Bluetooth speaker is ready for use.
+• You can play all music in the Smart Health app or other music players.";
+"smartLightV2SpeakerBluetoothConnect" = "You can also use speaker feature by connecting Smart Sleep Light product to bluetooth. You can see the product with the name of 'Vestel Smart Sleep Light' in bluetooth connections.";
+"connectBluetooth" = "Connect to Bluetooth";
+"notNow" = "Not now, thanks";
+"smartLightV2LightingSettings" = "Lighting Settings";
+"smartLightV2TimeSettings" = "Clock Hiding Settings";
+"smartLightV2TimeSettingsDescription" = "Allows you to hide the clock on the device.";
+"smartLightV2TimeSettingHide" = "Hide the clock";
+"smartLightV2TimeSettingHidePeriod" = "Hiding period";
+"smartLightV2SleepAssistant" = "Sleep Assistant";
+"smartLightV2SleepAssistantSwitch" = "Sleep assistant";
+"smartLightV2SleepAssistantSettings" = "Sleep assistant settings";
+"smartLightV2SleepAssistantDuration" = "Duration";
+"smartLightV2SleepAssistantDurationText" = "Set the duration of the light and music on.";
+"smartLightV2SleepAssistantDurationButton" = "Sleep assistant duration";
+"smartLightV2Light" = "Lighting";
+"nearestAlarm" = "The Soonest Alarm";
+"adjustTimeShowing" = "Set the time period to hide the clock"; 
+"weekdays" = "Weekday";
+"alarms" = "Alarms";
+"smartLightV2HowToCloseAlarm" = "How to close alarm?";
+"smartLightV2HowToCloseAlarmTitle" = "Snooze Mode";
+"smartLightV2HowToCloseAlarmTitleDescription" = "When the alarm rings, touch the top to enter snooze mode. The alarm will ring again in 5 minutes. After 3 snoozes, the alarm will turn off automatically.";
+"closeAlarm" = "Turn Off the Alarm";
+"closeAlarmDescription" = "After turning on the snooze mode, hold the top to turn off the alarm. If snooze mode is off, the alarm can be turned off by tapping or long touching the top.";
+"firstMusic" = "Morning Song";
+"secondMusic" = "Whispering";
+"thirdMusic" = "Didi";
+"fourthMusic" = "Lazy Morning";
+"fifthMusic" = "Music Box";
+"sixthMusic" = "Spring";
+"alarmSound" = "Alarm volume";
+"musicTitleFirst" = "Relaxing Sounds";
+"musicTitleFirstInfo1" = "Wave";
+"musicTitleFirstInfo2" = "Rain";
+"musicTitleFirstInfo3" = "Fire";
+"musicTitleFirstInfo4" = "Music Box";
+"musicTitleSecond" = "Piano";
+"musicTitleSecondInfo1" = "Memory";
+"musicTitleSecondInfo2" = "Moonlight";
+"musicTitleSecondInfo3" = "Little";
+"musicTitleSecondInfo4" = "Journey";
+"musicTitleThird" = "Lullaby";
+"musicTitleThirdInfo1" = "Flying Leaf";
+"musicTitleThirdInfo2" = "Child’s Song";
+"musicTitleThirdInfo3" = "Lullaby";
+"musicTitleThirdInfo4" = "Starry Sky";
+"musicList" = "Music List";
+"batteryLevel" = "Battery Level: ";
+"battery" = "Battery: ";
+"watchV2connectionError" = "Please check the device connection.";
+"control_smartlightv2_title" = "Control - Vestel Smart Sleep Light";
+
+"wifi_credentials_changing" = "Wi-Fi network is changing";
+"wifi_credentials_change_success" = "Wi-Fi network successfully changed";
+"wifi_credentials_change_failed" = "Unable to change Wi-Fi network";
+"wifi_credentials_change_failed_desc" = "To change the device's Wi-Fi network, Bluetooth must be turned on. Turn on Blueooth from the phone's Settings menu.";
+
+//MARK: -
+//MARK: - IDO ERRORS
+"idoSuccess" = "Operation completed successfully.";
+"idoUnrecoveredError" = "An unexpected device state has been encountered. Please unpair and re-pair the device. If the issue persists, reset the device or contact support for assistance.";
+"idoUnknown" = "An unknown error occurred. Please try again later.";
+"idoNotFound" = "Requested resource not found.";
+"idoNotSupported" = "This feature is not supported on your device.";
+"idoInvalidParameter" = "Invalid parameter provided. Please check your inputs and try again.";
+"idoInvalidState" = "Invalid state detected. Please ensure your device is in the correct state for this operation.";
+"idoInvalidDataLength" = "Invalid data length. Please check the data and try again.";
+"idoInvalidFlags" = "Invalid flags provided. Please check the provided flags and try again.";
+"idoInvalidData" = "Invalid data. Please validate the data and try again.";
+"idoWrongDataSize" = "Wrong data size. Please ensure the correct data size is used.";
+"idoTimeout" = "The operation is taking longer than expected. Please check your connection and try again.";
+"timeoutOperation" = "Operation timeout. Please try again later.";
+"idoTimeoutToast" = "Hold on. Still processing...";
+"idoEmptyData" = "Empty data. Please provide a valid data.";
+"idoForbidden" = "Access denied. You don't have permission to perform this operation.";
+"idoSystemBusy" = "The system is currently busy. Please try again later.";
+"idoBatteryTooLow" = "Battery level is too low. Please charge your device.";
+"idoBluetoothDisconnect" = "Please make sure to switch on/off the Bluetooth and ensure your device is in close proximity to the phone. After doing so, try again.";
+"idoBluetoothDisconnectCurrentOTA" = "Bluetooth connection was lost during OTA. Please ensure a stable Bluetooth connection during OTA updates.";
+"idoBluetoothDisconnectDeviceSyncing" = "Bluetooth connection lost, device is syncing. Please wait for the synchronization process to complete.";
+"idoUnorganizedSpace" = "Unorganized space. Please organize your space and try again.";
+"idoSpaceBeingOrganized" = "Space is currently being organized. Please wait for the space organization process to complete.";
+"idoModelDataError" = "Model data error.";
+"idoCurrentOTA" = "Current OTA operation is in progress.";
+"idoSyncingDeviceError" = "Device synchronization error.";
+"idoWrongAuthCode" = "Incorrect authorization code provided.";
+"idoPairingCancelled" = "Pairing process cancelled.";
+"idoPairingUnknownTimeout" = "Pairing process timed out. Please try again later.";
+"idoPairingReconnectionFailed" = "Pairing reconnection failed.";
+"idoOTAReconnectionFailed" = "OTA reconnection failed.";
+"idoFileNotExist" = "File does not exist.";
+"idoFileTransferFailed" = "File transfer failed.";
+"idoWrongAlarmId" = "Incorrect alarm ID provided.";
+"idoPairingTimeout" = "Pairing process timed out. Please restart the pairing process.";
+"idoConfigError" = "Configuration error. Please check your configuration settings and try again.";
+"idoDataMigrationError" = "Data migration error. Please ensure a valid data migration process.";
+"idoBluetoothPairingError" = "Bluetooth pairing error. Please check your Bluetooth pairing settings.";
+"idoDeviceNotBound" = "Device is not bound. Please connect your device to proceed.";
+"idoGPSRunning" = "GPS is in progress. Please wait until the GPS process is completed.";
+"idoSyncItemError" = "Synchronization item error. Please check the item and try again.";
+"idoTransferringFileError" = "File transfer error. Please check the file and try again.";
+"idoMethodDeprecated" = "This method is deprecated. Please use an alternative method.";
+"idoWrongAlarmName" = "Incorrect alarm name provided. Please provide a valid alarm name.";
+"idoEncryptedAuthCode" = "Encrypted authorization code. Please provide the correct authorization code.";
+"idoWriteDataError" = "Data writing error.";
+"idoSyncDataEmptyError" = "Sync data is empty.";
+"idoSyncGPSDataEmptyError" = "Sync GPS data is empty.";
+//MARK: - IDO ERRORS - WATCHFACE
+"idoWatchfaceFeatureUnsupported" = "This watch does not support the watchface feature. Please upgrade your watch to the latest model to access this feature.";
+"idoWatchfaceLoadError" = "Failed to sync watchfaces from your smartwatch. Please check the connection and try again.";
+"idoWatchfaceInstallError" = "Unable to install the watchface on your smartwatch. Please reset the watch and try again. If the problem persists, contact support for further assistance.";
+"idoWatcheNotEnoughSpaceError" = "Your watch does not have enough space to install the new watchface. Please delete an existing watchface or reset the watch to proceed.";
+"idoWFInitializing" = "Initializing...";
+"idoWFCheckingSpace" = "Checking Space...";
+"idoWFCleanupSpace" = "Cleanup Space...";
+"idoWFDownloading" = "Downloading Watchface...";
+"idoWFTransferring" = "Transferring Watchface...";
+"idoWFActivating" = "Activating Watchface...";
+"idoWFInstalled" = "Watchface installed successfully.";
