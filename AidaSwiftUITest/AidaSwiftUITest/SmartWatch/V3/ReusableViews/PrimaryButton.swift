@@ -52,8 +52,8 @@ struct PrimaryButton: View {
 
 #Preview {
     VStack {
-        PrimaryButton(title: "Primary", state: .primary, borderColor: nil)
-        PrimaryButton(title: "Active", state: .active, borderColor: .black)
+        PrimaryButton(title: .localized(.remove_device), state: .primary, borderColor: nil)
+        PrimaryButton(title: .localized(.update), state: .active, borderColor: .black)
         PrimaryButton(title: "Inactive", state: .inactive, borderColor: nil)
     }
     .padding()

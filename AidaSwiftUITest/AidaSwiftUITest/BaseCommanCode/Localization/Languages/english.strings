@@ -1555,11 +1555,12 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 "firmwareUpdate" = "Firmware Update";
 "deviceInfo" = "Device Info";
 "charging" = "Charging...";
+"watchv3_deviceinfo_macAddress" = "Mac Address";
 
-//MARK: - Firmware
-"buttonLabel" = "Remove Device";
-"updatebuttonLabel" = "Update";
-
+"watchv3_deviceinfo_firmwareVersion" = "Firmware Version";
+"watchv3_deviceinfo_resourcePackVersion" = "Resource Pack version";
+"watchv3_deviceinfo_deviceLanguageVersion" = "Device Language Version";
+"watchv3_deviceinfo_currentVersion" = "Current Version";
 //MARK: - V3 Features
 
 //MARK: Calls

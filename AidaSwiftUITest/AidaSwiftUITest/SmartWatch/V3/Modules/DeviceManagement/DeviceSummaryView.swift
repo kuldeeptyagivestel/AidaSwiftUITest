@@ -9,7 +9,7 @@
 import SwiftUI
 ///Device Summary View Header UI
 extension SmartWatch.V3.DeviceManagement {
-    //MARK: - WatchSummaryView
+    //MARK: - Device Summary View
     struct DeviceSummaryView: View {
         let imageName: String
         let deviceState: String

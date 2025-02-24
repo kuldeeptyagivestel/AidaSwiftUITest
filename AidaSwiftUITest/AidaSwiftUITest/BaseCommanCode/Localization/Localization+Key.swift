@@ -1456,10 +1456,11 @@ public enum LocalizationKey: String {
     case firmwareUpdate
     case deviceInfo
     case charging
-    //MARK: - Firmware
-    case buttonLabel
-    case updatebuttonLabel
-    
+    case watchv3_deviceinfo_macAddress
+    case watchv3_deviceinfo_firmwareVersion
+    case watchv3_deviceinfo_resourcePackVersion
+    case watchv3_deviceinfo_deviceLanguageVersion
+    case watchv3_deviceinfo_currentVersion
     //MARK: - V3 Features
     
     //MARK: Calls

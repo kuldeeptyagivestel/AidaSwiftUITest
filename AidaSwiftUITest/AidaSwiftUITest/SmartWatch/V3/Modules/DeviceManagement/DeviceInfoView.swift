@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+///Device Info View Screen UI
 extension SmartWatch.V3.DeviceManagement {
     //MARK: - DeviceInfo  View
     struct DeviceInfoView: View {
@@ -13,36 +14,38 @@ extension SmartWatch.V3.DeviceManagement {
         @ObservedObject var viewModel: DeviceManagementViewModel  // ViewModel injected via navigation
         @Binding var deviceInfoSummary: DeviceInfoSummary
         var body: some View {
-            GeometryReader { geometry in
                 ScrollView(.vertical, showsIndicators: true) {
-                    VStack(alignment: .leading,spacing: 0) {
+                    // spacing is used to reduce the spaces in cell.
+                    VStack(alignment: .leading, spacing: 0) {
                         HStack{
                             Image("smartwatchv3/bigDeviceImage")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        }.frame(height:340)
+                                .frame(width: 325, height: 203)
+                        }.frame(width:UIScreen.main.bounds.width,height:250)
                             .background(
                                 LinearGradient(
                                     gradient: Gradient(colors: [
-                                        Color.gradientStartColor,Color.gradientEndColor
+                                        Color.gradientStartColor, Color.gradientEndColor
                                     ]),
                                     startPoint: .top,
                                     endPoint: .bottom
                                 )
                             )
-                        InfoCell(text:"Model no" , info: $viewModel.deviceInfoSummary.deviceName)
-                        InfoCell(text:"Bluetooth name" , info: $viewModel.deviceInfoSummary.bluetoothName)
-                        InfoCell(text:"Mac address" , info: $viewModel.deviceInfoSummary.macAddress)
-                        InfoCell(text:"Device data update time" , info: $viewModel.deviceInfoSummary.deviceDataUpdateTime)
-                        Text("")
-                        InfoCell(text:"Firmware version" , info: $viewModel.deviceInfoSummary.version)
-                        InfoCell(text:"Resource pack version" , info: $viewModel.deviceInfoSummary.version)
-                        InfoCell(text:"Device language version" , info: $viewModel.deviceInfoSummary.version)
+                        Group{
+                            InfoCell(text: .localized(.watchv2_deviceinfo_modelno), info: $viewModel.deviceInfoSummary.deviceName)
+                            InfoCell(text: .localized(.watchv2_deviceinfo_blename), info: $viewModel.deviceInfoSummary.bluetoothName)
+                            InfoCell(text: .localized(.watchv3_deviceinfo_macAddress), info: $viewModel.deviceInfoSummary.macAddress)
+                            InfoCell(text:.localized(.watchv2_deviceinfo_updatetime) , info: $viewModel.deviceInfoSummary.deviceDataUpdateTime)
+                            Text("")
+                            InfoCell(text:.localized(.watchv3_deviceinfo_firmwareVersion), info: $viewModel.deviceInfoSummary.version)
+                            InfoCell(text:.localized(.watchv3_deviceinfo_resourcePackVersion), info: $viewModel.deviceInfoSummary.version)
+                            InfoCell(text:.localized(.watchv3_deviceinfo_deviceLanguageVersion), info: $viewModel.deviceInfoSummary.version)
+                        }
                         Spacer()
+                            
                     }
                 }
-            }
         }
     }
 }

@@ -14,10 +14,9 @@ extension SmartWatch.V3.DeviceManagement {
     struct UpdateFirmwareView: View {
         @EnvironmentObject var navigation: NavigationCoordinator
         @ObservedObject var viewModel: DeviceManagementViewModel  // ViewModel injected via navigation
-        @State private var updateAvailable: Bool = true
+        @State private var updateAvailable: Bool = false
         
         var body: some View {
-            GeometryReader { geometry in
                 VStack{
                     // Header
                     HStack {
@@ -33,7 +32,8 @@ extension SmartWatch.V3.DeviceManagement {
                                 .font(.custom(.muli, style: .bold, size: 18))
                                 .fontWeight(.bold)
                                 .foregroundColor(.black)
-                            Text("Current Version: \(viewModel.deviceFirmwareVersion)")
+                            
+                            Text("\(.localized(.watchv3_deviceinfo_currentVersion)): \(viewModel.deviceFirmwareVersion)")
                                 .font(.custom(.muli, style: .regular, size: 15))
                                 .foregroundColor(Color.labelSecondary)
                         }
@@ -94,14 +94,15 @@ extension SmartWatch.V3.DeviceManagement {
                         Spacer.height(UIScreen.main.bounds.height - 405)
                     }
                     if updateAvailable{
-                        PrimaryButton(title:.localized(.update), state: .active, borderColor: Color.buttonColor)
+                        PrimaryButton(title:.localized(.update), state: .primary, borderColor: Color.buttonColor)
                     }else{
-                        PrimaryButton(title: .localized(.update), state: .inactive, borderColor: Color.buttonColor)
+                        PrimaryButton(
+                            title: .localized(.update),
+                            state: .inactive, borderColor: Color.disableButton)
                     }
                     Spacer()
                 }
                 .background(Color.scrollViewBgColor)
-            }
         }
     }
 }

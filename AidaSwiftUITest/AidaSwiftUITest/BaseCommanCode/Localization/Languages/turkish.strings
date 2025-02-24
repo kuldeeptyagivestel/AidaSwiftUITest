@@ -1577,9 +1577,12 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "deviceInfo" = "Cihaz Bilgileri";
 "charging" = "Şarj ediliyor...";
 
-//MARK: - Firmware
-"buttonLabel" = "Cihazı Kaldır";
-"updatebuttonLabel" = "Güncelleme";
+"watchv3_deviceinfo_macAddress" = "Mac Address";
+
+"watchv3_deviceinfo_firmwareVersion" = "Ürün Yazılımı Sürümü";
+"watchv3_deviceinfo_resourcePackVersion" = "Kaynak Paketi sürümü";
+"watchv3_deviceinfo_deviceLanguageVersion" = "Aygıt Dili Sürümü";
+"watchv3_deviceinfo_currentVersion" = "Güncel Sürüm";
 
 //MARK: - V3 Features
 

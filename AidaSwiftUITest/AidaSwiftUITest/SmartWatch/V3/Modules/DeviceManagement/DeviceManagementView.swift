@@ -18,18 +18,29 @@ extension SmartWatch.V3.DeviceManagement {
         var body: some View {
             GeometryReader { geometry in
                 VStack(spacing:0) {
-                    DeviceSummaryView( imageName: "smartwatchv3/deviceImage", deviceState:.localized(.charging),deviceSummary: $viewModel.deviceSummary)
-                    Text("")
-                    FeatureCellWithVersion(featureTitle: $viewModel.deviceFirmware, version: $viewModel.deviceFirmwareVersion, isNew: $viewModel.deviceFirmwareTag)
-                    FeatureCell(featureTitle: $viewModel.deviceDeviceInfo)
-                    Text("")
-                    ForEach($viewModel.deviceFeature, id: \.self) { feature in
-                        FeatureCell(featureTitle: feature) { tappedFeature in
-                            print("Tapped feature: \(tappedFeature)")
+                    DeviceSummaryView(
+                        imageName: "smartwatchv3/deviceImage", deviceState:.localized(.charging),
+                        deviceSummary: $viewModel.deviceSummary)
+                    Group{
+                        Text("")
+                        
+                        FeatureCellWithVersion(
+                            featureTitle: $viewModel.deviceFirmware,
+                            version: $viewModel.deviceFirmwareVersion,
+                            isNew: $viewModel.deviceFirmwareTag)
+                        
+                        FeatureCell(featureTitle: $viewModel.deviceDeviceInfo)
+                        
+                        Text("")
+                        
+                        ForEach($viewModel.deviceFeature, id: \.self) { feature in
+                            FeatureCell(featureTitle: feature) { tappedFeature in
+                                print("Tapped feature: \(tappedFeature)")
+                            }
                         }
                     }
                     Spacer()
-                    PrimaryButton(title:.localized(.buttonLabel), state: .primary, borderColor: Color.buttonColor)
+                    PrimaryButton(title:.localized(.remove_device), state: .primary, borderColor: Color.buttonColor)
                     Spacer()
                 }.background(Color.scrollViewBgColor)
             }
