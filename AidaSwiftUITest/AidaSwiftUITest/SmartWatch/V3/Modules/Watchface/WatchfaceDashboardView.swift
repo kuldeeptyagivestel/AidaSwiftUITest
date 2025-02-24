@@ -14,19 +14,44 @@ extension SmartWatch.V3.Watchfaces {
     struct WatchfaceDashboardView: View {
         @EnvironmentObject var navigation: NavigationCoordinator
         @ObservedObject var viewModel: WatchfaceViewModel  // ViewModel injected via navigation
-
+        @State private var selectedTab = 0
+            let tabs = [String.localized(.market), String.localized(.photo), String.localized(.my_library)]
         var body: some View {
-            VStack {
-                Text("📄 Watch Face Dashboard").font(.largeTitle)
-                
-                Button("Update Watch Face") {
-                    viewModel.updateWatchFace()
-                }
-
-                Button("Go Back") {
-                    navigation.pop()
+            VStack{
+                TitleBarView(selectedTabIndex: $selectedTab, tabs: tabs)
+                ScrollView{
+                    FeatureCell(featureTitle: $viewModel.allFaces)
+                    WatchV3WatchfaceShowcaseView(
+                        watchfaces: $viewModel.watchfaces,
+                        title: .localized(.new_arrivals),
+                        cellSize: Watchface.Preview.size(for: .v3),
+                        cornerRadius: Watchface.Preview.radius(for: .v3)
+                    )
+                    Divider()
+                    WatchV3WatchfaceShowcaseView(
+                        watchfaces: $viewModel.watchfaces,
+                        title: .localized(.dynamic),
+                        cellSize: Watchface.Preview.size(for: .v3),
+                        cornerRadius: Watchface.Preview.radius(for: .v3)
+                    )
+                    Divider()
+                    WatchV3WatchfaceShowcaseView(
+                        watchfaces: $viewModel.watchfaces,
+                        title: .localized(.simple),
+                        cellSize: Watchface.Preview.size(for: .v3),
+                        cornerRadius: Watchface.Preview.radius(for: .v3)
+                    )
+                    .padding(.top, 8)
                 }
             }
         }
+    }
+}
+
+
+struct Previews_WatchfaceDashboardView: PreviewProvider {
+    static var previews: some View {
+        let rootViewModel = WatchV3WatchfaceViewModel()
+        SmartWatch.V3.Watchfaces.WatchfaceDashboardView(viewModel: rootViewModel)
     }
 }

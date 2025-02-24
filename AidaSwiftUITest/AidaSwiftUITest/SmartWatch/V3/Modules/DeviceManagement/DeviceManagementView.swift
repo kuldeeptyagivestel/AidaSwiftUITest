@@ -29,13 +29,12 @@ extension SmartWatch.V3.DeviceManagement {
                             version: $viewModel.deviceFirmwareVersion,
                             isNew: $viewModel.deviceFirmwareTag)
                         
-                        FeatureCell(featureTitle: $viewModel.deviceDeviceInfo)
                         
                         Text("")
                         
-                        ForEach($viewModel.deviceFeature, id: \.self) { feature in
-                            FeatureCell(featureTitle: feature) { tappedFeature in
-                                print("Tapped feature: \(tappedFeature)")
+                        ForEach($viewModel.deviceFeature, id: \.self) { $feature in
+                            FeatureCell(featureTitle: $feature) {
+                                print("Tapped feature: \(feature)")
                             }
                         }
                     }
@@ -48,40 +47,6 @@ extension SmartWatch.V3.DeviceManagement {
     }
 }
 
-extension SmartWatch.V3.DeviceManagement {
-    fileprivate struct FeatureCell: View {
-        @Binding var featureTitle: String
-        var onFeatureTap: ((String) -> Void)?
-        
-        var body: some View {
-            VStack(alignment: .center, spacing: 0) {
-                HStack{
-                    Text(featureTitle)
-                        .font(.custom(.muli, style: .bold, size: 17))
-                        .foregroundColor(Color.labelPrimary)
-                    Spacer()
-
-                    Image(systemName: "arrow.right")
-                        .foregroundColor(Color.cellNavigationArrowColor)
-                        .onTapGesture {
-                            
-                        }
-                }
-                .padding(.horizontal)
-                .frame(height: 48)
-                .background(
-                    RoundedRectangle(cornerRadius: 0)
-                        .fill(Color.white)
-                        .shadow(color: Color.black.opacity(0.1), radius: 6, x: 0, y: 2)
-                )
-                // Custom full-width divider
-                Divider().background(Color.brown)
-            }
-            
-        }
-    }
- 
-}
 extension SmartWatch.V3.DeviceManagement {
     fileprivate struct FeatureCellWithVersion: View {
         @Binding var featureTitle: String

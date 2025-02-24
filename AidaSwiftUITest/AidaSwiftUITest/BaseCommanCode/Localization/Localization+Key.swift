@@ -1461,6 +1461,10 @@ public enum LocalizationKey: String {
     case watchv3_deviceinfo_resourcePackVersion
     case watchv3_deviceinfo_deviceLanguageVersion
     case watchv3_deviceinfo_currentVersion
+    case allFaces
+    case dynamic
+    case simple
+    case custom_watchFace_desc
     //MARK: - V3 Features
     
     //MARK: Calls

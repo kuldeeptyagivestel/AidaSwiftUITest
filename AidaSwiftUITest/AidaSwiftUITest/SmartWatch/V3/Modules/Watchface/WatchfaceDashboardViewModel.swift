@@ -29,7 +29,8 @@ extension SmartWatch.V3.Watchfaces {
         //MARK: Instance Properties
         @Published var title: String = "Watch Face"
         @Published var watchFaceName: String = "Default Face"
-        
+        @Published var allFaces : String = .localized(.allFaces)
+        @Published var watchfaces: [CloudWatchfaceItem] = CloudWatchfaceItem.mock
         //MARK: Life Cycle Methods
         init() {
             

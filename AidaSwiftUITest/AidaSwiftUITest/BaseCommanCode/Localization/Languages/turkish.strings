@@ -1583,7 +1583,10 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "watchv3_deviceinfo_resourcePackVersion" = "Kaynak Paketi sürümü";
 "watchv3_deviceinfo_deviceLanguageVersion" = "Aygıt Dili Sürümü";
 "watchv3_deviceinfo_currentVersion" = "Güncel Sürüm";
-
+"allFaces" = "Bütün Yüzler";
+"dynamic" = "Dinamik";
+"simple" = "Basit";
+"custom_watchFace_desc" = "Saat kadranı görselleri temsilidir, gerçek ürün farklılık gösterebilir.";
 //MARK: - V3 Features
 
 //MARK: Calls
