@@ -31,15 +31,5 @@ extension SmartWatch.V3.DeviceLanguage {
         init() {
             
         }
-        
-        //MARK: -  Protocol Methods: Identifiable, Equatable
-        static func == (lhs: DeviceLanguageViewModel, rhs: DeviceLanguageViewModel) -> Bool {
-            //TODO: Need to implement
-            return true
-        }
-        
-        func hash(into hasher: inout Hasher) {
-            //TODO: Need to implement
-        }
     }
 }

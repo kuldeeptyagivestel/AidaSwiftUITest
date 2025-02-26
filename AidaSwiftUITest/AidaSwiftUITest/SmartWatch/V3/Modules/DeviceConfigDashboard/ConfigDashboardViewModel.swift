@@ -63,18 +63,6 @@ extension SmartWatch.V3.DeviceConfigDashboard {
         
         deinit { }
         
-        //MARK: -  Protocol Methods: Identifiable, Equatable
-        static func == (lhs: ConfigDashboardViewModel, rhs: ConfigDashboardViewModel) -> Bool {
-            //TODO: Need to implement
-            return true
-        }
-        
-        // Implement the Hashable protocol
-        func hash(into hasher: inout Hasher) {
-            // Combine the hash values of your properties
-            //TODO: Need to implement
-        }
-        
         // MARK: - Data Fetching
         func fetchData() {
             // Simulated data fetching and updates

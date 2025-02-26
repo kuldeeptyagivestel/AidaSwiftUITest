@@ -36,16 +36,6 @@ extension SmartWatch.V3.Watchfaces {
             
         }
 
-        //MARK: -  Protocol Methods: Identifiable, Equatable
-        static func == (lhs: WatchfaceViewModel, rhs: WatchfaceViewModel) -> Bool {
-            return lhs.watchFaceName == rhs.watchFaceName
-        }
-
-        func hash(into hasher: inout Hasher) {
-            hasher.combine(watchFaceName)
-            //TODO: Need to implement
-        }
-
         func updateWatchFace() {
             watchFaceName = "Updated Face"
         }

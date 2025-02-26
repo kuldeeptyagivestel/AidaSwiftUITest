@@ -58,15 +58,6 @@ extension SmartWatch.V3.DeviceManagement {
             fetchData()
         }
 
-        //MARK: -  Protocol Methods: Identifiable, Equatable
-        static func == (lhs: DeviceManagementViewModel, rhs: DeviceManagementViewModel) -> Bool {
-            //TODO: Need to implement
-            return true
-        }
-
-        func hash(into hasher: inout Hasher) {
-            //TODO: Need to implement
-        }
         // MARK: - Data Fetching
         func fetchData() {
             // Simulated data fetching and updates
