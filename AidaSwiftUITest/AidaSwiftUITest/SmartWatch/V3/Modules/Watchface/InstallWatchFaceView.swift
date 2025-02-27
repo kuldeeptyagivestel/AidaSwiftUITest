@@ -13,7 +13,7 @@ extension SmartWatch.V3.Watchfaces {
         let cornerRadius: CGFloat
         let sidePadding: CGFloat = 5
         @State var watchfaces: [CloudWatchfaceItem] = CloudWatchfaceItem.mock  // Updated to @Binding
-        @State private var addToFavourite: Bool = false
+        @State private var addToFavourite: Bool = true
         var body: some View {
             VStack{
                 VStack(alignment:.leading){
@@ -50,7 +50,7 @@ extension SmartWatch.V3.Watchfaces {
                 Spacer()
                 if addToFavourite{
                     PrimaryButton(title: .localized(.set_current), state: .primary, borderColor: Color.buttonColor)
-                    PrimaryButton(title: .localized(.delete), state: .inactive, borderColor: Color.popupButtonBorderColor)
+                    PrimaryButton(title: .localized(.delete), state: .active, borderColor: Color.popupButtonBorderColor)
                 }else{
                     PrimaryButton(title: .localized(.add_and_install), state: .primary, borderColor: Color.buttonColor)
                 }

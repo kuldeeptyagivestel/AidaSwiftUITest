@@ -1587,6 +1587,14 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "dynamic" = "Dinamik";
 "simple" = "Basit";
 "custom_watchFace_desc" = "Saat kadranı görselleri temsilidir, gerçek ürün farklılık gösterebilir.";
+"selectFromAlbum" = "Albümden seç";
+"watchFaceRecords" = "Saat yüzü kayıtları";
+"favorites" = "Favoriler";
+"installedWatchFaces" = "Yüklü saat yüzü";
+"builtinWatchFaces" = "Yerleşik saat yüzü";
+"takeAPhoto" = "Fotoğraf çek";
+"selectTextColor" = "Metin Rengi Seç";
+"selectTextLocation" = "Metin Konumu Seç";
 //MARK: - V3 Features
 
 //MARK: Calls

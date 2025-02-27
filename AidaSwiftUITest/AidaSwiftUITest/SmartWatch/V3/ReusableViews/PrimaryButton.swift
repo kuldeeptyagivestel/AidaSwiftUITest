@@ -41,10 +41,10 @@ struct PrimaryButton: View {
                 .padding()
                 .background(backgroundColor)
                 .foregroundColor(foregroundColor)
-                .cornerRadius(10)
+                .cornerRadius(8)
                 .overlay(
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(borderColor ?? .clear, lineWidth: borderColor == nil ? 0 : 2)
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(borderColor ?? .clear, lineWidth: borderColor == nil ? 0 : 1)
                 )
         }
     }

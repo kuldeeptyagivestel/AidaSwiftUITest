@@ -25,7 +25,8 @@ struct FeatureCell: View {
                         onFeatureTap?() // Trigger the tap action
                     }
             }
-            .padding(.horizontal)
+            .padding(.leading,10)
+            .padding(.trailing,15)
             .frame(height: 48)
             .background(
                 RoundedRectangle(cornerRadius: 0)

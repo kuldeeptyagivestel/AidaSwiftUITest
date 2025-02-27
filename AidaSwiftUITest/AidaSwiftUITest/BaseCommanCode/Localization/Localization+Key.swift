@@ -1465,6 +1465,14 @@ public enum LocalizationKey: String {
     case dynamic
     case simple
     case custom_watchFace_desc
+    case selectFromAlbum
+    case watchFaceRecords
+    case favorites
+    case installedWatchFaces
+    case builtinWatchFaces
+    case takeAPhoto
+    case selectTextColor
+    case selectTextLocation
     //MARK: - V3 Features
     
     //MARK: Calls

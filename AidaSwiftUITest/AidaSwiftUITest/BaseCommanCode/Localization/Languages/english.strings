@@ -1208,7 +1208,7 @@ If none of the above mentioned solutions work, please restart the device and the
 "watchv2_nointernet_desc" = "Please check your internet settings and try again.";
 "watchv2_camera" = "Camera";
 "watchv2_gallery" = "Gallery";
-"watchv2_photoselect" = "Select photo...";
+"watchv2_photoselect" = "Select photo";
 "watchv2_warning" = "Warning";
 "watchv2_cameranotfound" = "Camera not found!";
 "watchv2_cropphoto" = "Crop photo";
@@ -1565,6 +1565,14 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 "dynamic" = "Dynamic";
 "simple" = "Simple";
 "custom_watchFace_desc" = "Watch face images are illustrative, actual product may vary.";
+"selectFromAlbum" = "Select from album";
+"watchFaceRecords" = "Watch face records";
+"favorites" = "Favorites";
+"installedWatchFaces" = "Installed watch face";
+"builtinWatchFaces" = "Built-in watch face";
+"takeAPhoto" = "Take a photo";
+"selectTextColor" = "Select Text Color";
+"selectTextLocation" = "Select Text Location";
 //MARK: - V3 Features
 
 //MARK: Calls

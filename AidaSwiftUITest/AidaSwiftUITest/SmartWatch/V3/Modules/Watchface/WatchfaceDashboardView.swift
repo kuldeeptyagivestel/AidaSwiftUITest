@@ -15,33 +15,37 @@ extension SmartWatch.V3.Watchfaces {
         @EnvironmentObject var navigation: NavigationCoordinator
         @ObservedObject var viewModel: WatchfaceViewModel  // ViewModel injected via navigation
         @State private var selectedTab = 0
-            let tabs = [String.localized(.market), String.localized(.photo), String.localized(.my_library)]
+        let tabs = [String.localized(.market), String.localized(.photo), String.localized(.my_library)]
+        
         var body: some View {
             VStack{
                 TitleBarView(selectedTabIndex: $selectedTab, tabs: tabs)
                 ScrollView{
-                    FeatureCell(featureTitle: $viewModel.allFaces)
-                    WatchV3WatchfaceShowcaseView(
-                        watchfaces: $viewModel.watchfaces,
-                        title: .localized(.new_arrivals),
-                        cellSize: Watchface.Preview.size(for: .v3),
-                        cornerRadius: Watchface.Preview.radius(for: .v3)
-                    )
-                    Divider()
-                    WatchV3WatchfaceShowcaseView(
-                        watchfaces: $viewModel.watchfaces,
-                        title: .localized(.dynamic),
-                        cellSize: Watchface.Preview.size(for: .v3),
-                        cornerRadius: Watchface.Preview.radius(for: .v3)
-                    )
-                    Divider()
-                    WatchV3WatchfaceShowcaseView(
-                        watchfaces: $viewModel.watchfaces,
-                        title: .localized(.simple),
-                        cellSize: Watchface.Preview.size(for: .v3),
-                        cornerRadius: Watchface.Preview.radius(for: .v3)
-                    )
-                    .padding(.top, 8)
+                    VStack(spacing: 0){
+                        
+                        FeatureCell(featureTitle: $viewModel.allFaces)
+                        WatchV3WatchfaceShowcaseView(
+                            watchfaces: $viewModel.watchfaces,
+                            title: .localized(.new_arrivals),
+                            cellSize: Watchface.Preview.size(for: .v3),
+                            cornerRadius: Watchface.Preview.radius(for: .v3)
+                        )
+                        Divider()
+                        WatchV3WatchfaceShowcaseView(
+                            watchfaces: $viewModel.watchfaces,
+                            title: .localized(.dynamic),
+                            cellSize: Watchface.Preview.size(for: .v3),
+                            cornerRadius: Watchface.Preview.radius(for: .v3)
+                        )
+                        Divider()
+                        WatchV3WatchfaceShowcaseView(
+                            watchfaces: $viewModel.watchfaces,
+                            title: .localized(.simple),
+                            cellSize: Watchface.Preview.size(for: .v3),
+                            cornerRadius: Watchface.Preview.radius(for: .v3)
+                        )
+                        .padding(.top, 8)
+                    }
                 }
             }
         }

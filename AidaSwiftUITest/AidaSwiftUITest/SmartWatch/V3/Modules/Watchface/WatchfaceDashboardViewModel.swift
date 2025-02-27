@@ -28,9 +28,31 @@ extension SmartWatch.V3.Watchfaces {
     class WatchfaceViewModel: ViewModel {
         //MARK: Instance Properties
         @Published var title: String = "Watch Face"
+        
         @Published var watchFaceName: String = "Default Face"
+        
         @Published var allFaces : String = .localized(.allFaces)
+        @Published var watchFaceRecords : String = .localized(.watchFaceRecords)
+        @Published var favorites : String = .localized(.favorites)
         @Published var watchfaces: [CloudWatchfaceItem] = CloudWatchfaceItem.mock
+        
+        @Published var features: [Feature] = [
+            Feature(title: .localized(.selectFromAlbum)),
+            Feature(title: .localized(.takeAPhoto))
+            ]
+        @Published var colors: [Color] = [
+            .white,
+            .pink,
+            .orange,
+            .blue,
+            .purple,
+            .brown,
+            .orange,
+            .blue,
+            .green,
+            .white,
+            .pink,
+            .orange]
         //MARK: Life Cycle Methods
         init() {
             
@@ -49,5 +71,11 @@ extension SmartWatch.V3.Watchfaces {
         func updateWatchFace() {
             watchFaceName = "Updated Face"
         }
+    }
+}
+//MARK: - UI MODELS
+extension SmartWatch.V3.Watchfaces {
+    internal struct Feature {
+        var title: String
     }
 }

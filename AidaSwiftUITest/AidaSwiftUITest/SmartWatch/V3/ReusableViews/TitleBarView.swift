@@ -12,30 +12,37 @@ struct TitleBarView: View {
     let tabs: [String]
     
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(alignment: .center, spacing: 20) { // Adjust spacing if needed
-                ForEach(tabs.indices, id: \.self) { index in
-                    VStack {
-                        Text(tabs[index])
-                            .font(.custom(.muli, size: 16))
-                            .fontWeight(selectedTabIndex == index ? .bold : .semibold)
-                            .foregroundColor(selectedTabIndex == index ? Color.buttonColor : .gray)
-                            .onTapGesture {
-                                selectedTabIndex = index
+        GeometryReader { geometry in
+            HStack {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(alignment: .center, spacing: 20) {
+                        ForEach(tabs.indices, id: \.self) { index in
+                            VStack {
+                                Text(tabs[index])
+                                    .font(.custom(.muli, size: 16))
+                                    .fontWeight(selectedTabIndex == index ? .bold : .semibold)
+                                    .foregroundColor(selectedTabIndex == index ? Color.buttonColor : Color.labelSecondary)
+                                    .onTapGesture {
+                                        selectedTabIndex = index
+                                    }
+                                
+                                Rectangle()
+                                    .fill(selectedTabIndex == index ? Color.buttonColor : Color.clear)
+                                    .frame(width:58,height: 5)
                             }
-                        
-                        Rectangle()
-                            .fill(selectedTabIndex == index ? Color.buttonColor : Color.clear)
-                            .frame(height: 4)
+                        }
                     }
+                    .frame(width: geometry.size.width - 90) // Ensuring 30pts padding on both sides
                 }
+                .frame(height: 50)
             }
-            .frame(maxWidth: .infinity, alignment: .center) // Ensures centering
-            .padding(.horizontal, 20) // Adjust padding as needed
+            .frame(width: geometry.size.width, alignment: .center)
+            .padding(.horizontal, 30) // Adds 30pts padding on leading & trailing
         }
-        .frame(height: 50)
+        .frame(height: 50) // Maintain a consistent height
     }
 }
+
 
 #Preview {
     @State var selectedTab = 0
