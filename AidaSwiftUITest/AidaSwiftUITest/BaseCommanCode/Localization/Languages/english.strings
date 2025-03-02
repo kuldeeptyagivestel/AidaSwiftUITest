@@ -631,6 +631,7 @@
 "warning" = "Warning";
 "info" = "Info";
 "alert" = "Alert";
+"importantUpdate" = "Important Update";
 "alert_no_user_found" = "No user found with the email and password";
 "incorrect_email_and_pass" = "E-mail or password is incorrect please try again or reset your password";
 "confirm_email_title" = "Unactivated account";

@@ -17,7 +17,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
             HStack(spacing: 4) {
                 Text("\(batteryPercentage)%")
                     .font(.custom(.muli, style: .regular, size: 15))
-                    .foregroundColor(Color.labelPrimary)
+                    .foregroundColor(Color.lblPrimary)
 
                 BatteryIconView(percentage: batteryPercentage)
                     .frame(width: 25, height: 14)

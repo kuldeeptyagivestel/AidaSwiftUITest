@@ -514,6 +514,7 @@ public enum LocalizationKey: String {
     case warning
     case info
     case alert
+    case importantUpdate
     case alert_no_user_found
     case incorrect_email_and_pass
     case confirm_email_title

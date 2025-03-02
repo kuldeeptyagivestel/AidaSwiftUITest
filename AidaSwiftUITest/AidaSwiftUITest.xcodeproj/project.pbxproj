@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		321771402D681D48009EF4E7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3217713F2D681D48009EF4E7 /* Kingfisher */; };
+		32B06FAA2D71D09600C4C626 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 32B06FA92D71D09600C4C626 /* Kingfisher */; };
+		32F3DB2E2D7373EF00E2928A /* KRProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 32F3DB2D2D7373EF00E2928A /* KRProgressHUD */; };
+		32F3DB312D73749700E2928A /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 32F3DB302D73749700E2928A /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				321771402D681D48009EF4E7 /* Kingfisher in Frameworks */,
+				32F3DB312D73749700E2928A /* Toast in Frameworks */,
+				32F3DB2E2D7373EF00E2928A /* KRProgressHUD in Frameworks */,
+				32B06FAA2D71D09600C4C626 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +87,9 @@
 			);
 			name = AidaSwiftUITest;
 			packageProductDependencies = (
-				3217713F2D681D48009EF4E7 /* Kingfisher */,
+				32B06FA92D71D09600C4C626 /* Kingfisher */,
+				32F3DB2D2D7373EF00E2928A /* KRProgressHUD */,
+				32F3DB302D73749700E2928A /* Toast */,
 			);
 			productName = AidaSwiftUITest;
 			productReference = 321771212D67967A009EF4E7 /* AidaSwiftUITest.app */;
@@ -114,7 +120,9 @@
 			mainGroup = 321771182D67967A009EF4E7;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				3217713E2D681D48009EF4E7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				32B06FA82D71D09600C4C626 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				32F3DB2C2D7373EF00E2928A /* XCRemoteSwiftPackageReference "KRProgressHUD" */,
+				32F3DB2F2D73749700E2928A /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 321771222D67967A009EF4E7 /* Products */;
@@ -273,11 +281,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"AidaSwiftUITest/Preview Content\"";
 				DEVELOPMENT_TEAM = AF99KPBK4G;
 				ENABLE_PREVIEWS = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/AidaSwiftUITest/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -310,7 +319,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AidaSwiftUITest/Preview Content\"";
 				DEVELOPMENT_TEAM = AF99KPBK4G;
 				ENABLE_PREVIEWS = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/AidaSwiftUITest/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -357,21 +366,47 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3217713E2D681D48009EF4E7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		32B06FA82D71D09600C4C626 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 8.2.0;
 			};
 		};
+		32F3DB2C2D7373EF00E2928A /* XCRemoteSwiftPackageReference "KRProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krimpedance/KRProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.4.8;
+			};
+		};
+		32F3DB2F2D73749700E2928A /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3217713F2D681D48009EF4E7 /* Kingfisher */ = {
+		32B06FA92D71D09600C4C626 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3217713E2D681D48009EF4E7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = 32B06FA82D71D09600C4C626 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		32F3DB2D2D7373EF00E2928A /* KRProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32F3DB2C2D7373EF00E2928A /* XCRemoteSwiftPackageReference "KRProgressHUD" */;
+			productName = KRProgressHUD;
+		};
+		32F3DB302D73749700E2928A /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32F3DB2F2D73749700E2928A /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

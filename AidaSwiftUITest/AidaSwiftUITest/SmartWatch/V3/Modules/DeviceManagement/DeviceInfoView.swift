@@ -60,12 +60,12 @@ extension SmartWatch.V3.DeviceManagement {
                 HStack{
                     Text(text)
                         .font(.custom(.muli, style: .bold, size: 17))
-                        .foregroundColor(Color.labelPrimary)
+                        .foregroundColor(Color.lblPrimary)
                     Text(":")
-                        .foregroundColor(Color.labelPrimary)
+                        .foregroundColor(Color.lblPrimary)
                     Text(info)
                         .font(.custom(.muli, style: .bold, size: 17))
-                        .foregroundColor(Color.labelPrimary)
+                        .foregroundColor(Color.lblPrimary)
                 }
                 .padding()
                 Divider()

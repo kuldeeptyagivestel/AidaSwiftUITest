@@ -9,7 +9,7 @@
 import SwiftUI
 
 extension Color {
-    static let themeColor = Color(#colorLiteral(red: 1, green: 0.4705882353, blue: 0.1921568627, alpha: 1))
+    static let themeColor = Color(#colorLiteral(red: 0.9969399571, green: 0.4133140743, blue: 0.126126498, alpha: 1)) //FE6920
     
     //MARK: Table, Cells BG Colors
     static let cellBgColor = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1))
@@ -17,14 +17,17 @@ extension Color {
     static let scrollViewBgColor = Color(#colorLiteral(red: 0.9607843137, green: 0.9607843137, blue: 0.9607843137, alpha: 1)) //F5F5F5: Off White
     
     //MARK:  Button Colors
-    static let buttonColor = Color(#colorLiteral(red: 1, green: 0.4705882353, blue: 0.1921568627, alpha: 1))
-    static let secondaryButtonColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+    static let btnBgColor = Color(#colorLiteral(red: 0.9969399571, green: 0.4133140743, blue: 0.126126498, alpha: 1))
+    static let btnTitleColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+    static let btnSecondaryBgColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+    static let btnSecondaryTitleColor = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1))
+    static let btnSecondaryBorderColor = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1))
 
     static let disableButton = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1))
     
     //MARK: -  Navigation Bar Colors
-    static let backButtonItem = Color(#colorLiteral(red: 1, green: 0.4705882353, blue: 0.1921568627, alpha: 1))
-    static let navigationTitle = Color(#colorLiteral(red: 1, green: 0.4705882353, blue: 0.1921568627, alpha: 1))
+    static let backButtonItem = Color(#colorLiteral(red: 0.9969399571, green: 0.4133140743, blue: 0.126126498, alpha: 1))
+    static let navigationTitle = Color(#colorLiteral(red: 0.9969399571, green: 0.4133140743, blue: 0.126126498, alpha: 1))
     
     //MARK: - Tag Color
     static let tagColor = Color(#colorLiteral(red: 0.8470588235, green: 0.1215686275, blue: 0.1490196078, alpha: 1))
@@ -33,7 +36,7 @@ extension Color {
     static let cellColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
     
     //MARK:  Toggle Colors
-    static let toggleOnColor = Color(#colorLiteral(red: 1, green: 0.4705882353, blue: 0.1921568627, alpha: 1))
+    static let toggleOnColor = Color(#colorLiteral(red: 0.9969399571, green: 0.4133140743, blue: 0.126126498, alpha: 1))
     static let toggleOffColor = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1))
     
     //MARK: - Title Colors
@@ -45,8 +48,8 @@ extension Color {
     static let batteryIcon = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1))
     
     //MARK:  Label Colors
-    static let labelPrimary = Color(#colorLiteral(red: 0.2392156863, green: 0.231372549, blue: 0.231372549, alpha: 1))
-    static let labelSecondary = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1))
+    static let lblPrimary = Color(#colorLiteral(red: 0.2392156863, green: 0.231372549, blue: 0.231372549, alpha: 1))
+    static let lblSecondary = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1))
     static let disabledColor = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1))
     
     //MARK:  Description Colors
@@ -55,25 +58,25 @@ extension Color {
 
     //MARK:  Popup Colors
     static let popupBGColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
-    static let popupButtonBorderColor = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1))
-    static let popupLabelPrimary = Color(#colorLiteral(red: 0.2392156863, green: 0.231372549, blue: 0.231372549, alpha: 1))
-    static let popupLabelSecondary = Color(#colorLiteral(red: 0.2392156863, green: 0.231372549, blue: 0.231372549, alpha: 1))
-    static let popupLabelTertiary = Color(#colorLiteral(red: 0.2392156863, green: 0.231372549, blue: 0.231372549, alpha: 1))
-    static let progressColor = Color(#colorLiteral(red: 1, green: 0.4705882353, blue: 0.1921568627, alpha: 1))
+    static let popupLblPrimary = Color(#colorLiteral(red: 0.03921568627, green: 0.03921568627, blue: 0.03921568627, alpha: 1))
+    static let popupLblSecondary = Color(#colorLiteral(red: 0.03921568627, green: 0.03921568627, blue: 0.03921568627, alpha: 1))
+    static let popupLblTertiary = Color(#colorLiteral(red: 0.03921568627, green: 0.03921568627, blue: 0.03921568627, alpha: 1))
+    static let progressColor = Color(#colorLiteral(red: 0.9969399571, green: 0.4133140743, blue: 0.126126498, alpha: 1))
     static let crossButtonColor = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1))
-    static let textSelectionBorder = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1))
     
     //MARK:  Selection and Removal Color
-    static let checkMarkColor = Color(#colorLiteral(red: 1, green: 0.4705882353, blue: 0.1921568627, alpha: 1))
-    static let radioSelectionColor = Color(#colorLiteral(red: 1, green: 0.4705882353, blue: 0.1921568627, alpha: 1))
+    static let checkMarkColor = Color(#colorLiteral(red: 0.9969399571, green: 0.4133140743, blue: 0.126126498, alpha: 1))
+    static let radioSelectionColor = Color(#colorLiteral(red: 0.9969399571, green: 0.4133140743, blue: 0.126126498, alpha: 1))
     
     static let removeColor = Color(#colorLiteral(red: 1, green: 0.2705882353, blue: 0.2274509804, alpha: 1))
     static let addColor = Color(#colorLiteral(red: 0.1960784314, green: 0.8431372549, blue: 0.2941176471, alpha: 1))
     
     //MARK:  Gradient Colors
-    
     static let gradientStartColor = Color(#colorLiteral(red: 0.9764705882, green: 0.8588235294, blue: 0.8039215686, alpha: 1))
     static let gradientEndColor = Color(#colorLiteral(red: 1, green: 0.9529411765, blue: 1, alpha: 1))
+    
+    //MARK: Picker Colors
+    static let pickerSelectorColor = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1))
 }
 
 //MARK: - HEX/RGBA CONVERSION

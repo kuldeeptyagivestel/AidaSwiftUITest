@@ -21,13 +21,13 @@ struct TitleBarView: View {
                                 Text(tabs[index])
                                     .font(.custom(.muli, size: 16))
                                     .fontWeight(selectedTabIndex == index ? .bold : .semibold)
-                                    .foregroundColor(selectedTabIndex == index ? Color.buttonColor : Color.labelSecondary)
+                                    .foregroundColor(selectedTabIndex == index ? Color.lblPrimary : Color.lblSecondary)
                                     .onTapGesture {
                                         selectedTabIndex = index
                                     }
                                 
                                 Rectangle()
-                                    .fill(selectedTabIndex == index ? Color.buttonColor : Color.clear)
+                                    .fill(selectedTabIndex == index ? Color.btnBgColor : Color.clear)
                                     .frame(width:58,height: 5)
                             }
                         }
@@ -44,8 +44,8 @@ struct TitleBarView: View {
 }
 
 
-#Preview {
-    @State var selectedTab = 0
-        let tabs = [String.localized(.market), String.localized(.photo), String.localized(.my_library)]
-    TitleBarView(selectedTabIndex: $selectedTab, tabs: tabs)
-}
+//#Preview {
+//    @State var selectedTab = 0
+//        let tabs = [String.localized(.market), String.localized(.photo), String.localized(.my_library)]
+//    TitleBarView(selectedTabIndex: $selectedTab, tabs: tabs)
+//}

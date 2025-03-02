@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftUI
+import KRProgressHUD
 
 ///Device Config Dashboard Screen UI
 extension SmartWatch.V3.DeviceConfigDashboard {
@@ -57,9 +58,106 @@ extension SmartWatch.V3.DeviceConfigDashboard {
                 ForEach($features, id: \.title) { $feature in
                     FeatureCell(feature: $feature) { tappedFeature in
                         print("Tapped feature: \(tappedFeature.title)")
+                        
+                       // ToastManager.shared.show(message: "You can add up to 20 contacts to your watch.", duration: 3.0, position: .bottom)
+                        
+                       // KRProgressHUD.show()
+                       // KRProgressHUD.show(withMessage: "Loading...")
+                    
+                        
+//                        let model = Popup.SingleTextField(
+//                            title: "Alarm Name",
+//                            placeholder: "Alarm Name",
+//                            preset: .string("Kuldeep"),
+//                            onMainAction: { selectedOption in
+//                                guard let selectedOption else { return }
+//                                
+//                                if case let .string(text) = selectedOption {
+//                                    print("TEXT: \(selectedOption.displayText) TEXT: \(text)")
+//                                }
+//                            })
+                        
+                       // Popup.show(model, animationType: .fromTop, priority: .highest)
+                        
+                       // Popup.show(singleTextField: model)
+                        
+//                        let model = Popup.Info(
+//                            icon: "popup/connectionFailed",
+//                            title: "Are you sure you want to reset the device to factory settings?",
+//                            desc: "To reconnect with the device, you need to unpair the device on your phone's Bluetooth settings. To do this, you can follow these steps:"
+//                        )
+//                        Popup.Presenter.shared.show(model, animationType: .fade, priority: .highest)
+////                        
+                      
+                        
+//                                icon: "popup/connectionFailed",
+//                                title: "Reset Device 3rd",
+//                                cancelBtnTitle: "Reset",
+//                                onCancel: {
+//                                    print("Cancel button tapped")
+//                                }
+                        
+//                        let model1 = Popup.Alert(
+//                            icon: "popup/connectionFailed",
+//                            title: "Are you sure you want to reset the device to factory settings?",
+//                            desc: "To reconnect with the device, you need to unpair the device on your phone's Bluetooth settings. To do this, you can follow these steps:",
+//                            cancelBtnTitle: "Reset my Settings",
+//                            onCancel: {
+//                                print("Cancel button tapped")
+//                            }
+//                        )
+//                        Popup.Presenter.shared.show(model1, animationType: .fromTop, priority: .high)
+                        
+//                        let model3 = Popup.Custom(
+//                            title: "The device successfully reset to factory settings"
+//                        )
+//                        Popup.Presenter.shared.show(model3, animationType: .fromTop, priority: .high)
+
+
+                        let steps = [
+                            "Ensure that the device and your phone have a stable internet and Bluetooth connection.",
+                            "Verify that the device has enough space. Delete an existing watch face if needed.",
+                            "Upgrade the device to the latest model.",
+                            "If the issue persists, try restarting the device."
+                        ]
+                        
+//                        let model1 = Popup.InstructionAlert(
+//                            //icon: "popup/connectionFailed",
+//                           // title: "The device successfully reset to factory settings",
+//                           // desc: "To reconnect with the device, you need to unpair the device on your phone's Bluetooth settings. To do this, you can follow these steps:",
+//                            steps: steps
+//                        )
+//                        Popup.Presenter.shared.show(model1, animationType: .fromTop, priority: .high)
+
+//                        let model3 = Popup.Confirmation(
+//                            icon: "popup/connectionFailed",
+//                            title: "The device successfully reset to factory settings",
+//                            desc: "To reconnect with the device, you need to unpair the device on your phone's Bluetooth settings. To do this, you can follow these steps:",
+//                            mainBtnTitle: "Reset Device"
+//                        )
+//                        Popup.showAlert(
+//                            icon: "popup/connectionFailed",
+//                            title:  "The device successfully reset to factory settings",
+//                            desc: "To reconnect with the device, you need to unpair the device on your phone's Bluetooth settings. To do this, you can follow these steps:"
+//                        )
+                    
+                                  
+//                        let model = Popup.StandardPicker(
+//                            title: "Select Time",
+//                            cancelBtnTitle: "Cancel",
+//                            mainBtnTitle: "OK",
+//                            preset: Date(), // Pass preset as Any?
+//                            onMainAction: { selectedTime in
+//                                if let time = selectedTime as? Date {
+//                                    print("Time selected: \(time)")
+//                                }
+//                            }
+//                        )
+//                        
+//                        Popup.Presenter.shared.show(model, animationType: .fromTop, priority: .high)
                     }
                 }
-            }
+            } 
             .background(Color.cellColor)
         }
     }

@@ -39,7 +39,13 @@ extension SmartWatch.V3.DeviceManagement {
                         }
                     }
                     Spacer()
-                    PrimaryButton(title:.localized(.remove_device), state: .primary, borderColor: Color.buttonColor)
+                    SmartButton(
+                        title: .localized(.remove_device),
+                        style: .primary,
+                        action: {
+                            print("Button tapped!")
+                        }
+                    )
                     Spacer()
                 }.background(Color.scrollViewBgColor)
             }
@@ -58,7 +64,7 @@ extension SmartWatch.V3.DeviceManagement {
                 HStack{
                     Text(featureTitle)
                         .font(.custom(.muli, style: .bold, size: 17))
-                        .foregroundColor(Color.labelPrimary)
+                        .foregroundColor(Color.lblPrimary)
                     Spacer()
                     
                     SmartWatch.V3.DeviceConfigDashboard.FirmwareVersionView(version: $version, isNew: $isNew)

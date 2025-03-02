@@ -38,10 +38,10 @@ extension SmartWatch.V3.Watchfaces {
                             VStack(alignment:.leading){
                                 Text(watchfaces.first!.localizedTitle)
                                     .font(.custom(.muli, style: .bold, size: 16))
-                                    .foregroundColor(Color.labelPrimary)
+                                    .foregroundColor(Color.lblPrimary)
                                 Text(watchfaces.first!.localizedDesc)
                                     .font(.custom(.openSans, style: .regular, size: 15))
-                                    .foregroundColor(Color.labelPrimary)
+                                    .foregroundColor(Color.lblPrimary)
                                     .padding(.top, 8)
                                 Spacer()
                             }
@@ -55,7 +55,7 @@ extension SmartWatch.V3.Watchfaces {
                         )
                         Text(String.localized(.watchv2_photoselect))
                             .font(.custom(.muli, style: .semibold, size: 15))
-                            .foregroundColor(Color.labelPrimary)
+                            .foregroundColor(Color.lblPrimary)
                             .padding()
                         ForEach($viewModel.features, id: \.title) { $feature in
                             FeatureCell(featureTitle: $feature.title)
@@ -63,7 +63,7 @@ extension SmartWatch.V3.Watchfaces {
                         Text("")
                         Text(String.localized(.selectTextColor))
                             .font(.custom(.muli, style: .semibold, size: 15))
-                            .foregroundColor(Color.labelPrimary)
+                            .foregroundColor(Color.lblPrimary)
                             .padding()
                         // text color scrolling
                         TextColorScrolling()
@@ -73,7 +73,7 @@ extension SmartWatch.V3.Watchfaces {
                         VStack(alignment: .leading, spacing: 10) {
                             Text(String.localized(.selectTextLocation))
                                 .font(.custom(.muli, style: .semibold, size: 15))
-                                .foregroundColor(Color.labelPrimary)
+                                .foregroundColor(Color.lblPrimary)
                                 .padding(.horizontal)
                             HStack(spacing: 10) {
                                 ForEach(0..<4) { index in
@@ -109,7 +109,7 @@ extension SmartWatch.V3.Watchfaces {
                             )
                         }
                     }
-                    PrimaryButton(title: .localized(.add_and_install), state: .primary, borderColor: Color.buttonColor)
+                    //PrimaryButton(title: .localized(.add_and_install), state: .primary, borderColor: Color.buttonColor)
                 }
                 
             }
@@ -149,7 +149,7 @@ struct TextColorScrolling: View {
                                 Circle().stroke(
                                     selectedColor == color
                                         ? Color.radioSelectionColor
-                                        : (color == .white ? Color.labelSecondary : Color.clear),
+                                        : (color == .white ? Color.lblSecondary : Color.clear),
                                     lineWidth: color == .white ? 1 : 3
                                 )
                             )

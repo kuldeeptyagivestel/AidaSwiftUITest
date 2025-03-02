@@ -25,7 +25,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
                 VStack(alignment: .leading, spacing: 12) {
                     // Device Name
                     Text(watchSummary.deviceName)
-                        .foregroundColor(Color.labelPrimary)
+                        .foregroundColor(Color.lblPrimary)
                         .font(.custom(.muli, style: .bold, size: 19))
                         .lineLimit(1)
 
@@ -36,7 +36,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
                         
                         Text("•")
                             .font(.custom(.muli, style: .bold, size: 14))
-                            .foregroundColor(Color.labelSecondary)
+                            .foregroundColor(Color.lblSecondary)
                             .padding(.leading, 5)
 
                         // Firmware Version

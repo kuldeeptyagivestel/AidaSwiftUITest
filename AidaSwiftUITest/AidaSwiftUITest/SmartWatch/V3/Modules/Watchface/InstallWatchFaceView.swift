@@ -12,8 +12,10 @@ extension SmartWatch.V3.Watchfaces {
         let cellSize: CGSize
         let cornerRadius: CGFloat
         let sidePadding: CGFloat = 5
+        
         @State var watchfaces: [CloudWatchfaceItem] = CloudWatchfaceItem.mock  // Updated to @Binding
-        @State private var addToFavourite: Bool = true
+        @State private var addToFavourite: SmartButton.State = .enabled
+        
         var body: some View {
             VStack{
                 VStack(alignment:.leading){
@@ -38,22 +40,23 @@ extension SmartWatch.V3.Watchfaces {
                     VStack(alignment:.leading){
                         Text(watchfaces.first!.localizedTitle)
                             .font(.custom(.muli, style: .bold, size: 16))
-                            .foregroundColor(Color.labelPrimary)
+                            .foregroundColor(Color.lblPrimary)
                             .padding(.leading)
                         Text(watchfaces.first!.localizedDesc)
                             .font(.custom(.openSans, style: .regular, size: 15))
-                            .foregroundColor(Color.labelPrimary)
+                            .foregroundColor(Color.lblPrimary)
                             .padding(.horizontal)
                             .padding(.top, 8)
                     }
                 }
                 Spacer()
-                if addToFavourite{
-                    PrimaryButton(title: .localized(.set_current), state: .primary, borderColor: Color.buttonColor)
-                    PrimaryButton(title: .localized(.delete), state: .active, borderColor: Color.popupButtonBorderColor)
-                }else{
-                    PrimaryButton(title: .localized(.add_and_install), state: .primary, borderColor: Color.buttonColor)
-                }
+                
+//                if addToFavourite{
+//                    PrimaryButton(title: .localized(.set_current), state: .primary, borderColor: Color.btnBgColor)
+//                    PrimaryButton(title: .localized(.delete), state: .inactive, borderColor: Color.btnSecondaryBorderColor)
+//                }else{
+//                    PrimaryButton(title: .localized(.add_and_install), state: .primary, borderColor: Color.btnBgColor)
+//                }
                 
                 Spacer()
                 

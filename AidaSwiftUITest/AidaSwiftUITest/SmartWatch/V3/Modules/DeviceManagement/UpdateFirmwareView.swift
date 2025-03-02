@@ -14,7 +14,7 @@ extension SmartWatch.V3.DeviceManagement {
     struct UpdateFirmwareView: View {
         @EnvironmentObject var navigation: NavigationCoordinator
         @ObservedObject var viewModel: DeviceManagementViewModel  // ViewModel injected via navigation
-        @State private var updateAvailable: Bool = false
+        @State private var updateAvailable: SmartButton.State = .enabled
         
         var body: some View {
                 VStack{
@@ -35,7 +35,7 @@ extension SmartWatch.V3.DeviceManagement {
                             
                             Text("\(.localized(.watchv3_deviceinfo_currentVersion)): \(viewModel.deviceFirmwareVersion)")
                                 .font(.custom(.muli, style: .regular, size: 15))
-                                .foregroundColor(Color.labelSecondary)
+                                .foregroundColor(Color.lblSecondary)
                         }
                         Spacer()
                     }
@@ -49,8 +49,8 @@ extension SmartWatch.V3.DeviceManagement {
                     )
                     .padding(.bottom,10)
                     
-// Condition for the update available or updated
-                    if updateAvailable{
+                    // Condition for the update available or updated
+                    if updateAvailable == .enabled {
                         VStack{
                             VStack(alignment: .leading){
                                 Text("  New version is available:(\(viewModel.deviceFirmwareVersion))")
@@ -61,7 +61,7 @@ extension SmartWatch.V3.DeviceManagement {
                                     .padding(.bottom,2)
                                 Text(" • Fixed bugs")
                                     .font(.custom(.muli, style: .regular, size: 14))
-                                    .foregroundColor(Color.labelPrimary)
+                                    .foregroundColor(Color.lblPrimary)
                                     .padding(.bottom,2)
                             }
                             .frame(maxWidth: UIScreen.main.bounds.width - 40)
@@ -80,7 +80,7 @@ extension SmartWatch.V3.DeviceManagement {
                             .padding(8)
                         }
                         Spacer()
-                    }else{
+                    } else {
                         VStack{
                             Text("Firmware is already up to date")
                                 .font(.custom(.muli, style: .bold, size: 16))
@@ -93,13 +93,15 @@ extension SmartWatch.V3.DeviceManagement {
                                 .shadow(color: Color.black.opacity(0.1), radius: 6, x: 0, y: 2))
                         Spacer.height(UIScreen.main.bounds.height - 405)
                     }
-                    if updateAvailable{
-                        PrimaryButton(title:.localized(.update), state: .primary, borderColor: Color.buttonColor)
-                    }else{
-                        PrimaryButton(
-                            title: .localized(.update),
-                            state: .inactive, borderColor: Color.disableButton)
-                    }
+                    
+                    SmartButton(
+                        title: .localized(.update),
+                        style: .primary,
+                        state: $updateAvailable,
+                        action: {
+                            print("Button tapped!")
+                        }
+                    )
                     Spacer()
                 }
                 .background(Color.scrollViewBgColor)

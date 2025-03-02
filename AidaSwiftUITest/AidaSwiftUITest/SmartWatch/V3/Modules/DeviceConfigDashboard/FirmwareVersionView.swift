@@ -19,7 +19,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
                 HStack(spacing: 8) {
                     Text("V\(version)")
                         .font(.custom(.muli, style: .regular, size: 15))
-                        .foregroundColor(Color.labelPrimary)
+                        .foregroundColor(Color.lblPrimary)
 
                     Spacer().frame(width: 35) // Reserve space for "NEW" tag
                 }

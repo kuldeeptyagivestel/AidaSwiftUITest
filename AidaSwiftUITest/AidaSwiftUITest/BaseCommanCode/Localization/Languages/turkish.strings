@@ -572,6 +572,7 @@
 "warning" = "Uyarı";
 "info" = "Bilgi";
 "alert" = "Uyarı";
+"importantUpdate" = "Önemli Güncelleme";
 "alert_no_user_found" = "Girdiğiniz email ve şifre ile kullancı bulunamadı";
 "incorrect_email_and_pass" = "Girdiğiniz email veya şifre yanlış lütfen tekrar deneyiniz ya da şifrenizi sıfırlayınız";
 "confirm_email_title" = "Aktive edilmemiş hesap";

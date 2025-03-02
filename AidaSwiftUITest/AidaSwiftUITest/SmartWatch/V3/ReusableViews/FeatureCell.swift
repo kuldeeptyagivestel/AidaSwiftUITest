@@ -16,7 +16,7 @@ struct FeatureCell: View {
             HStack {
                 Text(featureTitle)
                     .font(.custom(.muli, style: .bold, size: 17))
-                    .foregroundColor(Color.labelPrimary)
+                    .foregroundColor(Color.lblPrimary)
                 Spacer()
 
                 Image(systemName: "arrow.right")

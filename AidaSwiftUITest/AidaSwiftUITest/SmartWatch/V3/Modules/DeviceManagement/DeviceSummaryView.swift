@@ -27,7 +27,7 @@ extension SmartWatch.V3.DeviceManagement {
                 VStack(alignment: .leading, spacing: 12) {
                     // Device Name
                     Text(deviceSummary.deviceName)
-                        .foregroundColor(Color.labelPrimary)
+                        .foregroundColor(Color.lblPrimary)
                         .font(.custom(.muli, style: .bold, size: 19))
                         .lineLimit(1)
 
@@ -38,13 +38,13 @@ extension SmartWatch.V3.DeviceManagement {
                         
                         Text("•")
                             .font(.custom(.muli, style: .regular, size: 16))
-                            .foregroundColor(Color.labelSecondary)
+                            .foregroundColor(Color.lblSecondary)
                             .padding(.leading, 5)
 
                         // Device state
                         Text(deviceState)
                             .font(.custom(.muli, style: .regular, size: 16))
-                            .foregroundColor(Color.labelSecondary)
+                            .foregroundColor(Color.lblSecondary)
                         Spacer()
                     }
                 }
