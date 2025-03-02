@@ -8,7 +8,6 @@
 
 import Foundation
 import SwiftUI
-import KRProgressHUD
 
 ///Device Config Dashboard Screen UI
 extension SmartWatch.V3.DeviceConfigDashboard {
@@ -59,10 +58,20 @@ extension SmartWatch.V3.DeviceConfigDashboard {
                     FeatureCell(feature: $feature) { tappedFeature in
                         print("Tapped feature: \(tappedFeature.title)")
                         
-                       // ToastManager.shared.show(message: "You can add up to 20 contacts to your watch.", duration: 3.0, position: .bottom)
+                        
+                        ToastHUD.show(message: "You can add up to 20 contacts to your watch....", duration: 3.0, position: .bottom)
+                      //  ToastHUD.show(message: "Please wait, syncing...", duration: 3.0, position: .bottom)
+                        
                         
                        // KRProgressHUD.show()
                        // KRProgressHUD.show(withMessage: "Loading...")
+                        
+//                        KRProgressHUD.show(hideAfter: 15) { isVisible in
+//                            ///Update UI if timeout occurred.
+//                            if isVisible {
+//                                print("isVISIBLE: HIDDEN")
+//                            }
+//                        }
                     
                         
 //                        let model = Popup.SingleTextField(
