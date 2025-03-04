@@ -21,25 +21,29 @@ import SwiftUI
 //MARK: - PROGRESS BAR
 struct ProgressBar: View {
     var progress: Double
+    private let size: CGSize = CGSize(width: 280, height: 16)
 
     var body: some View {
         ZStack(alignment: .leading) {
             // Background Pipe (Gray Tube)
             RoundedRectangle(cornerRadius: 20)
-                .frame(width: 280, height: 14) // Adjust height for a pipe-like effect
-                .foregroundColor(Color(.systemGray5))
+                .frame(width: size.width, height: size.height) // Adjust height for a pipe-like effect
+                .foregroundStyle(LinearGradient(
+                    gradient: Gradient(colors: [Color.fromHex("#F4F5F6"), Color.fromHex("#F3F3F3")]),
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                ))
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.white.opacity(0.5), lineWidth: 1)
-                        .blur(radius: 1)
+                        .stroke(Color.fromHex("##979797").opacity(0.3), lineWidth: 1)
                 )
-                .shadow(color: Color.black.opacity(0.1), radius: 2, x: 0, y: 2)
+                .shadow(color: Color.black.opacity(1.0), radius: 2, x: 0, y: 0.5)
 
             // Progress Fill (Simulates Liquid Flowing in Pipe)
             RoundedRectangle(cornerRadius: 20)
-                .frame(width: CGFloat(progress) * 2.8, height: 14)
+                .frame(width: CGFloat(progress) * 2.8, height: size.height)
                 .foregroundStyle(LinearGradient(
-                    gradient: Gradient(colors: [Color.themeColor.opacity(0.9), Color.themeColor]),
+                    gradient: Gradient(colors: [Color.themeColor.opacity(0.95), Color.themeColor]),
                     startPoint: .topLeading,
                     endPoint: .bottomTrailing
                 ))
@@ -48,18 +52,17 @@ struct ProgressBar: View {
                     RoundedRectangle(cornerRadius: 20)
                         .stroke(LinearGradient(
                             gradient: Gradient(colors: [
-                                Color.white.opacity(0.8), // Top highlight
+                                Color.black.opacity(0.1), // Top highlight
                                 Color.clear // No stroke at bottom
                             ]),
                             startPoint: .top,
                             endPoint: .bottom
-                        ), lineWidth: 3)
-                        .blur(radius: 1)
+                        ), lineWidth: 4)
                 )
-                .shadow(color: Color.black.opacity(0.15), radius: 3, x: 0, y: 1) // Soft depth shadow
+                .shadow(color: Color.black.opacity(1.0), radius: 2, x: -8, y: 0.5) // Soft depth shadow
                 .animation(.easeInOut(duration: 0.4), value: progress) // Smooth animation
         }
-        .frame(width: 280, height: 14)
+        .frame(width: size.width, height: size.height)
         .clipShape(RoundedRectangle(cornerRadius: 20)) // Ensures rounded edges
     }
 }
@@ -96,3 +99,4 @@ struct ProgressBar_Previews: PreviewProvider {
         ProgressBar_Preview()
     }
 }
+
