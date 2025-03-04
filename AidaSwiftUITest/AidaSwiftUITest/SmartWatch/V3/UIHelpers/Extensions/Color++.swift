@@ -58,7 +58,7 @@ extension Color {
 
     //MARK:  Popup Colors
     static let popupBGColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
-    static let popupLblPrimary = Color(#colorLiteral(red: 0.03921568627, green: 0.03921568627, blue: 0.03921568627, alpha: 1))
+    static let popupLblPrimary = Color(#colorLiteral(red: 0.03921568627, green: 0.03921568627, blue: 0.03921568627, alpha: 1)) //#0A0A0A
     static let popupLblSecondary = Color(#colorLiteral(red: 0.03921568627, green: 0.03921568627, blue: 0.03921568627, alpha: 1))
     static let popupLblTertiary = Color(#colorLiteral(red: 0.03921568627, green: 0.03921568627, blue: 0.03921568627, alpha: 1))
     static let progressColor = Color(#colorLiteral(red: 0.9969399571, green: 0.4133140743, blue: 0.126126498, alpha: 1))

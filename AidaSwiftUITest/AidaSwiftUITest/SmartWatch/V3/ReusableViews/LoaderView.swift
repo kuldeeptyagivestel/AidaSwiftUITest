@@ -7,7 +7,12 @@
 
 import SwiftUI
 
+/*
+ 🕰 Animated Clock Loader  █
+   - A circular clock with two rotating needles.
+ */
 // MARK: - Loader View
+///Clock with animated needles
 internal struct LoaderView: View {
     @Binding var isVisible: Bool
 
@@ -79,6 +84,52 @@ private struct AnimatedClockLoadingView: View {
             // Start rotation on view load
             rotateShortNeedle = true
             rotateLongNeedle = true
+        }
+    }
+}
+
+//MARK: - PREVIEW
+struct LoaderView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoaderPreviewWrapper()
+    }
+}
+
+// Wrapper to preview the loader with toggle functionality
+struct LoaderPreviewWrapper: View {
+    @State private var isVisible = true
+
+    var body: some View {
+        ZStack {
+            Color.black.opacity(0.1) // Background to make loader stand out
+                .ignoresSafeArea()
+            
+            VStack {
+                LoaderView(isVisible: $isVisible)
+                    .frame(width: 100, height: 100, alignment: .center)
+                    .cornerRadius(15)
+                
+                SmartWatch.V3.Watchfaces.WatchfaceCell(
+                    title: "Preview",
+                    imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w65.gif?alt=media&token=a90ed96b-4754-4671-a249-a8e0db5ae15a"),
+                    size: Watchface.Preview.size(for: .v3), // Configurable size
+                    cornerRadius: Watchface.Preview.radius(for: .v3) // Configurable corner radius
+                )
+                
+                Button(action: {
+                    withAnimation {
+                        isVisible.toggle()
+                    }
+                }) {
+                    Text(isVisible ? "Hide Loader" : "Show Loader")
+                        .font(.headline)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .clipShape(Capsule())
+                }
+                .padding(.top, 50)
+            }
         }
     }
 }
