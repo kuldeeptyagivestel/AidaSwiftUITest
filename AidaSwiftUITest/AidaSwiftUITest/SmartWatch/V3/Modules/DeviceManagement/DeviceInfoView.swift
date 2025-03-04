@@ -49,8 +49,9 @@ extension SmartWatch.V3.DeviceManagement {
         }
     }
 }
-//MARK: - FeatureCell
+//MARK: - Info Cell
 extension SmartWatch.V3.DeviceManagement {
+    //// created to store information
     fileprivate struct InfoCell: View {
         let text: String
         @Binding var info: String

@@ -1600,6 +1600,8 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 
 //MARK: Calls
 "calls" = "Aramalar";
+"incomingCallAlert" = "Gelen Çağrı Uyarısı";
+"frequentContacts" = "Sık Görüşülen Kişiler";
 
 //MARK: Notifications
 "notifications" = "Bildirimler";

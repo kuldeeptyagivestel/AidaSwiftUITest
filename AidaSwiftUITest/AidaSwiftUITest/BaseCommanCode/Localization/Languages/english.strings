@@ -1578,7 +1578,8 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 
 //MARK: Calls
 "calls" = "Calls";
-
+"incomingCallAlert" = "Incoming Call Alert";
+"frequentContacts" = "Frequent Contacts";
 //MARK: Notifications
 "notifications" = "Notifications";
 

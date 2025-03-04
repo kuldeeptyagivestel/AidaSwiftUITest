@@ -55,11 +55,12 @@ extension SmartWatch.V3.DeviceConfigDashboard {
         
         var body: some View {
             // Feature List using ScrollView & ForEach
-            VStack() {
+            VStack(spacing:0) {
                 ///We did not use list becuase list is not working well with scrollview
                 ForEach($features, id: \.title) { $feature in
-                    FeatureCell(feature: $feature) { tappedFeature in
-                        print("Tapped feature: \(tappedFeature.title)")
+                    FeatureCell(featureTitle: feature.title, type: feature.type,onTap:
+                    {
+                        print("Tapped feature: \(feature.title)")
                         
                         
                         ToastHUD.show(message: "You can add up to 20 contacts to your watch....", duration: 3.0, position: .bottom)
@@ -172,7 +173,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
 //                        )
 //                        
 //                        Popup.Presenter.shared.show(model, animationType: .fromTop, priority: .high)
-                    }
+                    })
                 }
             } 
             .background(Color.cellColor)
@@ -187,9 +188,9 @@ extension SmartWatch.V3.DeviceConfigDashboard {
                 // Feature List using ScrollView & ForEach
                 VStack(spacing: 0) {
                     ForEach($features, id: \.title) { $feature in
-                        FeatureCell(feature: $feature) { tappedFeature in
-                            print("Tapped feature: \(tappedFeature.title)")
-                        }
+                        FeatureCell(featureTitle: feature.title, type: feature.type, onTap:  {
+                            print("Tapped feature: \(feature.title)")
+                        })
                     }
                 }
                 .background(Color.cellColor)
@@ -198,55 +199,6 @@ extension SmartWatch.V3.DeviceConfigDashboard {
         }
     }
 }
-
-//MARK: - FeatureCell
-extension SmartWatch.V3.DeviceConfigDashboard {
-    fileprivate struct FeatureCell: View {
-        @Binding var feature: Feature
-        var onFeatureTap: ((Feature) -> Void)?
-        
-        var body: some View {
-            VStack(alignment: .center) {
-                
-                Spacer()
-                
-                HStack() {
-                    Text(feature.title)
-                        .font(.custom(.muli, style: .bold, size: 17))
-                    
-                    Spacer()
-                    
-                    switch feature.type {
-                    case .switchable(let value):
-                        Toggle("", isOn: Binding(
-                            get: { value },
-                            set: { newValue in
-                                feature.type = .switchable(value: newValue)
-                            }
-                        ))
-                        .toggleStyle(ToggleSwitchStyle())
-                        .labelsHidden()
-                        
-                    case .navigable:
-                        Image(systemName: "arrow.right")
-                            .foregroundColor(Color.cellNavigationArrowColor)
-                            .onTapGesture {
-                                onFeatureTap?(feature)
-                            }
-                    }
-                }
-                .padding(.horizontal)
-                
-                Spacer()
-                
-                // Custom full-width divider
-                Divider().background(Color.brown)
-            }
-            .frame(height: 48)
-        }
-    }
-}
-
 //MARK: - Previews
 struct Previews_ConfigDashboardView: PreviewProvider {
     static var previews: some View {

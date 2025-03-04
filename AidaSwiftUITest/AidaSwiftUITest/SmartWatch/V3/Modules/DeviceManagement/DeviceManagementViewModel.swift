@@ -44,7 +44,11 @@ extension SmartWatch.V3.DeviceManagement {
             deviceDataUpdateTime : "21/09/28 13:54",
             version: "V3"
         )
-        @Published var deviceFeature: [String] = [.localized(.factoryReset),.localized(.restartTheDevice)]
+        @Published var deviceFeature: [Feature] = [
+            Feature(title: .localized(.factoryReset), type: .navigable),
+            Feature(title: .localized(.restartTheDevice), type: .navigable)
+            
+        ]
         
         @Published var deviceFirmware : String = .localized(.firmwareUpdate)
         
@@ -83,11 +87,6 @@ extension SmartWatch.V3.DeviceManagement {
 
 //MARK: - UI MODELS
 extension SmartWatch.V3.DeviceManagement {
-    internal enum FeatureType {
-        case switchable(value: Bool)
-        case navigable
-    }
-
     internal struct Feature {
         let title: String
         var type: FeatureType

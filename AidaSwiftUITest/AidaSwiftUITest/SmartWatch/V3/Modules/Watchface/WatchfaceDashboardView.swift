@@ -23,7 +23,11 @@ extension SmartWatch.V3.Watchfaces {
                 ScrollView{
                     VStack(spacing: 0){
                         
-                        FeatureCell(featureTitle: $viewModel.allFaces)
+                        FeatureCell(
+                            featureTitle: viewModel.allFaces,
+                            type: .navigable
+                        )
+                        
                         WatchV3WatchfaceShowcaseView(
                             watchfaces: $viewModel.watchfaces,
                             title: .localized(.new_arrivals),

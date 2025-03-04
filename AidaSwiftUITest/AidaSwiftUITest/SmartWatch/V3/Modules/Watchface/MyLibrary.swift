@@ -18,8 +18,15 @@ extension SmartWatch.V3.Watchfaces {
                 
                 ScrollView{
                     VStack(spacing:0){
-                        FeatureCell(featureTitle: $viewModel.watchFaceRecords)
-                        FeatureCell(featureTitle: $viewModel.favorites)
+                        FeatureCell(
+                            featureTitle: viewModel.watchFaceRecords,
+                            type: .navigable
+                        )
+                        
+                        FeatureCell(
+                            featureTitle: viewModel.favorites,
+                            type: .navigable
+                        )
                         
                         WatchV3WatchfaceShowcaseView(
                             watchfaces: $viewModel.watchfaces,
@@ -27,7 +34,9 @@ extension SmartWatch.V3.Watchfaces {
                             cellSize: Watchface.Preview.size(for: .v3),
                             cornerRadius: Watchface.Preview.radius(for: .v3)
                         )
+                        
                         Divider()
+                        
                         WatchV3WatchfaceShowcaseView(
                             watchfaces: $viewModel.watchfaces,
                             title: .localized(.builtinWatchFaces),

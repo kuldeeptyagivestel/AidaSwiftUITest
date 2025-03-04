@@ -23,7 +23,7 @@ extension SmartWatch.V3.Watchfaces {
                 HStack {
                     Text(title)
                         .font(.custom(.muli, style: .bold, size: 17))
-                        .foregroundColor(.black)
+                        .foregroundColor(Color.lblPrimary)
                     
                     Spacer()
                     

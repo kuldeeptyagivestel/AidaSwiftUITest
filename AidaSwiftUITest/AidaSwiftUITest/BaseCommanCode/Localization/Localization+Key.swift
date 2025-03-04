@@ -1478,7 +1478,8 @@ public enum LocalizationKey: String {
     
     //MARK: Calls
     case calls
-    
+    case incomingCallAlert
+    case frequentContacts
     //MARK: Notifications
     case notifications
     

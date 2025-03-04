@@ -58,7 +58,9 @@ extension SmartWatch.V3.Watchfaces {
                             .foregroundColor(Color.lblPrimary)
                             .padding()
                         ForEach($viewModel.features, id: \.title) { $feature in
-                            FeatureCell(featureTitle: $feature.title)
+                            FeatureCell(
+                                featureTitle: feature.title,
+                                type: .navigable)
                         }
                         Text("")
                         Text(String.localized(.selectTextColor))

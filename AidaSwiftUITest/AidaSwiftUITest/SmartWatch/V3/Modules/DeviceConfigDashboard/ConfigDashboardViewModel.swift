@@ -80,10 +80,6 @@ extension SmartWatch.V3.DeviceConfigDashboard {
 
 //MARK: - UI MODELS
 extension SmartWatch.V3.DeviceConfigDashboard {
-    internal enum FeatureType {
-        case switchable(value: Bool)
-        case navigable
-    }
 
     internal struct Feature {
         let title: String

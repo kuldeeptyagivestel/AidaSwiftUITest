@@ -21,7 +21,7 @@ extension SmartWatch.V3.DeviceManagement {
                     DeviceSummaryView(
                         imageName: "smartwatchv3/deviceImage", deviceState:.localized(.charging),
                         deviceSummary: $viewModel.deviceSummary)
-                    Group{
+                    
                         Text("")
                         
                         FeatureCellWithVersion(
@@ -31,13 +31,17 @@ extension SmartWatch.V3.DeviceManagement {
                         
                         
                         Text("")
-                        
-                        ForEach($viewModel.deviceFeature, id: \.self) { $feature in
-                            FeatureCell(featureTitle: $feature) {
+                    
+                        ForEach($viewModel.deviceFeature, id: \.title) { $feature in
+                            FeatureCell(
+                                featureTitle: feature.title,
+                                type: feature.type,
+                                onTap:
+                                    {
                                 print("Tapped feature: \(feature)")
-                            }
+                            })
                         }
-                    }
+                                        
                     Spacer()
                     SmartButton(
                         title: .localized(.remove_device),
@@ -54,6 +58,8 @@ extension SmartWatch.V3.DeviceManagement {
 }
 
 extension SmartWatch.V3.DeviceManagement {
+    //MARK: - FeatureCellWithVersion
+    //// this cell is been created specfically for the version cell in device management.
     fileprivate struct FeatureCellWithVersion: View {
         @Binding var featureTitle: String
         var onFeatureTap: ((String) -> Void)?
