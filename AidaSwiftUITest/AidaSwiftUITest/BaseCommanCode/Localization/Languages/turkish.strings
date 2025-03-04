@@ -1602,7 +1602,8 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "calls" = "Aramalar";
 "incomingCallAlert" = "Gelen Çağrı Uyarısı";
 "frequentContacts" = "Sık Görüşülen Kişiler";
-
+"incomingCallAlertDesc" = "Gelen arama uyarısı özelliğini etkinleştirirseniz, gelen bir arama olduğunda arayanın adını ve arayan kimliğini saatinizde alırsınız. Rahatsız Etmeyin modunda, arama uyarıları almazsınız.";
+"frequentContactsDesc" = "Sık görüştüğünüz kişileri cihazınıza ekledikten sonra, onları doğrudan saatinizden arayabilirsiniz.";
 //MARK: Notifications
 "notifications" = "Bildirimler";
 

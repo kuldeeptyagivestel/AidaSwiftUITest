@@ -23,7 +23,7 @@ extension SmartWatch.V3.CallsManagement {
                     }
                 )
 
-                Text("If you enable the incoming call alert feature, you will receive the caller's name and caller ID on your watch when there is an incoming call. In Do Not Disturb mode, you won't receive call alerts.")
+                Text(String.localized(.incomingCallAlertDesc))
                         .padding(.horizontal,9)
                         .foregroundColor(Color.lblSecondary)
                         .font(.custom(.openSans, style: .regular, size: 14))
@@ -32,7 +32,7 @@ extension SmartWatch.V3.CallsManagement {
                     print("tapped")
                 })
     
-                Text("Once frequent contacts are added to your device, you can call them directly from the watch.")
+                Text(String.localized(.frequentContactsDesc))
                     .padding(.horizontal,9)
                     .foregroundColor(Color.lblSecondary)
                     .font(.custom(.openSans, style: .regular, size: 14))

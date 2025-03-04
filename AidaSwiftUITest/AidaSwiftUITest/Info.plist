@@ -29,5 +29,7 @@
 		<string>OpenSans-ExtraBold.ttf</string>
 		<string>OpenSans-ExtraBoldItalic.ttf</string>
 	</array>
+    <key>NSContactsUsageDescription</key>
+    <string>Akıllı Sağlık uygulamasının seçtiğin kişilere yardım mesajı göndermesi için erişim izni verin.</string>
 </dict>
 </plist>
