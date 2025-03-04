@@ -50,6 +50,9 @@ extension SmartWatch.V3.DeviceConfigDashboard {
     fileprivate struct FeatureListView: View {
         @Binding var features: [Feature]
         
+//        @State var progressState: InstallationProgressState = .initializing
+//        @State var progress: Double = 0
+        
         var body: some View {
             // Feature List using ScrollView & ForEach
             VStack() {
@@ -62,6 +65,11 @@ extension SmartWatch.V3.DeviceConfigDashboard {
                         ToastHUD.show(message: "You can add up to 20 contacts to your watch....", duration: 3.0, position: .bottom)
                       //  ToastHUD.show(message: "Please wait, syncing...", duration: 3.0, position: .bottom)
                         
+                        
+                        
+                        
+//                        let model = Popup.Progress(progressState: $progressState, progress: $progress)
+//                        Popup.show(model, priority: .highest)
                         
                        // KRProgressHUD.show()
                        // KRProgressHUD.show(withMessage: "Loading...")
