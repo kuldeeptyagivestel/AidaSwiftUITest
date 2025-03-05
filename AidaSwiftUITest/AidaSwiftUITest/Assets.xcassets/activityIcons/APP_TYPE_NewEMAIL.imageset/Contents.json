@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "APP_TYPE_NewEMAIL.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "APP_TYPE_NewEMAIL@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "APP_TYPE_NewEMAIL@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,5 +1,6 @@
 "company_name" = "Vestel";
 "app_name" = "Smart Health";
+"app_NameSmartLife" = "Smart Life";
 "welcome" = "Welcome";
 "email" = "E-mail";
 "password" = "Password";
@@ -1463,7 +1464,8 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 "APP_TYPE_LINKEDIN" = "Linkedin";
 "APP_TYPE_TELEGRAM" = "Telegram";
 "APP_TYPE_SLACK" = "Slack";
-
+"APP_TYPE_YOUTUBE" = "Youtube";
+"APP_TYPE_MISSEDCALL" = "Missed Calls";
 //MARK: watch v2 - do not disturb
 "duringDay" = "Do not disturb during the day";
 "startEndTime" = "Start-end time";
@@ -1582,9 +1584,11 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 "frequentContacts" = "Frequent Contacts";
 "incomingCallAlertDesc" = "If you enable the incoming call alert feature, you will receive the caller's name and caller ID on your watch when there is an incoming call. In Do Not Disturb mode, you won't receive call alerts.";
 "frequentContactsDesc" = "Once frequent contacts are added to your device, you can call them directly from the watch.";
+
 //MARK: Notifications
 "notifications" = "Notifications";
-
+"notificationsDesc" = "To receive notifications, you need to enable notification permission in your phone settings.";
+"systemNotificationPermission" = "System notifications permission";
 //MARK: Alarm
 "alarm" = "Alarm";
 

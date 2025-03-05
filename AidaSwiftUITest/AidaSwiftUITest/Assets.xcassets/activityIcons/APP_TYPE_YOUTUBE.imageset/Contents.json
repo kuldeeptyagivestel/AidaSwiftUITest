@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "APP_TYPE_YOUTUBE.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "APP_TYPE_YOUTUBE@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "APP_TYPE_YOUTUBE@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

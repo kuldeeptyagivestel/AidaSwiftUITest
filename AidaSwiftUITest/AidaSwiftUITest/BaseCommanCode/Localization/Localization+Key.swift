@@ -11,6 +11,7 @@ import Foundation
 public enum LocalizationKey: String {
     case company_name
     case app_name
+    case app_NameSmartLife
     case welcome
     case email
     case password
@@ -1366,7 +1367,8 @@ public enum LocalizationKey: String {
     case APP_TYPE_LINKEDIN
     case APP_TYPE_TELEGRAM
     case APP_TYPE_SLACK
-    
+    case APP_TYPE_YOUTUBE
+    case APP_TYPE_MISSEDCALL
     //MARK: do not disturb
     case duringDay
     case startEndTime
@@ -1482,8 +1484,11 @@ public enum LocalizationKey: String {
     case frequentContacts
     case incomingCallAlertDesc
     case frequentContactsDesc
+    
     //MARK: Notifications
     case notifications
+    case notificationsDesc
+    case systemNotificationPermission
     
     //MARK: Alarm
     case alarm
