@@ -1517,6 +1517,9 @@ public enum LocalizationKey: String {
     case automaticStressManagement
     case automaticStressManagementDesc
     case stressGraphDesc
+    
+    case automaticRespiratoryRateDetection
+    case automaticRespiratoryRateDesc
     //MARK: Do Not Disturb Mode
     case doNotDisturbMode
     

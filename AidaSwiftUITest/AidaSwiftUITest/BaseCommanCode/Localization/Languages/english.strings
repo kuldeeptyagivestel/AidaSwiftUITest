@@ -1620,6 +1620,11 @@ Whether this function is on or off, heart rate will be measured in real time by 
 "stressGraphDesc" = "When your stress level exceeds 80, the device will remind you to relax.
                     
 While an appropriate level of stress supports your physical and mental health, excessive stress can negatively impact your well-being. Your stress level is measured in real time to help you manage your physical and mental health effectively.";
+
+"automaticRespiratoryRateDetection" = "Automatic respiratory rate detection";
+"automaticRespiratoryRateDesc" = "Enable to monitor your respiratory rate during sleep.
+                 
+Note: Power consumption will increase while monitoring is active.";
 //MARK: Do Not Disturb Mode
 "doNotDisturbMode" = "Do Not Disturb Mode";
 
