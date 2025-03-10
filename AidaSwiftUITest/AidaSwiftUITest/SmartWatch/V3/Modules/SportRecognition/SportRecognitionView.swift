@@ -9,6 +9,7 @@
 import SwiftUI
 
 extension SmartWatch.V3.SportRecognition{
+    //MARK: - SportRecognition  View
     struct SportRecognitionView: View {
         @State private var sportPause: Bool = true
         @State private var sportend: Bool = true

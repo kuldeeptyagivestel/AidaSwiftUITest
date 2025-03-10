@@ -57,7 +57,7 @@ struct FeatureCell: View {
             }
             .padding(.leading, 10)
             .padding(.trailing, 15)
-            .frame(height: 48)
+            .frame(height: 54)
             .background(
                 RoundedRectangle(cornerRadius: 0)
                     .fill(Color.white)

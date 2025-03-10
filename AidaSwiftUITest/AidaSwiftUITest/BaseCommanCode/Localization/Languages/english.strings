@@ -1576,6 +1576,8 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 "takeAPhoto" = "Take a photo";
 "selectTextColor" = "Select Text Color";
 "selectTextLocation" = "Select Text Location";
+"muteNotification" = "Mute notification";
+"turnOffNotification" = "Turn off notification";
 //MARK: - V3 Features
 
 //MARK: Calls
@@ -1593,8 +1595,24 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 "alarm" = "Alarm";
 
 //MARK: Health Monitor
-"healthMonitor" = "Health Monitor";
+"healthMonitor" = "Health Tracking";
+"healthMonitorDesc" = "With health tracking, you can enable automatic measurements and set reminders to get notifications on your smart watch.";
+"heartRateDesc" = "When selected, the device won't vibrate when you receive a notification.";
+"continuousHeartRate" = "Continuous heart rate measurements";
+"hearRateMeasureDesc" = "To ensure accurate measurement, wear your smart watch at least one finger above your wrist bone and make sure it is snug on your wrist.
+                                                    
+Whether this function is on or off, heart rate will be measured in real time by default when an exercise is initiated.";
+"heartRateAlert" = "Heart rate alert";
+"highHeartRateTitle" = "High heart rate alert";
+"highHeartRateDesc" = "If this setting is inactive, an alert is still sent when your heart rate stays above the preset value for 10 minutes.";
+"lowHeartRateTitle" = "Low heart rate alert";
+"lowHeartRateDesc" = "If this setting is inactive, an alert is still sent when your heart rate stays above the preset value for 10 minutes.";
 
+"heartRate" = "Heart rate";
+"spO2BloodOxygenLevel" = "SpO2 (Blood Oxygen Level)";
+"respiratoryRate" = "Respiratory rate";
+"handWashingReminder" = "Hand-washing reminder";
+"scienceSleep" = "Science sleep";
 //MARK: Do Not Disturb Mode
 "doNotDisturbMode" = "Do Not Disturb Mode";
 

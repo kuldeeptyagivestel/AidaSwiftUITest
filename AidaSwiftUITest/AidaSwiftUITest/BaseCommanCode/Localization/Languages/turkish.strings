@@ -1598,6 +1598,8 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "takeAPhoto" = "Fotoğraf çek";
 "selectTextColor" = "Metin Rengi Seç";
 "selectTextLocation" = "Metin Konumu Seç";
+"muteNotification" = "Bildirimleri sessize al";
+"turnOffNotification" = "Bildirimi kapat";
 //MARK: - V3 Features
 
 //MARK: Calls
@@ -1606,7 +1608,6 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "frequentContacts" = "Sık Görüşülen Kişiler";
 "incomingCallAlertDesc" = "Gelen arama uyarısı özelliğini etkinleştirirseniz, gelen bir arama olduğunda arayanın adını ve arayan kimliğini saatinizde alırsınız. Rahatsız Etmeyin modunda, arama uyarıları almazsınız.";
 "frequentContactsDesc" = "Sık görüştüğünüz kişileri cihazınıza ekledikten sonra, onları doğrudan saatinizden arayabilirsiniz.";
-
 //MARK: Notifications
 "notifications" = "Bildirimler";
 "notificationsDesc" = "Bildirimleri alabilmeniz için telefon ayarlarınızdan bildirim iznini aktifleştirmeniz gerekmektedir.";
@@ -1615,8 +1616,24 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "alarm" = "Alarm";
 
 //MARK: Health Monitor
-"healthMonitor" = "Sağlık monitörü";
+"healthMonitor" = "Sağlık Takibi";
+"healthMonitorDesc" = "Sağlık takibiyle otomatik ölçümleri etkinleştirebilir, akıllı saatinize bildirim almak için hatırlatıcılar ayarlayabilirsiniz.";
+"continuousHeartRate" = "Sürekli kalp atış hızı ölçümleri";
+"heartRateDesc" = "Seçildiğinde, bir bildirim aldığınızda cihaz titreşmez.";
+"hearRateMeasureDesc" = "Doğru ölçümü sağlamak için akıllı saatinizi bilek kemiğinizin en az bir parmak yukarısına takın ve bileğinize tam oturduğundan emin olun.
 
+Bu işlev açık veya kapalı olsun, bir egzersiz başlatıldığında kalp atış hızı varsayılan olarak gerçek zamanlı olarak ölçülecektir.";
+"heartRateAlert" = "Kalp atış hızı uyarısı";
+"highHeartRateTitle" = "Yüksek kalp atış hızı uyarısı";
+"highHeartRateDesc" = "Bu ayar devre dışı bırakıldığında, kalp atış hızınız 10 dakika boyunca önceden ayarlanmış değerin üzerinde kaldığında yine de bir uyarı gönderilir.";
+"lowHeartRateTitle" = "Düşük kalp atış hızı uyarısı";
+"lowHeartRateDesc" = "Bu ayar devre dışı bırakıldığında, kalp atış hızınız 10 dakika boyunca önceden ayarlanmış değerin üzerinde kaldığında yine de bir uyarı gönderilir.";
+
+"heartRate" = "Kalp atış hızı";
+"spO2BloodOxygenLevel" = "SpO2 (Kan Oksijen Seviyesi)";
+"respiratoryRate" = "Solunum hızı";
+"handWashingReminder" = "El yıkama hatırlatıcısı";
+"scienceSleep" = "Bilim uykusu";
 //MARK: Do Not Disturb Mode
 "doNotDisturbMode" = "Rahatsız etmeyin modu";
 

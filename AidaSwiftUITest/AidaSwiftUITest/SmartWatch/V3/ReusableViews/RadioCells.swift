@@ -1,0 +1,56 @@
+//
+//  RadioCells.swift
+//  AidaSwiftUITest
+//
+//  Created by Swapnil Baranwal on 09/03/25.
+//
+import SwiftUI
+
+struct RadioCells: View {
+    @Binding var selectedOption: NotificationOption
+    @ObservedObject var viewModel: WatchV3HealthMonitorViewModel
+
+    var body: some View {
+        VStack(spacing:0) {
+            ForEach(NotificationOption.allCases, id: \.self) { option in
+                VStack{
+                    HStack {
+                        Text(option.description)
+                            .font(.custom(.muli, style: .bold, size: 16))
+                        Spacer()
+                        ZStack {
+                            Circle()
+                                .stroke(Color.black, lineWidth: 1)
+                                .frame(width: 20, height: 20)
+
+                            if selectedOption == option {
+                                Circle()
+                                    .fill(Color.radioSelectionColor)
+                                    .frame(width: 13, height: 13)
+                            }
+                        }
+                    }
+                    .padding(.vertical, 15)
+                    .contentShape(Rectangle()) // Improves tap recognition
+                    .padding(.horizontal,8)
+                    .onTapGesture {
+                        viewModel.selectOption(option) // Call the selectOption method here
+                    }
+                    Divider()
+                }
+                .background(
+                    RoundedRectangle(cornerRadius: 0)
+                        .fill(Color.white)
+                        .shadow(color: Color.black.opacity(0.1), radius: 6, x: 0, y: 2)
+                )
+            }
+        }
+    }
+}
+
+
+//#Preview {
+//    @State var selectedOption: NotificationOption = .allowNotifications
+//    return RadioCells(selectedOption: $selectedOption)
+//}
+

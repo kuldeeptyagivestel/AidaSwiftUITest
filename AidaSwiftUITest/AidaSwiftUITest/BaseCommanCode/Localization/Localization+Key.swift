@@ -1476,6 +1476,8 @@ public enum LocalizationKey: String {
     case takeAPhoto
     case selectTextColor
     case selectTextLocation
+    case muteNotification
+    case turnOffNotification
     //MARK: - V3 Features
     
     //MARK: Calls
@@ -1495,7 +1497,21 @@ public enum LocalizationKey: String {
     
     //MARK: Health Monitor
     case healthMonitor
+    case healthMonitorDesc
+    case heartRateDesc
+    case continuousHeartRate
+    case hearRateMeasureDesc
+    case heartRateAlert
+    case highHeartRateTitle
+    case highHeartRateDesc
+    case lowHeartRateTitle
+    case lowHeartRateDesc
     
+    case heartRate
+    case spO2BloodOxygenLevel
+    case respiratoryRate
+    case handWashingReminder
+    case scienceSleep
     //MARK: Do Not Disturb Mode
     case doNotDisturbMode
     
