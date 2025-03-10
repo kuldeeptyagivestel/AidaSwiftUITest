@@ -14,6 +14,7 @@ extension SmartWatch.V3.DeviceManagement {
         @ObservedObject var viewModel: DeviceManagementViewModel  // ViewModel injected via navigation
         @Binding var deviceInfoSummary: DeviceInfoSummary
         var body: some View {
+            VStack{
                 ScrollView(.vertical, showsIndicators: true) {
                     // spacing is used to reduce the spaces in cell.
                     VStack(alignment: .leading, spacing: 0) {
@@ -37,15 +38,16 @@ extension SmartWatch.V3.DeviceManagement {
                             InfoCell(text: .localized(.watchv2_deviceinfo_blename), info: $viewModel.deviceInfoSummary.bluetoothName)
                             InfoCell(text: .localized(.watchv3_deviceinfo_macAddress), info: $viewModel.deviceInfoSummary.macAddress)
                             InfoCell(text:.localized(.watchv2_deviceinfo_updatetime) , info: $viewModel.deviceInfoSummary.deviceDataUpdateTime)
-                            Text("")
+                                .padding(.bottom,16)
                             InfoCell(text:.localized(.watchv3_deviceinfo_firmwareVersion), info: $viewModel.deviceInfoSummary.version)
                             InfoCell(text:.localized(.watchv3_deviceinfo_resourcePackVersion), info: $viewModel.deviceInfoSummary.version)
                             InfoCell(text:.localized(.watchv3_deviceinfo_deviceLanguageVersion), info: $viewModel.deviceInfoSummary.version)
                         }
                         Spacer()
-                            
+                        
                     }
                 }
+            }.background(Color.scrollViewBgColor)
         }
     }
 }

@@ -21,8 +21,7 @@ extension SmartWatch.V3.DeviceManagement {
                     DeviceSummaryView(
                         imageName: "smartwatchv3/deviceImage", deviceState:.localized(.charging),
                         deviceSummary: $viewModel.deviceSummary)
-                    
-                        Text("")
+                        .padding(.bottom,18)
                         
                         FeatureCellWithVersion(
                             featureTitle: $viewModel.deviceFirmware,
@@ -30,7 +29,7 @@ extension SmartWatch.V3.DeviceManagement {
                             isNew: $viewModel.deviceFirmwareTag)
                         
                         
-                        Text("")
+                        .padding(.bottom,16)
                     
                         ForEach($viewModel.deviceFeature, id: \.title) { $feature in
                             FeatureCell(

@@ -31,7 +31,7 @@ extension SmartWatch.V3.DoNotDisturb {
                     .padding(.bottom,8)
                 }
                 
-                Text("")
+                .padding(.bottom,16)
                 ////Second cell
                 VStack(spacing:0){
                     FeatureCell(featureTitle: String.localized(.duringNight), type: .switchable(value: viewModel.isONnight))

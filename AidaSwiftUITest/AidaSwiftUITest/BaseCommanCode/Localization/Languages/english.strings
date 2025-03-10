@@ -1613,6 +1613,13 @@ Whether this function is on or off, heart rate will be measured in real time by 
 "respiratoryRate" = "Respiratory rate";
 "handWashingReminder" = "Hand-washing reminder";
 "scienceSleep" = "Science sleep";
+
+"reminderInterval" = "Reminder Interval";
+"automaticStressManagement" = "Automatic stress management";
+"automaticStressManagementDesc" = "Enable to monitor your stress level automatically throughout the day.";
+"stressGraphDesc" = "When your stress level exceeds 80, the device will remind you to relax.
+                    
+While an appropriate level of stress supports your physical and mental health, excessive stress can negatively impact your well-being. Your stress level is measured in real time to help you manage your physical and mental health effectively.";
 //MARK: Do Not Disturb Mode
 "doNotDisturbMode" = "Do Not Disturb Mode";
 

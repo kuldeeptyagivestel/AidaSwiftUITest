@@ -25,26 +25,26 @@ extension SmartWatch.V3.SportRecognition{
                                 })
                             }
                             Group{
-                                Text("")
                                 Text("When you don't start a sport manually, the device detects if you are running, walking, using the elliptical, or rowing machine, and suggests starting the corresponding activity. ")
                                     .padding(.leading,8)
                                     .padding(.trailing,15)
                                     .foregroundColor(Color.lblSecondary)
                                     .font(.custom(.openSans, style: .regular, size: 14))
+                                    .padding(.vertical,16)
                                 
-                                Text("")
                                 FeatureCell(featureTitle: "Automatic sport pause", type: .switchable(value: sportPause))
-                                Text("")
+                                    .padding(.bottom,16)
                                 
                                 Text("Detects automatic pauses for running and automatically pauses outdoor cycling started through the app.")
                                     .padding(.leading,8)
                                     .padding(.trailing,15)
                                     .foregroundColor(Color.lblSecondary)
                                     .font(.custom(.openSans, style: .regular, size: 14))
-                                Text("")
+                                    .padding(.bottom,16)
         
                                 FeatureCell(featureTitle: "Automatic sport end", type: .switchable(value: sportend))
-                                Text("")
+                                    .padding(.bottom,16)
+                                
                                 Text("Automatically ends sports such as running, walking, outdoor cycling, rowing, elliptical, and swimming.")
                                     .padding(.leading,8)
                                     .foregroundColor(Color.lblSecondary)

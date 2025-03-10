@@ -15,12 +15,12 @@ extension SmartWatch.V3.HealthMonitor{
 
         var body: some View {
             VStack(alignment: .leading, spacing: 10) {
-                Text("")
+                
                 Text(String.localized(.healthMonitorDesc))
                     .font(.custom(.openSans, style: .regular, size: 14))
                     .foregroundColor(Color.lblSecondary)
                     .padding(.horizontal,9)
-                
+                    .padding(.top,16)
                 ScrollView {
                     VStack(spacing: 0) {
                         ForEach(viewModel.sampleTitles, id: \.id) { feature in

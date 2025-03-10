@@ -1634,6 +1634,13 @@ Bu işlev açık veya kapalı olsun, bir egzersiz başlatıldığında kalp atı
 "respiratoryRate" = "Solunum hızı";
 "handWashingReminder" = "El yıkama hatırlatıcısı";
 "scienceSleep" = "Bilim uykusu";
+
+"reminderInterval" = "Hatırlatma Aralığı";
+"automaticStressManagement" = "Otomatik stres yönetimi";
+"automaticStressManagementDesc" = "Gün boyunca stres seviyenizi otomatik olarak izlemek için etkinleştirin.";
+"stressGraphDesc" = "Stres seviyeniz 80'i aştığında, cihaz size rahatlamanızı hatırlatacaktır.
+
+Uygun bir stres seviyesi fiziksel ve ruhsal sağlığınızı desteklerken, aşırı stres refahınızı olumsuz etkileyebilir. Stres seviyeniz, fiziksel ve ruhsal sağlığınızı etkili bir şekilde yönetmenize yardımcı olmak için gerçek zamanlı olarak ölçülür.";
 //MARK: Do Not Disturb Mode
 "doNotDisturbMode" = "Rahatsız etmeyin modu";
 

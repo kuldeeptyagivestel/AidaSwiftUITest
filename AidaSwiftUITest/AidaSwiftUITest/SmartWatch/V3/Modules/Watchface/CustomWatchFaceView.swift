@@ -27,7 +27,7 @@ extension SmartWatch.V3.Watchfaces {
                 ScrollView{
                     VStack(alignment:.leading,spacing: 0){
                         TitleBarView(selectedTabIndex: $selectedTab, tabs: tabs)
-                        Text("")
+                            .padding(.bottom,16)
                         HStack(spacing:20){
                             WatchfaceCell(
                                 title: "",
@@ -62,7 +62,7 @@ extension SmartWatch.V3.Watchfaces {
                                 featureTitle: feature.title,
                                 type: .navigable)
                         }
-                        Text("")
+                        .padding(.bottom,16)
                         Text(String.localized(.selectTextColor))
                             .font(.custom(.muli, style: .semibold, size: 15))
                             .foregroundColor(Color.lblPrimary)
@@ -70,7 +70,7 @@ extension SmartWatch.V3.Watchfaces {
                         // text color scrolling
                         TextColorScrolling()
                         
-                        Text("")
+                            .padding(.bottom,16)
                         // Select Text Location
                         VStack(alignment: .leading, spacing: 10) {
                             Text(String.localized(.selectTextLocation))

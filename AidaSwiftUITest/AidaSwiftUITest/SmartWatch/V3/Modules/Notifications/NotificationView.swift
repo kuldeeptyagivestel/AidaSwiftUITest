@@ -56,17 +56,21 @@ extension SmartWatch.V3.Notification {
                             .padding(.horizontal)
                             .foregroundColor(Color.lblSecondary)
 
-                        VStack(spacing: 0) {
-                            ForEach($viewModel.notificationOptions, id: \.id) { $option in
-                                NotificationToggleRow(option: $option, isDisabled: !viewModel.allowNotifications)
+                        VStack(spacing:16) {
+                            VStack(spacing:0){
+                                ForEach($viewModel.notificationOptions, id: \.id) { $option in
+                                    NotificationToggleRow(option: $option, isDisabled: !viewModel.allowNotifications)
+                                }
                             }
-                            Text("")
-                            ForEach($viewModel.systemOptions, id: \.id) { $option in
-                                NotificationToggleRow(option: $option, isDisabled: !viewModel.allowNotifications)
+                            VStack(spacing:0){
+                                ForEach($viewModel.systemOptions, id: \.id) { $option in
+                                    NotificationToggleRow(option: $option, isDisabled: !viewModel.allowNotifications)
+                                }
                             }
-                            Text("")
-                            ForEach($viewModel.socialOptions, id: \.id) { $option in
-                                NotificationToggleRow(option: $option, isDisabled: !viewModel.allowNotifications)
+                            VStack(spacing:0){
+                                ForEach($viewModel.socialOptions, id: \.id) { $option in
+                                    NotificationToggleRow(option: $option, isDisabled: !viewModel.allowNotifications)
+                                }
                             }
                         }
                     }

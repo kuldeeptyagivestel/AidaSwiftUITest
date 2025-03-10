@@ -1512,6 +1512,11 @@ public enum LocalizationKey: String {
     case respiratoryRate
     case handWashingReminder
     case scienceSleep
+    
+    case reminderInterval
+    case automaticStressManagement
+    case automaticStressManagementDesc
+    case stressGraphDesc
     //MARK: Do Not Disturb Mode
     case doNotDisturbMode
     
