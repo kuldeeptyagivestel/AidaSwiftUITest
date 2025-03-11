@@ -1463,7 +1463,12 @@ public enum LocalizationKey: String {
     case watchv3_deviceinfo_firmwareVersion
     case watchv3_deviceinfo_resourcePackVersion
     case watchv3_deviceinfo_deviceLanguageVersion
-    case watchv3_deviceinfo_currentVersion
+    case currentVersion
+    case newVersionAvailable
+    case releaseNotes
+    case fixedBugs
+    case fwUpdateImpNotice
+    
     case allFaces
     case dynamic
     case simple

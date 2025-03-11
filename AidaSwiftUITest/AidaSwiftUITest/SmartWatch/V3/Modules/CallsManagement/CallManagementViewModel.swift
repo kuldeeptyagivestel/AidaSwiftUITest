@@ -34,10 +34,9 @@ extension SmartWatch.V3.CallsManagement {
         @Published var selectedCount: Int = 0
         @Published var showMaxSelectionMessage = false
         
-        @Published var features: [Feature] = [
-            Feature(title: .localized(.incomingCallAlert), type: .switchable(value: true)),
-            Feature(title: .localized(.frequentContacts), type: .navigable)
-            
+        @Published var features: [FeatureCell.Model] = [
+            FeatureCell.Model(title: .localized(.incomingCallAlert), type: .switchable(value: true)),
+            FeatureCell.Model(title: .localized(.frequentContacts), type: .navigable)
         ]
  
         // MARK: - Initializer
@@ -96,7 +95,7 @@ extension SmartWatch.V3.CallsManagement {
 extension SmartWatch.V3.CallsManagement {
     internal struct Feature {
         let title: String
-        var type: FeatureType
+        var type: FeatureCell.CellType
     }
     // Contact Model
     internal struct Contact: Identifiable {

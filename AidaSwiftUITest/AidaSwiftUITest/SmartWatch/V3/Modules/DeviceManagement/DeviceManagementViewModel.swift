@@ -11,6 +11,7 @@ import SwiftUI
 
 internal typealias WatchV3DeviceManagementViewModel = SmartWatch.V3.DeviceManagement.DeviceManagementViewModel
 internal typealias WatchV3DeviceManagementView = SmartWatch.V3.DeviceManagement.DeviceManagementView
+internal typealias WatchV3Summary = SmartWatch.V3.DeviceManagement.WatchSummary
 
 //MARK: -
 //MARK: - Device Management Module: Module Class
@@ -29,14 +30,16 @@ extension SmartWatch.V3.DeviceManagement {
         @Published var title: String = "Watch Face"
         
         // MARK: - Published Properties
-        @Published var deviceSummary: DeviceSummary = DeviceSummary(
+        @Published var watchSummary = WatchSummary(
             deviceName: .localized(.add_device_smartwatchv3_name),
-            batteryPercentage: 65,
+            isConnected: true,
+            batteryPercentage: 79,
             isCharging: true,
             currentFirmware: "1.61.99",
             latestFirmware: "1.62.00",
             isNewFirmware: true
         )
+        
         @Published var deviceInfoSummary: DeviceInfoSummary = DeviceInfoSummary(
             deviceName: .localized(.add_device_smartwatchv3_name),
             bluetoothName: "Akıllı Saat 3",
@@ -44,19 +47,11 @@ extension SmartWatch.V3.DeviceManagement {
             deviceDataUpdateTime : "21/09/28 13:54",
             version: "V3"
         )
-        @Published var deviceFeature: [Feature] = [
-            Feature(title: .localized(.factoryReset), type: .navigable),
-            Feature(title: .localized(.restartTheDevice), type: .navigable)
-            
+        @Published var deviceFeature: [FeatureCell.Model] = [
+            FeatureCell.Model(title: .localized(.factoryReset), type: .navigable),
+            FeatureCell.Model(title: .localized(.restartTheDevice), type: .navigable)
         ]
         
-        @Published var deviceFirmware : String = .localized(.firmwareUpdate)
-        
-        @Published var deviceDeviceInfo : String = .localized(.deviceInfo)
-        
-        @Published var deviceFirmwareVersion: String = "1.61.99"
-        @Published var deviceFirmwareTag: Bool = true
-        @Published var deviceName: String = .localized(.add_device_smartwatchv3_name)
         //MARK: Life Cycle Methods
         init() {
             fetchData()
@@ -65,10 +60,11 @@ extension SmartWatch.V3.DeviceManagement {
         // MARK: - Data Fetching
         func fetchData() {
             // Simulated data fetching and updates
-            self.deviceSummary = DeviceSummary(
+            self.watchSummary = WatchV3Summary(
                 deviceName: .localized(.add_device_smartwatchv3_name),
-                batteryPercentage: 75,
-                isCharging: false,
+                isConnected: true,
+                batteryPercentage: 79,
+                isCharging: true,
                 currentFirmware: "1.61.99",
                 latestFirmware: "1.62.00",
                 isNewFirmware: true
@@ -85,35 +81,50 @@ extension SmartWatch.V3.DeviceManagement {
     }
 }
 
-//MARK: - UI MODELS
+//MARK: - MOCKING
 extension SmartWatch.V3.DeviceManagement {
-    internal struct Feature {
-        let title: String
-        var type: FeatureType
-    }
-    internal struct DeviceSummary {
-        var deviceName: String
-        var batteryPercentage: Int
-        var isCharging: Bool
-        var currentFirmware: String
-        var latestFirmware: String
-        var isNewFirmware: Bool
+    internal class DeviceManagementViewModelMocking {
+        var rootViewModel = WatchV3DeviceManagementViewModel()
+        private var timer: Timer?
         
-        // Optional initializer for clarity
-        public init(deviceName: String,
-                    batteryPercentage: Int,
-                    isCharging: Bool,
-                    currentFirmware: String,
-                    latestFirmware: String,
-                    isNewFirmware: Bool) {
-            self.deviceName = deviceName
-            self.batteryPercentage = batteryPercentage
-            self.isCharging = isCharging
-            self.currentFirmware = currentFirmware
-            self.latestFirmware = latestFirmware
-            self.isNewFirmware = isNewFirmware
+        // MARK: - Initializer
+        init() {
+            self.startTimer()
+        }
+        
+        private func startTimer() {
+            timer = Timer.scheduledTimer(withTimeInterval: 4.0, repeats: true) { [weak self] _ in
+                self?.updateWatchSummary()
+            }
+        }
+        
+        private func updateWatchSummary() {
+            // Simulate firmware version changes
+            let currentVersion = ["1.61.99", "1.62.00", "1.62.01"].randomElement() ?? "1.61.99"
+            let latestVersion = ["1.62.00", "1.62.01", "1.62.02"].randomElement() ?? "1.62.00"
+            
+            rootViewModel.watchSummary = WatchV3Summary(
+                deviceName: .localized(.add_device_smartwatchv3_name),
+                isConnected: true,
+                batteryPercentage: 79,
+                isCharging: true,
+                currentFirmware: currentVersion,
+                latestFirmware: latestVersion,
+                isNewFirmware: Bool.random()
+            )
+            
+            print("______________isNewFirmware: \(rootViewModel.watchSummary.isNewFirmware)")
+        }
+        
+        deinit {
+            timer?.invalidate()
         }
     }
+}
+
+
+//MARK: - UI MODELS
+extension SmartWatch.V3.DeviceManagement {
     internal struct DeviceInfoSummary {
         var deviceName: String
         var bluetoothName: String

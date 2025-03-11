@@ -11,7 +11,7 @@ import SwiftUI
 extension SmartWatch.V3.DeviceConfigDashboard {
     //MARK: - WATCH SUMMARY VIEW
     struct WatchSummaryView: View {
-        @Binding var watchSummary: WatchSummary
+        @Binding var watchSummary: WatchV3Summary
         
         var body: some View {
             HStack(spacing: 16) {
@@ -61,7 +61,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
 
 //MARK: - PREVIEW
 struct Previews_WatchSummaryView: PreviewProvider {
-    @State static var watchSummary = SmartWatch.V3.DeviceConfigDashboard.WatchSummary(
+    @State static var watchSummary = WatchV3Summary(
         deviceName: "Vestel Smart Watch 3",
         batteryPercentage: 79,
         isCharging: true,

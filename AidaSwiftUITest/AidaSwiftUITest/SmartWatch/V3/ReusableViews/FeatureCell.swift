@@ -7,81 +7,105 @@
 
 import SwiftUI
 
-//MARK: - FEATURE CELL
-struct FeatureCell: View {
-    let featureTitle: String
-    let type: FeatureType
-    var onToggle: ((Bool) -> Void)?  // Callback when switch changes
-    var onTap: (() -> Void)?         // Callback for navigation
-
-    @State private var isOn: Bool = false
-
-    init(featureTitle: String, type: FeatureType, onToggle: ((Bool) -> Void)? = nil, onTap: (() -> Void)? = nil) {
-        self.featureTitle = featureTitle
-        self.type = type
-        self.onToggle = onToggle
-        self.onTap = onTap
-
-        if case .switchable(let value) = type {
-            _isOn = State(initialValue: value) // Store initial value
-        }
+// Define FeatureType for reusability/
+extension FeatureCell {
+    enum CellType {
+        case switchable(value: Bool)
+        case navigable
     }
 
+    struct Model {
+        let title: String
+        var type: CellType
+    }
+}
+
+/*
+ ------------------------------
+ | CELL TITLE              ⭕️ |  // Toggle Switch (On/Off)
+ ------------------------------
+ | CELL TITLE              ➡️ |  // Navigable Arrow
+ ------------------------------
+ */
+struct FeatureCell: View {
+    @Binding var feature: FeatureCell.Model
+    var onTap: ((FeatureCell.Model) -> Void)?
+    
+    @State private var dividerColor: Color = .cellDividerColor
+    
+    // View modifier support
+    func dividerColor(_ color: Color) -> some View {
+        var copy = self
+        copy._dividerColor = State(initialValue: color)
+        return copy
+    }
+    
     var body: some View {
         VStack(alignment: .center) {
-            HStack {
-                Text(featureTitle)
-                .font(.custom(.muli, style: .bold, size: 17))
-                .foregroundColor(Color.lblPrimary)
-
+            Spacer()
+            
+            HStack() {
+                Text(feature.title)
+                    .font(.custom(.muli, style: .bold, size: 16))
+                
                 Spacer()
-
-                switch type {
-                case .switchable:
+                
+                switch feature.type {
+                case .switchable(let value):
                     Toggle("", isOn: Binding(
-                        get: { isOn },
+                        get: { value
+                        },
                         set: { newValue in
-                            isOn = newValue
-                            onToggle?(newValue) // Notify parent of toggle change
+                            feature.type = .switchable(value: newValue)
+                            onTap?(feature)
                         }
                     ))
                     .toggleStyle(ToggleSwitchStyle())
                     .labelsHidden()
-
+                    
                 case .navigable:
                     Image(systemName: "arrow.right")
                         .foregroundColor(Color.cellNavigationArrowColor)
-                        .onTapGesture {
-                            onTap?()
-                        }
                 }
             }
-            .padding(.leading, 12)
-            .padding(.trailing, 15)
-            .frame(height: 54)
-            .background(
-                RoundedRectangle(cornerRadius: 0)
-                    .fill(Color.white)
-                    .shadow(color: Color.black.opacity(0.1), radius: 6, x: 0, y: 2)
-            )
+            .padding(.horizontal)
+            
+            Spacer()
+            
+            // Custom full-width divider
+            if dividerColor != .clear {
+                Divider().background(dividerColor)
+            }
+        }
+        .frame(height: 48)
+        .contentShape(Rectangle()) // Ensures the entire area is tappable
+        .onTapGesture {
+            if case .navigable = feature.type {
+                onTap?(feature)
+            }
         }
     }
 }
 
-// Define FeatureType for reusability
-enum FeatureType {
-    case switchable(value: Bool)
-    case navigable
-}
-
-//MARK: - PREVIEW
 #Preview {
-    VStack(spacing:2){
-        FeatureCell(featureTitle: "Dark Mode", type: .navigable, onToggle: { isOn in
-            print("Dark Mode toggled to \(isOn)")
-        })
-        FeatureCell(featureTitle: "Dark Mode", type: .switchable(value: true), onToggle: { isOn in
-            print("Dark Mode toggled to \(isOn)")
-        })
+    VStack(spacing:0){
+        FeatureCell(feature: .constant(FeatureCell.Model(title: "Firmware update", type: .navigable))) { tappedFeature in
+            switch tappedFeature.type {
+            case .switchable(let value):
+                print("Toggle Changed: \(tappedFeature.title) → \(value ? "ON" : "OFF")")
+            case .navigable:
+                print("Tapped: \(tappedFeature.title)")
+            }
+        }
+        
+        FeatureCell(feature: .constant(FeatureCell.Model(title: "Factory reset", type: .switchable(value: true)))) { tappedFeature in
+            switch tappedFeature.type {
+            case .switchable(let value):
+                print("Toggle Changed: \(tappedFeature.title) → \(value ? "ON" : "OFF")")
+            case .navigable:
+                print("Tapped: \(tappedFeature.title)")
+            }
+        }
+        .dividerColor(.clear)
     }
 }

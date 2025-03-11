@@ -56,6 +56,7 @@ fileprivate extension Popup {
                     get: { progressState.title },
                     set: { _ in }
                 ))
+                .font(.custom(style: .bold, size: 17))
 
                 // Sub-label - Progress Percentage
                 ProgressPercentageText(progressState: $progressState, progress: $progress)

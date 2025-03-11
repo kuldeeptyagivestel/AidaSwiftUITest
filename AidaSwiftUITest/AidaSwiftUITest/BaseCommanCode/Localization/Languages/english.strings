@@ -1557,13 +1557,18 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 "restartTheDevice" = "Restart the device";
 "firmwareUpdate" = "Firmware Update";
 "deviceInfo" = "Device Info";
-"charging" = "Charging...";
+"charging" = "Charging";
 "watchv3_deviceinfo_macAddress" = "Mac Address";
 
 "watchv3_deviceinfo_firmwareVersion" = "Firmware Version";
 "watchv3_deviceinfo_resourcePackVersion" = "Resource Pack version";
 "watchv3_deviceinfo_deviceLanguageVersion" = "Device Language Version";
-"watchv3_deviceinfo_currentVersion" = "Current Version";
+"currentVersion" = "Current Version";
+"newVersionAvailable" = "New version is available";
+"releaseNotes" = "Release notes";
+"fixedBugs" = "Fixed bugs";
+"fwUpdateImpNotice" = "Important Notice: \n1. Make sure the device’s battery level is more than 30% and the device is close the phone. \n2. Do not leave this page during update.";
+
 "allFaces" = "All Faces";
 "dynamic" = "Dynamic";
 "simple" = "Simple";

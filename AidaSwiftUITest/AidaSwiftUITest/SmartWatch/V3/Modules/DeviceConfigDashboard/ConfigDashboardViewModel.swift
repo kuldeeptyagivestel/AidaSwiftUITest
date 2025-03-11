@@ -30,7 +30,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
         var title: String = .localized(.add_device_smartwatchv3_name)
         
         // MARK: - Published Properties
-        @Published var watchSummary: WatchSummary = WatchSummary(
+        @Published var watchSummary: WatchV3Summary = WatchV3Summary(
             deviceName: .localized(.add_device_smartwatchv3_name),
             batteryPercentage: 65,
             isCharging: true,
@@ -39,19 +39,19 @@ extension SmartWatch.V3.DeviceConfigDashboard {
             isNewFirmware: true
         )
         
-        @Published var features: [Feature] = [
-            Feature(title: .localized(.calls), type: .navigable),
-            Feature(title: .localized(.notifications), type: .navigable),
-            Feature(title: .localized(.alarm), type: .navigable),
-            Feature(title: .localized(.healthMonitor), type: .navigable),
-            Feature(title: .localized(.doNotDisturbMode), type: .navigable),
-            Feature(title: .localized(.sportRecognition), type: .navigable),
-            Feature(title: .localized(.findMyPhone), type: .switchable(value: true)),
-            Feature(title: .localized(.musicControl), type: .switchable(value: true)),
-            Feature(title: .localized(.weatherDisplay), type: .switchable(value: true)),
-            Feature(title: .localized(.shortcuts), type: .navigable),
-            Feature(title: .localized(.sportDisplay), type: .navigable),
-            Feature(title: .localized(.deviceLanguage), type: .navigable)
+        @Published var features: [FeatureCell.Model] = [
+            FeatureCell.Model(title: .localized(.calls), type: .navigable),
+            FeatureCell.Model(title: .localized(.notifications), type: .navigable),
+            FeatureCell.Model(title: .localized(.alarm), type: .navigable),
+            FeatureCell.Model(title: .localized(.healthMonitor), type: .navigable),
+            FeatureCell.Model(title: .localized(.doNotDisturbMode), type: .navigable),
+            FeatureCell.Model(title: .localized(.sportRecognition), type: .navigable),
+            FeatureCell.Model(title: .localized(.findMyPhone), type: .switchable(value: true)),
+            FeatureCell.Model(title: .localized(.musicControl), type: .switchable(value: true)),
+            FeatureCell.Model(title: .localized(.weatherDisplay), type: .switchable(value: true)),
+            FeatureCell.Model(title: .localized(.shortcuts), type: .navigable),
+            FeatureCell.Model(title: .localized(.sportDisplay), type: .navigable),
+            FeatureCell.Model(title: .localized(.deviceLanguage), type: .navigable)
         ]
         
         @Published var watchfaces: [CloudWatchfaceItem] = CloudWatchfaceItem.mock
@@ -66,7 +66,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
         // MARK: - Data Fetching
         func fetchData() {
             // Simulated data fetching and updates
-            self.watchSummary = WatchSummary(
+            self.watchSummary = WatchV3Summary(
                 deviceName: .localized(.add_device_smartwatchv3_name),
                 batteryPercentage: 75,
                 isCharging: false,
@@ -74,39 +74,6 @@ extension SmartWatch.V3.DeviceConfigDashboard {
                 latestFirmware: "1.62.00",
                 isNewFirmware: true
             )
-        }
-    }
-}
-
-//MARK: - UI MODELS
-extension SmartWatch.V3.DeviceConfigDashboard {
-
-    internal struct Feature {
-        let title: String
-        var type: FeatureType
-    }
-    
-    internal struct WatchSummary {
-        var deviceName: String
-        var batteryPercentage: Int
-        var isCharging: Bool
-        var currentFirmware: String
-        var latestFirmware: String
-        var isNewFirmware: Bool
-        
-        // Optional initializer for clarity
-        public init(deviceName: String,
-                    batteryPercentage: Int,
-                    isCharging: Bool,
-                    currentFirmware: String,
-                    latestFirmware: String,
-                    isNewFirmware: Bool) {
-            self.deviceName = deviceName
-            self.batteryPercentage = batteryPercentage
-            self.isCharging = isCharging
-            self.currentFirmware = currentFirmware
-            self.latestFirmware = latestFirmware
-            self.isNewFirmware = isNewFirmware
         }
     }
 }
@@ -140,7 +107,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
             rootViewModel.watchSummary.latestFirmware = latestVersion
             rootViewModel.watchSummary.isNewFirmware = currentVersion != latestVersion
             
-            rootViewModel.features.append(Feature(title: "Settings", type: .navigable))
+            rootViewModel.features.append(FeatureCell.Model(title: "Settings", type: .navigable))
         }
         
         deinit {

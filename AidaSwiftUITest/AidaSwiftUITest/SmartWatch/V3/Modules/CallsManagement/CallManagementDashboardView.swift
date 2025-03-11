@@ -15,22 +15,22 @@ extension SmartWatch.V3.CallsManagement {
         @ObservedObject var viewModel: WatchV3CallsManagementViewModel
         var body: some View {
             VStack{
-                FeatureCell(
-                    featureTitle: viewModel.features[0].title,
-                    type: viewModel.features[0].type,
-                    onToggle: { newValue in
-                        viewModel.features[0].type = .switchable(value: newValue)
-                    }
-                )
+//                FeatureCell(
+//                    featureTitle: viewModel.features[0].title,
+//                    type: viewModel.features[0].type,
+//                    onToggle: { newValue in
+//                        viewModel.features[0].type = .switchable(value: newValue)
+//                    }
+//                )
 
                 Text(String.localized(.incomingCallAlertDesc))
                         .padding(.horizontal,12)
                         .foregroundColor(Color.lblSecondary)
                         .font(.custom(.openSans, style: .regular, size: 14))
                     
-                FeatureCell(featureTitle: viewModel.features[1].title, type: viewModel.features[1].type,onTap: {
-                    print("tapped")
-                })
+//                FeatureCell(featureTitle: viewModel.features[1].title, type: viewModel.features[1].type,onTap: {
+//                    print("tapped")
+//                })
     
                 Text(String.localized(.frequentContactsDesc))
                     .padding(.horizontal,12)

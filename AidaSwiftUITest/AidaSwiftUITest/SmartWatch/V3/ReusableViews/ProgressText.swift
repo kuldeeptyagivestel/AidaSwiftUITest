@@ -17,6 +17,23 @@ struct ProgressText: View {
     
     private let dotCycle = ["", ".", "..", "...", "...."]
     
+    // Default font and color
+    private var textFont: Font = .custom(.muli, style: .regular, size: 16)
+    private var textColor: Color = .popupLblPrimary
+    
+    // View modifier support
+    func font(_ font: Font) -> Self {
+        var copy = self
+        copy.textFont = font
+        return copy
+    }
+    
+    func foregroundColor(_ color: Color) -> Self {
+        var copy = self
+        copy.textColor = color
+        return copy
+    }
+    
     init(baseText: Binding<String>, animationDuration: Binding<TimeInterval>? = nil) {
         self._baseText = baseText
         self._animationDuration = animationDuration ?? .constant(0.5)
@@ -25,13 +42,13 @@ struct ProgressText: View {
     var body: some View {
         HStack(alignment: .center, spacing: 0) {
             Text(animatedText)
-                .foregroundStyle(Color.popupLblPrimary)
-                .font(.custom(style: .bold, size: 17))
+                .foregroundStyle(textColor)
+                .font(textFont)
                 .transition(.opacity)
             
             Text(animatedDots)
-                .foregroundStyle(Color.popupLblPrimary)
-                .font(.custom(style: .bold, size: 17))
+                .foregroundStyle(textColor)
+                .font(textFont)
                 .frame(width: 36, alignment: .leading)
         }
         .onAppear {
@@ -67,6 +84,8 @@ struct ProgressText_Previews: View {
             baseText: $previewText,
             animationDuration: $previewDuration
         )
+        .font(.custom(style: .bold, size: 17))
+        .foregroundColor(Color.green)
         .onAppear {
             Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { _ in
                 DispatchQueue.main.async {
