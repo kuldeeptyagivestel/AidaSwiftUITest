@@ -19,7 +19,7 @@ extension SmartWatch.V3.DoNotDisturb {
             VStack{
                 ////first cell
                 VStack(spacing:0) {
-                    FeatureCell(featureTitle: String.localized(.duringDay), type: .switchable(value: viewModel.isONday))
+                    //FeatureCell(featureTitle: String.localized(.duringDay), type: .switchable(value: viewModel.isONday))
                     
                     // Conditionally rendered InfoRows
                     InfoRow(
@@ -34,7 +34,7 @@ extension SmartWatch.V3.DoNotDisturb {
                 .padding(.bottom,16)
                 ////Second cell
                 VStack(spacing:0){
-                    FeatureCell(featureTitle: String.localized(.duringNight), type: .switchable(value: viewModel.isONnight))
+                    //FeatureCell(featureTitle: String.localized(.duringNight), type: .switchable(value: viewModel.isONnight))
                     Divider()
                     
                     // Conditionally rendered InfoRows

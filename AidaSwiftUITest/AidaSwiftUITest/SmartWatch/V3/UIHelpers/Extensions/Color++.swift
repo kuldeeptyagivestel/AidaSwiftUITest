@@ -13,9 +13,10 @@ extension Color {
     
     //MARK: Table, Cells BG Colors
     static let cellBgColor = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1))
-    static let whiteBgColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)) //White color
+    static let whiteBgColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)) //#FFFFFF: Pure White color
+    static let viewBgColor = Color(#colorLiteral(red: 0.9803921569, green: 0.9803921569, blue: 0.9803921569, alpha: 1)) //#FAFAFA: Almost White
     static let scrollViewBgColor = Color(#colorLiteral(red: 0.9607843137, green: 0.9607843137, blue: 0.9607843137, alpha: 1)) //F5F5F5: Off White
-    static let viewBgColor = Color(#colorLiteral(red: 0.9803921569, green: 0.9803921569, blue: 0.9803921569, alpha: 1))//#FAFAFA: Almost White
+    
     //MARK:  Button Colors
     static let btnBgColor = Color(#colorLiteral(red: 0.9960784314, green: 0.4117647059, blue: 0.1254901961, alpha: 1)) //# FE6920
     static let btnTitleColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)) // #FFFFFF : White
@@ -33,7 +34,10 @@ extension Color {
     static let tagColor = Color(#colorLiteral(red: 0.8470588235, green: 0.1215686275, blue: 0.1490196078, alpha: 1)) // #D81F26
     static let cellNavigationArrowColor = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1)) //#676767 DarkGray
     static let clockColor = Color(#colorLiteral(red: 0.7529411765, green: 0.7529411765, blue: 0.7529411765, alpha: 1))
+    
+    //MARK: - CELL
     static let cellColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+    static let cellDividerColor = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1)) //#D0D0D0
     
     //MARK:  Toggle Colors
     static let toggleOnColor = Color(#colorLiteral(red: 0.9969399571, green: 0.4133140743, blue: 0.126126498, alpha: 1))
@@ -48,14 +52,13 @@ extension Color {
     static let batteryIcon = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1))
     
     //MARK:  Label Colors
-    static let lblPrimary = Color(#colorLiteral(red: 0.2392156863, green: 0.231372549, blue: 0.231372549, alpha: 1)) //#3D3B3B MediumGray
-    static let lblSecondary = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1)) //#676767 DarkGray
-    static let disabledColor = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1)) //#D0D0D0 MediumGray
-    static let labelNofav = Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+    static let lblPrimary = Color(#colorLiteral(red: 0.2392156863, green: 0.231372549, blue: 0.231372549, alpha: 1)) //#3D3B3B DarkGray
+    static let lblSecondary = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1)) //#676767 MediumGray
+    static let disabledColor = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1)) //#D0D0D0 LightGray
     
     //MARK:  Description Colors
     static let descriptionPrimary = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1))
-    static let descriptionSecondary = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1))
+    static let descriptionSecondary = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1)) //#676767
 
     //MARK:  Popup Colors
     static let popupBGColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))

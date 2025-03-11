@@ -17,7 +17,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
         var body: some View {
             ZStack {
                 HStack(spacing: 8) {
-                    Text("V\(version)")
+                    Text("\(version)")
                         .font(.custom(.muli, style: .regular, size: 15))
                         .foregroundColor(Color.lblPrimary)
 

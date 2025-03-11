@@ -59,9 +59,9 @@ extension SmartWatch.V3.Watchfaces {
                             .padding()
                         VStack(spacing:0){
                         ForEach($viewModel.features, id: \.title) { $feature in
-                            FeatureCell(
-                                featureTitle: feature.title,
-                                type: .navigable)
+//                            FeatureCell(
+//                                featureTitle: feature.title,
+//                                type: .navigable)
                         }
                     }
                         .padding(.bottom,16)
