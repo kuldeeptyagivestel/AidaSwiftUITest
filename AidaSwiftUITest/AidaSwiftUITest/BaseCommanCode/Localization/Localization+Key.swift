@@ -1486,6 +1486,8 @@ public enum LocalizationKey: String {
     case frequentContacts
     case incomingCallAlertDesc
     case frequentContactsDesc
+    case noContacts
+    case noContactsDesc
     
     //MARK: Notifications
     case notifications
@@ -1527,12 +1529,18 @@ public enum LocalizationKey: String {
     case lowBloodOxygenLevel
     case limitValue
     case lowBloodOxygenLevelDesc
+    
+    case drinkingReminderDesc
     //MARK: Do Not Disturb Mode
     case doNotDisturbMode
     
     //MARK: Sport Recognition
     case sportRecognition
-    
+    case sportRecognitionDesc
+    case automaticSportPause
+    case automaticSportDesc
+    case automaticSportEnd
+    case automaticSportEndDesc
     //MARK: Find My Phone
     case findMyPhone
     
@@ -1544,7 +1552,7 @@ public enum LocalizationKey: String {
     
     //MARK: Shortcuts
     case shortcuts
-    
+    case shortcutsDesc
     //MARK: Sport Display
     case sportDisplay
     

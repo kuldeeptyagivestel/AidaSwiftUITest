@@ -8,6 +8,7 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 extension SmartWatch.V3.Shortcuts {
+    //MARK: - SHORTCUT VIEW
     struct ShortcutView: View {
         @ObservedObject var viewModel: WatchV3ShortcutsViewModel
         @State private var draggedItem: String?
@@ -19,7 +20,7 @@ extension SmartWatch.V3.Shortcuts {
                 ScrollView {
                     VStack(alignment: .leading) {
                         // Show Functions Section
-                        Text("Show Functions")
+                        Text(String.localized(.show_functions))
                             .foregroundColor(Color.lblSecondary)
                             .font(.custom(.muli, style: .semibold, size: 15))
                             .padding(.horizontal)
@@ -77,7 +78,7 @@ extension SmartWatch.V3.Shortcuts {
                         }
                         if !viewModel.hideFunctions.isEmpty {
                             // Hide Functions Section
-                            Text("Hide Functions")
+                            Text(String.localized(.hide_functions))
                                 .foregroundColor(Color.lblSecondary)
                                 .font(.custom(.muli, style: .semibold, size: 15))
                                 .padding(.horizontal)
@@ -125,7 +126,7 @@ extension SmartWatch.V3.Shortcuts {
                                     .shadow(color: Color.black.opacity(0.1), radius: 6, x: 0, y: 2)
                             )
                         }
-                        Text("Long press and drag to reorder the functions. The device displays at least 2 cards.")
+                        Text(String.localized(.shortcutsDesc))
                             .foregroundColor(Color.lblSecondary)
                             .font(.custom(.openSans, style: .regular, size: 14))
                             .padding(.horizontal)
@@ -137,7 +138,7 @@ extension SmartWatch.V3.Shortcuts {
         }
     }
 }
-//MARK: - DropDelegate
+//MARK: - DROP DELEGATE
 extension SmartWatch.V3.Shortcuts {
     //// hold drag and drop to specific position
     fileprivate struct DropViewDelegate: DropDelegate {
@@ -168,7 +169,7 @@ extension SmartWatch.V3.Shortcuts {
         }
     }
 }
-//MARK: - Vibration
+//MARK: - VIBRATION
 extension SmartWatch.V3.Shortcuts {
     //// when holding for long acticvates vibration to screen in order to feel user that he picked a cell
     struct Vibration {
@@ -181,6 +182,7 @@ extension SmartWatch.V3.Shortcuts {
     }
 }
 
+//MARK: - PREVIEW
 #Preview {
     let rootViewModel = WatchV3ShortcutsViewModel()
     SmartWatch.V3.Shortcuts.ShortcutView(viewModel: rootViewModel)

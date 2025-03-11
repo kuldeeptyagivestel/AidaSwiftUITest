@@ -9,7 +9,7 @@
 import SwiftUI
 
 extension SmartWatch.V3.HealthMonitor{
-    //MARK: - HealthMonitor  View
+    //MARK: - HEALTH TRACKING VIEW
     struct HealthTrackingView: View {
         @ObservedObject var viewModel: WatchV3HealthMonitorViewModel
 
@@ -22,12 +22,11 @@ extension SmartWatch.V3.HealthMonitor{
                     .padding(.horizontal,9)
                     .padding(.top,16)
                 ScrollView {
-                    VStack(spacing: 0) {
+                    VStack(spacing: 2) {
                         ForEach(viewModel.sampleTitles, id: \.id) { feature in
                             ToggleRow(option: feature,
                                       onToggle: { viewModel.toggleFeature(feature) },
                                       onFeatureTap: { viewModel.handleFeatureTap(feature) })
-                            Divider()
                         }
                         
                     }
@@ -83,6 +82,7 @@ extension SmartWatch.V3.HealthMonitor{
 
 }
 
+//MARK: - PREVIEW
 #Preview {
     let rootViewModel = WatchV3HealthMonitorViewModel()
     SmartWatch.V3.HealthMonitor.HealthTrackingView(viewModel: rootViewModel)

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//MARK: - FEATURE CELL
 struct FeatureCell: View {
     let featureTitle: String
     let type: FeatureType
@@ -27,7 +28,7 @@ struct FeatureCell: View {
     }
 
     var body: some View {
-        VStack(alignment: .center, spacing: 0) {
+        VStack(alignment: .center) {
             HStack {
                 Text(featureTitle)
                 .font(.custom(.muli, style: .bold, size: 17))
@@ -55,7 +56,7 @@ struct FeatureCell: View {
                         }
                 }
             }
-            .padding(.leading, 10)
+            .padding(.leading, 12)
             .padding(.trailing, 15)
             .frame(height: 54)
             .background(
@@ -63,8 +64,6 @@ struct FeatureCell: View {
                     .fill(Color.white)
                     .shadow(color: Color.black.opacity(0.1), radius: 6, x: 0, y: 2)
             )
-
-            Divider().background(Color.brown)
         }
     }
 }
@@ -75,8 +74,9 @@ enum FeatureType {
     case navigable
 }
 
+//MARK: - PREVIEW
 #Preview {
-    VStack(spacing:0){
+    VStack(spacing:2){
         FeatureCell(featureTitle: "Dark Mode", type: .navigable, onToggle: { isOn in
             print("Dark Mode toggled to \(isOn)")
         })

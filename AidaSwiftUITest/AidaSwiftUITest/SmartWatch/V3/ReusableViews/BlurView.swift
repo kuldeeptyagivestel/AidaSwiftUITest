@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//MARK: - BLUR VIEW
 //Use to create Blur background
 struct BlurView: UIViewRepresentable {
     let style: UIBlurEffect.Style

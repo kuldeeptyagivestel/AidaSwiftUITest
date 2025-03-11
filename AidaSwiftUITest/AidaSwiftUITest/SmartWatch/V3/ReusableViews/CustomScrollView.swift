@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// MARK: - BounceModifier
+// MARK: - BOUNCE MODIFIER
 // Custom view modifier to set ScrollView appearance settings
 struct ScrollViewBounceModifier: ViewModifier {
     var bounces: Bool
@@ -19,7 +19,7 @@ struct ScrollViewBounceModifier: ViewModifier {
     }
 }
 
-// MARK: - BounceModifier ScrollView Extension
+// MARK: - BOUNCE MODIFIER SCROLLVIEW EXTENSION
 // Extension to apply the custom modifier to ScrollView
 extension ScrollView {
     func withBounce(_ bounces: Bool) -> some View {

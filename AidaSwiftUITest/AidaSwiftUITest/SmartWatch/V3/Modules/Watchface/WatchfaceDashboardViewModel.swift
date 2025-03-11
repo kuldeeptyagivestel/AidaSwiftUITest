@@ -35,7 +35,7 @@ extension SmartWatch.V3.Watchfaces {
         @Published var watchFaceRecords : String = .localized(.watchFaceRecords)
         @Published var favorites : String = .localized(.favorites)
         @Published var watchfaces: [CloudWatchfaceItem] = CloudWatchfaceItem.mock
-        
+        @Published var tabs = [String.localized(.market), String.localized(.photo), String.localized(.my_library)]
         @Published var features: [Feature] = [
             Feature(title: .localized(.selectFromAlbum)),
             Feature(title: .localized(.takeAPhoto))

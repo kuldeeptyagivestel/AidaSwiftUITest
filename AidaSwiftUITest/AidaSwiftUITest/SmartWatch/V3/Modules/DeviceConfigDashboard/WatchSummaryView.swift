@@ -9,7 +9,7 @@ import SwiftUI
 
 ///Watch Summary View Header UI
 extension SmartWatch.V3.DeviceConfigDashboard {
-    //MARK: - WatchSummaryView
+    //MARK: - WATCH SUMMARY VIEW
     struct WatchSummaryView: View {
         @Binding var watchSummary: WatchSummary
         
@@ -59,7 +59,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
     }
 }
 
-// MARK: - Preview
+//MARK: - PREVIEW
 struct Previews_WatchSummaryView: PreviewProvider {
     @State static var watchSummary = SmartWatch.V3.DeviceConfigDashboard.WatchSummary(
         deviceName: "Vestel Smart Watch 3",

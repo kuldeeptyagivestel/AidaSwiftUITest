@@ -8,7 +8,7 @@
 
 import SwiftUI
 extension SmartWatch.V3.CallsManagement {
-    //MARK: - CallManagementDashboardView  View
+    //MARK: - CALL MANAGEMENT DASHBOARD VIEW
     struct CallManagementDashboardView: View {
         @State var isOn = true
         var onFrequentContactsTap: (() -> Void)?
@@ -24,7 +24,7 @@ extension SmartWatch.V3.CallsManagement {
                 )
 
                 Text(String.localized(.incomingCallAlertDesc))
-                        .padding(.horizontal,9)
+                        .padding(.horizontal,12)
                         .foregroundColor(Color.lblSecondary)
                         .font(.custom(.openSans, style: .regular, size: 14))
                     
@@ -33,7 +33,7 @@ extension SmartWatch.V3.CallsManagement {
                 })
     
                 Text(String.localized(.frequentContactsDesc))
-                    .padding(.horizontal,9)
+                    .padding(.horizontal,12)
                     .foregroundColor(Color.lblSecondary)
                     .font(.custom(.openSans, style: .regular, size: 14))
                 Spacer()
@@ -42,6 +42,8 @@ extension SmartWatch.V3.CallsManagement {
         }
     }
 }
+
+//MARK: - PREVIEW
 #Preview {
     let rootViewModel = WatchV3CallsManagementViewModel()
     SmartWatch.V3.CallsManagement.CallManagementDashboardView(viewModel: rootViewModel)

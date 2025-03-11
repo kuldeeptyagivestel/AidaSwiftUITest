@@ -6,18 +6,19 @@
 //
 
 import SwiftUI
-//MARK: WatchfaceCarouselView
+
 extension SmartWatch.V3.Watchfaces {
+    //MARK: - MY LIBRARY VIEW
     struct MyLibrary: View {
         @ObservedObject var viewModel: WatchfaceViewModel  // ViewModel injected via navigation
         @State private var selectedTab = 0
-        let tabs = [String.localized(.market), String.localized(.photo), String.localized(.my_library)]
+        
         var body: some View {
             VStack{
-                TitleBarView(selectedTabIndex: $selectedTab, tabs: tabs)
+                TitleBarView(selectedTabIndex: $selectedTab, tabs: viewModel.tabs)
                 
                 ScrollView{
-                    VStack(spacing:0){
+                    VStack(spacing:2){
                         FeatureCell(
                             featureTitle: viewModel.watchFaceRecords,
                             type: .navigable
@@ -49,6 +50,8 @@ extension SmartWatch.V3.Watchfaces {
         }
     }
 }
+
+//MARK: - PREVIEW
 #Preview {
     let rootViewModel = WatchV3WatchfaceViewModel()
     SmartWatch.V3.Watchfaces.MyLibrary(viewModel: rootViewModel)

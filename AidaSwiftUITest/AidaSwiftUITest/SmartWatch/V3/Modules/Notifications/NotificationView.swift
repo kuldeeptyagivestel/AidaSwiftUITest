@@ -7,6 +7,7 @@
 import SwiftUI
 
 extension SmartWatch.V3.Notification {
+    //MARK: - NOTIFICATION VIEW
     struct NotificationView: View {
         @ObservedObject var viewModel: NotificationViewModel
 
@@ -57,17 +58,17 @@ extension SmartWatch.V3.Notification {
                             .foregroundColor(Color.lblSecondary)
 
                         VStack(spacing:16) {
-                            VStack(spacing:0){
+                            VStack(spacing:2){
                                 ForEach($viewModel.notificationOptions, id: \.id) { $option in
                                     NotificationToggleRow(option: $option, isDisabled: !viewModel.allowNotifications)
                                 }
                             }
-                            VStack(spacing:0){
+                            VStack(spacing:2){
                                 ForEach($viewModel.systemOptions, id: \.id) { $option in
                                     NotificationToggleRow(option: $option, isDisabled: !viewModel.allowNotifications)
                                 }
                             }
-                            VStack(spacing:0){
+                            VStack(spacing:2){
                                 ForEach($viewModel.socialOptions, id: \.id) { $option in
                                     NotificationToggleRow(option: $option, isDisabled: !viewModel.allowNotifications)
                                 }
@@ -82,51 +83,56 @@ extension SmartWatch.V3.Notification {
 
 }
 
-
-struct NotificationToggleRow: View {
-    @Binding var option: SmartWatch.V3.Notification.NotificationOption
-    var isDisabled: Bool
-    var body: some View {
-        ToggleComponentWithImage(title: option.name, icon: option.icon, isOn: $option.isEnabled, isDisabled: isDisabled)
-        Divider()
-    }
-}
-
-struct ToggleComponentWithImage: View {
-    var title: String
-    var icon: String
-    @Binding var isOn: Bool
-    var isDisabled: Bool
-    var body: some View {
-        HStack {
-            Image(icon)
-                .resizable()
-                .frame(width: 30, height: 30)
-                .scaledToFit()
-                .padding(.leading,15)
-            
-            Text(title)
-                .font(.custom(.muli,style:.bold, size: 16))
-                .foregroundColor(isDisabled ? .gray : .black)
-            
-            Spacer()
-            
-            Toggle("", isOn: $isOn)
-                .toggleStyle(ToggleSwitchStyle())
-                .padding(.trailing,10)
-                .disabled(isDisabled)
+//MARK: - NOTIFICATION TOGGLE ROW
+extension SmartWatch.V3.Notification {
+    struct NotificationToggleRow: View {
+        @Binding var option: SmartWatch.V3.Notification.NotificationOption
+        var isDisabled: Bool
+        var body: some View {
+            ToggleComponentWithImage(title: option.name, icon: option.icon, isOn: $option.isEnabled, isDisabled: isDisabled)
         }
-        .frame(height: 50)
-        .background(
-            RoundedRectangle(cornerRadius: 0)
-                .fill(Color.white)
-                .shadow(color: Color.black.opacity(0.1),
-                        radius: 6, x: 0, y: 2)
-        )
-        
     }
 }
 
+//MARK: - COMPONENT WITH IMAGE
+extension SmartWatch.V3.Notification {
+    struct ToggleComponentWithImage: View {
+        var title: String
+        var icon: String
+        @Binding var isOn: Bool
+        var isDisabled: Bool
+        var body: some View {
+            HStack {
+                Image(icon)
+                    .resizable()
+                    .frame(width: 30, height: 30)
+                    .scaledToFit()
+                    .padding(.leading,15)
+                
+                Text(title)
+                    .font(.custom(.muli,style:.bold, size: 16))
+                    .foregroundColor(isDisabled ? .gray : .black)
+                
+                Spacer()
+                
+                Toggle("", isOn: $isOn)
+                    .toggleStyle(ToggleSwitchStyle())
+                    .padding(.trailing,10)
+                    .disabled(isDisabled)
+            }
+            .frame(height: 50)
+            .background(
+                RoundedRectangle(cornerRadius: 0)
+                    .fill(Color.white)
+                    .shadow(color: Color.black.opacity(0.1),
+                            radius: 6, x: 0, y: 2)
+            )
+            
+        }
+    }
+}
+
+//MARK: - PREVIEW
 #Preview {
     let rootViewModel = WatchV3NotificationViewModel()
     SmartWatch.V3.Notification.NotificationView(viewModel: rootViewModel)

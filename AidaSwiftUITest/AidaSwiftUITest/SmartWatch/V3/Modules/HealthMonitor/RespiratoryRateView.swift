@@ -8,7 +8,7 @@
 
 import SwiftUI
 extension SmartWatch.V3.HealthMonitor{
-    //MARK: - RespiratoryRate  View
+    //MARK: - RESPIRATORY VIEW
     struct RespiratoryRateView: View {
         
         @ObservedObject private var viewModel = WatchV3HealthMonitorViewModel()
@@ -25,7 +25,8 @@ extension SmartWatch.V3.HealthMonitor{
                 Text(String.localized(.automaticRespiratoryRateDesc))
                     .font(.custom(.openSans, style: .regular, size: 14))
                     .foregroundColor(Color.lblSecondary)
-                    .padding(.horizontal,8)
+                    .padding(.leading,12)
+                    .padding(.trailing,15)
                 Spacer()
             }
             .background(Color.viewBgColor)
@@ -33,6 +34,7 @@ extension SmartWatch.V3.HealthMonitor{
     }
 }
 
+//MARK: - PREVIEW
 #Preview {
     SmartWatch.V3.HealthMonitor.RespiratoryRateView()
 }

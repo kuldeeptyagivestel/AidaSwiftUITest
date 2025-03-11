@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension SmartWatch.V3.HealthMonitor{
-    //MARK: - HeartRate  View
+    //MARK: - HEART RATE VIEW
     struct HeartRateView: View {
         @ObservedObject private var viewModel = WatchV3HealthMonitorViewModel()
         
@@ -22,21 +22,25 @@ extension SmartWatch.V3.HealthMonitor{
                         Text(String.localized(.heartRateDesc))
                             .font(.custom(.openSans, style: .regular, size: 14))
                             .foregroundColor(Color.lblSecondary)
-                            .padding(.horizontal,8)
+                            .padding(.leading,12)
+                            .padding(.trailing,15)
                         
                         FeatureCell(featureTitle: String.localized(.continuousHeartRate), type:.switchable(value: true))
                         
                         Text(String.localized(.hearRateMeasureDesc))
                         .font(.custom(.openSans, style: .regular, size: 14))
                         .foregroundColor(Color.lblSecondary)
-                        .padding(.horizontal,8)
+                        .padding(.leading,12)
+                        .padding(.trailing,15)
+                        .padding(.bottom,15)
                         
                         Text(String.localized(.heartRateAlert))
                             .font(.custom(.muli, style: .semibold, size: 15))
-                            .padding(.horizontal,8)
+                            .padding(.leading,12)
+                            .padding(.trailing,15)
                             .foregroundColor(Color.lblPrimary)
-                        
-                        VStack(spacing:0){
+                            
+                        VStack(spacing:2){
                             FeatureCell(featureTitle: String.localized(.highHeartRateTitle), type:.switchable(value: viewModel.isHighHeart ))
                                 .disabled(viewModel.selectedOption == .turnOffNotifications)
                             InfoRow(
@@ -51,8 +55,9 @@ extension SmartWatch.V3.HealthMonitor{
                         Text(String.localized(.highHeartRateDesc))
                             .font(.custom(.openSans, style: .regular, size: 14))
                             .foregroundColor(Color.lblSecondary)
-                            .padding(.horizontal,8)
-                        VStack(spacing:0){
+                            .padding(.leading,12)
+                            .padding(.trailing,15)
+                        VStack(spacing:2){
                             FeatureCell(featureTitle:String.localized(.lowHeartRateTitle), type:.switchable(value: viewModel.isLowHeart))
                                 .disabled(viewModel.selectedOption == .turnOffNotifications)
                             InfoRow(
@@ -66,7 +71,8 @@ extension SmartWatch.V3.HealthMonitor{
                         Text(String.localized(.lowHeartRateDesc))
                             .font(.custom(.openSans, style: .regular, size: 14))
                             .foregroundColor(Color.lblSecondary)
-                            .padding(.horizontal,8)
+                            .padding(.leading,12)
+                            .padding(.trailing,15)
                     }
                 }
             }
@@ -74,6 +80,8 @@ extension SmartWatch.V3.HealthMonitor{
         }
     }
 }
+
+//MARK: - PREVIEW
 #Preview {
     let rootViewModel = WatchV3HealthMonitorViewModel()
     SmartWatch.V3.HealthMonitor.HeartRateView()

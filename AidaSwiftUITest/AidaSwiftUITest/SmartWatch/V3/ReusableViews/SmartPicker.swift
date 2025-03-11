@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// MARK: - SmartPicker Component
+// MARK: - SMART PICKER COMPONENT
 ///Stand alone Picker View: ``A PICKER + UNIT: 06: Days
 struct SmartPicker<T: Hashable>: View {
     let options: [T]
@@ -98,12 +98,14 @@ struct SmartPicker_Previews: View {
     }
 }
 
+//MARK: - PREVIEW
 struct SmartPicker_Previews_Previews: PreviewProvider {
     static var previews: some View {
         SmartPicker_Previews()
     }
 }
 
+//MARK: - TIME PICKER POPUP VIEW
 struct TimePickerPopup_Preview: View {
     // State variables for time selection
     @State private var selectedStartHour = 21
@@ -207,6 +209,7 @@ struct TimePickerPopup_Preview: View {
     }
 }
 
+//MARK: - PREVIEW
 // Preview
 struct TimePickerPopup_Previews: PreviewProvider {
     static var previews: some View {

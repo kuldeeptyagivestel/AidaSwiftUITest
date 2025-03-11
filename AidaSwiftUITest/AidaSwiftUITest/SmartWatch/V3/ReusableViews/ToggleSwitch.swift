@@ -48,6 +48,7 @@ private struct ToggleSwitchDemo: View {
     }
 }
 
+//MARK: - PREVIEW
 #Preview {
     ToggleSwitchDemo()
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 ///Watchface Showcase View
 extension SmartWatch.V3.Watchfaces {
-    // MARK: - WatchfaceShowcaseView
+    // MARK: - WATCH SHOWCASE VIEW
     //WatchfaceShowcaseView: Horizontal Watch Face Collection View with Header title and Arrow
     internal struct WatchfaceShowcaseView: View {
         @Binding var watchfaces: [CloudWatchfaceItem]  // Updated to @Binding
@@ -83,7 +83,7 @@ extension SmartWatch.V3.Watchfaces {
     }
 }
 
-// MARK: - Preview
+//MARK: - PREVIEW
 struct Previews_WatchfaceShowcaseView: PreviewProvider {
     static var previews: some View {
         @State var watchfaces: [CloudWatchfaceItem] = CloudWatchfaceItem.mock

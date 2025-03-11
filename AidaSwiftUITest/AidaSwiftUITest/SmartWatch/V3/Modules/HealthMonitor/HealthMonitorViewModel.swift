@@ -48,6 +48,7 @@ extension SmartWatch.V3.HealthMonitor {
         
         @Published var automaticToggleBloodOxygen = true
         @Published var lowBloodOxygen = true
+        @Published var isDrinkingReminderON: Bool = true
         // This closure is set to handle the selected days
         var onDaysSelected: (([Bool]) -> Void)?
         // MARK: - Initializer

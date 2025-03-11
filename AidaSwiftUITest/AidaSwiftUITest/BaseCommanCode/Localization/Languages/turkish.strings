@@ -1580,7 +1580,7 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "deviceInfo" = "Cihaz Bilgileri";
 "charging" = "Şarj ediliyor...";
 
-"watchv3_deviceinfo_macAddress" = "Mac Address";
+"watchv3_deviceinfo_macAddress" = "Mac Adresi";
 
 "watchv3_deviceinfo_firmwareVersion" = "Ürün Yazılımı Sürümü";
 "watchv3_deviceinfo_resourcePackVersion" = "Kaynak Paketi sürümü";
@@ -1600,22 +1600,25 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "selectTextLocation" = "Metin Konumu Seç";
 "muteNotification" = "Bildirimleri sessize al";
 "turnOffNotification" = "Bildirimi kapat";
-//MARK: - V3 Features
+//MARK: - V3 FEATURES
 
-//MARK: Calls
+//MARK: CALLS
 "calls" = "Aramalar";
 "incomingCallAlert" = "Gelen Çağrı Uyarısı";
 "frequentContacts" = "Sık Görüşülen Kişiler";
 "incomingCallAlertDesc" = "Gelen arama uyarısı özelliğini etkinleştirirseniz, gelen bir arama olduğunda arayanın adını ve arayan kimliğini saatinizde alırsınız. Rahatsız Etmeyin modunda, arama uyarıları almazsınız.";
 "frequentContactsDesc" = "Sık görüştüğünüz kişileri cihazınıza ekledikten sonra, onları doğrudan saatinizden arayabilirsiniz.";
-//MARK: Notifications
+
+"noContact" = "İletişim yok";
+"noContact Desc" = "Saatinize 20'ye kadar iletişim ekleyebilirsiniz.";
+//MARK: NOTIFICATIONS
 "notifications" = "Bildirimler";
 "notificationsDesc" = "Bildirimleri alabilmeniz için telefon ayarlarınızdan bildirim iznini aktifleştirmeniz gerekmektedir.";
 "systemNotificationPermission" = "Sistem bildirimleri izni";
-//MARK: Alarm
+//MARK: ALARM
 "alarm" = "Alarm";
 
-//MARK: Health Monitor
+//MARK: HEALTH MONITOR
 "healthMonitor" = "Sağlık Takibi";
 "healthMonitorDesc" = "Sağlık takibiyle otomatik ölçümleri etkinleştirebilir, akıllı saatinize bildirim almak için hatırlatıcılar ayarlayabilirsiniz.";
 "continuousHeartRate" = "Sürekli kalp atış hızı ölçümleri";
@@ -1659,28 +1662,34 @@ Not: Bu özellik cihazın bekleme süresini azaltabilir.";
 Not: Doğru ölçümler için cihazı bilek kemiğinizin en az bir parmak yukarısına takın ve sıkıca oturduğundan emin olun.
 
 Not: Dış etkenler (örneğin düşük kan perfüzyonu, aşırı kol kılı, dövmeler, kol hareketleri, uygunsuz kullanım veya soğuk hava sıcaklıkları) doğruluğu etkileyebilir veya ölçüm hatalarına neden olabilir.";
-//MARK: Do Not Disturb Mode
+
+"drinkingReminderDesc" = "İçme hatırlatıcısı, su içmenizi hatırlatmak için size bildirimler gönderir. Belirlediğiniz başlangıç-bitiş zaman aralığında, hatırlatma süresi ayarınıza göre tekrar tekrar su içmeniz hatırlatılır.";
+//MARK: DO NOT DISTURB MODE
 "doNotDisturbMode" = "Rahatsız etmeyin modu";
 
-//MARK: Sport Recognition
+//MARK: SPORT RECOGNITION
 "sportRecognition" = "Spor tanıma";
-
-//MARK: Find My Phone
+"sportRecognitionDesc" = "Bir sporu manuel olarak başlatmadığınızda, cihaz koşu, yürüyüş, eliptik veya kürek makinesi kullanıp kullanmadığınızı algılar ve ilgili aktiviteye başlamayı önerir.";
+"automaticSportPause" = "Otomatik spor duraklatma";
+"automaticSportDesc" = "Koşu için otomatik duraklamaları algılar ve uygulama aracılığıyla başlatılan açık hava bisiklet sürüşünü otomatik olarak duraklatır.";
+"automaticSportEnd" = "Otomatik spor sonu";
+"automaticSportEnd" = "Koşu, yürüyüş, açık hava bisikleti, kürek çekme, eliptik ve yüzme gibi sporları otomatik olarak sonlandırır.";
+//MARK: FIND MY PHONE
 "findMyPhone" = "Telefonumu bul";
 
-//MARK: Music Control
+//MARK: MUSIC CONTROL
 "musicControl" = "Müzik kontrolü";
 
-//MARK: Weather Display
+//MARK: WEATHER DISPLAY
 "weatherDisplay" = "Hava durumu ekranı";
 
-//MARK: Shortcuts
+//MARK: SHORTCUTS
 "shortcuts" = "Kısayollar";
-
-//MARK: Sport Display
+"shortcutsDesc" = "Fonksiyonları yeniden sıralamak için uzun basın ve sürükleyin. Cihaz en az 2 kart görüntüler.";
+//MARK: SPORT DISPLAY
 "sportDisplay" = "Spor ekranı";
 
-//MARK: Device Language
+//MARK: DEVICE LANGUAGE
 "deviceLanguage" = "Cihaz dili";
 
 //MARK: -

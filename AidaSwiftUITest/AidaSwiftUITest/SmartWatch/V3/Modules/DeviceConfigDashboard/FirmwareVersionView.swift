@@ -9,7 +9,7 @@ import SwiftUI
 
 ///Firmware Version View UI
 extension SmartWatch.V3.DeviceConfigDashboard {
-    //MARK: - FirmwareVersionView
+    //MARK: - FIRMWARE VERSION VIEW
     struct FirmwareVersionView: View {
         @Binding var version: String
         @Binding var isNew: Bool
@@ -43,9 +43,9 @@ extension SmartWatch.V3.DeviceConfigDashboard {
     }
 }
 
-// MARK: - Preview
+//MARK: - PREVIEW
 struct Previews_FirmwareVersionView: PreviewProvider {
-    // MARK: - Preview Wrapper
+    // MARK: - PREVIEW WRAPPER
     private struct FirmwareVersionView_PreviewWrapper: View {
         @State private var version = "1.61.99"
         @State private var isNew = true

@@ -8,7 +8,7 @@
 import SwiftUI
 ///Device Info View Screen UI
 extension SmartWatch.V3.DeviceManagement {
-    //MARK: - DeviceInfo  View
+    //MARK: - DEVICE INFO  VIEW
     struct DeviceInfoView: View {
         @EnvironmentObject var navigation: NavigationCoordinator
         @ObservedObject var viewModel: DeviceManagementViewModel  // ViewModel injected via navigation
@@ -51,7 +51,7 @@ extension SmartWatch.V3.DeviceManagement {
         }
     }
 }
-//MARK: - Info Cell
+//MARK: - INFO CELL
 extension SmartWatch.V3.DeviceManagement {
     //// created to store information
     fileprivate struct InfoCell: View {

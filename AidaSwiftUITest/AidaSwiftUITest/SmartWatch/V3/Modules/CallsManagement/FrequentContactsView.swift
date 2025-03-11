@@ -8,7 +8,7 @@
 
 import SwiftUI
 extension SmartWatch.V3.CallsManagement {
-    //MARK: - FrequentContactsView
+    //MARK: - FREQUENT CONTACTS VIEW
     struct FrequentContactsView: View {
         var onAddContactTap: (() -> Void)?
         var body: some View {
@@ -42,6 +42,7 @@ extension SmartWatch.V3.CallsManagement {
     }
 }
 
+//MARK: - PREVIEW
 #Preview {
     SmartWatch.V3.CallsManagement.FrequentContactsView()
 }

@@ -55,7 +55,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
         
         var body: some View {
             // Feature List using ScrollView & ForEach
-            VStack(spacing:0) {
+            VStack(spacing:2) {
                 ///We did not use list becuase list is not working well with scrollview
                 ForEach($features, id: \.title) { $feature in
                     FeatureCell(featureTitle: feature.title, type: feature.type,onTap:
@@ -186,7 +186,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
         var body: some View {
             ScrollView {
                 // Feature List using ScrollView & ForEach
-                VStack(spacing: 0) {
+                VStack(spacing: 2) {
                     ForEach($features, id: \.title) { $feature in
                         FeatureCell(featureTitle: feature.title, type: feature.type, onTap:  {
                             print("Tapped feature: \(feature.title)")
@@ -195,11 +195,11 @@ extension SmartWatch.V3.DeviceConfigDashboard {
                 }
                 .background(Color.cellColor)
             }
-            .background(Color.disabledColor)
+            .background(Color.viewBgColor)
         }
     }
 }
-//MARK: - Previews
+//MARK: - PREVIEW
 struct Previews_ConfigDashboardView: PreviewProvider {
     static var previews: some View {
         let rootViewModel = WatchV3ConfigDashboardViewModel()

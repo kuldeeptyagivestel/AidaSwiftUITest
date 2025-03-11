@@ -10,7 +10,7 @@
 import SwiftUI
 
 extension SmartWatch.V3.DeviceManagement {
-    //MARK: - UpdateFirmware View
+    //MARK: - UPDATE FIRMWARE VIEW
     struct UpdateFirmwareView: View {
         @EnvironmentObject var navigation: NavigationCoordinator
         @ObservedObject var viewModel: DeviceManagementViewModel  // ViewModel injected via navigation
@@ -108,6 +108,7 @@ extension SmartWatch.V3.DeviceManagement {
         }
     }
 }
+//MARK: - PREVIEW
 #Preview {
     let rootViewModel = WatchV3DeviceManagementViewModel()
     SmartWatch.V3.DeviceManagement.UpdateFirmwareView(viewModel: rootViewModel)

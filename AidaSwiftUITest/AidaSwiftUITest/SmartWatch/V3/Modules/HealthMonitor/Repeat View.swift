@@ -8,7 +8,7 @@
 
 import SwiftUI
 extension SmartWatch.V3.HealthMonitor{
-    //MARK: - Repeat  View
+    //MARK: - REPEAT VIEW
     struct RepeatView: View {
         @ObservedObject private var viewModel = WatchV3HealthMonitorViewModel()
         
@@ -50,6 +50,8 @@ extension SmartWatch.V3.HealthMonitor{
         }
     }
 }
+
+//MARK: - PREVIEW
 #Preview {
     SmartWatch.V3.HealthMonitor.RepeatView()
 }

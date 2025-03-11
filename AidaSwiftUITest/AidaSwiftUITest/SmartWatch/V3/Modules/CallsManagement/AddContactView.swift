@@ -9,7 +9,7 @@
 import SwiftUI
 import Contacts
 extension SmartWatch.V3.CallsManagement {
-    //MARK: - AddContactViewView
+    //MARK: - ADD CONTACT VIEW
     struct AddContactView: View {
         @State private var searchText: String = ""
         @ObservedObject var viewModel: WatchV3CallsManagementViewModel
@@ -58,7 +58,7 @@ extension SmartWatch.V3.CallsManagement {
         }
 
         private func contactList(_ contacts: [Contact]) -> some View {
-            VStack(spacing: 0) {
+            VStack(spacing: 2) {
                 ForEach(contacts) { contact in
                     VStack {
                         HStack {
@@ -77,7 +77,7 @@ extension SmartWatch.V3.CallsManagement {
                         }
                         .padding(.vertical, 6)
                         .padding(.horizontal)
-                        Divider()
+                        
                     }
                     .background(
                         RoundedRectangle(cornerRadius: 0)
@@ -90,8 +90,7 @@ extension SmartWatch.V3.CallsManagement {
     }
 }
 
-
-
+//MARK: - PREVIEW
 #Preview {
     let rootViewModel = WatchV3CallsManagementViewModel()
     SmartWatch.V3.CallsManagement.AddContactView(viewModel: rootViewModel)

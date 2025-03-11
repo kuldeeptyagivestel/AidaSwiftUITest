@@ -11,7 +11,7 @@ import SwiftUI
  🕰 Animated Clock Loader  █
    - A circular clock with two rotating needles.
  */
-// MARK: - Loader View
+// MARK: - LOADER VIEW
 ///Clock with animated needles
 internal struct LoaderView: View {
     @Binding var isVisible: Bool

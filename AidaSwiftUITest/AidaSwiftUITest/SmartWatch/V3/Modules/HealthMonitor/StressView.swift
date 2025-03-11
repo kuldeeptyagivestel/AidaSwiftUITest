@@ -8,7 +8,7 @@
 
 import SwiftUI
 extension SmartWatch.V3.HealthMonitor{
-    //MARK: - Stress View
+    //MARK: - STRESS VIEW
     struct StressView: View {
         @ObservedObject private var viewModel = WatchV3HealthMonitorViewModel()
         var body: some View {
@@ -21,7 +21,8 @@ extension SmartWatch.V3.HealthMonitor{
                         Text(String.localized(.heartRateDesc))
                             .font(.custom(.openSans, style: .regular, size: 14))
                             .foregroundColor(Color.lblSecondary)
-                            .padding(.horizontal,8)
+                            .padding(.leading,12)
+                            .padding(.trailing,15)
                         
                         // Continuous Heart Rate Measurements
                         FeatureCell(featureTitle:String.localized(.automaticStressManagement),
@@ -31,10 +32,11 @@ extension SmartWatch.V3.HealthMonitor{
                         Text(String.localized(.automaticStressManagementDesc))
                             .font(.custom(.openSans, style: .regular, size: 14))
                             .foregroundColor(Color.lblSecondary)
-                            .padding(.horizontal,8)
+                            .padding(.leading,12)
+                            .padding(.trailing,15)
                         
                         // Continuation of the StressView
-                        VStack(spacing:0){
+                        VStack(spacing:2){
                             FeatureCell(
                                 featureTitle: String.localized(.highHeartRateTitle),
                                 type:.switchable(value: viewModel.isHighHeart ))
@@ -66,7 +68,8 @@ extension SmartWatch.V3.HealthMonitor{
                         Text(String.localized(.stressGraphDesc))
                             .font(.custom(.openSans, style: .regular, size: 14))
                             .foregroundColor(Color.lblSecondary)
-                            .padding(.horizontal,8)
+                            .padding(.leading,12)
+                            .padding(.trailing,15)
                         
                         
                     }
@@ -93,6 +96,8 @@ extension SmartWatch.V3.HealthMonitor{
         }
     }
 }
+
+//MARK: - PREVIEW
 #Preview {
     SmartWatch.V3.HealthMonitor.StressView()
 }

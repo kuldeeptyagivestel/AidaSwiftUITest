@@ -9,7 +9,7 @@
 import SwiftUI
 ///Device Summary View Header UI
 extension SmartWatch.V3.DeviceManagement {
-    //MARK: - Device Summary View
+    //MARK: - DEVICE SUMMARY VIEW
     struct DeviceSummaryView: View {
         let imageName: String
         let deviceState: String
@@ -57,6 +57,7 @@ extension SmartWatch.V3.DeviceManagement {
     }
 }
 
+//MARK: - PREVIEW
 #Preview {
     @State var deviceSummary = SmartWatch.V3.DeviceManagement.DeviceSummary(
         deviceName: "Vestel Smart Watch 3",

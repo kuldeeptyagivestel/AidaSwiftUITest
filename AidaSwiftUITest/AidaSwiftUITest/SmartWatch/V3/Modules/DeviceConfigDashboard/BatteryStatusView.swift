@@ -9,7 +9,7 @@ import SwiftUI
 
 ///Battery Status View
 extension SmartWatch.V3.DeviceConfigDashboard {
-    // MARK: - BatteryStatusView
+    // MARK: - BATTERY STATUS VIEW
     internal struct BatteryStatusView: View {
         @Binding var batteryPercentage: Int
         
@@ -25,7 +25,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
         }
     }
     
-    // MARK: - BatteryIconView with Animation
+    // MARK: - BATTERY ICON VIEW WITH ANIMATION
     private struct BatteryIconView: View {
         var percentage: Int
         @State private var displayedPercentage: Int = 0
@@ -79,7 +79,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
     }
 }
 
-// MARK: - Preview
+//MARK: - PREVIEW
 struct Previews_BatteryStatusView: PreviewProvider {
     static var previews: some View {
         @State var batteryPercentage = 55

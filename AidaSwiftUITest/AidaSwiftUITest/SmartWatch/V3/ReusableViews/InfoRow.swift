@@ -5,7 +5,7 @@
 //  Created by Swapnil Baranwal on 06/03/25.
 //
 import SwiftUI
-
+//MARK: - INFO ROW
 struct InfoRow: View {
     var title: String
     var value: String?
@@ -34,7 +34,7 @@ struct InfoRow: View {
                     }
             }
         }
-        .padding(.horizontal,8)
+        .padding(.horizontal,10)
         .padding(.vertical, 15)
         .background(
             RoundedRectangle(cornerRadius: 0)
@@ -46,11 +46,12 @@ struct InfoRow: View {
     }
 }
 
+//MARK: - PREVIEW
 #Preview {
     InfoRow(
         title: "Start-end time",
         value: "09:00-18:00",
         icon: Image(systemName: "arrow.right"),
-        isEnabled: false
+        isEnabled: true
     )
 }

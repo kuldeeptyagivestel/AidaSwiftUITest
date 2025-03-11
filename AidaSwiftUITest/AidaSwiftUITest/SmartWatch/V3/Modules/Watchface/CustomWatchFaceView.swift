@@ -8,8 +8,8 @@
 import SwiftUI
 import Kingfisher
 
-//MARK: CutomWatchFace
 extension SmartWatch.V3.Watchfaces {
+    //MARK: - CUSTOM WATCHFACE VIEW
     struct CustomWatchFaceView: View {
         @ObservedObject var viewModel: WatchfaceViewModel
         @State private var selectedColor: Color = .purple
@@ -57,7 +57,7 @@ extension SmartWatch.V3.Watchfaces {
                             .font(.custom(.muli, style: .semibold, size: 15))
                             .foregroundColor(Color.lblPrimary)
                             .padding()
-                        VStack(spacing:0){
+                        VStack(spacing:2){
                         ForEach($viewModel.features, id: \.title) { $feature in
                             FeatureCell(
                                 featureTitle: feature.title,
@@ -132,6 +132,7 @@ extension SmartWatch.V3.Watchfaces {
     }
 }
 
+//MARK: - TEXT COLOR SCROLLING VIEW
 struct TextColorScrolling: View {
     @State private var selectedColor: Watchface.Custom.TextColor = .black
     @State private var selectedTextLocation: Int = 1
@@ -175,6 +176,8 @@ struct TextColorScrolling: View {
         )
     }
 }
+
+//MARK: - PREVIEW
 #Preview {
     let rootViewModel = WatchV3WatchfaceViewModel()
     SmartWatch.V3.Watchfaces.CustomWatchFaceView(

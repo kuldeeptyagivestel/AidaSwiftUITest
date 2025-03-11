@@ -5,13 +5,13 @@
 //  Created by Swapnil Baranwal on 09/03/25.
 //
 import SwiftUI
-
+//MARK: - RADIO CELLS
 struct RadioCells: View {
     @Binding var selectedOption: NotificationOption
     @ObservedObject var viewModel: WatchV3HealthMonitorViewModel
 
     var body: some View {
-        VStack(spacing:0) {
+        VStack(spacing:1) {
             ForEach(NotificationOption.allCases, id: \.self) { option in
                 VStack{
                     HStack {
@@ -33,7 +33,7 @@ struct RadioCells: View {
                     }
                     .padding(.vertical, 15)
                     .contentShape(Rectangle()) // Improves tap recognition
-                    .padding(.horizontal,8)
+                    .padding(.horizontal,10)
                     .onTapGesture {
                         viewModel.selectOption(option) // Call the selectOption method here
                     }
@@ -49,7 +49,7 @@ struct RadioCells: View {
     }
 }
 
-
+//MARK: - PREVIEW
 #Preview {
     let rootViewModel = WatchV3HealthMonitorViewModel()
     @State var selectedOption: NotificationOption = .allowNotifications

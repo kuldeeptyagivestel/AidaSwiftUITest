@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
-//MARK: WatchfaceCarouselView
+
 extension SmartWatch.V3.Watchfaces {
+    //MARK: - INSTALL WATCH FACE VIEW
     struct InstallWatchFaceView: View {
         let cellSize: CGSize
         let cornerRadius: CGFloat
@@ -66,6 +67,7 @@ extension SmartWatch.V3.Watchfaces {
     }
 }
 
+//MARK: - PREVIEW
 #Preview {
     
     @State var watchfaces: [CloudWatchfaceItem] = CloudWatchfaceItem.mock

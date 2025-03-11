@@ -10,7 +10,7 @@ import Kingfisher
 
 ///Watchface Cell UI
 extension SmartWatch.V3.Watchfaces {
-    //MARK: - WatchfaceCell
+    //MARK: - WATCHFACE CELL
     struct WatchfaceCell: View {
         let title: String
         let imageURL: URL?
@@ -98,7 +98,7 @@ extension SmartWatch.V3.Watchfaces {
     }
 }
 
-// MARK: - Preview
+//MARK: - PREVIEW
 struct Previews_WatchfaceCell: PreviewProvider {
     static var previews: some View {
         SmartWatch.V3.Watchfaces.WatchfaceCell(

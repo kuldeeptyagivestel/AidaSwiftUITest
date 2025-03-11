@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 
 extension SmartWatch.V3.DeviceLanguage {
-    //MARK: - DeviceLanguageView  View
+    //MARK: - DEVICE LANGUAGE VIEW
     struct DeviceLanguageView: View {
         @EnvironmentObject var navigation: NavigationCoordinator
         @ObservedObject var viewModel: DeviceLanguageViewModel  // ViewModel injected via navigation

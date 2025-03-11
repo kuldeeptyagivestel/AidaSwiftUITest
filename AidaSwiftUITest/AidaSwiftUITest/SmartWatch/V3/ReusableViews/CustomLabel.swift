@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//MARK: - CUSTOM LABEL STYLE
 struct CustomLabelStyle: LabelStyle {
     // The amount of spacing to apply between the icon and title.
     var spacing: Double = 0.0

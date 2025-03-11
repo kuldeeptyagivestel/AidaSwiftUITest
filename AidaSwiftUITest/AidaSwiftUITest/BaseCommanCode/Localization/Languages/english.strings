@@ -1578,23 +1578,25 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 "selectTextLocation" = "Select Text Location";
 "muteNotification" = "Mute notification";
 "turnOffNotification" = "Turn off notification";
-//MARK: - V3 Features
+//MARK: - V3 FEATURES
 
-//MARK: Calls
+//MARK: CALLS
 "calls" = "Calls";
 "incomingCallAlert" = "Incoming Call Alert";
 "frequentContacts" = "Frequent Contacts";
 "incomingCallAlertDesc" = "If you enable the incoming call alert feature, you will receive the caller's name and caller ID on your watch when there is an incoming call. In Do Not Disturb mode, you won't receive call alerts.";
 "frequentContactsDesc" = "Once frequent contacts are added to your device, you can call them directly from the watch.";
 
-//MARK: Notifications
+"noContacts" = "No contacts";
+"noContactsDesc" = "You can add up to 20 contacts to your watch.";
+//MARK: NOTIFICATIONS
 "notifications" = "Notifications";
 "notificationsDesc" = "To receive notifications, you need to enable notification permission in your phone settings.";
 "systemNotificationPermission" = "System notifications permission";
-//MARK: Alarm
+//MARK: ALARM
 "alarm" = "Alarm";
 
-//MARK: Health Monitor
+//MARK: HEALTH MONITOR
 "healthMonitor" = "Health Tracking";
 "healthMonitorDesc" = "With health tracking, you can enable automatic measurements and set reminders to get notifications on your smart watch.";
 "heartRateDesc" = "When selected, the device won't vibrate when you receive a notification.";
@@ -1638,28 +1640,34 @@ Note: This feature may reduce the device's standby time.";
 Note: For accurate measurements, wear the device at least one finger above your wrist bone and ensure it fits snugly.
 
 Note: External factors (e.g., low blood perfusion, excessive arm hair, tattoos, arm movement, improper wearing, or cold temperatures) can affect accuracy or cause measurement errors.";
-//MARK: Do Not Disturb Mode
+
+"drinkingReminderDesc" =  "Drinking reminder sends you notifications to remind you to drink water. During the start-end time period you have set, you will be reminded to drink water repeatedly according to your reminder duration setting.";
+//MARK: DO NOT DISTURB MODE
 "doNotDisturbMode" = "Do Not Disturb Mode";
 
-//MARK: Sport Recognition
+//MARK: SPORT RECOGNITION
 "sportRecognition" = "Sport Recognition";
-
-//MARK: Find My Phone
+"sportRecognitionDesc" = "When you don't start a sport manually, the device detects if you are running, walking, using the elliptical, or rowing machine, and suggests starting the corresponding activity.";
+"automaticSportPause" = "Automatic sport pause";
+"automaticSportDesc" = "Detects automatic pauses for running and automatically pauses outdoor cycling started through the app.";
+"automaticSportEnd" = "Automatic sport end";
+"automaticSportEndDesc" = "Automatically ends sports such as running, walking, outdoor cycling, rowing, elliptical, and swimming.";
+//MARK: FIND MY PHONE
 "findMyPhone" = "Find My Phone";
 
-//MARK: Music Control
+//MARK: MUSIC CONTROL
 "musicControl" = "Music Control";
 
-//MARK: Weather Display
+//MARK: WEATHER DISPLAY
 "weatherDisplay" = "Weather Display";
 
-//MARK: Shortcuts
+//MARK: SHORTCUTS
 "shortcuts" = "Shortcuts";
-
-//MARK: Sport Display
+"shortcutsDesc" = "Long press and drag to reorder the functions. The device displays at least 2 cards.";
+//MARK: SPORT DISPLAY
 "sportDisplay" = "Sport Display";
 
-//MARK: Device Language
+//MARK: DEVICE LANGUAGE
 "deviceLanguage" = "Device Language";
 
 //MARK: -

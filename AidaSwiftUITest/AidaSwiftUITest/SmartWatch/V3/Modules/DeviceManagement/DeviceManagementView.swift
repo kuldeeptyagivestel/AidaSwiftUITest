@@ -10,14 +10,14 @@ import Foundation
 import SwiftUI
 
 extension SmartWatch.V3.DeviceManagement {
-    //MARK: - DeviceManagementView  View
+    //MARK: - DEVICE MANAGEMENT VIEW
     struct DeviceManagementView: View {
         @EnvironmentObject var navigation: NavigationCoordinator
         @ObservedObject var viewModel: DeviceManagementViewModel  // ViewModel injected via navigation
 
         var body: some View {
             GeometryReader { geometry in
-                VStack(spacing:0) {
+                VStack(spacing:2) {
                     DeviceSummaryView(
                         imageName: "smartwatchv3/deviceImage", deviceState:.localized(.charging),
                         deviceSummary: $viewModel.deviceSummary)
@@ -57,7 +57,7 @@ extension SmartWatch.V3.DeviceManagement {
 }
 
 extension SmartWatch.V3.DeviceManagement {
-    //MARK: - FeatureCellWithVersion
+    //MARK: - FEATURE CELL WITH VERSION VIEW
     //// this cell is been created specfically for the version cell in device management.
     fileprivate struct FeatureCellWithVersion: View {
         @Binding var featureTitle: String
@@ -81,21 +81,19 @@ extension SmartWatch.V3.DeviceManagement {
                         }
                 }
                 .padding(.horizontal)
-                .frame(height: 48)
+                .frame(height: 52)
                 .background(
                     RoundedRectangle(cornerRadius: 0)
                         .fill(Color.white)
                         .shadow(color: Color.black.opacity(0.1), radius: 6, x: 0, y: 2)
                 )
-                // Custom full-width divider
-                Divider().background(Color.brown)
             }
             
         }
     }
  
 }
-//MARK: - Previews
+//MARK: - PREVIEW
 struct Previews_DeviceManagementView: PreviewProvider {
     static var previews: some View {
         let rootViewModel = WatchV3DeviceManagementViewModel()

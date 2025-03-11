@@ -10,7 +10,7 @@
 import SwiftUI
 
 extension SmartWatch.V3.DoNotDisturb {
-    //MARK: - DoNotDisturbView
+    //MARK: - DO NOT DISTURB VIEW
     struct DoNotDisturbView: View {
         
         @ObservedObject var viewModel: WatchV3DoNotDisturbViewModel
@@ -18,7 +18,7 @@ extension SmartWatch.V3.DoNotDisturb {
         var body: some View {
             VStack{
                 ////first cell
-                VStack(spacing:0) {
+                VStack(spacing:2) {
                     FeatureCell(featureTitle: String.localized(.duringDay), type: .switchable(value: viewModel.isONday))
                     
                     // Conditionally rendered InfoRows
@@ -33,10 +33,9 @@ extension SmartWatch.V3.DoNotDisturb {
                 
                 .padding(.bottom,16)
                 ////Second cell
-                VStack(spacing:0){
+                VStack(spacing:2){
                     FeatureCell(featureTitle: String.localized(.duringNight), type: .switchable(value: viewModel.isONnight))
-                    Divider()
-                    
+
                     // Conditionally rendered InfoRows
                     InfoRow(
                         title: String.localized(.sedentary_start_end_time),
@@ -59,6 +58,8 @@ extension SmartWatch.V3.DoNotDisturb {
         }
     }
 }
+
+//MARK: - PREVIEW
 #Preview {
     let rootViewModel = WatchV3DoNotDisturbViewModel()
     SmartWatch.V3.DoNotDisturb.DoNotDisturbView(viewModel: rootViewModel)
