@@ -28,6 +28,7 @@ extension SmartWatch.V3.HealthMonitor{
                     .padding(.horizontal,8)
                 Spacer()
             }
+            .background(Color.viewBgColor)
         }
     }
 }

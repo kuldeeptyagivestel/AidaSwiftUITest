@@ -15,23 +15,23 @@ extension Color {
     static let cellBgColor = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1))
     static let whiteBgColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)) //White color
     static let scrollViewBgColor = Color(#colorLiteral(red: 0.9607843137, green: 0.9607843137, blue: 0.9607843137, alpha: 1)) //F5F5F5: Off White
-    
+    static let viewBgColor = Color(#colorLiteral(red: 0.9803921569, green: 0.9803921569, blue: 0.9803921569, alpha: 1))//#FAFAFA: Almost White
     //MARK:  Button Colors
-    static let btnBgColor = Color(#colorLiteral(red: 0.9969399571, green: 0.4133140743, blue: 0.126126498, alpha: 1))
-    static let btnTitleColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
-    static let btnSecondaryBgColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+    static let btnBgColor = Color(#colorLiteral(red: 0.9960784314, green: 0.4117647059, blue: 0.1254901961, alpha: 1)) //# FE6920
+    static let btnTitleColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)) // #FFFFFF : White
+    static let btnSecondaryBgColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)) // #FFFFFF : White
     static let btnSecondaryTitleColor = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1))
     static let btnSecondaryBorderColor = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1))
-
+    static let mainColor = Color(#colorLiteral(red: 1, green: 0.4705882353, blue: 0.1921568627, alpha: 1)) // #FF7831 MainOrange
     static let disableButton = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1))
     
     //MARK: -  Navigation Bar Colors
-    static let backButtonItem = Color(#colorLiteral(red: 0.9969399571, green: 0.4133140743, blue: 0.126126498, alpha: 1))
-    static let navigationTitle = Color(#colorLiteral(red: 0.9969399571, green: 0.4133140743, blue: 0.126126498, alpha: 1))
+    static let backButtonItem = Color(#colorLiteral(red: 0.9960784314, green: 0.4117647059, blue: 0.1254901961, alpha: 1)) //# FE6920
+    static let navigationTitle = Color(#colorLiteral(red: 0.9969399571, green: 0.4133140743, blue: 0.126126498, alpha: 1)) //# FE6920
     
     //MARK: - Tag Color
-    static let tagColor = Color(#colorLiteral(red: 0.8470588235, green: 0.1215686275, blue: 0.1490196078, alpha: 1))
-    static let cellNavigationArrowColor = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1))
+    static let tagColor = Color(#colorLiteral(red: 0.8470588235, green: 0.1215686275, blue: 0.1490196078, alpha: 1)) // #D81F26
+    static let cellNavigationArrowColor = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1)) //#676767 DarkGray
     static let clockColor = Color(#colorLiteral(red: 0.7529411765, green: 0.7529411765, blue: 0.7529411765, alpha: 1))
     static let cellColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
     
@@ -43,14 +43,14 @@ extension Color {
     static let titlePrimary = Color(#colorLiteral(red: 0.2392156863, green: 0.231372549, blue: 0.231372549, alpha: 1))
     
     //MARK: - Battery Cell
-    static let batteryCell = Color(#colorLiteral(red: 0.3294117647, green: 0.8196078431, blue: 0.7450980392, alpha: 1))
-    static let batteryLowCell = Color(#colorLiteral(red: 0.8470588235, green: 0.1215686275, blue: 0.1490196078, alpha: 1))
+    static let batteryCell = Color(#colorLiteral(red: 0.3294117647, green: 0.8196078431, blue: 0.7450980392, alpha: 1)) //#54D1BE
+    static let batteryLowCell = Color(#colorLiteral(red: 0.8470588235, green: 0.1215686275, blue: 0.1490196078, alpha: 1)) // #D81F26
     static let batteryIcon = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1))
     
     //MARK:  Label Colors
-    static let lblPrimary = Color(#colorLiteral(red: 0.2392156863, green: 0.231372549, blue: 0.231372549, alpha: 1))
-    static let lblSecondary = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1))
-    static let disabledColor = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1))
+    static let lblPrimary = Color(#colorLiteral(red: 0.2392156863, green: 0.231372549, blue: 0.231372549, alpha: 1)) //#3D3B3B MediumGray
+    static let lblSecondary = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1)) //#676767 DarkGray
+    static let disabledColor = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1)) //#D0D0D0 MediumGray
     static let labelNofav = Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
     
     //MARK:  Description Colors
@@ -103,7 +103,7 @@ extension Color {
     ///   - hex: The hexadecimal color code (e.g., "#FF5733").
     ///   - opacity: The opacity value for the color, ranging from 0.0 (fully transparent) to 1.0 (fully opaque). Default is 1.0.
     /// - Returns: A SwiftUI `Color` instance representing the specified color.
-    static func fromHex(_ hex: String, opacity: Double = 1.0) -> Color {
+    static func fromHexSwiftUI(_ hex: String, opacity: Double = 1.0) -> Color {
         var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
         hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
  

@@ -1625,6 +1625,19 @@ While an appropriate level of stress supports your physical and mental health, e
 "automaticRespiratoryRateDesc" = "Enable to monitor your respiratory rate during sleep.
                  
 Note: Power consumption will increase while monitoring is active.";
+
+"automaticBloodOxygen" = "Automatic blood oxygen measurement";
+"automaticBloodOxygenDesc" = "Enable to measure and record your blood oxygen level automatically when you are in a static state. Results can help you monitor your health status (e.g., during sleep or at high altitudes).
+                         
+Note: This feature may reduce the device's standby time.";
+
+"lowBloodOxygenLevel" = "Low blood oxygen level reminder";
+"limitValue" = "Limit value";
+"lowBloodOxygenLevelDesc" = "You will receive a reminder when your blood oxygen level falls below the limit value.
+                        
+Note: For accurate measurements, wear the device at least one finger above your wrist bone and ensure it fits snugly.
+
+Note: External factors (e.g., low blood perfusion, excessive arm hair, tattoos, arm movement, improper wearing, or cold temperatures) can affect accuracy or cause measurement errors.";
 //MARK: Do Not Disturb Mode
 "doNotDisturbMode" = "Do Not Disturb Mode";
 

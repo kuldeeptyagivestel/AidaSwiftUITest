@@ -39,7 +39,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
                     .frame(width: geometry.size.width, alignment: .leading)
                     .clipped()
                 }
-                .background(Color.scrollViewBgColor)
+                .background(Color.viewBgColor)
             }
         }
     }

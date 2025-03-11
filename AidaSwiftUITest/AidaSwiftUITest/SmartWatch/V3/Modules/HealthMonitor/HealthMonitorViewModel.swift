@@ -41,9 +41,13 @@ extension SmartWatch.V3.HealthMonitor {
         
         @Published var  isHighHeart: Bool = true
         @Published  var isLowHeart: Bool = false
+        
         @Published var selectedDays: [Bool] = Array(repeating: false, count: 7)
         @Published var isON: Bool = false
         @Published var daysOfWeek = [String.localized(.every_mon),String.localized(.every_tue),String.localized(.every_wed),String.localized(.every_thu),String.localized(.every_fri),String.localized(.every_sat),String.localized(.every_sun)]
+        
+        @Published var automaticToggleBloodOxygen = true
+        @Published var lowBloodOxygen = true
         // This closure is set to handle the selected days
         var onDaysSelected: (([Bool]) -> Void)?
         // MARK: - Initializer

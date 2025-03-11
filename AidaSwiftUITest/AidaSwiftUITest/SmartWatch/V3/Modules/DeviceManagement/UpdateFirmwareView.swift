@@ -104,7 +104,7 @@ extension SmartWatch.V3.DeviceManagement {
                     )
                     Spacer()
                 }
-                .background(Color.scrollViewBgColor)
+                .background(Color.viewBgColor)
         }
     }
 }

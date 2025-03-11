@@ -53,7 +53,7 @@ extension SmartWatch.V3.SportRecognition{
                         }
                     }
                 }
-                .background(Color.scrollViewBgColor)
+                .background(Color.viewBgColor)
             }
         }
     }

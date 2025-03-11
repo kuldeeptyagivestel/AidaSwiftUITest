@@ -1646,6 +1646,19 @@ Uygun bir stres seviyesi fiziksel ve ruhsal sağlığınızı desteklerken, aş�
 "automaticRespiratoryRateDesc" = "Uyku sırasında solunum hızınızı izlemek için etkinleştirin.
 
 Not: İzleme etkinken güç tüketimi artacaktır.";
+
+"automaticBloodOxygen" = "Otomatik kan oksijen ölçümü";
+"automaticBloodOxygenDesc" = "Sabit bir durumda olduğunuzda kan oksijen seviyenizi otomatik olarak ölçmek ve kaydetmek için etkinleştirin. Sonuçlar sağlık durumunuzu izlemenize yardımcı olabilir (örneğin, uyku sırasında veya yüksek irtifalarda).
+
+Not: Bu özellik cihazın bekleme süresini azaltabilir.";
+
+"lowBloodOxygenLevel" = "Düşük kan oksijen seviyesi hatırlatıcısı";
+"limitValue" = "Sınır değer";
+"lowBloodOxygenLevelDesc" = "Kan oksijen seviyeniz sınır değerin altına düştüğünde bir hatırlatıcı alacaksınız.
+
+Not: Doğru ölçümler için cihazı bilek kemiğinizin en az bir parmak yukarısına takın ve sıkıca oturduğundan emin olun.
+
+Not: Dış etkenler (örneğin düşük kan perfüzyonu, aşırı kol kılı, dövmeler, kol hareketleri, uygunsuz kullanım veya soğuk hava sıcaklıkları) doğruluğu etkileyebilir veya ölçüm hatalarına neden olabilir.";
 //MARK: Do Not Disturb Mode
 "doNotDisturbMode" = "Rahatsız etmeyin modu";
 

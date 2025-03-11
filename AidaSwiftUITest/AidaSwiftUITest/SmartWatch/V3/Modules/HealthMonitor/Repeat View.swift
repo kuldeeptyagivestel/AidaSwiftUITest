@@ -43,7 +43,7 @@ extension SmartWatch.V3.HealthMonitor{
                 .padding(.top,3)
                 Spacer()
             }
-            .background(Color.scrollViewBgColor)
+            .background(Color.viewBgColor)
             .onDisappear {
                 viewModel.notifyParent() // Let the viewModel handle the onDisappear logic
             }

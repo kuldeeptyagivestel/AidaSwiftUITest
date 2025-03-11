@@ -16,8 +16,8 @@ extension SmartWatch.V3.HealthMonitor{
                 ScrollView {
                     VStack(alignment: .leading) {
                         RadioCells(selectedOption: $viewModel.selectedOption, viewModel: viewModel)
-                            .padding(.bottom,8)
-                            .padding(.bottom,8)
+                            .padding(.bottom,16)
+                            
                         Text(String.localized(.heartRateDesc))
                             .font(.custom(.openSans, style: .regular, size: 14))
                             .foregroundColor(Color.lblSecondary)
@@ -89,7 +89,7 @@ extension SmartWatch.V3.HealthMonitor{
                 }
             }
             .padding(.bottom, 10)
-            .background(Color.scrollViewBgColor)
+            .background(Color.viewBgColor)
         }
     }
 }

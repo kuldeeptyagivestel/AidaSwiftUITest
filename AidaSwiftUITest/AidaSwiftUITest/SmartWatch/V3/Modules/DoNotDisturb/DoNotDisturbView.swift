@@ -54,7 +54,7 @@ extension SmartWatch.V3.DoNotDisturb {
                     .padding(.horizontal,10)
                 Spacer()
             }
-            .background(Color.scrollViewBgColor)
+            .background(Color.viewBgColor)
             
         }
     }

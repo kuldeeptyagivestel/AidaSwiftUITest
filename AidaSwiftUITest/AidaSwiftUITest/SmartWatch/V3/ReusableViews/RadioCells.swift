@@ -29,6 +29,7 @@ struct RadioCells: View {
                                     .frame(width: 13, height: 13)
                             }
                         }
+                        .padding(.trailing, 10)
                     }
                     .padding(.vertical, 15)
                     .contentShape(Rectangle()) // Improves tap recognition
@@ -49,8 +50,9 @@ struct RadioCells: View {
 }
 
 
-//#Preview {
-//    @State var selectedOption: NotificationOption = .allowNotifications
-//    return RadioCells(selectedOption: $selectedOption)
-//}
+#Preview {
+    let rootViewModel = WatchV3HealthMonitorViewModel()
+    @State var selectedOption: NotificationOption = .allowNotifications
+    RadioCells(selectedOption: $selectedOption, viewModel:rootViewModel)
+}
 

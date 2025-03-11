@@ -70,6 +70,7 @@ extension SmartWatch.V3.HealthMonitor{
                     }
                 }
             }
+            .background(Color.viewBgColor)
         }
     }
 }

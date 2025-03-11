@@ -76,7 +76,7 @@ extension SmartWatch.V3.Notification {
                     }
                 }
             }
-            .background(Color.scrollViewBgColor)
+            .background(Color.viewBgColor)
         }
     }
 

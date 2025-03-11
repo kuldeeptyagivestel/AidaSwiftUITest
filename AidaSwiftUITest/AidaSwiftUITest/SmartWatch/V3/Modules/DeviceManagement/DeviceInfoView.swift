@@ -47,7 +47,7 @@ extension SmartWatch.V3.DeviceManagement {
                         
                     }
                 }
-            }.background(Color.scrollViewBgColor)
+            }.background(Color.viewBgColor)
         }
     }
 }

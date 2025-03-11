@@ -33,7 +33,7 @@ extension SmartWatch.V3.HealthMonitor{
                     }
                 }
             }
-            .background(Color.scrollViewBgColor)
+            .background(Color.viewBgColor)
         }
     }
     
@@ -51,11 +51,13 @@ extension SmartWatch.V3.HealthMonitor{
                 
                 Text(option.title)
                     .font(.custom(.muli, style: .bold, size: 16))
+                    .foregroundColor(Color.lblPrimary)
                 
                 Spacer()
                 
                 Text(option.isOn ? "On" : "Off")
-                    .foregroundColor(option.isOn ? Color.btnBgColor: Color.lblSecondary)
+                    .font(.custom(.muli, style: .semibold, size: 15))
+                    .foregroundColor(option.isOn ? Color.mainColor: Color.lblSecondary)
                     .font(.body)
                     .padding(.horizontal, 8)
                     .onTapGesture {

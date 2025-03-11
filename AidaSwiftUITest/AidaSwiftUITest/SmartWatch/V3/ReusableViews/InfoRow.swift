@@ -24,6 +24,7 @@ struct InfoRow: View {
                 Text(value)
                     .font(.custom(.openSans, style: .regular, size: 14))
                     .foregroundColor(isEnabled ? Color.descriptionSecondary : Color.disabledColor)
+                    .padding(.trailing,8)
             }
             if let icon = icon {
                 icon

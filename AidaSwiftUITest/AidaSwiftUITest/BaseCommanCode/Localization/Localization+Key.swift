@@ -1520,6 +1520,13 @@ public enum LocalizationKey: String {
     
     case automaticRespiratoryRateDetection
     case automaticRespiratoryRateDesc
+    
+    case automaticBloodOxygen
+    case automaticBloodOxygenDesc
+    
+    case lowBloodOxygenLevel
+    case limitValue
+    case lowBloodOxygenLevelDesc
     //MARK: Do Not Disturb Mode
     case doNotDisturbMode
     

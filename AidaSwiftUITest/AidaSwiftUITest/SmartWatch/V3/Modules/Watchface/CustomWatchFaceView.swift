@@ -57,11 +57,13 @@ extension SmartWatch.V3.Watchfaces {
                             .font(.custom(.muli, style: .semibold, size: 15))
                             .foregroundColor(Color.lblPrimary)
                             .padding()
+                        VStack(spacing:0){
                         ForEach($viewModel.features, id: \.title) { $feature in
                             FeatureCell(
                                 featureTitle: feature.title,
                                 type: .navigable)
                         }
+                    }
                         .padding(.bottom,16)
                         Text(String.localized(.selectTextColor))
                             .font(.custom(.muli, style: .semibold, size: 15))
@@ -81,12 +83,12 @@ extension SmartWatch.V3.Watchfaces {
                                 ForEach(0..<4) { index in
                                     ZStack(alignment: textAlignment(for: index)) {
                                         KFAnimatedImage(watchfaces.first?.cloudPreviewURL)
-                                            .scaledToFill()
-                                            .frame(width: 80, height: 90)
-                                            .cornerRadius(12)
-                                            .padding(3)
+                                            .scaledToFit()
+                                            .frame(width: 82, height: 90)
+                                            .padding(.vertical,4)
                                             .overlay(
-                                                RoundedRectangle(cornerRadius: 10)
+                                                RoundedRectangle(cornerRadius: 22)
+                                                    
                                                     .stroke(selectedTextLocation == index ? Color.orange : Color.clear, lineWidth: 3)
                                                     
                                             )
@@ -131,7 +133,7 @@ extension SmartWatch.V3.Watchfaces {
 }
 
 struct TextColorScrolling: View {
-    @State private var selectedColor: Watchface.Custom.TextColor = .default
+    @State private var selectedColor: Watchface.Custom.TextColor = .black
     @State private var selectedTextLocation: Int = 1
 
     var body: some View {
@@ -141,7 +143,7 @@ struct TextColorScrolling: View {
                     Spacer()
                     
                     ForEach(Watchface.Custom.TextColor.validColors, id: \.self) { color in
-                        let colorValue = Color(color.rawValue) // Precompute color value
+                        let colorValue = Color.fromHexSwiftUI(color.rawValue) // Precompute color value
                         
                         Circle()
                             .fill(colorValue)
@@ -167,8 +169,9 @@ struct TextColorScrolling: View {
         }
         .background(
             RoundedRectangle(cornerRadius: 0)
-                .fill(Color.white)
-                .shadow(color: Color.black.opacity(0.1), radius: 6, x: 0, y: 2)
+                .fill(Color.cellColor)
+                .shadow(color: Color.labelNofav.opacity(0.1),
+                        radius: 6, x: 0, y: 2)
         )
     }
 }

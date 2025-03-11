@@ -132,7 +132,7 @@ extension SmartWatch.V3.Shortcuts {
                     }
                 }
             }
-            .background(Color.gray.opacity(0.1))
+            .background(Color.viewBgColor)
             
         }
     }

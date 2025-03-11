@@ -29,13 +29,13 @@ struct ProgressBar: View {
             RoundedRectangle(cornerRadius: 20)
                 .frame(width: size.width, height: size.height) // Adjust height for a pipe-like effect
                 .foregroundStyle(LinearGradient(
-                    gradient: Gradient(colors: [Color.fromHex("#F4F5F6"), Color.fromHex("#F3F3F3")]),
+                    gradient: Gradient(colors: [Color.fromHexSwiftUI("#F4F5F6"), Color.fromHexSwiftUI("#F3F3F3")]),
                     startPoint: .topLeading,
                     endPoint: .bottomTrailing
                 ))
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.fromHex("##979797").opacity(0.3), lineWidth: 1)
+                        .stroke(Color.fromHexSwiftUI("##979797").opacity(0.3), lineWidth: 1)
                 )
                 .shadow(color: Color.black.opacity(1.0), radius: 2, x: 0, y: 0.5)
 
