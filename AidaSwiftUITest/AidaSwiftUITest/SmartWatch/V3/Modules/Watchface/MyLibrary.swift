@@ -18,16 +18,14 @@ extension SmartWatch.V3.Watchfaces {
                 TitleBarView(selectedTabIndex: $selectedTab, tabs: viewModel.tabs)
                 
                 ScrollView{
-                    VStack(spacing:2){
-                        FeatureCell(
-                            featureTitle: viewModel.watchFaceRecords,
+                    VStack(spacing:0){
+                        FeatureCell(feature: .constant(FeatureCell.Model(title: viewModel.watchFaceRecords,
                             type: .navigable
-                        )
+                        )))
                         
-                        FeatureCell(
-                            featureTitle: viewModel.favorites,
+                        FeatureCell(feature: .constant(FeatureCell.Model(title: viewModel.favorites,
                             type: .navigable
-                        )
+                        )))
                         
                         WatchV3WatchfaceShowcaseView(
                             watchfaces: $viewModel.watchfaces,

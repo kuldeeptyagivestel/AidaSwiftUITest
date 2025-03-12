@@ -25,8 +25,8 @@ extension SmartWatch.V3.HealthMonitor{
                             .padding(.trailing,15)
                         
                         // Continuous Heart Rate Measurements
-                        FeatureCell(featureTitle:String.localized(.automaticStressManagement),
-                                    type:.switchable(value: true))
+                        FeatureCell(feature: .constant(FeatureCell.Model(title:String.localized(.automaticStressManagement),
+                                    type:.switchable(value: true))))
                         .padding(.bottom,8)
                         
                         Text(String.localized(.automaticStressManagementDesc))
@@ -36,10 +36,9 @@ extension SmartWatch.V3.HealthMonitor{
                             .padding(.trailing,15)
                         
                         // Continuation of the StressView
-                        VStack(spacing:2){
-                            FeatureCell(
-                                featureTitle: String.localized(.highHeartRateTitle),
-                                type:.switchable(value: viewModel.isHighHeart ))
+                        VStack(spacing:0){
+                            FeatureCell(feature: .constant(FeatureCell.Model(title: String.localized(.highHeartRateTitle),
+                                type:.switchable(value: viewModel.isHighHeart ))))
                             .disabled(viewModel.selectedOption == .turnOffNotifications)
                             Group{
                                 InfoRow(
@@ -58,9 +57,8 @@ extension SmartWatch.V3.HealthMonitor{
                                 )
                                 .disabled(viewModel.selectedOption == .turnOffNotifications)
                             }
-                            FeatureCell(
-                                featureTitle: String.localized(.watchv2_hm_war_repeat),
-                                type:.navigable)
+                            FeatureCell(feature: .constant(FeatureCell.Model(title: String.localized(.watchv2_hm_war_repeat),
+                                type:.navigable)))
                             .disabled(viewModel.selectedOption == .turnOffNotifications)
                         }
                         .padding(.bottom,8)

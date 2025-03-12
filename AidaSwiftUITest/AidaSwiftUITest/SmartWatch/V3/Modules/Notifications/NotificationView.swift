@@ -58,17 +58,17 @@ extension SmartWatch.V3.Notification {
                             .foregroundColor(Color.lblSecondary)
 
                         VStack(spacing:16) {
-                            VStack(spacing:2){
+                            VStack(spacing:1){
                                 ForEach($viewModel.notificationOptions, id: \.id) { $option in
                                     NotificationToggleRow(option: $option, isDisabled: !viewModel.allowNotifications)
                                 }
                             }
-                            VStack(spacing:2){
+                            VStack(spacing:1){
                                 ForEach($viewModel.systemOptions, id: \.id) { $option in
                                     NotificationToggleRow(option: $option, isDisabled: !viewModel.allowNotifications)
                                 }
                             }
-                            VStack(spacing:2){
+                            VStack(spacing:1){
                                 ForEach($viewModel.socialOptions, id: \.id) { $option in
                                     NotificationToggleRow(option: $option, isDisabled: !viewModel.allowNotifications)
                                 }
@@ -125,7 +125,7 @@ extension SmartWatch.V3.Notification {
                 RoundedRectangle(cornerRadius: 0)
                     .fill(Color.white)
                     .shadow(color: Color.black.opacity(0.1),
-                            radius: 6, x: 0, y: 2)
+                            radius: 9, x: 0, y: 2)
             )
             
         }

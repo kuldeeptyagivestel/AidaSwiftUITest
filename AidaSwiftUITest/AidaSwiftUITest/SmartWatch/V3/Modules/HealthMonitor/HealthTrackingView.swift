@@ -22,7 +22,7 @@ extension SmartWatch.V3.HealthMonitor{
                     .padding(.horizontal,9)
                     .padding(.top,16)
                 ScrollView {
-                    VStack(spacing: 2) {
+                    VStack(spacing: 0) {
                         ForEach(viewModel.sampleTitles, id: \.id) { feature in
                             ToggleRow(option: feature,
                                       onToggle: { viewModel.toggleFeature(feature) },

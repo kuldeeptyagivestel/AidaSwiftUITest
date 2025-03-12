@@ -25,7 +25,7 @@ extension SmartWatch.V3.HealthMonitor{
                             .padding(.leading,12)
                             .padding(.trailing,15)
                         
-                        FeatureCell(featureTitle: String.localized(.continuousHeartRate), type:.switchable(value: true))
+                        FeatureCell(feature: .constant(FeatureCell.Model(title: String.localized(.continuousHeartRate), type:.switchable(value: true))))
                         
                         Text(String.localized(.hearRateMeasureDesc))
                         .font(.custom(.openSans, style: .regular, size: 14))
@@ -40,8 +40,8 @@ extension SmartWatch.V3.HealthMonitor{
                             .padding(.trailing,15)
                             .foregroundColor(Color.lblPrimary)
                             
-                        VStack(spacing:2){
-                            FeatureCell(featureTitle: String.localized(.highHeartRateTitle), type:.switchable(value: viewModel.isHighHeart ))
+                        VStack(spacing:0){
+                            FeatureCell(feature: .constant(FeatureCell.Model(title: String.localized(.highHeartRateTitle), type:.switchable(value: viewModel.isHighHeart ))))
                                 .disabled(viewModel.selectedOption == .turnOffNotifications)
                             InfoRow(
                                 title: String.localized(.sedentary_start_end_time),
@@ -57,8 +57,8 @@ extension SmartWatch.V3.HealthMonitor{
                             .foregroundColor(Color.lblSecondary)
                             .padding(.leading,12)
                             .padding(.trailing,15)
-                        VStack(spacing:2){
-                            FeatureCell(featureTitle:String.localized(.lowHeartRateTitle), type:.switchable(value: viewModel.isLowHeart))
+                        VStack(spacing:0){
+                            FeatureCell(feature: .constant(FeatureCell.Model(title:String.localized(.lowHeartRateTitle), type:.switchable(value: viewModel.isLowHeart))))
                                 .disabled(viewModel.selectedOption == .turnOffNotifications)
                             InfoRow(
                                 title: String.localized(.sedentary_start_end_time),

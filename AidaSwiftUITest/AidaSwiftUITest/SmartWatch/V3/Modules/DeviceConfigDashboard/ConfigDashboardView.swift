@@ -55,7 +55,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
         
         var body: some View {
             // Feature List using ScrollView & ForEach
-            VStack(spacing:2) {
+            VStack(spacing:0) {
                 ///We did not use list becuase list is not working well with scrollview
                 ForEach($features, id: \.title) { $feature in
                     FeatureCell(feature: .constant(feature)) { tappedFeature in
@@ -185,7 +185,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
         var body: some View {
             ScrollView {
                 // Feature List using ScrollView & ForEach
-                VStack(spacing: 2) {
+                VStack(spacing: 0) {
                     ForEach($features, id: \.title) { $feature in
 //                        FeatureCell(featureTitle: feature.title, type: feature.type, onTap:  {
 //                            print("Tapped feature: \(feature.title)")

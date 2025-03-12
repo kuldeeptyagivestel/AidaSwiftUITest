@@ -21,7 +21,7 @@ extension SmartWatch.V3.CallsManagement {
                         .padding(.bottom,25)
                     Text("No Contacts")
                         .font(.custom(.muli, style: .bold, size: 18))
-                        .foregroundColor(Color.labelNofav)
+                        .foregroundColor(Color.lblPrimary)
                         .padding(.bottom,15)
                     Text("You can add up to 20 contacts to your watch.")
                         .font(.custom(.openSans, style: .regular, size: 14))

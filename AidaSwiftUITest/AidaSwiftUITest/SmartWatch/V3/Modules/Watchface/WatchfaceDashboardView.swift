@@ -21,27 +21,26 @@ extension SmartWatch.V3.Watchfaces {
             VStack {
                 TitleBarView(selectedTabIndex: $selectedTab, tabs: tabs)
                 ScrollView{
-                    VStack(spacing:2) {
+                    VStack(spacing:0) {
                         
-                        FeatureCell(
-                            featureTitle: viewModel.allFaces,
+                        FeatureCell(feature: .constant(FeatureCell.Model(title: viewModel.allFaces,
                             type: .navigable
-                        )
-                        VStack(spacing:1) {
+                        )))
+                        VStack(spacing:0) {
                             WatchV3WatchfaceShowcaseView(
                                 watchfaces: $viewModel.watchfaces,
                                 title: .localized(.new_arrivals),
                                 cellSize: Watchface.Preview.size(for: .v3),
                                 cornerRadius: Watchface.Preview.radius(for: .v3)
                             )
-                            
+                            Divider()
                             WatchV3WatchfaceShowcaseView(
                                 watchfaces: $viewModel.watchfaces,
                                 title: .localized(.dynamic),
                                 cellSize: Watchface.Preview.size(for: .v3),
                                 cornerRadius: Watchface.Preview.radius(for: .v3)
                             )
-                            
+                            Divider()
                             WatchV3WatchfaceShowcaseView(
                                 watchfaces: $viewModel.watchfaces,
                                 title: .localized(.simple),

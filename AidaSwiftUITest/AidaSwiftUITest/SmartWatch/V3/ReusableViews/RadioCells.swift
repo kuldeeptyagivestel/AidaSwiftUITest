@@ -11,9 +11,9 @@ struct RadioCells: View {
     @ObservedObject var viewModel: WatchV3HealthMonitorViewModel
 
     var body: some View {
-        VStack(spacing:1) {
+        VStack(spacing:0) {
             ForEach(NotificationOption.allCases, id: \.self) { option in
-                VStack{
+                VStack(spacing:0){
                     HStack {
                         Text(option.description)
                             .font(.custom(.muli, style: .bold, size: 16))
@@ -31,9 +31,11 @@ struct RadioCells: View {
                         }
                         .padding(.trailing, 10)
                     }
-                    .padding(.vertical, 15)
-                    .contentShape(Rectangle()) // Improves tap recognition
-                    .padding(.horizontal,10)
+                    .contentShape(Rectangle())
+                    .padding(.vertical, 12)
+                     // Improves tap recognition
+                    .padding(.trailing,10)
+                    .padding(.leading,15)
                     .onTapGesture {
                         viewModel.selectOption(option) // Call the selectOption method here
                     }

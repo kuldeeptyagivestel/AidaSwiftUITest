@@ -57,12 +57,11 @@ extension SmartWatch.V3.Watchfaces {
                             .font(.custom(.muli, style: .semibold, size: 15))
                             .foregroundColor(Color.lblPrimary)
                             .padding()
-                        VStack(spacing:2){
+                        VStack(spacing:0){
                         ForEach($viewModel.features, id: \.title) { $feature in
-//                            FeatureCell(
-//                                featureTitle: feature.title,
-//                                type: .navigable)
-                        }
+                            FeatureCell(feature: .constant(FeatureCell.Model(title: feature.title,
+                                type: .navigable)
+                        ))}
                     }
                         .padding(.bottom,16)
                         Text(String.localized(.selectTextColor))
@@ -171,7 +170,7 @@ struct TextColorScrolling: View {
         .background(
             RoundedRectangle(cornerRadius: 0)
                 .fill(Color.cellColor)
-                .shadow(color: Color.labelNofav.opacity(0.1),
+                .shadow(color: Color.lblPrimary.opacity(0.1),
                         radius: 6, x: 0, y: 2)
         )
     }

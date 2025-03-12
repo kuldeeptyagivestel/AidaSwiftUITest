@@ -34,7 +34,8 @@ struct InfoRow: View {
                     }
             }
         }
-        .padding(.horizontal,10)
+        .padding(.leading,15)
+        .padding(.trailing,10)
         .padding(.vertical, 15)
         .background(
             RoundedRectangle(cornerRadius: 0)

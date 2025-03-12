@@ -14,11 +14,10 @@ extension SmartWatch.V3.HealthMonitor {
         
         var body: some View {
             VStack {
-                VStack(spacing:2) {
+                VStack(spacing:0) {
                     // Toggle for Drinking Reminder
-                    FeatureCell(
-                        featureTitle: String.localized(.watchv2_hm_water),
-                        type:.switchable(value: viewModel.isDrinkingReminderON ))
+                    FeatureCell(feature: .constant(FeatureCell.Model(title: String.localized(.watchv2_hm_water),
+                        type:.switchable(value: viewModel.isDrinkingReminderON ))))
                     
                     // Conditionally rendered InfoRows
                     InfoRow(
@@ -27,13 +26,14 @@ extension SmartWatch.V3.HealthMonitor {
                         icon: viewModel.isDrinkingReminderON ? nil : Image(systemName: "arrow.right"),
                         isEnabled: viewModel.isDrinkingReminderON
                     )
-                    
+                    Divider()
                     InfoRow(
                         title: String.localized(.reminderInterval),
                         value: viewModel.isDrinkingReminderON ? "60 min" : nil,
                         icon: viewModel.isDrinkingReminderON ? nil : Image(systemName: "arrow.right"),
                         isEnabled: viewModel.isDrinkingReminderON
                     )
+                    Divider()
                     InfoRow(
                         title: String.localized(.repeat_title),
                         value: viewModel.isDrinkingReminderON ? nil : nil,

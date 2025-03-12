@@ -18,8 +18,8 @@ extension SmartWatch.V3.DoNotDisturb {
         var body: some View {
             VStack{
                 ////first cell
-                VStack(spacing:2) {
-                    FeatureCell(featureTitle: String.localized(.duringDay), type: .switchable(value: viewModel.isONday))
+                VStack(spacing:0) {
+                    FeatureCell(feature: .constant(FeatureCell.Model(title: String.localized(.duringDay), type: .switchable(value: viewModel.isONday))))
                     
                     // Conditionally rendered InfoRows
                     InfoRow(
@@ -33,8 +33,8 @@ extension SmartWatch.V3.DoNotDisturb {
                 
                 .padding(.bottom,16)
                 ////Second cell
-                VStack(spacing:2){
-                    FeatureCell(featureTitle: String.localized(.duringNight), type: .switchable(value: viewModel.isONnight))
+                VStack(spacing:0){
+                    FeatureCell(feature: .constant(FeatureCell.Model(title: String.localized(.duringNight), type: .switchable(value: viewModel.isONnight))))
 
                     // Conditionally rendered InfoRows
                     InfoRow(

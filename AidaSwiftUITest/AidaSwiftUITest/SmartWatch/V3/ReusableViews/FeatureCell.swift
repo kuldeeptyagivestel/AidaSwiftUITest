@@ -47,6 +47,7 @@ struct FeatureCell: View {
             HStack() {
                 Text(feature.title)
                     .font(.custom(.muli, style: .bold, size: 16))
+                    .foregroundColor(Color.lblPrimary)
                 
                 Spacer()
                 
@@ -77,6 +78,12 @@ struct FeatureCell: View {
                 Divider().background(dividerColor)
             }
         }
+        .background(
+            RoundedRectangle(cornerRadius: 0)
+                .fill(Color.cellColor)
+                .shadow(color: Color.lblPrimary.opacity(0.1),
+                        radius: 6, x: 0, y: 2)
+        )
         .frame(height: 48)
         .contentShape(Rectangle()) // Ensures the entire area is tappable
         .onTapGesture {

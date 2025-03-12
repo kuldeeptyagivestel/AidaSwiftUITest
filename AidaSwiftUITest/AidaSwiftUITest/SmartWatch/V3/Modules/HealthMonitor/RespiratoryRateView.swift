@@ -15,9 +15,8 @@ extension SmartWatch.V3.HealthMonitor{
         var body: some View {
             VStack(alignment: .leading) {
                 VStack{
-                    FeatureCell(
-                        featureTitle:String.localized(.automaticRespiratoryRateDetection),
-                        type: .switchable(value:viewModel.isON ))
+                    FeatureCell(feature: .constant(FeatureCell.Model(title:String.localized(.automaticRespiratoryRateDetection),
+                        type: .switchable(value:viewModel.isON ))))
                 }
                 .padding(.bottom, 8)
                 

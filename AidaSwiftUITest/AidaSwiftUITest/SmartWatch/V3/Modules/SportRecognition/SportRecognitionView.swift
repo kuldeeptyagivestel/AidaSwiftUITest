@@ -18,11 +18,9 @@ extension SmartWatch.V3.SportRecognition{
             VStack{
                 ScrollView{
                     VStack {
-                        VStack(alignment: .leading,spacing:2){
+                        VStack(alignment: .leading,spacing:0){
                             ForEach($viewModel.sampleTitles, id: \.title) { $feature in
-                                FeatureCell(featureTitle: feature.title, type: feature.type, onTap:  {
-                                    print("Tapped feature: \(feature.title)")
-                                })
+                                FeatureCell(feature: .constant(FeatureCell.Model(title: feature.title, type: .switchable(value: true))))
                             }
                             Group{
                                 Text(String.localized(.sportRecognitionDesc))
@@ -32,7 +30,7 @@ extension SmartWatch.V3.SportRecognition{
                                     .font(.custom(.openSans, style: .regular, size: 14))
                                     .padding(.vertical,16)
                                 
-                                FeatureCell(featureTitle: String.localized(.automaticSportPause), type: .switchable(value: sportPause))
+                                FeatureCell(feature: .constant(FeatureCell.Model(title: String.localized(.automaticSportPause), type: .switchable(value: sportPause))))
                                     .padding(.bottom,16)
                                 
                                 Text(String.localized(.automaticSportDesc))
@@ -42,7 +40,7 @@ extension SmartWatch.V3.SportRecognition{
                                     .font(.custom(.openSans, style: .regular, size: 14))
                                     .padding(.bottom,16)
         
-                                FeatureCell(featureTitle: String.localized(.automaticSportEnd), type: .switchable(value: sportend))
+                                FeatureCell(feature: .constant(FeatureCell.Model(title: String.localized(.automaticSportEnd), type: .switchable(value: sportend))))
                                     .padding(.bottom,16)
                                 
                                 Text(String.localized(.automaticSportEndDesc))

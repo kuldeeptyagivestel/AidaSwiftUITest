@@ -58,7 +58,7 @@ extension SmartWatch.V3.CallsManagement {
         }
 
         private func contactList(_ contacts: [Contact]) -> some View {
-            VStack(spacing: 2) {
+            VStack(spacing: 0) {
                 ForEach(contacts) { contact in
                     VStack {
                         HStack {

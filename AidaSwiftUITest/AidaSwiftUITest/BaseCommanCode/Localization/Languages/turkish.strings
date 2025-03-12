@@ -1669,6 +1669,7 @@ Not: Doğru ölçümler için cihazı bilek kemiğinizin en az bir parmak yukar�
 Not: Dış etkenler (örneğin düşük kan perfüzyonu, aşırı kol kılı, dövmeler, kol hareketleri, uygunsuz kullanım veya soğuk hava sıcaklıkları) doğruluğu etkileyebilir veya ölçüm hatalarına neden olabilir.";
 
 "drinkingReminderDesc" = "İçme hatırlatıcısı, su içmenizi hatırlatmak için size bildirimler gönderir. Belirlediğiniz başlangıç-bitiş zaman aralığında, hatırlatma süresi ayarınıza göre tekrar tekrar su içmeniz hatırlatılır.";
+"handWashReminderDesc" = "El yıkama hatırlatıcısı, belirlenen zaman dilimi ve hatırlatma aralığı içerisinde ellerinizi düzenli olarak yıkamanız için bildirimler gönderir. El yıkama alışkanlıklarınızı iyileştirmenize yardımcı olmak için tasarlanmıştır.";
 //MARK: DO NOT DISTURB MODE
 "doNotDisturbMode" = "Rahatsız etmeyin modu";
 

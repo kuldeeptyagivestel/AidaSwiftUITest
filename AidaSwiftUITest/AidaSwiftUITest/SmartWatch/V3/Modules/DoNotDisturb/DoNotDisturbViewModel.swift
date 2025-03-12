@@ -30,7 +30,7 @@ extension SmartWatch.V3.DoNotDisturb {
         ////static data passed
         @Published var  isONday: Bool = true
 
-        @Published  var isONnight: Bool = false
+        @Published  var isONnight: Bool = true
         
         // MARK: - Initializer
         init() {

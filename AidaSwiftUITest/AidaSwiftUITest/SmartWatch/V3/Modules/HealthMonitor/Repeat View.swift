@@ -37,7 +37,7 @@ extension SmartWatch.V3.HealthMonitor{
                 }.background(
                     RoundedRectangle(cornerRadius: 0)
                         .fill(Color.cellColor)
-                        .shadow(color: Color.labelNofav.opacity(0.1),
+                        .shadow(color: Color.lblPrimary.opacity(0.1),
                                 radius: 6, x: 0, y: 2)
                 )
                 .padding(.top,3)

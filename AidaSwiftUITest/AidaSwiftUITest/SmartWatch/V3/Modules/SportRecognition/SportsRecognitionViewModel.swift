@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import MapKit
 
 internal typealias WatchV3SportRecognitionViewModel = SmartWatch.V3.SportRecognition.SportRecognitionViewModel
 internal typealias WatchV3SportRecognitionView = SmartWatch.V3.SportRecognition.SportRecognitionView
@@ -27,10 +28,10 @@ extension SmartWatch.V3.SportRecognition {
         var title: String = .localized(.sportRecognition)
                 
                 @Published var sampleTitles: [SportsRecognitionItem] = [
-                    SportsRecognitionItem(id: 1, title: "Running", type: .switchable(value: true)),
-                               SportsRecognitionItem(id: 2, title: "Walking", type: .switchable(value: true)),
-                               SportsRecognitionItem(id: 3, title: "Elliptical", type: .switchable(value: true)),
-                               SportsRecognitionItem(id: 4, title: "Rowing machine", type: .switchable(value: true))
+                    SportsRecognitionItem(id: 1, title: "Running"),
+                               SportsRecognitionItem(id: 2, title: "Walking"),
+                               SportsRecognitionItem(id: 3, title: "Elliptical"),
+                               SportsRecognitionItem(id: 4, title: "Rowing machine")
                 ]
     
                 
@@ -49,6 +50,5 @@ extension SmartWatch.V3.SportRecognition {
     internal struct SportsRecognitionItem {
         let id: Int
         let title: String
-        var type: FeatureType
         }
 }
