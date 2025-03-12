@@ -1540,6 +1540,12 @@ public enum LocalizationKey: String {
     
     case sleepMonitor
     case sleepMonitorDesc
+    
+    case reminderDay
+    case reminderTime
+    
+    case menstrualDesc
+    case menstrulaRecommendSetting
     //MARK: Do Not Disturb Mode
     case doNotDisturbMode
     

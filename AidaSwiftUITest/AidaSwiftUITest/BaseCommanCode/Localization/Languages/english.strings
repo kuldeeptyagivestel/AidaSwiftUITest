@@ -1653,6 +1653,12 @@ Note: External factors (e.g., low blood perfusion, excessive arm hair, tattoos, 
 "sleepMonitorDesc" = "Enable this feature to monitor your sleep and breathing quality in real time.
 
 Note: Power consumption will increase while monitoring is active.";
+
+"reminderDay" = "Reminder Day";
+"reminderTime" = "Reminder Time";
+
+"menstrualDesc" = "You can track your menstruation cycle and set period reminder.";
+"menstrulaRecommendSetting" = "Continuous recording can improve forecast accuracy. We recommend updating your settings according to your actual period each month to receive more accurate forecasts and reminders.";
 //MARK: DO NOT DISTURB MODE
 "doNotDisturbMode" = "Do Not Disturb Mode";
 

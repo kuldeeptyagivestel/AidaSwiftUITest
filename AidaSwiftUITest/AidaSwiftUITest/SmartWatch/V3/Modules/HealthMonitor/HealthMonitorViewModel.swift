@@ -10,6 +10,7 @@ import Foundation
 internal typealias WatchV3HealthMonitorViewModel = SmartWatch.V3.HealthMonitor.HealthMonitorViewModel
 internal typealias WatchV3HealthMonitorView = SmartWatch.V3.HealthMonitor.HealthTrackingView
 internal typealias WatchV3HealthMonitorItem = SmartWatch.V3.HealthMonitor.HealthMonitorItem
+
 //MARK: -
 //MARK: - Device Config Dashboard Module Class
 extension SmartWatch.V3 {
@@ -54,6 +55,9 @@ extension SmartWatch.V3.HealthMonitor {
         
         @Published var isWalkaroundReminderON: Bool = true
         @Published var isSleepMonitoringON: Bool = true
+        
+        @Published var isMenstrualCycelON: Bool = true
+        
         // This closure is set to handle the selected days
         var onDaysSelected: (([Bool]) -> Void)?
         // MARK: - Initializer
@@ -92,6 +96,7 @@ extension SmartWatch.V3.HealthMonitor {
                         break
                     }
                 }
+       
     }
 
         
@@ -101,10 +106,10 @@ extension SmartWatch.V3.HealthMonitor {
 extension SmartWatch.V3.HealthMonitor {
     internal struct HealthMonitorItem {
         var id: Int // Unique identifier for the configuration item
-        var title: String 
+        var title: String
         var icon: String
         var isOn: Bool
-        }
+    }
 }
 
 // MARK: - Enum for Notification Option Types

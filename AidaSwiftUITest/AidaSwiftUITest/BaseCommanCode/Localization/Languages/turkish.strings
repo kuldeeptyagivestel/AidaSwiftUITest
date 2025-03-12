@@ -1675,6 +1675,12 @@ Not: Dış etkenler (örneğin düşük kan perfüzyonu, aşırı kol kılı, d�
 "sleepMonitorDesc" = "Uykunuzu ve nefes kalitenizi gerçek zamanlı olarak izlemek için bu özelliği etkinleştirin.
 
 Not: İzleme etkinken güç tüketimi artacaktır.";
+
+"reminderDay" = "Hatırlatma Günü";
+"reminderTime" = "Hatırlatma Zamanı";
+
+"menstrualDesc" = "Adet döngünüzü takip edebilir ve adet hatırlatıcısı ayarlayabilirsiniz.";
+"menstrulaRecommendSetting" = "Sürekli kayıt, tahmin doğruluğunu artırabilir. Daha doğru tahminler ve hatırlatıcılar almak için ayarlarınızı her ay gerçek adetinize göre güncellemenizi öneririz.";
 //MARK: DO NOT DISTURB MODE
 "doNotDisturbMode" = "Rahatsız etmeyin modu";
 
