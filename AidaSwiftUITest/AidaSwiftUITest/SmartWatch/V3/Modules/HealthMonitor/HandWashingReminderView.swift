@@ -10,7 +10,7 @@ import SwiftUI
 extension SmartWatch.V3.HealthMonitor {
     //MARK: - HANDWASHING REMINDER VIEW
     struct HandWashingReminderView: View {
-        @State private var isON = false
+        
         @ObservedObject private var viewModel = WatchV3HealthMonitorViewModel()
         var body: some View {
             VStack(alignment: .leading) {
@@ -52,7 +52,7 @@ extension SmartWatch.V3.HealthMonitor {
                 Spacer()
             }
             
-            .background(Color.gray.opacity(0.1))
+            .background(Color.viewBgColor)
         }
     }
 }

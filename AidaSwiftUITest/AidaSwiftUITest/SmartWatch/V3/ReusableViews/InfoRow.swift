@@ -16,7 +16,7 @@ struct InfoRow: View {
     var body: some View {
         HStack {
             Text(title)
-                .font(.custom(.muli, style: .bold, size: 17))
+                .font(.custom(.muli, style: .bold, size: 16))
                 .foregroundColor(isEnabled ? Color.lblPrimary : Color.disabledColor)
             
             Spacer()
@@ -29,6 +29,7 @@ struct InfoRow: View {
             if let icon = icon {
                 icon
                     .foregroundColor(Color.cellNavigationArrowColor)
+                    .padding(.trailing,8)
                     .onTapGesture {
                         onTap?()  // Trigger the closure when tapped
                     }

@@ -1648,6 +1648,11 @@ Note: External factors (e.g., low blood perfusion, excessive arm hair, tattoos, 
 
 "drinkingReminderDesc" =  "Drinking reminder sends you notifications to remind you to drink water. During the start-end time period you have set, you will be reminded to drink water repeatedly according to your reminder duration setting.";
 "handWashReminderDesc" = "Hand-washing reminder sends you notifications to wash your hands regularly within the set time period and reminder interval. It is designed to help improve your hand-washing habits.";
+
+"sleepMonitor" = "Sleep monitoring";
+"sleepMonitorDesc" = "Enable this feature to monitor your sleep and breathing quality in real time.
+
+Note: Power consumption will increase while monitoring is active.";
 //MARK: DO NOT DISTURB MODE
 "doNotDisturbMode" = "Do Not Disturb Mode";
 

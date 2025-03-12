@@ -51,6 +51,9 @@ extension SmartWatch.V3.HealthMonitor {
         @Published var isDrinkingReminderON: Bool = true
         
         @Published var isWashingHandReminderON: Bool = true
+        
+        @Published var isWalkaroundReminderON: Bool = true
+        @Published var isSleepMonitoringON: Bool = true
         // This closure is set to handle the selected days
         var onDaysSelected: (([Bool]) -> Void)?
         // MARK: - Initializer

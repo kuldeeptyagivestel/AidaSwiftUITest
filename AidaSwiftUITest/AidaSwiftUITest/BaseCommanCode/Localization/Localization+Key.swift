@@ -1537,6 +1537,9 @@ public enum LocalizationKey: String {
     
     case drinkingReminderDesc
     case handWashReminderDesc
+    
+    case sleepMonitor
+    case sleepMonitorDesc
     //MARK: Do Not Disturb Mode
     case doNotDisturbMode
     
