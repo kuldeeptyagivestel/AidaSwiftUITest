@@ -1400,11 +1400,8 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 
 //MARK: Watch v2 - device info
 "watchv2_deviceinfo_title" = "Device Info";
-"watchv2_deviceinfo_modelno" = "Model no:";
 "watchv2_deviceinfo_version" = "Version:";
-"watchv2_deviceinfo_blename" = "Bluetooth name:";
 "watchv2_deviceinfo_mac" = "Mac:";
-"watchv2_deviceinfo_updatetime" = "Device data update time:";
 
 "watchv2_alarm" = "Alarm";
 "watchv2_alarm_name" = "Alarm name";
@@ -1552,22 +1549,44 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 ///Device corrupted: need to remove and reconnect again.
 "connection_failed_device_corrupted" = "Device status is unknown and cannot be reconnected. Please remove the device from the app and then reconnect it.";
 
-//MARK: - WATCH SETTINGS PAGES: V3
+//MARK: -
+//MARK: - V3: WATCH SETTINGS PAGES
+//MARK: V3: CONFIG SCREEN
+"new" = "NEW";
+"calls" = "Calls";
+"notifications" = "Notifications";
+"alarm" = "Alarm";
+"healthMonitor" = "Health monitor";
+"doNotDisturbMode" = "Do not disturb mode";
+"sportRecognition" = "Sport recognition";
+"findMyPhone" = "Find my phone";
+"musicControl" = "Music control";
+"weatherDisplay" = "Weather display";
+"shortcuts" = "Shortcuts";
+"sportDisplay" = "Sport display";
+"deviceLanguage" = "Device language";
+
+//MARK: V3 DEVICE MANAGEMENT
+"deviceManagement" = "Device Management";
+"charging" = "Charging";
 "factoryReset" = "Factory Reset";
 "restartTheDevice" = "Restart the device";
 "firmwareUpdate" = "Firmware Update";
-"deviceInfo" = "Device Info";
-"charging" = "Charging";
-"watchv3_deviceinfo_macAddress" = "Mac Address";
-
-"watchv3_deviceinfo_firmwareVersion" = "Firmware Version";
-"watchv3_deviceinfo_resourcePackVersion" = "Resource Pack version";
-"watchv3_deviceinfo_deviceLanguageVersion" = "Device Language Version";
 "currentVersion" = "Current Version";
 "newVersionAvailable" = "New version is available";
 "releaseNotes" = "Release notes";
 "fixedBugs" = "Fixed bugs";
 "fwUpdateImpNotice" = "Important Notice: \n1. Make sure the device’s battery level is more than 30% and the device is close the phone. \n2. Do not leave this page during update.";
+
+///DEVICE INFO
+"deviceInfo" = "Device Info";
+"modelNo" = "Model no";
+"bluetoothName" = "Bluetooth name";
+"macAddress" = "Mac address";
+"deviceDataUpdateTime" = "Device data update time";
+"firmwareVersion" = "Firmware version";
+"resourcePackVersion" = "Resource pack version";
+"deviceLanguageVersion" = "Device language version";
 
 "allFaces" = "All Faces";
 "dynamic" = "Dynamic";

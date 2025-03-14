@@ -1305,11 +1305,8 @@ public enum LocalizationKey: String {
     case watchv2_firmware_info
     
     case watchv2_deviceinfo_title
-    case watchv2_deviceinfo_modelno
     case watchv2_deviceinfo_version
-    case watchv2_deviceinfo_blename
     case watchv2_deviceinfo_mac
-    case watchv2_deviceinfo_updatetime
     
     case watchv2_alarm
     case watchv2_alarm_name
@@ -1453,21 +1450,44 @@ public enum LocalizationKey: String {
     case connection_failed_desc
     case connection_failed_device_corrupted
     
-    //MARK: - WATCH DeviceConfig Page: V3
+    //MARK: -
+    //MARK: - V3: WATCH SETTINGS PAGES
+    //MARK: V3: CONFIG SCREEN
+    case new
+    case calls
+    case notifications
+    case alarm
+    case healthMonitor
+    case doNotDisturbMode
+    case sportRecognition
+    case findMyPhone
+    case musicControl
+    case weatherDisplay
+    case shortcuts
+    case sportDisplay
+    case deviceLanguage
+
+    //MARK: V3 DEVICE MANAGEMENT
+    case deviceManagement
+    case charging
     case factoryReset
     case restartTheDevice
     case firmwareUpdate
-    case deviceInfo
-    case charging
-    case watchv3_deviceinfo_macAddress
-    case watchv3_deviceinfo_firmwareVersion
-    case watchv3_deviceinfo_resourcePackVersion
-    case watchv3_deviceinfo_deviceLanguageVersion
     case currentVersion
     case newVersionAvailable
     case releaseNotes
     case fixedBugs
     case fwUpdateImpNotice
+   
+    ///DEVICE INFO
+    case deviceInfo
+    case modelNo
+    case bluetoothName
+    case macAddress
+    case deviceDataUpdateTime
+    case firmwareVersion
+    case resourcePackVersion
+    case deviceLanguageVersion
     
     case allFaces
     case dynamic
@@ -1486,7 +1506,6 @@ public enum LocalizationKey: String {
     //MARK: - V3 Features
     
     //MARK: Calls
-    case calls
     case incomingCallAlert
     case frequentContacts
     case incomingCallAlertDesc
@@ -1495,15 +1514,11 @@ public enum LocalizationKey: String {
     case noContactsDesc
     
     //MARK: Notifications
-    case notifications
     case notificationsDesc
     case systemNotificationPermission
     
-    //MARK: Alarm
-    case alarm
-    
     //MARK: Health Monitor
-    case healthMonitor
+    case healthTracking
     case healthMonitorDesc
     case heartRateDesc
     case continuousHeartRate
@@ -1546,33 +1561,15 @@ public enum LocalizationKey: String {
     
     case menstrualDesc
     case menstrulaRecommendSetting
-    //MARK: Do Not Disturb Mode
-    case doNotDisturbMode
     
     //MARK: Sport Recognition
-    case sportRecognition
     case sportRecognitionDesc
     case automaticSportPause
     case automaticSportDesc
     case automaticSportEnd
     case automaticSportEndDesc
-    //MARK: Find My Phone
-    case findMyPhone
     
-    //MARK: Music Control
-    case musicControl
-    
-    //MARK: Weather Display
-    case weatherDisplay
-    
-    //MARK: Shortcuts
-    case shortcuts
     case shortcutsDesc
-    //MARK: Sport Display
-    case sportDisplay
-    
-    //MARK: Device Language
-    case deviceLanguage
     
     //MARK: -
     //MARK: -  AIRPURIFIER

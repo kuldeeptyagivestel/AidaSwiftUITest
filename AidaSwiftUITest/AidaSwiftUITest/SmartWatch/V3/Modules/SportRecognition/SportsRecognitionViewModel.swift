@@ -50,5 +50,5 @@ extension SmartWatch.V3.SportRecognition {
     internal struct SportsRecognitionItem {
         let id: Int
         let title: String
-        }
+    }
 }

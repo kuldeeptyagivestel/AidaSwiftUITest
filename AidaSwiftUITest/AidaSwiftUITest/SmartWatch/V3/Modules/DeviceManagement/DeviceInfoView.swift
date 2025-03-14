@@ -6,13 +6,13 @@
 //
 
 import SwiftUI
+
 ///Device Info View Screen UI
 extension SmartWatch.V3.DeviceManagement {
     //MARK: - DEVICE INFO  VIEW
     struct DeviceInfoView: View {
-        @EnvironmentObject var navigation: NavigationCoordinator
-        @ObservedObject var viewModel: DeviceManagementViewModel  // ViewModel injected via navigation
-        @Binding var deviceInfoSummary: DeviceInfoSummary
+        @ObservedObject var viewModel: DeviceManagementViewModel
+        
         var body: some View {
             VStack{
                 ScrollView(.vertical, showsIndicators: true) {
@@ -34,10 +34,10 @@ extension SmartWatch.V3.DeviceManagement {
                                 )
                             )
                         VStack(spacing: 0) {
-                            InfoCell(text: .localized(.device_model), info: $viewModel.deviceInfoSummary.deviceName)
-                            InfoCell(text: .localized(.watchv2_deviceinfo_blename), info: $viewModel.deviceInfoSummary.bluetoothName)
-                            InfoCell(text: .localized(.watchv3_deviceinfo_macAddress), info: $viewModel.deviceInfoSummary.macAddress)
-                            InfoCell(text: .localized(.device_info), info: $viewModel.deviceInfoSummary.deviceDataUpdateTime)
+//                            InfoCell(text: .localized(.device_model), info: $viewModel.deviceInfoSummary.deviceName)
+//                            InfoCell(text: .localized(.watchv2_deviceinfo_blename), info: $viewModel.deviceInfoSummary.bluetoothName)
+//                            InfoCell(text: .localized(.watchv3_deviceinfo_macAddress), info: $viewModel.deviceInfoSummary.macAddress)
+//                            InfoCell(text: .localized(.device_info), info: $viewModel.deviceInfoSummary.deviceDataUpdateTime)
                         }
                         .background(
                             RoundedRectangle(cornerRadius: 0)
@@ -47,9 +47,9 @@ extension SmartWatch.V3.DeviceManagement {
                         .padding(.bottom, 16)
                         
                         VStack(spacing: 0) {
-                            InfoCell(text: .localized(.firmware_wait), info: $viewModel.deviceInfoSummary.version)
-                            InfoCell(text: .localized(.watchv3_deviceinfo_resourcePackVersion), info: $viewModel.deviceInfoSummary.version)
-                            InfoCell(text: .localized(.device_info), info: $viewModel.deviceInfoSummary.version)
+//                            InfoCell(text: .localized(.firmware_wait), info: $viewModel.deviceInfoSummary.version)
+//                            InfoCell(text: .localized(.watchv3_deviceinfo_resourcePackVersion), info: $viewModel.deviceInfoSummary.version)
+//                            InfoCell(text: .localized(.device_info), info: $viewModel.deviceInfoSummary.version)
                         }
                         .background(
                             RoundedRectangle(cornerRadius: 0)
@@ -64,36 +64,32 @@ extension SmartWatch.V3.DeviceManagement {
         }
     }
 }
+
 //MARK: - INFO CELL
 extension SmartWatch.V3.DeviceManagement {
     //// created to store information
     fileprivate struct InfoCell: View {
-        let text: String
+        let title: String
         @Binding var info: String
         
         var body: some View {
             VStack(alignment:.leading,spacing:0){
                 HStack{
-                    Text(text)
+                    Text("\(title):")
                         .font(.custom(.muli, style: .bold, size: 17))
-                        .foregroundColor(Color.lblPrimary)
-                    Text(":")
                         .foregroundColor(Color.lblPrimary)
                     Text(info)
-                        .font(.custom(.muli, style: .bold, size: 17))
+                        .font(.custom(.muli, style: .bold, size: 16))
                         .foregroundColor(Color.lblPrimary)
                 }
                 .padding()
                 Divider()
             }
-            .background(
-                RoundedRectangle(cornerRadius: 0)
-                    .fill(Color.white)
-                    .shadow(color: Color.black.opacity(0.1), radius: 6, x: 0, y: 2)
-            )
         }
     }
 }
+
+//MARK: - PREVIEW
 #Preview {
     let rootViewModel = WatchV3DeviceManagementViewModel()
     @State var deviceInfoSummary = SmartWatch.V3.DeviceManagement.DeviceInfoSummary(
@@ -104,5 +100,5 @@ extension SmartWatch.V3.DeviceManagement {
         version: "V3"
     )
     
-    SmartWatch.V3.DeviceManagement.DeviceInfoView(viewModel: rootViewModel, deviceInfoSummary: $deviceInfoSummary)
+    SmartWatch.V3.DeviceManagement.DeviceInfoView(viewModel: rootViewModel)
 }

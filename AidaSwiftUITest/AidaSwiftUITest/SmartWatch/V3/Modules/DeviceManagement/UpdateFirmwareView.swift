@@ -6,7 +6,6 @@
 //  Copyright © 2025 Vestel Elektronik A.Ş. All rights reserved.
 //
 
-
 import SwiftUI
 
 extension SmartWatch.V3.DeviceManagement {

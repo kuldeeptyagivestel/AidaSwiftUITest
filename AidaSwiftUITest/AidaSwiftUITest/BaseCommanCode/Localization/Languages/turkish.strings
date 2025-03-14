@@ -1408,11 +1408,8 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 
 //MARK: Watch v2 - device info
 "watchv2_deviceinfo_title" = "Cihaz Bilgisi";
-"watchv2_deviceinfo_modelno" = "Model no:";
 "watchv2_deviceinfo_version" = "Versiyon:";
-"watchv2_deviceinfo_blename" = "Bluetooth ismi:";
 "watchv2_deviceinfo_mac" = "Mac:";
-"watchv2_deviceinfo_updatetime" = "Cihaz veri güncelleme zamanı:";
 
 "watchv2_alarm" = "Alarm";
 "watchv2_alarm_name" = "Alarm ismi";
@@ -1567,13 +1564,27 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 ///Device corrupted: need to remove and reconnect again.
 "connection_failed_device_corrupted" = "Cihaz durumu bilinmiyor ve yeniden bağlanamıyor. Lütfen cihazı uygulamadan kaldırın ve ardından tekrar bağlayın.";
 
-//MARK: -
-//MARK: -  AIRPURIFIER
-"airpurifier_app_transition_title" = "Hava Temizleyici Uygulama Değişikliği";
-"airpurifier_app_transition_desc" = "**Vestel Akıllı Yaşam** uygulaması, VHT-402 Hava temizleyicinizin tüm özelliklerine erişmenizi ve kontrol etmenizi sağlayacak en güncel platformdur. Bu uygulamayı indirerek cihazınızı kullanmaya devam edebilirsiniz.";
-"go_to_app_store" = "App Store'a Git";
 
-//MARK: - WATCH SETTINGS PAGES: V3
+//MARK: -
+//MARK: - V3: WATCH SETTINGS PAGES
+//MARK: V3: CONFIG SCREEN
+"new" = "YENİ";
+"calls" = "Çağrı bildirimi";
+"notifications" = "Mesaj bildirimleri";
+"alarm" = "Alarm";
+"healthMonitor" = "Sağlık monitörü";
+"doNotDisturbMode" = "Rahatsız etme";
+"sportRecognition" = "Spor tanıma";
+"findMyPhone" = "Telefonumu bul";
+"musicControl" = "Müziği kontrol et";
+"weatherDisplay" = "Hava durumu gösterimi";
+"shortcuts" = "Kısayol";
+"sportDisplay" = "Spor gösterimi";
+"deviceLanguage" = "Cihaz dili";
+
+//MARK: V3 DEVICE MANAGEMENT
+"deviceManagement" = "Cihaz Yönetimi";
+"charging" = "Şarj ediliyor";
 "factoryReset" = "Fabrika Ayarlarına Sıfırlama";
 "restartTheDevice" = "Cihazı Yeniden Başlatma";
 "firmwareUpdate" = "Yazılım Güncellemesi";
@@ -1590,6 +1601,16 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "releaseNotes" = "Sürüm notları";
 "fixedBugs" = "Düzeltilen hatalar";
 "fwUpdateImpNotice" = "Önemli Uyarı: \n1. Cihazın pil seviyesinin %30'dan fazla olduğundan ve cihazın telefonu kapattığından emin olun. \n2. Güncelleme sırasında bu sayfadan ayrılmayın.";
+
+///DEVICE INFO
+"deviceInfo" = "Cihaz Bilgileri";
+"modelNo" = "Model no";
+"bluetoothName" = "Bluetooth ismi";
+"macAddress" = "Mac adresi";
+"deviceDataUpdateTime" = "Cihaz veri güncelleme zamanı";
+"firmwareVersion" = "Firmware sürümü";
+"resourcePackVersion" = "Kaynak paket sürümü";
+"deviceLanguageVersion" = "Cihaz dil sürümü";
 
 "allFaces" = "Bütün Yüzler";
 "dynamic" = "Dinamik";
@@ -1708,6 +1729,12 @@ Not: İzleme etkinken güç tüketimi artacaktır.";
 
 //MARK: DEVICE LANGUAGE
 "deviceLanguage" = "Cihaz dili";
+
+//MARK: -
+//MARK: -  AIRPURIFIER
+"airpurifier_app_transition_title" = "Hava Temizleyici Uygulama Değişikliği";
+"airpurifier_app_transition_desc" = "**Vestel Akıllı Yaşam** uygulaması, VHT-402 Hava temizleyicinizin tüm özelliklerine erişmenizi ve kontrol etmenizi sağlayacak en güncel platformdur. Bu uygulamayı indirerek cihazınızı kullanmaya devam edebilirsiniz.";
+"go_to_app_store" = "App Store'a Git";
 
 //MARK: -
 //MARK: -  SLEEP TRACKER

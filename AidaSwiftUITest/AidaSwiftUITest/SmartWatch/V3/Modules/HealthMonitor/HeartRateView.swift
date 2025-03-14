@@ -24,7 +24,7 @@ extension SmartWatch.V3.HealthMonitor{
                             .foregroundColor(Color.lblSecondary)
                             .padding(.leading,12)
                             .padding(.trailing,15)
-                        
+
                         FeatureCell(feature: .constant(FeatureCell.Model(title: String.localized(.continuousHeartRate), type:.switchable(value: true))))
                         
                         Text(String.localized(.hearRateMeasureDesc))

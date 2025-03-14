@@ -26,7 +26,7 @@ extension SmartWatch.V3 {
 extension SmartWatch.V3.DoNotDisturb {
     // ViewModel responsible for managing data related to the Route History view.
     class DoNotDisturbViewModel: ViewModel {
-        var title: String = .localized(.doNotDisturbMode)
+        var title: String = .localized(.doNotDisturbMode).localizedCapitalized
         ////static data passed
         @Published var  isONday: Bool = true
 
