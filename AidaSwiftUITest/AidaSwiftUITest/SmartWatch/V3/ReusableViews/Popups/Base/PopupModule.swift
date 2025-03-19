@@ -97,7 +97,7 @@ public enum Popup {
     public struct Default {
         private init() {}
         
-        public static let icon = "popup/info"
+        public static let icon = "popup/verifyBind"
         public static let title = String.localized(.importantUpdate)
         public static let cancelBtnTitle = String.localized(.cancel)
         public static let okBtnTitle = String.localized(.ok)

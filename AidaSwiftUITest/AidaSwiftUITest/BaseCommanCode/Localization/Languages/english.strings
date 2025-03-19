@@ -1588,20 +1588,31 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 "resourcePackVersion" = "Resource pack version";
 "deviceLanguageVersion" = "Device language version";
 
+//MARK: WATCHFACE
+///WATCHFACE DASHBOARD
 "allFaces" = "All Faces";
-"dynamic" = "Dynamic";
-"simple" = "Simple";
-"custom_watchFace_desc" = "Watch face images are illustrative, actual product may vary.";
+"installedWatchfaces" = "Installed watch face";
+"builtinWatchfaces" = "Built-in watch face";
+
+///CUSTOM WATCHFACE
+"customWatchface" = "Custom Watch Face";
+"customWatchfaceDesc" = "Your favorite photo will display on the watch face whenever you raise your wrist or tap the screen.";
+"selectPhoto" = "Select Photo";
 "selectFromAlbum" = "Select from album";
-"watchFaceRecords" = "Watch face records";
-"favorites" = "Favorites";
-"installedWatchFaces" = "Installed watch face";
-"builtinWatchFaces" = "Built-in watch face";
 "takeAPhoto" = "Take a photo";
 "selectTextColor" = "Select Text Color";
 "selectTextLocation" = "Select Text Location";
-"muteNotification" = "Mute notification";
-"turnOffNotification" = "Turn off notification";
+"install" = "Install";
+
+///CAMARA/GALARY PERMISSIONS
+"permissionRequired" = "Permission Required";
+"cameraPermissionRequiredDesc" = "To capture photos, please enable camera access in your device settings.";
+"galaryPermissionRequiredDesc" = "To select photos from your gallery, please enable photo access in your device settings.";
+
+"watchfaceRecords" = "Watch face records";
+"favorites" = "Favorites";
+"custom_watchFace_desc" = "Watch face images are illustrative, actual product may vary.";
+
 //MARK: - V3 FEATURES
 
 //MARK: CALLS
@@ -1617,6 +1628,10 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 "notifications" = "Notifications";
 "notificationsDesc" = "To receive notifications, you need to enable notification permission in your phone settings.";
 "systemNotificationPermission" = "System notifications permission";
+
+"muteNotification" = "Mute notification";
+"turnOffNotification" = "Turn off notification";
+
 //MARK: ALARM
 "alarm" = "Alarm";
 

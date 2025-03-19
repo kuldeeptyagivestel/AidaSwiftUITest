@@ -55,6 +55,7 @@ extension SmartWatch.V3.DeviceConfigDashboard {
         ]
         
         @Published var watchfaces: [CloudWatchfaceItem] = CloudWatchfaceItem.mock
+        @Published var currentWFName: String? = nil
         
         // MARK: - Initializer
         init() {

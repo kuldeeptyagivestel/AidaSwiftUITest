@@ -28,7 +28,14 @@ extension SmartWatch.V3.DeviceConfigDashboard {
                             watchfaces: $viewModel.watchfaces,
                             title: "Watch Face",
                             cellSize: Watchface.Preview.size(for: .v3),
-                            cornerRadius: Watchface.Preview.radius(for: .v3)
+                            cornerRadius: Watchface.Preview.radius(for: .v3),
+                            currentWFName: viewModel.currentWFName,
+                            onWatchfaceSelected: { selectedWatchface in
+                                print("Selected watchface: \(selectedWatchface.localizedTitle)")
+                            },
+                            onHeaderTap: {
+                                print("Header tapped - Navigate to another page")
+                            }
                         )
                         .padding(.top, 8)
                         

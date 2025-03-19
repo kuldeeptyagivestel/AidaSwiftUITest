@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SwiftUICore
 
 // MARK: - WatchFace ENUM
 /// Enum representing different types of watch faces.
@@ -167,8 +168,8 @@ extension Watchface.Custom {
     public enum TextLocation: Int, Codable, CaseIterable, Equatable {
         case unknown  = 0 // Fallback for unexpected values
         case topLeft = 1
-        case topRight = 3
         case bottomLeft = 7
+        case topRight = 3
         case bottomRight = 9
         
         // MARK: - Custom Methods
@@ -225,6 +226,10 @@ extension Watchface.Custom {
         /// The `UIColor` representation of the color
         public var uiColor: UIColor {
             return UIColor(named: self.rawValue) ?? UIColor.black
+        }
+        
+        public var color: Color {
+            return Color(fromHex: self.rawValue)
         }
         
         /// A user-friendly name for the color

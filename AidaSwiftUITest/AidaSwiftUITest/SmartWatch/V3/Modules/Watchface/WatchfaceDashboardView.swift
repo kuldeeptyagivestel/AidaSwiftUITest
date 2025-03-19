@@ -9,58 +9,65 @@
 import Foundation
 import SwiftUI
 
+//MARK: - WATCHFACE DASHBOARD  VIEW
 extension SmartWatch.V3.Watchfaces {
-    //MARK: - WATCHFACE DASHBOARD  VIEW
     struct WatchfaceDashboardView: View {
-        @EnvironmentObject var navigation: NavigationCoordinator
-        @ObservedObject var viewModel: WatchfaceViewModel  // ViewModel injected via navigation
+        @ObservedObject var viewModel: WatchfaceViewModel
         @State private var selectedTab = 0
-        let tabs = [String.localized(.market), String.localized(.photo), String.localized(.my_library)]
+        
+        private let tabs = [
+            TabBar.Tab(index: 0, title: .localized(.market)),
+            TabBar.Tab(index: 1, title: .localized(.photo)),
+            TabBar.Tab(index: 2, title: .localized(.my_library))
+        ]
         
         var body: some View {
             VStack {
-                TitleBarView(selectedTabIndex: $selectedTab, tabs: tabs)
-                ScrollView{
-                    VStack(spacing:0) {
-                        
-                        FeatureCell(feature: .constant(FeatureCell.Model(title: viewModel.allFaces,
-                            type: .navigable
-                        )))
-                        VStack(spacing:0) {
-                            WatchV3WatchfaceShowcaseView(
-                                watchfaces: $viewModel.watchfaces,
-                                title: .localized(.new_arrivals),
-                                cellSize: Watchface.Preview.size(for: .v3),
-                                cornerRadius: Watchface.Preview.radius(for: .v3)
-                            )
-                            Divider()
-                            WatchV3WatchfaceShowcaseView(
-                                watchfaces: $viewModel.watchfaces,
-                                title: .localized(.dynamic),
-                                cellSize: Watchface.Preview.size(for: .v3),
-                                cornerRadius: Watchface.Preview.radius(for: .v3)
-                            )
-                            Divider()
-                            WatchV3WatchfaceShowcaseView(
-                                watchfaces: $viewModel.watchfaces,
-                                title: .localized(.simple),
-                                cellSize: Watchface.Preview.size(for: .v3),
-                                cornerRadius: Watchface.Preview.radius(for: .v3)
-                            )
-                        }
-                        .background(Color.cellBgColor.opacity(0.5))
-                    }
+                // Tab Bar
+                TabBar(selectedTabIndex: $selectedTab, tabs: tabs)
+                
+                // Dynamic Content for Tabs
+                TabView(selection: $selectedTab) {
+                    MarketView(viewModel: viewModel)
+                        .tag(0)
                     
+                    PhotoView()
+                        .tag(1)
+                    
+                    MyLibraryView(viewModel: viewModel)
+                        .tag(2)
                 }
-            }.background(Color.viewBgColor)
+                .tabViewStyle(.page(indexDisplayMode: .never)) // Hide default dots
+            }
+            .background(Color.viewBgColor)
         }
     }
 }
 
-//MARK: - PREVIEW
-struct Previews_WatchfaceDashboardView: PreviewProvider {
-    static var previews: some View {
-        let rootViewModel = WatchV3WatchfaceViewModel()
-        SmartWatch.V3.Watchfaces.WatchfaceDashboardView(viewModel: rootViewModel)
+// MARK: - Market View
+extension SmartWatch.V3.Watchfaces {
+    // MARK: - Photo View
+    struct PhotoView: View {
+        var body: some View {
+            Text("Photo View Content")
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color.blue.opacity(0.1))
+        }
     }
 }
+
+//#MARK: - PREVIEW
+struct WatchfaceDashboardView_Preview: View {
+    let mocking = SmartWatch.V3.Watchfaces.WatchfaceViewModelMocking()
+    
+    var body: some View {
+        SmartWatch.V3.Watchfaces.WatchfaceDashboardView(viewModel: mocking.viewModel)
+    }
+}
+
+struct WatchfaceDashboardView_Preview_Previews: PreviewProvider {
+    static var previews: some View {
+        WatchfaceDashboardView_Preview()
+    }
+}
+

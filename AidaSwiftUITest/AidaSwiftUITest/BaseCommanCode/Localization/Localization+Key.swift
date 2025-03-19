@@ -1489,20 +1489,31 @@ public enum LocalizationKey: String {
     case resourcePackVersion
     case deviceLanguageVersion
     
+    //MARK: WATCHFACE
+    ///WATCHFACE DASHBOARD
     case allFaces
-    case dynamic
-    case simple
-    case custom_watchFace_desc
+    case installedWatchfaces
+    case builtinWatchfaces
+    
+    //CUSTOM WATCHFACE
+    case customWatchface
+    case customWatchfaceDesc
+    case selectPhoto
     case selectFromAlbum
-    case watchFaceRecords
-    case favorites
-    case installedWatchFaces
-    case builtinWatchFaces
     case takeAPhoto
     case selectTextColor
     case selectTextLocation
-    case muteNotification
-    case turnOffNotification
+    case install
+    
+    ///CAMARA/GALARY PERMISSIONS
+    case permissionRequired
+    case cameraPermissionRequiredDesc
+    case galaryPermissionRequiredDesc
+
+    case watchfaceRecords
+    case favorites
+    case custom_watchFace_desc
+    
     //MARK: - V3 Features
     
     //MARK: Calls
@@ -1516,6 +1527,9 @@ public enum LocalizationKey: String {
     //MARK: Notifications
     case notificationsDesc
     case systemNotificationPermission
+    
+    case muteNotification
+    case turnOffNotification
     
     //MARK: Health Monitor
     case healthTracking

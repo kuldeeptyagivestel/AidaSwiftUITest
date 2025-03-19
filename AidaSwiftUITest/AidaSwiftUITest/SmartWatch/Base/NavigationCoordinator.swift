@@ -32,4 +32,33 @@ class NavigationCoordinator: ObservableObject {
     func popToRoot() {
         navigationController?.popToRootViewController(animated: true)
     }
+    
+    ///#PRESENT SWIFTUI VIEW
+    func present<T: View>(_ view: T, isFullScreen: Bool = false) {
+        let hostingController = GenericHostingController(rootView: view.environmentObject(self))
+        
+        if isFullScreen {
+            hostingController.modalPresentationStyle = .fullScreen
+        } else {
+            hostingController.modalPresentationStyle = .automatic
+        }
+        
+        navigationController?.topViewController?.present(hostingController, animated: true)
+    }
+    
+    ///#PRESENT UIKIT VIEW CONTROLLER
+    func present(_ viewController: UIViewController, isFullScreen: Bool = false) {
+        if isFullScreen {
+            viewController.modalPresentationStyle = .fullScreen
+        } else {
+            viewController.modalPresentationStyle = .automatic
+        }
+        
+        navigationController?.topViewController?.present(viewController, animated: true)
+    }
+    
+    ///#DISMISS
+    func dismiss(animated: Bool = true) {
+        navigationController?.topViewController?.dismiss(animated: animated)
+    }
 }

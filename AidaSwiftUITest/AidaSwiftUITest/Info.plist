@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Test camera</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Use for photo select</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Muli-ExtraLight.ttf</string>
@@ -29,7 +33,7 @@
 		<string>OpenSans-ExtraBold.ttf</string>
 		<string>OpenSans-ExtraBoldItalic.ttf</string>
 	</array>
-    <key>NSContactsUsageDescription</key>
-    <string>Akıllı Sağlık uygulamasının seçtiğin kişilere yardım mesajı göndermesi için erişim izni verin.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Akıllı Sağlık uygulamasının seçtiğin kişilere yardım mesajı göndermesi için erişim izni verin.</string>
 </dict>
 </plist>

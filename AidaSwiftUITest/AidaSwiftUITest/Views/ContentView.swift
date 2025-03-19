@@ -13,11 +13,14 @@ struct ContentView: View {
     static let rootViewModel = WatchV3ConfigDashboardViewModel()
     var body: some View {
         
-        VStack(spacing: 10) {
-            SmartWatch.V3.DeviceConfigDashboard.ConfigDashboardView(viewModel: ContentView.rootViewModel)
-        }
-        .padding(5)
-        .previewLayout(.sizeThatFits)
+        let rootViewModel = WatchV3WatchfaceViewModel()
+        SmartWatch.V3.Watchfaces.WatchfaceDashboardView(viewModel: rootViewModel)
+        
+//        VStack(spacing: 10) {
+//            SmartWatch.V3.DeviceConfigDashboard.ConfigDashboardView(viewModel: ContentView.rootViewModel)
+//        }
+//        .padding(5)
+//        .previewLayout(.sizeThatFits)
     }
 }
 

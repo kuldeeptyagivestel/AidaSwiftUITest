@@ -1612,20 +1612,31 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "resourcePackVersion" = "Kaynak paket sürümü";
 "deviceLanguageVersion" = "Cihaz dil sürümü";
 
+//MARK: WATCHFACE
+///WATCHFACE DASHBOARD
 "allFaces" = "Bütün Yüzler";
-"dynamic" = "Dinamik";
-"simple" = "Basit";
-"custom_watchFace_desc" = "Saat kadranı görselleri temsilidir, gerçek ürün farklılık gösterebilir.";
-"selectFromAlbum" = "Albümden seç";
-"watchFaceRecords" = "Saat yüzü kayıtları";
-"favorites" = "Favoriler";
-"installedWatchFaces" = "Yüklü saat yüzü";
-"builtinWatchFaces" = "Yerleşik saat yüzü";
+"installedWatchfaces" = "Yüklü saat yüzü";
+"builtinWatchfaces" = "Yerleşik saat yüzü";
+
+//CUSTOM WATCHFACE
+"customWatchface" = "Custom Watch Face";
+"customWatchfaceDesc" = "Your favorite photo will display on the watch face whenever you raise your wrist or tap the screen.";
+"selectPhoto" = "Select Photo";
+"selectFromAlbum" = "Select from album";
 "takeAPhoto" = "Fotoğraf çek";
-"selectTextColor" = "Metin Rengi Seç";
-"selectTextLocation" = "Metin Konumu Seç";
-"muteNotification" = "Bildirimleri sessize al";
-"turnOffNotification" = "Bildirimi kapat";
+"selectTextColor" = "Metin Konumu Seç";
+"selectTextLocation" = "Select Text Location";
+"install" = "Yükle";
+
+///CAMARA/GALARY PERMISSIONS
+"permissionRequired" = "İzin Gerekli";
+"cameraPermissionRequiredDesc" = "Fotoğraf çekmek için lütfen cihaz ayarlarından kamera erişimine izin verin.";
+"galaryPermissionRequiredDesc" = "Galerinizden fotoğraf seçmek için lütfen cihaz ayarlarından fotoğraf erişimine izin verin.";
+
+"watchfaceRecords" = "Saat yüzü kayıtları";
+"favorites" = "Favoriler";
+"custom_watchFace_desc" = "Saat kadranı görselleri temsilidir, gerçek ürün farklılık gösterebilir.";
+
 //MARK: - V3 FEATURES
 
 //MARK: CALLS
@@ -1641,6 +1652,10 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "notifications" = "Bildirimler";
 "notificationsDesc" = "Bildirimleri alabilmeniz için telefon ayarlarınızdan bildirim iznini aktifleştirmeniz gerekmektedir.";
 "systemNotificationPermission" = "Sistem bildirimleri izni";
+
+"muteNotification" = "Bildirimleri sessize al";
+"turnOffNotification" = "Bildirimi kapat";
+
 //MARK: ALARM
 "alarm" = "Alarm";
 
