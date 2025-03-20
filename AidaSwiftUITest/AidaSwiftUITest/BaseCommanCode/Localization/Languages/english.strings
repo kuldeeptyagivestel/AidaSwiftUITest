@@ -1618,7 +1618,7 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 "noWatchfaceRecordsFound" = "No watch face records found.";
 "noFavorites" = "No favorites";
 
-"custom_watchFace_desc" = "Watch face images are illustrative, actual product may vary.";
+"watchfaceInstallationWarning" = "Watch face images are illustrative, actual product may vary.";
 
 //MARK: - V3 FEATURES
 

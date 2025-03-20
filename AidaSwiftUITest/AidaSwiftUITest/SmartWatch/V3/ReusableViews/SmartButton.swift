@@ -20,6 +20,14 @@ public extension SmartButton {
         case secondary // An outlined button
         case tertiary // A subtle, text-only button
     }
+    
+    struct Config: Identifiable {
+        public let id = UUID()  // Unique identifier for SwiftUI's diffing algorithm
+        public let title: String
+        public let style: SmartButton.Style
+        public let state: SmartButton.State
+        public let action: () -> Void
+    }
 }
 
 // MARK: - VIEW
@@ -42,6 +50,15 @@ public struct SmartButton: View {
         self._state = state ?? .constant(.enabled) // Default to .enabled if no binding is provided
         self.maxWidth = maxWidth
         self.action = action
+    }
+    
+    //Init with Config
+    public init(config: Config, maxWidth: CGFloat? = nil) {
+        self.title = config.title
+        self.style = config.style
+        self._state = .constant(config.state)
+        self.action = config.action
+        self.maxWidth = maxWidth
     }
     
     var borderColor: Color {

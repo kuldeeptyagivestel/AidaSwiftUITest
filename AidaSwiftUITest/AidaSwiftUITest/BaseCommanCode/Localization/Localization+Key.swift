@@ -1516,7 +1516,7 @@ public enum LocalizationKey: String {
     case noWatchfaceAvailable
     case noWatchfaceRecordsFound
     case noFavorites
-    case custom_watchFace_desc
+    case watchfaceInstallationWarning
     
     //MARK: - V3 Features
     

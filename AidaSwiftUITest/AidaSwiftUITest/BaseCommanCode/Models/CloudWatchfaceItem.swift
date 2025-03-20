@@ -292,6 +292,14 @@ extension CloudWatchfaceItem {
         
         return watchfaces
     }
+    
+    // Method to read CloudWatchfaces.json and return model
+    public static var mockModel: CloudWatchfaceItem {
+        if let model = FirebaseWatchface.mock.first.map({ CloudWatchfaceItem($0) }) {
+            return model
+        }
+        return CloudWatchfaceItem(id: "v3_wf_w41")
+    }
 }
 
 //MARK: -
