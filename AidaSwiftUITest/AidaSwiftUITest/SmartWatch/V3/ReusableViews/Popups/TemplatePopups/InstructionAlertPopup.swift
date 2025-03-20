@@ -41,26 +41,23 @@ public extension Popup {
 internal extension Popup {
     struct InstructionAlertView: View {
         let model: InstructionAlert
-        
+        let alertdescription = """
+                            1.<b>Turn Bluetooth off, then back on.</b><br>2.<b>Check your device’s battery</b> and ensure it’s close to your phone.<br>3.<b>Reset the device</b> and try connecting again if the issue persists.<br>4. If your device is connected to another phone, go to <b>Settings > Bluetooth</b> on that phone, find your device, and select <b>“Forget this device”</b> or <b>“Unpair”</b>.
+                            """
         public var body: some View {
             VStack(spacing: 16) {
-                if !model.steps.isEmpty {
-                    VStack(alignment: .leading, spacing: 4) {
-                        ForEach(model.steps, id: \.self) { step in
-                            Text("• \(step)")
-                                .font(Font.custom(size: 12))
-                                .foregroundStyle(Color.popupLblSecondary)
-                                .multilineTextAlignment(.leading)
-                                .lineLimit(nil) // Allow multiline text
-                                .fixedSize(horizontal: false, vertical: true) // Prevent horizontal compression
-                        }
-                    }
+                ///this code is for direct markdown texts.
+                Text("1.**Turn Bluetooth off, then back on.**\n2.**Check your device’s battery** and ensure it’s **close to your phone.**\n3.**Reset the device** and try connecting again if the issue persists.\n4.If your device is connected to another phone, go to **Settings > Bluetooth** on that phone, find your device, and select **“Forget this device”** or **“Unpair”.**")
+                ///this code is for html tags converting it into markdown
+                Text(alertdescription.convertHTMLToAttributedString())
+                    .font(Font.custom(size: 12))
+                    .foregroundStyle(Color.popupLblSecondary)
                     .padding(.horizontal)
                     .padding(.vertical, 10)
                     .background(Color.popupBGColor)
                     .cornerRadius(6)
                     .shadow(radius: 4)
-                }
+                    .lineSpacing(4)
                 
                 SmartButton(
                     title: model.cancelBtnTitle,
@@ -73,6 +70,18 @@ internal extension Popup {
                 .padding(.bottom, 1)
             }
         }
+    }
+}
+
+// MARK: - String Extension for SwiftUI Formatting
+extension String {
+    /// Converts HTML to an AttributedString for SwiftUI
+    func convertHTMLToAttributedString() -> AttributedString {
+        let formattedText = self.replacingOccurrences(of: "<b>", with: "**")
+            .replacingOccurrences(of: "</b>", with: "**")
+            .replacingOccurrences(of: "<br>", with: "\n")
+        
+        return (try? AttributedString(markdown: formattedText, options: .init(interpretedSyntax: .inlineOnlyPreservingWhitespace))) ?? AttributedString(formattedText)
     }
 }
 
@@ -107,3 +116,19 @@ struct InstructionAlertPopupPreview_Previews: PreviewProvider {
     }
 }
 
+struct AttributedText: UIViewRepresentable {
+    let attributedString: NSAttributedString
+
+    func makeUIView(context: Context) -> UILabel {
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
+        label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal) // Allow wrapping
+        label.setContentHuggingPriority(.required, for: .vertical) // Shrink vertically if needed
+        return label
+    }
+
+    func updateUIView(_ uiView: UILabel, context: Context) {
+        uiView.attributedText = attributedString
+    }
+}
