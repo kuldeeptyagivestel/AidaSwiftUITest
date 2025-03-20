@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     //MARK: - INSTALL WATCH FACE VIEW
     struct InstallWatchFaceView: View {
         let cellSize: CGSize
@@ -71,5 +71,5 @@ extension SmartWatch.V3.Watchfaces {
 #Preview {
     
     @State var watchfaces: [CloudWatchfaceItem] = CloudWatchfaceItem.mock
-    SmartWatch.V3.Watchfaces.InstallWatchFaceView( cellSize: Watchface.Preview.size(for: .v3), cornerRadius: Watchface.Preview.radius(for: .v3))
+    SmartWatch.V3.Watchface.InstallWatchFaceView( cellSize: Watchface.Preview.size(for: .v3), cornerRadius: Watchface.Preview.radius(for: .v3))
 }

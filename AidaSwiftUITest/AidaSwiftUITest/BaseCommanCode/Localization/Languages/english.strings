@@ -1609,8 +1609,15 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 "cameraPermissionRequiredDesc" = "To capture photos, please enable camera access in your device settings.";
 "galaryPermissionRequiredDesc" = "To select photos from your gallery, please enable photo access in your device settings.";
 
+///WATCHFACE LIST (RECORDS)
 "watchfaceRecords" = "Watch face records";
 "favorites" = "Favorites";
+
+///WATCHFACE EMPTY STATE
+"noWatchfaceAvailable" = "No watch faces available.";
+"noWatchfaceRecordsFound" = "No watch face records found.";
+"noFavorites" = "No favorites";
+
 "custom_watchFace_desc" = "Watch face images are illustrative, actual product may vary.";
 
 //MARK: - V3 FEATURES

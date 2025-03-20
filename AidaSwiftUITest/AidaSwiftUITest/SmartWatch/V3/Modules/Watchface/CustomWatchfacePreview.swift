@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 // MARK: - CUSTOM WATCHFACE PREVIEW
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     struct CustomWatchfacePreview: View {
         @Binding var imageURL: URL?
         @Binding var textLocation: Watchface.Custom.TextLocation
@@ -118,7 +118,7 @@ struct CustomWatchfacePreview_Preview: View {
     private let sampleColors: [Watchface.Custom.TextColor] = Watchface.Custom.TextColor.validColors
     
     var body: some View {
-        SmartWatch.V3.Watchfaces.CustomWatchfacePreview(
+        SmartWatch.V3.Watchface.CustomWatchfacePreview(
             imageURL: $imageURL,
             textLocation: $textLocation,
             textColor: $textColor,

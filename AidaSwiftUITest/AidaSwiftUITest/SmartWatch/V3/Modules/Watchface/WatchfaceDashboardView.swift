@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 
 //MARK: - WATCHFACE DASHBOARD  VIEW
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     struct WatchfaceDashboardView: View {
         @ObservedObject var viewModel: WatchfaceViewModel
         @State private var selectedTab = 0
@@ -45,7 +45,7 @@ extension SmartWatch.V3.Watchfaces {
 }
 
 // MARK: - Market View
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     // MARK: - Photo View
     struct PhotoView: View {
         var body: some View {
@@ -58,10 +58,10 @@ extension SmartWatch.V3.Watchfaces {
 
 //#MARK: - PREVIEW
 struct WatchfaceDashboardView_Preview: View {
-    let mocking = SmartWatch.V3.Watchfaces.WatchfaceViewModelMocking()
+    let mocking = SmartWatch.V3.Watchface.WatchfaceViewModelMocking()
     
     var body: some View {
-        SmartWatch.V3.Watchfaces.WatchfaceDashboardView(viewModel: mocking.viewModel)
+        SmartWatch.V3.Watchface.WatchfaceDashboardView(viewModel: mocking.viewModel)
     }
 }
 

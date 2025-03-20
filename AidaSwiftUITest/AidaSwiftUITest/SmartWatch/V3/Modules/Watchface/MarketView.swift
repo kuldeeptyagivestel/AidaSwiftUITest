@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 // MARK: - MARKET VIEW
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     struct MarketView: View {
         @ObservedObject var viewModel: WatchfaceViewModel
         
@@ -22,7 +22,9 @@ extension SmartWatch.V3.Watchfaces {
                                 title: .localized(.allFaces),
                                 type: .navigable
                             )
-                        )
+                        ), onTap: { _ in
+                            viewModel.navigateToWFGallery(type: .allFaces)
+                        }
                     )
                     
                     ForEach(viewModel.categories, id: \.id) { category in
@@ -40,7 +42,7 @@ extension SmartWatch.V3.Watchfaces {
                                     print("Selected watchface: \(selectedWatchface.id)")
                                 },
                                 onHeaderTap: {
-                                    print("Header tapped - Navigate to another page")
+                                    viewModel.navigateToWFGallery(type: .category(category))
                                 }
                             )
                             .padding(.top, 8)
@@ -58,10 +60,10 @@ extension SmartWatch.V3.Watchfaces {
 
 //#MARK: - PREVIEW
 struct MarketView_Preview: View {
-    let mocking = SmartWatch.V3.Watchfaces.WatchfaceViewModelMocking()
+    let mocking = SmartWatch.V3.Watchface.WatchfaceViewModelMocking()
     
     var body: some View {
-        SmartWatch.V3.Watchfaces.MarketView(viewModel: mocking.viewModel)
+        SmartWatch.V3.Watchface.MarketView(viewModel: mocking.viewModel)
     }
 }
 

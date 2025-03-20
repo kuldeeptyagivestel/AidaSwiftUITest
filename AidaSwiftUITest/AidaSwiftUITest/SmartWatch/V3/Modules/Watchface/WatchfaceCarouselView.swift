@@ -8,7 +8,7 @@
 import SwiftUI
 
 ///Watchface Showcase View
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     // MARK: - WATCH SHOWCASE VIEW
     //WatchfaceShowcaseView: Horizontal Watch Face Collection View with Header title and Arrow
     internal struct WatchfaceShowcaseView: View {
@@ -69,7 +69,7 @@ extension SmartWatch.V3.Watchfaces {
 }
 
 //MARK: WatchfaceCarouselView
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     // WatchfaceCarouselView: Represents the core horizontal scrollable view with cells.
     internal struct WatchfaceCarouselView: View {
         @Binding var watchfaces: [CloudWatchfaceItem]  // Updated to @Binding
@@ -118,7 +118,7 @@ struct Previews_WatchfaceShowcaseView: View {
     @State private var currentWFName: String? = nil
     
     var body: some View {
-        SmartWatch.V3.Watchfaces.WatchfaceShowcaseView(
+        SmartWatch.V3.Watchface.WatchfaceShowcaseView(
             watchfaces: $watchfaces,
             title: "Watch Face",
             cellSize: Watchface.Preview.size(for: .v3),

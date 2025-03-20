@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     //MARK: - MY LIBRARY VIEW
     struct MyLibraryView: View {
         @ObservedObject var viewModel: WatchfaceViewModel
@@ -83,10 +83,10 @@ extension SmartWatch.V3.Watchfaces {
 
 //#MARK: - PREVIEW
 struct MyLibraryView_Preview: View {
-    let mocking = SmartWatch.V3.Watchfaces.WatchfaceViewModelMocking()
+    let mocking = SmartWatch.V3.Watchface.WatchfaceViewModelMocking()
     
     var body: some View {
-        SmartWatch.V3.Watchfaces.MyLibraryView(viewModel: mocking.viewModel)
+        SmartWatch.V3.Watchface.MyLibraryView(viewModel: mocking.viewModel)
     }
 }
 

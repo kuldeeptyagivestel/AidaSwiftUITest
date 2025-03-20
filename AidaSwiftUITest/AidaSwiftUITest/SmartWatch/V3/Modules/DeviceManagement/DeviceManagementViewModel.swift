@@ -14,7 +14,7 @@ internal typealias WatchV3DeviceManagementView = SmartWatch.V3.DeviceManagement.
 internal typealias WatchV3Summary = SmartWatch.V3.DeviceManagement.WatchSummary
 
 //MARK: -
-//MARK: - Device Management Module: Module Class
+//MARK: -  Module Class
 extension SmartWatch.V3 {
     public final class DeviceManagement {
         // To prevent instantiation

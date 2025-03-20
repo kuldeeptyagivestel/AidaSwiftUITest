@@ -8,7 +8,7 @@
 import SwiftUI
 
 //MARK: - CUSTOM WATCHFACE VIEW
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     struct CustomWatchfaceView: View {
         @ObservedObject var viewModel: WatchfaceViewModel
         
@@ -43,7 +43,7 @@ extension SmartWatch.V3.Watchfaces {
     }
 }
 
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     // MARK: - Custom Watchface Header
     fileprivate struct HeaderView: View {
         @ObservedObject var viewModel: WatchfaceViewModel
@@ -51,7 +51,7 @@ extension SmartWatch.V3.Watchfaces {
         var body: some View {
             HStack(spacing: 20) {
                 
-                SmartWatch.V3.Watchfaces.CustomWatchfacePreview(
+                SmartWatch.V3.Watchface.CustomWatchfacePreview(
                     imageURL: .constant(viewModel.customWF.localFileURL),
                     textLocation: .constant(viewModel.customWF.textLocation),
                     textColor: .constant(viewModel.customWF.timeColor),
@@ -86,7 +86,7 @@ extension SmartWatch.V3.Watchfaces {
 }
 
 // MARK: - PHOTO SELECTION
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     fileprivate struct PhotoSelectionView: View {
         @ObservedObject var viewModel: WatchfaceViewModel
         
@@ -123,7 +123,7 @@ extension SmartWatch.V3.Watchfaces {
     }
 }
 
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     fileprivate struct TextColorSelectionView: View {
         @ObservedObject var viewModel: WatchfaceViewModel
         @State private var selectedColor: Watchface.Custom.TextColor = .default // Tracks the current selection
@@ -177,7 +177,7 @@ extension SmartWatch.V3.Watchfaces {
     }
 }
 
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     // MARK: - Text Location Selection
     fileprivate struct TextLocationView: View {
         @ObservedObject var viewModel: WatchfaceViewModel
@@ -262,10 +262,10 @@ extension SmartWatch.V3.Watchfaces {
 
 //#MARK: - PREVIEW
 struct CustomWatchfaceView_Preview: View {
-    let mocking = SmartWatch.V3.Watchfaces.WatchfaceViewModelMocking()
+    let mocking = SmartWatch.V3.Watchface.WatchfaceViewModelMocking()
     
     var body: some View {
-        SmartWatch.V3.Watchfaces.CustomWatchfaceView(viewModel: mocking.viewModel)
+        SmartWatch.V3.Watchface.CustomWatchfaceView(viewModel: mocking.viewModel)
     }
 }
 

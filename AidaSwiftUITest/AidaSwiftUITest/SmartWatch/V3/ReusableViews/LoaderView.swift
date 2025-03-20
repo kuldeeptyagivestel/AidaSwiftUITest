@@ -109,7 +109,7 @@ struct LoaderPreviewWrapper: View {
                     .frame(width: 100, height: 100, alignment: .center)
                     .cornerRadius(15)
                 
-                SmartWatch.V3.Watchfaces.WatchfaceCell(
+                SmartWatch.V3.Watchface.WatchfaceCell(
                     title: "Preview",
                     imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w65.gif?alt=media&token=a90ed96b-4754-4671-a249-a8e0db5ae15a"),
                     size: Watchface.Preview.size(for: .v3), // Configurable size

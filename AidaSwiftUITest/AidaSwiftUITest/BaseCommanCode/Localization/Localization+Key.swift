@@ -1510,8 +1510,12 @@ public enum LocalizationKey: String {
     case cameraPermissionRequiredDesc
     case galaryPermissionRequiredDesc
 
+    ///WATCHFACE LIST (RECORDS)
     case watchfaceRecords
     case favorites
+    case noWatchfaceAvailable
+    case noWatchfaceRecordsFound
+    case noFavorites
     case custom_watchFace_desc
     
     //MARK: - V3 Features

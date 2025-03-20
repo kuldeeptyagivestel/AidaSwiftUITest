@@ -10,7 +10,6 @@ import Foundation
 import SwiftUI
 
 ///HostingController will use to link Swift UI Code to UIKit view controller and manage linking between UIKit and SwiftUI
-@MainActor
 class GenericHostingController<T: View>: UIHostingController<T> {
     override init(rootView: T) {
         super.init(rootView: rootView)

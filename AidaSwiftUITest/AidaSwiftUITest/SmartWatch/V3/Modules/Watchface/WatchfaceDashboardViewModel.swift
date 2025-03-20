@@ -9,14 +9,14 @@
 import Foundation
 import SwiftUI
 
-internal typealias WatchV3WatchfaceViewModel = SmartWatch.V3.Watchfaces.WatchfaceViewModel
-internal typealias WatchV3WatchfaceDashboardView = SmartWatch.V3.Watchfaces.WatchfaceDashboardView
-internal typealias WatchV3WatchfaceShowcaseView = SmartWatch.V3.Watchfaces.WatchfaceShowcaseView
+internal typealias WatchV3WatchfaceViewModel = SmartWatch.V3.Watchface.WatchfaceViewModel
+internal typealias WatchV3WatchfaceDashboardView = SmartWatch.V3.Watchface.WatchfaceDashboardView
+internal typealias WatchV3WatchfaceShowcaseView = SmartWatch.V3.Watchface.WatchfaceShowcaseView
 
 //MARK: -
 //MARK: - Watchface Module: Module Class
 extension SmartWatch.V3 {
-    public final class Watchfaces {
+    public final class Watchface {
         // To prevent instantiation
         private init() {}
     }
@@ -24,21 +24,28 @@ extension SmartWatch.V3 {
 
 //MARK: -
 //MARK: - View Model
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     class WatchfaceViewModel: ViewModel {
-        // MARK: - Instance Properties
-        @Published var title: String = "Watch Face"
+        ///#INSTANCE PROPERTIES
+        @Published var title: String = .localized(.watchface)
+        var navCoordinator: NavigationCoordinator
+        let watchType: SmartWatchType
+        
+        ///#PUBLISHED PROPERTIES
         @Published var categories: [CloudWatchfaceCategoryItem] = []
         @Published var watchfacesByCategory: [String: [CloudWatchfaceItem]] = [:]
         @Published var installedWFs: [CloudWatchfaceItem] = []
         @Published var builtInWFs: [CloudWatchfaceItem] = []
         @Published var customWF: CustomWatchfaceItem = CustomWatchfaceItem()
-        
         ///currentInstalledWFName
         @Published var currentWFName: String? = nil
         
-        // MARK: - Life Cycle Methods
-        init() {
+        // MARK: METHODS
+        ///#LIFE CYCLE METHODS
+        init(navCoordinator: NavigationCoordinator, watchType: SmartWatchType) {
+            self.navCoordinator = navCoordinator
+            self.watchType = watchType
+            
             self.loadCategories()
             self.loadInstalledWFs()
             self.loadBuiltInWFs()
@@ -99,12 +106,29 @@ extension SmartWatch.V3.Watchfaces {
                 }
             }
         }
+        
+        ///#NAVIGATION
+        internal func navigateToWFGallery(type: GalleryType) {
+            let viewModel = SmartWatch.V3.Watchface.GalleryViewModel(
+                type: type,
+                navCoordinator: self.navCoordinator,
+                watchType: self.watchType
+            )
+            
+            let view = SmartWatch.V3.Watchface.GalleryView(
+                viewModel: viewModel,
+                cellSize: Watchface.Preview.size(for: .v3),
+                cornerRadius: Watchface.Preview.radius(for: .v3)
+            )
+            
+            self.navCoordinator.push(view, with: viewModel)
+        }
     }
 }
 
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     internal class WatchfaceViewModelMocking {
-        var viewModel = WatchfaceViewModel()
+        var viewModel = WatchfaceViewModel(navCoordinator: NavigationCoordinator(), watchType: .v3)
         private var timer: Timer?
 
         // Sample watchface names for mocking
@@ -145,12 +169,10 @@ extension SmartWatch.V3.Watchfaces {
         private func updateCurrentWFName() {
             let randomName = mockWatchfaceNames.randomElement()
             viewModel.currentWFName = randomName
-            print("Updated currentWFName to: \(randomName ?? "None")")
         }
 
         deinit {
             timer?.invalidate()
         }
     }
-
 }

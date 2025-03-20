@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 ///Watchface Cell UI
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     //MARK: - WATCHFACE CELL
     struct WatchfaceCell: View {
         let title: String
@@ -116,7 +116,7 @@ struct DynamicWatchfaceCellPreview: View {
     @State private var isCurrent = false
     
     var body: some View {
-        SmartWatch.V3.Watchfaces.WatchfaceCell(
+        SmartWatch.V3.Watchface.WatchfaceCell(
             title: "Dynamic Preview",
             isCurrent: $isCurrent,
             imageURL: URL(string: "https://firebasestorage.googleapis.com/v0/b/vestel-aida-test.appspot.com/o/watchface%2Fgtx12%2Fprod%2Fimages%2Fwf_w66.gif?alt=media&token=ecc581bc-b14f-46c7-ac86-0cabc23e2018"),

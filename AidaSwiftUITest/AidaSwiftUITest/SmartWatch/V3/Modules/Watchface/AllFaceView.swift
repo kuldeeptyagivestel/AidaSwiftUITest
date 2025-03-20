@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension SmartWatch.V3.Watchfaces {
+extension SmartWatch.V3.Watchface {
     //MARK: - ALL FACE VIEW
     struct AllFaceView: View {
         @Binding var watchfaces: [CloudWatchfaceItem]  // Updated to @Binding
@@ -40,5 +40,5 @@ extension SmartWatch.V3.Watchfaces {
 //MARK: - PREVIEW
 #Preview {
     @State var watchfaces: [CloudWatchfaceItem] = CloudWatchfaceItem.mock
-    SmartWatch.V3.Watchfaces.AllFaceView(watchfaces: $watchfaces, cellSize: Watchface.Preview.size(for: .v3), cornerRadius: Watchface.Preview.radius(for: .v3))
+    SmartWatch.V3.Watchface.AllFaceView(watchfaces: $watchfaces, cellSize: Watchface.Preview.size(for: .v3), cornerRadius: Watchface.Preview.radius(for: .v3))
 }
