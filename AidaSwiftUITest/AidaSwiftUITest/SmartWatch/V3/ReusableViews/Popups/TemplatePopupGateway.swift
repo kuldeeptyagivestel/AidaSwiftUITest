@@ -29,8 +29,13 @@ public extension Popup {
     }
     
     ///Hide any popup
-    static func hidePopup(forceImmediate: Bool = false) {
+    static func hide(forceImmediate: Bool = false) {
         Presenter.shared.hidePopup(forceImmediate: forceImmediate)
+    }
+    
+    ///Checks if the provided model is currently displayed.
+    static func isVisible(_ model: some Popup.Model) -> Bool {
+        return Presenter.shared.isVisible(model)
     }
 }
 
@@ -45,7 +50,7 @@ public extension Popup {
     
     /// Quickly show an alert with a single cancel button
     /// #Alert Popup (One Button)
-    static func showAlert(icon: String = "popup/connectionFailed", title: String, desc: String?, onCancel: (() -> Void)? = nil) {
+    static func showAlert(icon: String = "popup/connectionFailed", title: String, desc: String? = nil, onCancel: (() -> Void)? = nil) {
         let model = Popup.Alert(icon: icon, title: title, desc: desc, onCancel: onCancel)
         Popup.show(model, animationType: .fromTop, priority: .high)
     }

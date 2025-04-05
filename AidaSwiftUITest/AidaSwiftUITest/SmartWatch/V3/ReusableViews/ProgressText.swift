@@ -93,12 +93,12 @@ struct ProgressText: View {
         .onChange(of: baseText) { newValue in
             isTextReadyForShimmer = false // Pause shimmer during text transition
             
-            withAnimation(.easeInOut(duration: 0.5)) {
+            withAnimation(.easeInOut(duration: 0.2)) {
                 animatedText = newValue
             }
 
             // Delay shimmer reset until text animation completes
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                 shimmeringText = newValue
                 isTextReadyForShimmer = true
                 if isShimmering { startShimmering() }
@@ -154,7 +154,7 @@ struct ProgressText_Previews: View {
         .font(.custom(style: .bold, size: 20))
         .foregroundColor(Color.green)
         .onAppear {
-            Timer.scheduledTimer(withTimeInterval: 6.0, repeats: true) { _ in
+            Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { _ in
                 DispatchQueue.main.async {
                     let texts = ["Starting", "Processing", "Finalizing", "Completed"]
                     if let currentIndex = texts.firstIndex(of: previewText) {

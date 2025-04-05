@@ -32,6 +32,7 @@ struct FeatureCell: View {
     var onTap: ((FeatureCell.Model) -> Void)?
     
     @State private var dividerColor: Color = .cellDividerColor
+    @State private var textHeight: CGFloat = 0
     
     // View modifier support
     func dividerColor(_ color: Color) -> some View {
@@ -48,8 +49,20 @@ struct FeatureCell: View {
                 Text(feature.title)
                     .font(.custom(.muli, style: .bold, size: 17))
                     .foregroundStyle(Color.lblPrimary)
-                
-                Spacer()
+                    .lineLimit(2)
+                    .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true) // Ensure proper wrapping
+                    .frame(width: 250, alignment: .leading)
+                    .background(
+                        GeometryReader { geo in
+                            Color.clear
+                                .onAppear {
+                                    textHeight = geo.size.height // Capture text height
+                                }
+                        }
+                    )
+        
+                Spacer(minLength: 10)
                 
                 switch feature.type {
                 case .switchable(let value):
@@ -78,7 +91,7 @@ struct FeatureCell: View {
                 Divider().background(dividerColor)
             }
         }
-        .frame(height: 48)
+        .frame(height: max(48, textHeight + 20)) // Dynamic height with min 48
         .contentShape(Rectangle()) // Ensures the entire area is tappable
         .onTapGesture {
             if case .navigable = feature.type {
@@ -98,8 +111,9 @@ struct FeatureCell: View {
                 print("Tapped: \(tappedFeature.title)")
             }
         }
+        .background(Color.yellow)
         
-        FeatureCell(feature: .constant(FeatureCell.Model(title: "Factory reset", type: .switchable(value: true)))) { tappedFeature in
+        FeatureCell(feature: .constant(FeatureCell.Model(title: "Continuous heart rate measurements", type: .switchable(value: true)))) { tappedFeature in
             switch tappedFeature.type {
             case .switchable(let value):
                 print("Toggle Changed: \(tappedFeature.title) → \(value ? "ON" : "OFF")")
@@ -108,6 +122,6 @@ struct FeatureCell: View {
             }
         }
         .dividerColor(.clear)
+        .background(Color.green)
     }
 }
-

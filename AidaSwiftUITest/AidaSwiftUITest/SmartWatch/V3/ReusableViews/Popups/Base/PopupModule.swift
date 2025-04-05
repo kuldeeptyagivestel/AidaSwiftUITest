@@ -97,6 +97,9 @@ public enum Popup {
     public struct Default {
         private init() {}
         
+        ///.frame(maxWidth: UIScreen.main.bounds.width * 0.85, minHeight: 200): popupWidth: Percentage
+        public static let popupWidth = 0.92
+        public static let pupupCornerRadius = 6.0
         public static let icon = "popup/verifyBind"
         public static let title = String.localized(.importantUpdate)
         public static let cancelBtnTitle = String.localized(.cancel)

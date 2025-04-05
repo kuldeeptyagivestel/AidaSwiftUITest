@@ -1660,8 +1660,9 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "notificationsDesc" = "Bildirimleri alabilmeniz için telefon ayarlarınızdan bildirim iznini aktifleştirmeniz gerekmektedir.";
 "systemNotificationPermission" = "Sistem bildirimleri izni";
 
-"muteNotification" = "Bildirimleri sessize al";
-"turnOffNotification" = "Bildirimi kapat";
+"allowNotifications" = "Bildirimlere izin ver";
+"turnOffNotifications" = "Bildirimleri sessize al";
+"muteNotifications" = "Bildirimleri kapat";
 
 //MARK: ALARM
 "alarm" = "Alarm";
@@ -1671,10 +1672,10 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "healthMonitorDesc" = "Sağlık takibiyle otomatik ölçümleri etkinleştirebilir, akıllı saatinize bildirim almak için hatırlatıcılar ayarlayabilirsiniz.";
 "continuousHeartRate" = "Sürekli kalp atış hızı ölçümleri";
 "heartRateDesc" = "Seçildiğinde, bir bildirim aldığınızda cihaz titreşmez.";
-"hearRateMeasureDesc" = "Doğru ölçümü sağlamak için akıllı saatinizi bilek kemiğinizin en az bir parmak yukarısına takın ve bileğinize tam oturduğundan emin olun.
+"hrMeasureDesc" = "Doğru ölçümü sağlamak için akıllı saatinizi bilek kemiğinizin en az bir parmak yukarısına takın ve bileğinize tam oturduğundan emin olun.
 
 Bu işlev açık veya kapalı olsun, bir egzersiz başlatıldığında kalp atış hızı varsayılan olarak gerçek zamanlı olarak ölçülecektir.";
-"heartRateAlert" = "Kalp atış hızı uyarısı";
+"heartRateAlerts" = "Kalp Atış Hızı Uyarıları";
 "highHeartRateTitle" = "Yüksek kalp atış hızı uyarısı";
 "highHeartRateDesc" = "Bu ayar devre dışı bırakıldığında, kalp atış hızınız 10 dakika boyunca önceden ayarlanmış değerin üzerinde kaldığında yine de bir uyarı gönderilir.";
 "lowHeartRateTitle" = "Düşük kalp atış hızı uyarısı";
@@ -2189,11 +2190,35 @@ Kışın: 21.30 - 22.30";
 "idoWatchfaceLoadError" = "Akıllı saatinizden saat yüzleri senkronize edilemedi. Lütfen bağlantıyı kontrol edip tekrar deneyin.";
 "idoWatchfaceInstallError" = "Saat yüzü akıllı saatinize yüklenemedi. Lütfen saati sıfırlayın ve tekrar deneyin. Sorun devam ederse, destek için bizimle iletişime geçin.";
 "idoWatcheNotEnoughSpaceError" = "Saatinizde yeni saat yüzünü yüklemek için yeterli alan yok. Lütfen mevcut bir saat yüzünü silin veya devam etmek için saati sıfırlayın.";
-//MARK: - IDO ERRORS - WATCHFACE
-"idoWFInitializing" = "Başlatılıyor...";
-"idoWFCheckingSpace" = "Alan Kontrol Ediliyor...";
-"idoWFCleanupSpace" = "Alan Temizleniyor...";
-"idoWFDownloading" = "Saat Arayüzü İndiriliyor...";
-"idoWFTransferring" = "Saat Arayüzü Aktarılıyor...";
-"idoWFActivating" = "Saat Arayüzü Etkinleştiriliyor...";
-"idoWFInstalled" = "Saat arayüzü başarıyla yüklendi.";
+
+//MARK: -
+//MARK: KURULUM SÜRECİ
+"starting" = "Başlatılıyor";
+"preparingInstallation" = "Kurulum Hazırlanıyor";
+"checkingAvailableStorage" = "Mevcut Depolama Alanı Kontrol Ediliyor";
+"notEnoughSpace" = "Yetersiz Depolama Alanı";
+"cleaningUpSpace" = "Depolama Alanı Temizleniyor";
+"downloadingFile" = "Dosya İndiriliyor";
+"downloadComplete" = "İndirme Tamamlandı";
+"transferring" = "Aktarılıyor";
+"transferComplete" = "Aktarım Tamamlandı";
+"installing" = "Yükleniyor";
+"installationFinished" = "Kurulum Tamamlandı";
+"activating" = "Etkinleştiriliyor";
+"installationSuccessful" = "Kurulum Başarılı!";
+"installationFailed" = "Kurulum Başarısız";
+
+"initiatingProcess" = "İşlem başlatılıyor...";
+"gettingReadyToInstall" = "Kuruluma hazırlanıyor...";
+"verifyingAvailableStorage" = "Mevcut depolama alanı doğrulanıyor...";
+"insufficientSpace" = "Yetersiz alan. Lütfen depolama alanı boşaltın.";
+"clearingOutdatedFiles" = "Eski dosyalar kaldırılıyor...";
+"downloadingProgress" = "İndiriliyor...";
+"downloadSuccessful" = "İndirme başarılı!";
+"transferringProgress" = "Aktarılıyor...";
+"transferSuccessful" = "Aktarım başarılı!";
+"installingProgress" = "Yükleniyor...";
+"installationComplete" = "Kurulum tamamlandı!";
+"activatingDevice" = "Cihazınız etkinleştiriliyor...";
+"allSetEnjoy" = "Her şey hazır! Keyfini çıkarın.";
+"failedWithError" = "Bir şeyler ters gitti. Lütfen tekrar deneyin.";

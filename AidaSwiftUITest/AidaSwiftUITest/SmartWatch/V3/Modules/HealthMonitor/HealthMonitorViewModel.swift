@@ -27,17 +27,19 @@ extension SmartWatch.V3.HealthMonitor {
     class HealthMonitorViewModel: ViewModel {
         var title: String = .localized(.healthMonitor)
         
-        @Published var sampleTitles: [HealthMonitorItem] = [
-            HealthMonitorItem(id: 1, title: .localized(.heartRate), icon: "smartwatchv3/heartIcon", isOn: true),
-            HealthMonitorItem(id: 2, title: .localized(.watchv2_hm_stress), icon: "smartwatchv3/stressIcon", isOn: true),
-            HealthMonitorItem(id: 3, title: .localized(.spO2BloodOxygenLevel), icon: "smartwatchv3/bloodOxygenIcon", isOn: true),
-            HealthMonitorItem(id: 4, title: .localized(.respiratoryRate), icon: "smartwatchv3/respiratoryIcon", isOn: false),
-            HealthMonitorItem(id: 5, title: .localized(.watchv2_hm_dr_reminder), icon: "smartwatchv3/waterIcon", isOn: false),
-            HealthMonitorItem(id: 6, title: .localized(.handWashingReminder), icon: "smartwatchv3/handwashIcon", isOn: false),
-            HealthMonitorItem(id: 7, title: .localized(.watchv2_hm_war_reminder), icon: "smartwatchv3/trackerIcon", isOn: true),
-            HealthMonitorItem(id: 8, title: .localized(.scienceSleep), icon: "smartwatchv3/sleepIcon", isOn: true),
-            HealthMonitorItem(id: 9, title: .localized(.watchv2_hm_menstrual), icon: "smartwatchv3/menstrualIcon", isOn: false)
+        ///#PUBLISHED PROPERTIES
+        @Published var features: [HealthFeatureSummary] = [
+            HealthFeatureSummary(id: 1, icon: "smartwatchv3/heartIcon", title: .localized(.heartRate), isOn: true),
+            HealthFeatureSummary(id: 2, icon: "smartwatchv3/stressIcon", title: .localized(.watchv2_hm_stress), isOn: true),
+            HealthFeatureSummary(id: 3, icon: "smartwatchv3/bloodOxygenIcon", title: .localized(.spO2BloodOxygenLevel), isOn: true),
+            HealthFeatureSummary(id: 4, icon: "smartwatchv3/respiratoryIcon", title: .localized(.respiratoryRate), isOn: false),
+            HealthFeatureSummary(id: 5, icon: "smartwatchv3/waterIcon", title: .localized(.watchv2_hm_dr_reminder), isOn: false),
+            HealthFeatureSummary(id: 6, icon: "smartwatchv3/handwashIcon", title: .localized(.handWashingReminder), isOn: false),
+            HealthFeatureSummary(id: 7, icon: "smartwatchv3/trackerIcon", title: .localized(.watchv2_hm_war_reminder), isOn: false),
+            HealthFeatureSummary(id: 8, icon: "smartwatchv3/sleepIcon", title: .localized(.scienceSleep), isOn: false),
+            HealthFeatureSummary(id: 9, icon: "smartwatchv3/menstrualIcon", title: .localized(.watchv2_hm_menstrual), isOn: false),
         ]
+        
         @Published var selectedOption: NotificationOption = .allowNotifications
         
         @Published var  isHighHeart: Bool = true
@@ -76,9 +78,9 @@ extension SmartWatch.V3.HealthMonitor {
             onDaysSelected?(selectedDays)
         }
         func toggleFeature(_ feature: HealthMonitorItem) {
-            if let index = sampleTitles.firstIndex(where: { $0.id == feature.id }) {
-                sampleTitles[index].isOn.toggle()
-            }
+//            if let index = sampleTitles.firstIndex(where: { $0.id == feature.id }) {
+//                sampleTitles[index].isOn.toggle()
+//            }
         }
 
         func handleFeatureTap(_ feature: HealthMonitorItem) {
@@ -102,6 +104,33 @@ extension SmartWatch.V3.HealthMonitor {
         
         
 }
+
+//MARK: - HEALTH FEATURE SUMMARY
+extension SmartWatch.V3.HealthMonitor {
+    internal struct HealthFeatureSummary: Equatable {
+        let id: Int
+        let icon: String
+        let title : String
+        var isOn: Bool
+        
+        // MARK: UPDATE
+        func update(isOn: Bool) -> HealthFeatureSummary {
+            // Check if any real value changes to avoid unnecessary struct creation
+            guard isOn != self.isOn else {
+                return self //No real change, return self to avoid unnecessary UI updates
+            }
+            
+            return HealthFeatureSummary(id: self.id, icon: self.icon, title: self.title, isOn: isOn)
+        }
+        
+        // MARK: EQUATABLE
+        static func == (lhs: HealthFeatureSummary, rhs: HealthFeatureSummary) -> Bool {
+            return lhs.id == rhs.id && lhs.icon == rhs.icon && lhs.title == rhs.title && lhs.isOn == rhs.isOn
+        }
+    }
+}
+
+
 //MARK: - UI MODELS
 extension SmartWatch.V3.HealthMonitor {
     internal struct HealthMonitorItem {
@@ -123,9 +152,9 @@ enum NotificationOption: CaseIterable {
         case .allowNotifications:
             return String.localized(.allow_notifications)
         case .muteNotifications:
-            return String.localized(.muteNotification)
+            return String.localized(.muteNotifications)
         case .turnOffNotifications:
-            return String.localized(.turnOffNotification)
+            return String.localized(.turnOffNotifications)
         }
     }
 }

@@ -75,6 +75,10 @@ extension String {
         
     }
     
+    func toDate(as format: DateFormat = .default) -> Date? {
+        DateFormatter(format: format, timeZone: .current, locale: .current).date(from: self)
+    }
+    
     func toInt() -> Int? {
          if let num = NumberFormatter().number(from: self) {
              return num.intValue

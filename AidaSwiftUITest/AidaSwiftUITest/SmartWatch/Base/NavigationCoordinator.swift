@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 
 ///NavigationCoordinator to manage the navigtion between the screens.
-class NavigationCoordinator: ObservableObject {
+public class NavigationCoordinator: ObservableObject {
     weak var navigationController: UINavigationController?
 
     func push<T: View, VM: ViewModel>(_ view: T, with viewModel: VM) {

@@ -69,6 +69,12 @@ public extension Popup {
             }
         }
         
+        ///Checks if the provided model is currently displayed.
+        public func isVisible(_ model: some Popup.Model) -> Bool {
+            guard let currentPopup = viewModel.currentPopup else { return false }
+            return currentPopup.id == model.id
+        }
+        
         private func displayPopup(_ request: Popup.Request) {
             guard let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
             

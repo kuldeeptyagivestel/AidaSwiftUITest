@@ -1532,16 +1532,17 @@ public enum LocalizationKey: String {
     case notificationsDesc
     case systemNotificationPermission
     
-    case muteNotification
-    case turnOffNotification
+    case allowNotifications
+    case turnOffNotifications
+    case muteNotifications
     
     //MARK: Health Monitor
     case healthTracking
     case healthMonitorDesc
     case heartRateDesc
     case continuousHeartRate
-    case hearRateMeasureDesc
-    case heartRateAlert
+    case hrMeasureDesc
+    case heartRateAlerts
     case highHeartRateTitle
     case highHeartRateDesc
     case lowHeartRateTitle
@@ -1969,12 +1970,36 @@ public enum LocalizationKey: String {
     case idoWatchfaceLoadError
     case idoWatchfaceInstallError
     case idoWatcheNotEnoughSpaceError
-    //MARK: - IDO ERRORS - WATCHFACE
-    case idoWFInitializing
-    case idoWFCheckingSpace
-    case idoWFCleanupSpace
-    case idoWFDownloading
-    case idoWFTransferring
-    case idoWFActivating
-    case idoWFInstalled
+    
+    //MARK: -
+    //MARK: INSTALLATION PROCESS
+    case starting
+    case preparingInstallation
+    case checkingAvailableStorage
+    case notEnoughSpace
+    case cleaningUpSpace
+    case downloadingFile
+    case downloadComplete
+    case transferring
+    case transferComplete
+    case installing
+    case installationFinished
+    case activating
+    case installationSuccessful
+    case installationFailed
+
+    case initiatingProcess
+    case gettingReadyToInstall
+    case verifyingAvailableStorage
+    case insufficientSpace
+    case clearingOutdatedFiles
+    case downloadingProgress
+    case downloadSuccessful
+    case transferringProgress
+    case transferSuccessful
+    case installingProgress
+    case installationComplete
+    case activatingDevice
+    case allSetEnjoy
+    case failedWithError
 }

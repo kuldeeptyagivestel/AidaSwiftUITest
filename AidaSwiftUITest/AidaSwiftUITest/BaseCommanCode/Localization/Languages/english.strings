@@ -1636,8 +1636,9 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 "notificationsDesc" = "To receive notifications, you need to enable notification permission in your phone settings.";
 "systemNotificationPermission" = "System notifications permission";
 
-"muteNotification" = "Mute notification";
-"turnOffNotification" = "Turn off notification";
+"allowNotifications" = "Allow notifications";
+"turnOffNotifications" = "Turn off notifications";
+"muteNotifications" = "Mute notifications";
 
 //MARK: ALARM
 "alarm" = "Alarm";
@@ -1647,10 +1648,10 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 "healthMonitorDesc" = "With health tracking, you can enable automatic measurements and set reminders to get notifications on your smart watch.";
 "heartRateDesc" = "When selected, the device won't vibrate when you receive a notification.";
 "continuousHeartRate" = "Continuous heart rate measurements";
-"hearRateMeasureDesc" = "To ensure accurate measurement, wear your smart watch at least one finger above your wrist bone and make sure it is snug on your wrist.
+"hrMeasureDesc" = "To ensure accurate measurement, wear your smart watch at least one finger above your wrist bone and make sure it is snug on your wrist.
                                                     
 Whether this function is on or off, heart rate will be measured in real time by default when an exercise is initiated.";
-"heartRateAlert" = "Heart rate alert";
+"heartRateAlerts" = "Heart Rate Alerts";
 "highHeartRateTitle" = "High heart rate alert";
 "highHeartRateDesc" = "If this setting is inactive, an alert is still sent when your heart rate stays above the preset value for 10 minutes.";
 "lowHeartRateTitle" = "Low heart rate alert";
@@ -1700,6 +1701,7 @@ Note: Power consumption will increase while monitoring is active.";
 
 "menstrualDesc" = "You can track your menstruation cycle and set period reminder.";
 "menstrulaRecommendSetting" = "Continuous recording can improve forecast accuracy. We recommend updating your settings according to your actual period each month to receive more accurate forecasts and reminders.";
+
 //MARK: DO NOT DISTURB MODE
 "doNotDisturbMode" = "Do Not Disturb Mode";
 
@@ -2172,10 +2174,35 @@ If the device cannot be configured after the above-mentioned solutions, please u
 "idoWatchfaceLoadError" = "Failed to sync watchfaces from your smartwatch. Please check the connection and try again.";
 "idoWatchfaceInstallError" = "Unable to install the watchface on your smartwatch. Please reset the watch and try again. If the problem persists, contact support for further assistance.";
 "idoWatcheNotEnoughSpaceError" = "Your watch does not have enough space to install the new watchface. Please delete an existing watchface or reset the watch to proceed.";
-"idoWFInitializing" = "Initializing...";
-"idoWFCheckingSpace" = "Checking Space...";
-"idoWFCleanupSpace" = "Cleanup Space...";
-"idoWFDownloading" = "Downloading Watchface...";
-"idoWFTransferring" = "Transferring Watchface...";
-"idoWFActivating" = "Activating Watchface...";
-"idoWFInstalled" = "Watchface installed successfully.";
+
+//MARK: -
+//MARK: INSTALLATION PROCESS
+"starting" = "Starting";
+"preparingInstallation" = "Preparing Installation";
+"checkingAvailableStorage" = "Checking Available Storage";
+"notEnoughSpace" = "Insufficient Storage Space";
+"cleaningUpSpace" = "Clearing Up Space";
+"downloadingFile" = "Downloading File";
+"downloadComplete" = "Download Complete";
+"transferring" = "Transferring";
+"transferComplete" = "Transfer Complete";
+"installing" = "Installing";
+"installationFinished" = "Installation Finished";
+"activating" = "Activating";
+"installationSuccessful" = "Installed Successfully!";
+"installationFailed" = "Installation Failed";
+
+"initiatingProcess" = "Initiating the process...";
+"gettingReadyToInstall" = "Getting ready to install...";
+"verifyingAvailableStorage" = "Verifying available storage...";
+"insufficientSpace" = "Not Enough Space. Free up storage.";
+"clearingOutdatedFiles" = "Removing outdated files...";
+"downloadingProgress" = "Downloading...";
+"downloadSuccessful" = "Download successful!";
+"transferringProgress" = "Transferring...";
+"transferSuccessful" = "Transfer successful!";
+"installingProgress" = "Installing...";
+"installationComplete" = "Installation finished!";
+"activatingDevice" = "Activating your device...";
+"allSetEnjoy" = "All set! Enjoy.";
+"failedWithError" = "Something went wrong. Please try again.";

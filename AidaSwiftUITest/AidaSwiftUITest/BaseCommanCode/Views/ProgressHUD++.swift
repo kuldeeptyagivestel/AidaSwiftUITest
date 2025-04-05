@@ -10,6 +10,25 @@ import KRProgressHUD
 import Dispatch
 import UIKit
 
+//MARK: - HELPER METHOD
+extension KRProgressHUD {
+    ///SwiftUI Helper method to code only in one line
+    static func showWithTimeoutAlert(
+        _ coordinator: NavigationCoordinator?,
+        timeout: TimeInterval = 30,
+        alertTitle: LocalizationKey = .idoTimeout
+    ) {
+        self.show(hideAfter: timeout) { isVisible in
+            if isVisible {
+                Popup.showAlert(title: .localized(alertTitle)) {
+                    coordinator?.pop()
+                }
+            }
+        }
+    }
+}
+
+//MARK: - TIMEOUT EXT
 extension KRProgressHUD {
     private static var currentWorkItem: DispatchWorkItem?
     
@@ -21,7 +40,7 @@ extension KRProgressHUD {
         timeoutMessage: String = .localized(.timeoutOperation),
         dismissHandler: ((Bool) -> Void)? = nil
     ) {
-        KRProgressHUD.show(hideAfter: delay, message: .localized(.idoWFInitializing)) { isVisible in
+        KRProgressHUD.show(hideAfter: delay, message: message) { isVisible in
             if isVisible {
                 view.makeToast(
                     timeoutMessage,

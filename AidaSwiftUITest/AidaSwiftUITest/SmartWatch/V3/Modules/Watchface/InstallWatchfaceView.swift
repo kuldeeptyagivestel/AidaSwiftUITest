@@ -45,7 +45,7 @@ extension SmartWatch.V3.Watchface {
                     Text(String.localized(.watchfaceInstallationWarning))
                         .font(.custom(.openSans, style: .regular, size: 15))
                         .multilineTextAlignment(.center)
-                        .foregroundColor(Color.descriptionPrimary)
+                        .foregroundColor(Color.descPrimary)
                         .padding(.horizontal)
                 }
                 .padding()

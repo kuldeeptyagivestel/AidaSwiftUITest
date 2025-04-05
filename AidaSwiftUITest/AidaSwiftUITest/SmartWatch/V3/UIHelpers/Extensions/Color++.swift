@@ -36,7 +36,7 @@ extension Color {
     static let clockColor = Color(#colorLiteral(red: 0.7529411765, green: 0.7529411765, blue: 0.7529411765, alpha: 1))
     
     //MARK: - CELL
-    static let cellColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+    static let cellColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)) //FFFFFF
     static let cellDividerColor = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1)) //#D0D0D0
     
     //MARK:  Toggle Colors
@@ -57,8 +57,8 @@ extension Color {
     static let disabledColor = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1)) //#D0D0D0 LightGray
     
     //MARK:  Description Colors
-    static let descriptionPrimary = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1))
-    static let descriptionSecondary = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1)) //#676767
+    static let descPrimary = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1))
+    static let descSecondary = Color(#colorLiteral(red: 0.4039215686, green: 0.4039215686, blue: 0.4039215686, alpha: 1)) //#676767
 
     //MARK:  Popup Colors
     static let popupBGColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))

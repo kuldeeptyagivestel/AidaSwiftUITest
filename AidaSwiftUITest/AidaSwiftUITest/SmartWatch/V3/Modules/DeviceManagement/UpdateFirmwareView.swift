@@ -124,7 +124,7 @@ extension SmartWatch.V3.DeviceManagement {
                         //Imp Notice
                         Text(String.localized(.fwUpdateImpNotice))
                             .font(.custom(.muli, style: .regular, size: 14))
-                            .foregroundColor(Color.descriptionSecondary)
+                            .foregroundColor(Color.descSecondary)
                             .padding(.vertical, 8)
                             .padding(.horizontal, 15)
                     } else {
