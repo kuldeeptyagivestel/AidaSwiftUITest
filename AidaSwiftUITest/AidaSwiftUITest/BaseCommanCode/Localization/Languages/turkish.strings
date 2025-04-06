@@ -1686,6 +1686,30 @@ Bu işlev açık veya kapalı olsun, bir egzersiz başlatıldığında kalp atı
 "respiratoryRate" = "Solunum hızı";
 "handWashingReminder" = "El yıkama hatırlatıcısı";
 "scienceSleep" = "Bilim uykusu";
+"sleep" = "Sleep";
+
+"notificationDesc" = "Seçildiğinde, bildirim aldığında cihaz titreşimle uyarmaz.";
+"continuousHRMeasure" = "Sürekli kalp atış hızı ölçümü";
+"hrMeasureDesc" = "Doğru ölçümü sağlamak için akıllı saatini bilek kemiğinin en az bir parmak yukarısına takmalı ve bileğine tam oturduğundan emin olmalısın.
+
+Bu işlevin açık veya kapalı olmasına bakılmaksızın, bir egzersiz başlatıldığında kalp atış hızı varsayılan olarak gerçek zamanlı olarak ölçülecektir. ";
+"heartRateAlerts" = "Kalp Atış Hızı Uyarıları";
+"highHRAlert" = "Yüksek kalp atış hızı uyarısı";
+"limitValue" = "Sınır değeri";
+"hrAlertDescDesc" = "Bu ayar kapalı olsa bile, kalp atış hızın 10 dakika boyunca belirlenen değerin üzerine çıkarsa cihaz bir uyarı gönderir.";
+"lowHRAlert" = "Düşük kalp atış hızı uyarısı";
+
+//STRESS
+"autoStressMeasure" = "Otomatik stres ölçümü";
+"autoStressMeasureDesc" = "Stres seviyeni gün boyunca otomatik olarak izlemek için bu özelliği etkinleştir.";
+"reminderInterval" = "Hatırlatma aralığı";
+"stressDesc" = "Stres seviyen 80’in üzerine çıktığında, cihaz sana rahatlamanı hatırlatır.
+                                                    
+Uygun düzeyde stres, fiziksel ve zihinsel sağlığını desteklerken, aşırı stres sağlığını olumsuz etkileyebilir. Stres seviyen gerçek zamanlı olarak ölçülerek fiziksel ve zihinsel sağlığını yönetmene yardımcı olur.";
+"stressZone" = "Stres seviyesi aralığı";
+"relax" = "Rahat";
+"medium" = "Orta";
+"high" = "Yüksek";
 
 "reminderInterval" = "Hatırlatma Aralığı";
 "automaticStressManagement" = "Otomatik stres yönetimi";

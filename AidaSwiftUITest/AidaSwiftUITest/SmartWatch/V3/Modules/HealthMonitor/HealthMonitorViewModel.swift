@@ -8,7 +8,7 @@
 import Foundation
 
 internal typealias WatchV3HealthMonitorViewModel = SmartWatch.V3.HealthMonitor.HealthMonitorViewModel
-internal typealias WatchV3HealthMonitorView = SmartWatch.V3.HealthMonitor.HealthTrackingView
+internal typealias WatchV3HealthMonitorView = SmartWatch.V3.HealthTracking.HealthTrackingView
 internal typealias WatchV3HealthMonitorItem = SmartWatch.V3.HealthMonitor.HealthMonitorItem
 
 //MARK: -

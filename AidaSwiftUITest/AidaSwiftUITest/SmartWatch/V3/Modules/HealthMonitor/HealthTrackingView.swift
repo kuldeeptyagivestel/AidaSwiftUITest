@@ -2,32 +2,34 @@
 //  HealthTrackingView.swift
 //  AIDAApp
 //
-//  Created by Swapnil Baranwal on 02/01/25.
+//  Created by Kuldeep Tyagi on 04/04/25.
 //  Copyright © 2025 Vestel Elektronik A.Ş. All rights reserved.
 //
 
 import SwiftUI
 
-extension SmartWatch.V3.HealthMonitor {
+/// A unified view for displaying various watchface categories like All Faces, Favorites, and New Arrivals.
+extension SmartWatch.V3.HealthTracking {
     //MARK: - HEALTH TRACKING VIEW
     struct HealthTrackingView: View {
-        @ObservedObject var viewModel: WatchV3HealthMonitorViewModel
+        @ObservedObject var viewModel: HealthTrackingViewModel
 
         var body: some View {
             VStack(alignment: .leading, spacing: 10) {
                 ///Header
                 Text(String.localized(.healthMonitorDesc))
-                    .font(.custom(.openSans, style: .regular, size: 14))
+                    .font(.custom(.openSans, style: .regular, size: 15))
                     .foregroundColor(Color.lblSecondary)
                     .padding(.horizontal, 16)
                     .padding(.top, 16)
+                    .padding(.bottom, 8)
                 
                 //List
                 ScrollView {
                     VStack(spacing: 0) {
                         ForEach($viewModel.features, id: \.id) { feature in
                             HealthFeatureCell(model: feature) { model in
-                                
+                                viewModel.navigateTo(feature: model)
                             }
                         }
                     }
@@ -45,7 +47,7 @@ extension SmartWatch.V3.HealthMonitor {
 }
 
 //MARK: - CELL
-extension SmartWatch.V3.HealthMonitor {
+extension SmartWatch.V3.HealthTracking {
     fileprivate struct HealthFeatureCell: View {
         @Binding var model: HealthFeatureSummary
         var onTap: ((HealthFeatureSummary) -> Void)?
@@ -55,9 +57,10 @@ extension SmartWatch.V3.HealthMonitor {
                 HStack {
                     Image(model.icon)
                         .resizable()
-                        .scaledToFit()
-                        .frame(width: 30, height: 30)
-                        .padding(.horizontal, 8)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 25, height: 25)
+                        .clipped()
+                        .padding(.horizontal, 4)
                     
                     Text(model.title)
                         .font(.custom(.muli, style: .bold, size: 17))
@@ -67,7 +70,7 @@ extension SmartWatch.V3.HealthMonitor {
                     
                     Text(String.localized(model.isOn ? .on : .off))
                         .font(.custom(.muli, style: .semibold, size: 16))
-                        .foregroundColor(model.isOn ? Color.themeColor: Color.lblSecondary)
+                        .foregroundColor(model.isOn ? Color.toggleOnColor: Color.lblSecondary)
                         .font(.body)
                         .padding(.horizontal, 8)
                     
@@ -87,9 +90,9 @@ extension SmartWatch.V3.HealthMonitor {
     }
 }
 
-
 //MARK: - PREVIEW
 #Preview {
-    let rootViewModel = WatchV3HealthMonitorViewModel()
-    SmartWatch.V3.HealthMonitor.HealthTrackingView(viewModel: rootViewModel)
+    let rootViewModel = SmartWatch.V3.HealthTracking.HealthTrackingViewModel(navCoordinator: NavigationCoordinator(), watchType: .v3)
+    SmartWatch.V3.HealthTracking.HealthTrackingView(viewModel: rootViewModel)
 }
+

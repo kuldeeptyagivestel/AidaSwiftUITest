@@ -1553,8 +1553,23 @@ public enum LocalizationKey: String {
     case respiratoryRate
     case handWashingReminder
     case scienceSleep
+    case sleep
+    case notificationDesc
+    case continuousHRMeasure
+    case highHRAlert
+    case hrAlertDescDesc
+    case lowHRAlert
     
+    //STRESS
+    case autoStressMeasure
+    case autoStressMeasureDesc
     case reminderInterval
+    case stressDesc
+    case stressZone
+    case relax
+    case medium
+    case high
+    
     case automaticStressManagement
     case automaticStressManagementDesc
     case stressGraphDesc

@@ -29,10 +29,22 @@ extension FeatureCell {
  */
 struct FeatureCell: View {
     @Binding var feature: FeatureCell.Model
+    @Binding var isEnabled: Bool
     var onTap: ((FeatureCell.Model) -> Void)?
     
     @State private var dividerColor: Color = .cellDividerColor
     @State private var textHeight: CGFloat = 0
+    
+    // Custom initializer with default value for isEnabled
+    init(
+        feature: Binding<FeatureCell.Model>,
+        isEnabled: Binding<Bool> = .constant(true),
+        onTap: ((FeatureCell.Model) -> Void)? = nil
+    ) {
+        self._feature = feature
+        self._isEnabled = isEnabled
+        self.onTap = onTap
+    }
     
     // View modifier support
     func dividerColor(_ color: Color) -> some View {
@@ -48,11 +60,12 @@ struct FeatureCell: View {
             HStack() {
                 Text(feature.title)
                     .font(.custom(.muli, style: .bold, size: 17))
-                    .foregroundStyle(Color.lblPrimary)
+                    .foregroundStyle(isEnabled ? Color.lblPrimary : Color.disabledColor)
                     .lineLimit(2)
                     .multilineTextAlignment(.leading)
                     .fixedSize(horizontal: false, vertical: true) // Ensure proper wrapping
-                    .frame(width: 250, alignment: .leading)
+                    .frame(width: 250, alignment: .leading) //250 becuase text can more space.
+                    .animation(.easeInOut(duration: 0.35), value: isEnabled)
                     .background(
                         GeometryReader { geo in
                             Color.clear
@@ -61,25 +74,30 @@ struct FeatureCell: View {
                                 }
                         }
                     )
-        
+                
                 Spacer(minLength: 10)
                 
                 switch feature.type {
                 case .switchable(let value):
                     Toggle("", isOn: Binding(
-                        get: { value
+                        get: {
+                            isEnabled ? value : false
                         },
                         set: { newValue in
+                            guard isEnabled else { return }
+                            UIImpactFeedbackGenerator(style: .medium).impactOccurred() //haptic
                             feature.type = .switchable(value: newValue)
                             onTap?(feature)
                         }
                     ))
                     .toggleStyle(ToggleSwitchStyle())
                     .labelsHidden()
+                    .disabled(!isEnabled)
                     
                 case .navigable:
                     Image(systemName: "arrow.right")
-                        .foregroundColor(Color.cellNavigationArrowColor)
+                        .foregroundColor(isEnabled ? Color.cellNavigationArrowColor : Color.disabledColor)
+                        .animation(.easeInOut(duration: 0.35), value: isEnabled)
                 }
             }
             .padding(.horizontal)
@@ -94,6 +112,7 @@ struct FeatureCell: View {
         .frame(height: max(48, textHeight + 20)) // Dynamic height with min 48
         .contentShape(Rectangle()) // Ensures the entire area is tappable
         .onTapGesture {
+            guard isEnabled else { return }
             if case .navigable = feature.type {
                 onTap?(feature)
             }
@@ -102,26 +121,57 @@ struct FeatureCell: View {
 }
 
 #Preview {
-    VStack(spacing:0){
-        FeatureCell(feature: .constant(FeatureCell.Model(title: "Firmware update", type: .navigable))) { tappedFeature in
-            switch tappedFeature.type {
-            case .switchable(let value):
-                print("Toggle Changed: \(tappedFeature.title) → \(value ? "ON" : "OFF")")
-            case .navigable:
-                print("Tapped: \(tappedFeature.title)")
-            }
-        }
-        .background(Color.yellow)
+    struct PreviewWrapper: View {
+        @State private var isEnabled: Bool = true
         
-        FeatureCell(feature: .constant(FeatureCell.Model(title: "Continuous heart rate measurements", type: .switchable(value: true)))) { tappedFeature in
-            switch tappedFeature.type {
-            case .switchable(let value):
-                print("Toggle Changed: \(tappedFeature.title) → \(value ? "ON" : "OFF")")
-            case .navigable:
-                print("Tapped: \(tappedFeature.title)")
+        var body: some View {
+            VStack(spacing: 0) {
+                FeatureCell(
+                    feature: .constant(FeatureCell.Model(title: "Firmware update", type: .navigable)),
+                    isEnabled: $isEnabled
+                ) { tappedFeature in
+                    switch tappedFeature.type {
+                    case .switchable(let value):
+                        print("Toggle Changed: \(tappedFeature.title) → \(value ? "ON" : "OFF")")
+                    case .navigable:
+                        print("Tapped: \(tappedFeature.title)")
+                    }
+                }
+                .background(
+                    RoundedRectangle(cornerRadius: 0)
+                        .fill(Color.white)
+                        .shadow(color: Color.black.opacity(0.1), radius: 6, x: 0, y: 2)
+                )
+                
+                FeatureCell(
+                    feature: .constant(FeatureCell.Model(title: "Continuous heart rate measurements", type: .switchable(value: true))),
+                    isEnabled: $isEnabled
+                ) { tappedFeature in
+                    switch tappedFeature.type {
+                    case .switchable(let value):
+                        print("Toggle Changed: \(tappedFeature.title) → \(value ? "ON" : "OFF")")
+                    case .navigable:
+                        print("Tapped: \(tappedFeature.title)")
+                    }
+                }
+                .dividerColor(.clear)
+                .background(
+                    RoundedRectangle(cornerRadius: 0)
+                        .fill(Color.white)
+                        .shadow(color: Color.black.opacity(0.1), radius: 6, x: 0, y: 2)
+                )
+            }
+            .onAppear {
+                Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { _ in
+                    withAnimation {
+                        isEnabled.toggle()
+                        print("isEnabled toggled: \(isEnabled)")
+                    }
+                }
             }
         }
-        .dividerColor(.clear)
-        .background(Color.green)
     }
+
+    return PreviewWrapper()
 }
+

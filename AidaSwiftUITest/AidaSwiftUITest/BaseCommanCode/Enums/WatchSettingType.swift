@@ -59,13 +59,14 @@ public enum NotificationPreference: Int, Codable, RadioSelectable {
     }
 }
 
+
 //MARK: - REPEAT DAYS
 /**
  let selectedDays: RepeatDays = [.monday, .wednesday, .friday]
  print(selectedDays.rawValue)  // Output: 42 (00101010 in binary)
  print(RepeatDays.workingDays.rawValue) // Output: 62
  print(RepeatDays.weekends.rawValue)    // Output: 65
- print(RepeatDays.allDays.rawValue)     // Output: 127 
+ print(RepeatDays.allDays.rawValue)     // Output: 127
  */
 public struct RepeatDays: OptionSet, Codable, CaseIterable {
     public let rawValue: Int
@@ -329,6 +330,36 @@ extension WatchSettings {
             self.lowHRAlert = lowHRAlert
             self.highHRLimit = highHRLimit
             self.lowHRLimit = lowHRLimit
+        }
+        
+        func update(
+            notifyState: NotificationPreference? = nil,
+            autoMeasure: Bool? = nil,
+            highHRAlert: Bool? = nil,
+            lowHRAlert: Bool? = nil,
+            highHRLimit: Int? = nil,
+            lowHRLimit: Int? = nil
+        ) -> HRMonitoring {
+            // Check if any real value has changed
+            guard notifyState.map({ $0 != self.notifyState }) ?? false ||
+                    autoMeasure.map({ $0 != self.autoMeasure }) ?? false ||
+                    highHRAlert.map({ $0 != self.highHRAlert }) ?? false ||
+                    lowHRAlert.map({ $0 != self.lowHRAlert }) ?? false ||
+                    highHRLimit.map({ $0 != self.highHRLimit }) ?? false ||
+                    lowHRLimit.map({ $0 != self.lowHRLimit }) ?? false
+            else {
+                return self // No change, return existing instance
+            }
+            
+            return HRMonitoring(
+                watchType: self.watchType,
+                notifyState: notifyState ?? self.notifyState,
+                autoMeasure: autoMeasure ?? self.autoMeasure,
+                highHRAlert: highHRAlert ?? self.highHRAlert,
+                lowHRAlert: lowHRAlert ?? self.lowHRAlert,
+                highHRLimit: highHRLimit ?? self.highHRLimit,
+                lowHRLimit: lowHRLimit ?? self.lowHRLimit
+            )
         }
     }
 }
@@ -693,7 +724,7 @@ extension WatchSettings {
             self.reminderDay = Int(dict["reminderDay"] ?? "2") ?? 2
             self.reminderTime = dict["reminderTime"] ?? "08:10"
             self.cycleLength = Int(dict["cycleLength"] ?? "30") ?? 30
-            self.lastMenstrualDate = dict["lastMenstrualDate"]?.toDate(as: DateFormat.default) ?? Date()
+            self.lastMenstrualDate = dict["lastMenstrualDate"]?.toDate(as: .default) ?? Date()
         }
 
         public init(
@@ -871,3 +902,4 @@ extension WatchSettings {
 //        public var manualSelection: String?
 //    }
 //}
+

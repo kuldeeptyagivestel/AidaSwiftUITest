@@ -1662,6 +1662,30 @@ Whether this function is on or off, heart rate will be measured in real time by 
 "respiratoryRate" = "Respiratory rate";
 "handWashingReminder" = "Hand-washing reminder";
 "scienceSleep" = "Science sleep";
+"sleep" = "Sleep";
+
+"notificationDesc" = "When selected, the device won't vibrate when you receive a notification.";
+"continuousHRMeasure" = "Continuous heart rate measurements";
+"hrMeasureDesc" = "To ensure accurate measurement, wear your smart watch at least one finger above your wrist bone and make sure it is snug on your wrist.
+                                                    
+Whether this function is on or off, heart rate will be measured in real time by default when an exercise is initiated.";
+"heartRateAlerts" = "Heart Rate Alerts";
+"highHRAlert" = "High heart rate alert";
+"limitValue" = "Limit value";
+"hrAlertDescDesc" = "If this setting is inactive, an alert is still sent when your heart rate stays above the preset value for 10 minutes.";
+"lowHRAlert" = "Low heart rate alert";
+
+///STRESS
+"autoStressMeasure" = "Automatic stress measurement";
+"autoStressMeasureDesc" = "Enable to monitor your stress level automatically throughout the day.";
+"reminderInterval" = "Reminder interval";
+"stressDesc" = "When your stress level exceeds 80, the device will remind you to relax.
+                                                    
+ While an appropriate level of stress supports your physical and mental health, excessive stress can negatively impact your well-being. Your stress level is measured in real time to help you manage your physical and mental health effectively.";
+"stressZone" = "Stress zone";
+"relax" = "Relax";
+"medium" = "Medium";
+"high" = "High";
 
 "reminderInterval" = "Reminder Interval";
 "automaticStressManagement" = "Automatic stress management";
