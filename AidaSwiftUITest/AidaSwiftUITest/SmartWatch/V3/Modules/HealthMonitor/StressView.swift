@@ -12,48 +12,16 @@ extension SmartWatch.V3.HealthTracking {
     //MARK: - HEART RATE VIEW
     internal struct StressView: View {
         @ObservedObject var viewModel: StressViewModel
-        
-        @State private var autoHRFeature: FeatureCell.Model
-        @State private var highHRFeature: FeatureCell.Model
-        @State private var lowHRFeature: FeatureCell.Model
-        
-        /*
-            • HRAlertSection disabled when:
-            • autoMeasure == false OR
-            • autoMeasure == true && notifyState == .turnOff
-            • In all other cases, enabled
-         */
-        private var isHRAlertSectionEnabled: Binding<Bool> {
-            Binding(
-                get: {
-                    let auto = viewModel.hrModel.autoMeasure
-                    let notify = viewModel.hrModel.notifyState
-                    return auto && notify != .turnOff
-                },
-                set: { _ in } // Do nothing, because this is a derived value
-            )
-        }
+        @State private var autoFeature: FeatureCell.Model
 
         // Custom Init to initialize @State
         init(viewModel: StressViewModel) {
             self.viewModel = viewModel
             
-            _autoHRFeature = State(
+            _autoFeature = State(
                 initialValue: FeatureCell.Model(
-                    title: .localized(.continuousHRMeasure),
-                    type: .switchable(value: viewModel.hrModel.autoMeasure)
-                )
-            )
-            _highHRFeature = State(
-                initialValue: FeatureCell.Model(
-                    title: .localized(.highHRAlert),
-                    type: .switchable(value: viewModel.hrModel.highHRAlert)
-                )
-            )
-            _lowHRFeature = State(
-                initialValue: FeatureCell.Model(
-                    title: .localized(.lowHRAlert),
-                    type: .switchable(value: viewModel.hrModel.lowHRAlert)
+                    title: .localized(.autoStressMeasure),
+                    type: .switchable(value: viewModel.stressModel.autoMeasure)
                 )
             )
         }
@@ -63,71 +31,42 @@ extension SmartWatch.V3.HealthTracking {
                 ScrollView {
                     VStack(alignment: .leading) {
                         ///NOTIFICATION
-                        RadioSelectionView(selectedOption: $viewModel.hrModel.notifyState) { selectedState in
+                        RadioSelectionView(selectedOption: $viewModel.stressModel.notifyState) { selectedState in
                             ///Automatically update the hrModel
-                            viewModel.setCommand(watchType: viewModel.watchType, updatedModel: viewModel.hrModel)
+                            viewModel.setCommand(watchType: viewModel.watchType, updatedModel: viewModel.stressModel)
                         }
                         
                         HRDescView(text: .localized(.notificationDesc))
                         
                         ///AUTO MEASUREMENT
-                        HRFeatureSection(feature: $autoHRFeature, desc: .localized(.hrMeasureDesc)) { feature in
+                        AutoFeatureSection(feature: $autoFeature) { feature in
                             if case .switchable(let newValue) = feature.type {
                                 ///Manually update the model.
-                                viewModel.hrModel = viewModel.hrModel.update(autoMeasure: newValue)
-                                viewModel.setCommand(watchType: viewModel.watchType, updatedModel: viewModel.hrModel)
+                                viewModel.stressModel = viewModel.stressModel.update(autoMeasure: newValue)
+                                viewModel.setCommand(watchType: viewModel.watchType, updatedModel: viewModel.stressModel)
                             }
                         }
                         
-                        ///Heart Rate Alerts TEXT
-                        Text(String.localized(.heartRateAlerts))
-                            .font(.custom(.muli, style: .semibold, size: 16))
-                            .padding(.horizontal, 16)
-                            .foregroundColor(Color.lblPrimary)
-                        
-                        // HIGH HEART RATE ALERT
-                        HRAlertSection(
-                            title: .localized(.highHRAlert),
-                            feature: $highHRFeature,
-                            infoValue: Binding(
-                                get: { "\(viewModel.hrModel.highHRLimit) bpm" },
-                                set: { _ in }
-                            ),
-                            isEnabled: isHRAlertSectionEnabled,
-                            onSwitchChange: { isEnable in
-                                ///Manually update the model.
-                                viewModel.hrModel = viewModel.hrModel.update(highHRAlert: isEnable)
-                                viewModel.setCommand(watchType: viewModel.watchType, updatedModel: viewModel.hrModel)
-                            }) {
-                                viewModel.openHighHRLimitPopup()
-                            }
-
-                        //DESC TEXT
-                        HRDescView(text: .localized(.hrAlertDescDesc))
-                            .padding(.vertical, 5)
-                        
-                        ///LOW HEART RATE
-                        HRAlertSection(
-                            title: .localized(.lowHRAlert),
-                            feature: $lowHRFeature,
-                            infoValue: Binding(
-                                get: { "\(viewModel.hrModel.lowHRLimit) bpm" },
-                                set: { _ in }
-                            ),
-                            isEnabled: isHRAlertSectionEnabled,
-                            onSwitchChange: { isEnable in
-                                ///Manually update the model.
-                                viewModel.hrModel = viewModel.hrModel.update(lowHRAlert: isEnable)
-                                viewModel.setCommand(watchType: viewModel.watchType, updatedModel: viewModel.hrModel)
-                            }) {
-                                viewModel.openLowHRLimitPopup()
-                            }
+                        // HIGH HEART RATE ALERT SECTION
+                        HRAlertSection(viewModel: viewModel)
                         
                         //DESC TEXT
-                        HRDescView(text: .localized(.hrAlertDescDesc))
-                            .padding(.vertical, 5)
+                        HRDescView(text: .localized(.stressDesc))
+                        
+                        ///STRESS ZONE
+                        VStack(alignment: .center) {
+                            Text(String.localized(.stressZone))
+                                .font(.custom(.muli, style: .bold, size: 17))
+                                .padding(.bottom, 8)
+                            
+                            Image(String.localized(.stressZoneGraph))
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 280, height: 48)
+                        }
+                        .frame(maxWidth: .infinity)
                     }
-                    .padding(.bottom, 25) /// To make some space at bottom
+                    .padding(.bottom, 15) /// To make some space at bottom
                 }
             }
             .background(Color.viewBgColor)
@@ -149,9 +88,8 @@ extension SmartWatch.V3.HealthTracking {
     }
 
     // MARK: - AUTO MEASUREMENT
-    private struct HRFeatureSection: View {
+    private struct AutoFeatureSection: View {
         @Binding var feature: FeatureCell.Model
-        let desc: String
         var onTap: ((FeatureCell.Model) -> Void)?
         
         var body: some View {
@@ -166,38 +104,97 @@ extension SmartWatch.V3.HealthTracking {
                     .shadow(color: Color.black.opacity(0.1), radius: 6, x: 0, y: 2)
             )
             
-            HRDescView(text: desc)
+            HRDescView(text: .localized(.autoStressMeasureDesc))
         }
     }
     
     // MARK: - Reusable HR Alert Section
     private struct HRAlertSection: View {
-        let title: String
-        @Binding var feature: FeatureCell.Model
-        @Binding var infoValue: String?
-        @Binding var isEnabled: Bool
-        var onSwitchChange: ((Bool) -> Void)?
-        var onLimitValueTap: (() -> Void)?
+        @ObservedObject var viewModel: StressViewModel
+        @State private var highHRFeature: FeatureCell.Model
+        
+        private var startEndTime: Binding<String?> {
+            Binding(
+                get: { "\(viewModel.stressModel.startEndTime.formattedText)" },
+                set: { _ in }
+            )
+        }
+        
+        private var reminderInterval: Binding<String?> {
+            Binding(
+                get: { "\(viewModel.stressModel.interval) min" },
+                set: { _ in }
+            )
+        }
+        
+        private var repeatDays: Binding<String?> {
+            Binding(
+                get: { "\(viewModel.stressModel.repeatDays.localizedText)" },
+                set: { _ in }
+            )
+        }
+
+        private var isEnabled: Binding<Bool> {
+            Binding(
+                get: {
+                    let auto = viewModel.stressModel.autoMeasure
+                    let notify = viewModel.stressModel.notifyState
+                    return auto && notify != .turnOff
+                },
+                set: { _ in } // Do nothing, because this is a derived value
+            )
+        }
         
         // Derived value: only enabled if both `isEnabled` and switch is ON
-        private var isInfoEnabled: Bool {
-            guard case .switchable(let isOn) = feature.type else { return false }
-            return isOn && isEnabled
+        private var isChildEnabled: Bool {
+            guard case .switchable(let isOn) = highHRFeature.type else { return false }
+            return isOn && isEnabled.wrappedValue
+        }
+        
+        // Custom Init to initialize @State
+        init(viewModel: StressViewModel) {
+            self.viewModel = viewModel
+            
+            _highHRFeature = State(
+                initialValue: FeatureCell.Model(
+                    title: .localized(.autoStressMeasure),
+                    type: .switchable(value: viewModel.stressModel.autoMeasure)
+                )
+            )
         }
 
         var body: some View {
             VStack(alignment: .leading, spacing: 6) {
                 VStack(spacing: 0) {
-                    FeatureCell(feature: $feature, isEnabled: $isEnabled) { feature in
-                        if case .switchable(let newValue) = feature.type {
-                            onSwitchChange?(newValue)
-                        }
+                    FeatureCell(feature: $highHRFeature, isEnabled: isEnabled) { feature in
+                        
                     }
-                    .background(Color.whiteBgColor)
 
-                    InfoCell(title: .localized(.limitValue), value: $infoValue, isEnabled: .constant(isInfoEnabled)) {
-                        onLimitValueTap?()
+                    InfoCell(
+                        title: .localized(.startEndTime),
+                        value: startEndTime,
+                        isEnabled: .constant(isChildEnabled)
+                    ) {
+                        viewModel.openStartEndTimePicker()
                     }
+                    
+                    InfoCell(
+                        title: .localized(.reminderInterval),
+                        value: reminderInterval,
+                        isEnabled: .constant(isChildEnabled)
+                    ) {
+                        viewModel.openReminderIntervalPicker()
+                    }
+                    
+                    InfoCell(
+                        title: .localized(.repeat_title),
+                        value: repeatDays,
+                        icon: Image(systemName: "arrow.right"),
+                        isEnabled: .constant(isChildEnabled)
+                    ) {
+                        
+                    }
+                    .dividerColor(.clear)
                 }
                 .background(
                     RoundedRectangle(cornerRadius: 0)
@@ -211,6 +208,6 @@ extension SmartWatch.V3.HealthTracking {
 
 //MARK: - PREVIEW
 #Preview {
-    let rootViewModel = SmartWatch.V3.HealthTracking.HeartRateViewModel(navCoordinator: NavigationCoordinator(), watchType: .v3)
-    SmartWatch.V3.HealthTracking.HeartRateView(viewModel: rootViewModel)
+    let rootViewModel = SmartWatch.V3.HealthTracking.StressViewModel(navCoordinator: NavigationCoordinator(), watchType: .v3)
+    SmartWatch.V3.HealthTracking.StressView(viewModel: rootViewModel)
 }

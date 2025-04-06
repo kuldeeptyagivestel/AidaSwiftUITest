@@ -20,7 +20,7 @@ extension SmartWatch.V3.HealthTracking {
         
         ///#PUBLISHED PROPERTIES
         ///Just init to error in  init.
-        @Published var hrModel: WatchSettings.HRMonitoring = WatchSettings.HRMonitoring(watchType: .v3)
+        @Published var stressModel: WatchSettings.Stress = WatchSettings.Stress(watchType: .v3)
         
         ///#SERVICES
         fileprivate weak var commandService: WatchCommandService! = DependencyContainer.shared.watchCommandService
@@ -31,7 +31,7 @@ extension SmartWatch.V3.HealthTracking {
             self.navCoordinator = navCoordinator
             self.watchType = watchType
             ///Get data from Database
-            self.hrModel = self.storedModel
+            self.stressModel = self.storedModel
         }
         
         deinit {
@@ -40,49 +40,51 @@ extension SmartWatch.V3.HealthTracking {
         
         ///#FETCH DATA
         ///Return Stored Model from DB
-        private var storedModel: WatchSettings.HRMonitoring {
-            WatchSettings.HRMonitoring(watchType: self.watchType)
+        private var storedModel: WatchSettings.Stress {
+            WatchSettings.Stress(watchType: self.watchType)
         }
         
         ///#NAVIGATE
-        internal func openHighHRLimitPopup() {
-            let options: [Popup.OptionType] = Array(
-                stride(from: 100, through: 200, by: 5)).map {
-                    Popup.OptionType.int($0)
-                }
-            
-            let model = PickerPopup.Standard(
-                title: .localized(.highHRAlert),
-                unit: "bpm",
-                options: options,
-                preset: Popup.OptionType.int(self.hrModel.highHRLimit)
-            ) { [weak self] selectedOption in
-                if let selectedOption {
-                    guard let self else { return }
-                    self.hrModel = self.hrModel.update(highHRLimit: selectedOption.intValue)
-                    self.setCommand(watchType: self.watchType, updatedModel: self.hrModel)
+        internal func openStartEndTimePicker() {
+            let model = PickerPopup.StartEndTime(
+                title: .localized(.setStartEndTimeTitle),
+                preset: .startEndTime(start: .time(hour: 21, minute: 15), end: .time(hour: 7, minute: 11))
+            ) { selectedOption in
+                guard let selectedOption else { return }
+                
+                if case let .startEndTime(start, end) = selectedOption {
+                    if case let .time(startHour, startMinute) = start,
+                       case let .time(endHour, endMinute) = end {
+                        print("TEXT: \(selectedOption.displayText)")
+                        print("START TIME: \(String(format: "%02d:%02d", startHour, startMinute))")
+                        print("END TIME: \(String(format: "%02d:%02d", endHour, endMinute))")
+                    }
+                    
+                    //                        guard let self else { return }
+                    //                        self.stressModel = self.hrModel.update(highHRLimit: selectedOption.intValue)
+                    //                        self.setCommand(watchType: self.watchType, updatedModel: self.hrModel)
                 }
             }
             
-            PickerPopup.show(standard: model)
+            PickerPopup.show(startEndTime: model)
         }
         
-        internal func openLowHRLimitPopup() {
+        internal func openReminderIntervalPicker() {
             let options: [Popup.OptionType] = Array(
-                stride(from: 30, through: 70, by: 5)).map {
+                stride(from: 15, through: 120, by: 15)).map {
                     Popup.OptionType.int($0)
                 }
             
             let model = PickerPopup.Standard(
-                title: .localized(.lowHRAlert),
-                unit: "bpm",
+                title: .localized(.reminderInterval),
+                unit: .localized(.min),
                 options: options,
-                preset: Popup.OptionType.int(self.hrModel.lowHRLimit)
+                preset: Popup.OptionType.int(self.stressModel.interval)
             ) { [weak self] selectedOption in
                 if let selectedOption {
-                    guard let self else { return }
-                    self.hrModel = self.hrModel.update(lowHRLimit: selectedOption.intValue)
-                    self.setCommand(watchType: self.watchType, updatedModel: self.hrModel)
+//                    guard let self else { return }
+//                    self.hrModel = self.hrModel.update(lowHRLimit: selectedOption.intValue)
+//                    self.setCommand(watchType: self.watchType, updatedModel: self.hrModel)
                 }
             }
             
@@ -94,7 +96,7 @@ extension SmartWatch.V3.HealthTracking {
 //MARK: - SDK COMMANDS
 extension SmartWatch.V3.HealthTracking.StressViewModel {
     ///Execute commands
-    internal func setCommand(watchType: SmartWatchType, updatedModel: WatchSettings.HRMonitoring) {
+    internal func setCommand(watchType: SmartWatchType, updatedModel: WatchSettings.Stress) {
 
     }
 }

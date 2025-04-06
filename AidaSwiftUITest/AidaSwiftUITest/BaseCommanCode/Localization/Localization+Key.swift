@@ -1566,9 +1566,9 @@ public enum LocalizationKey: String {
     case reminderInterval
     case stressDesc
     case stressZone
-    case relax
-    case medium
-    case high
+    case stressZoneGraph
+    case setStartEndTimeTitle
+    case min
     
     case automaticStressManagement
     case automaticStressManagementDesc

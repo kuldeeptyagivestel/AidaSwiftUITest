@@ -193,7 +193,6 @@ extension SmartWatch.V3.HealthTracking {
                             onSwitchChange?(newValue)
                         }
                     }
-                    .background(Color.whiteBgColor)
 
                     InfoCell(title: .localized(.limitValue), value: $infoValue, isEnabled: .constant(isInfoEnabled)) {
                         onLimitValueTap?()

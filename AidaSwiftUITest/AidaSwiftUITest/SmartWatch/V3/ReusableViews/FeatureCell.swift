@@ -64,7 +64,7 @@ struct FeatureCell: View {
                     .lineLimit(2)
                     .multilineTextAlignment(.leading)
                     .fixedSize(horizontal: false, vertical: true) // Ensure proper wrapping
-                    .frame(width: 250, alignment: .leading) //250 becuase text can more space.
+                    .frame(width: 280, alignment: .leading) //250 becuase text can more space.
                     .animation(.easeInOut(duration: 0.35), value: isEnabled)
                     .background(
                         GeometryReader { geo in

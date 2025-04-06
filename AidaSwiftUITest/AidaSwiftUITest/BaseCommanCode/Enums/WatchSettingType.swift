@@ -21,6 +21,10 @@ public struct TimeRange: Codable, Equatable {
         self.start = start
         self.end = end
     }
+    
+    public var formattedText: String {
+        return "\(start)-\(end)"
+    }
 }
 
 /// Protocol for UI view requirement for Selection View
@@ -87,6 +91,24 @@ public struct RepeatDays: OptionSet, Codable, CaseIterable {
     
     public static var allCases: [RepeatDays] {
         return [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday]
+    }
+    
+    var localizedText: String {
+        let dayMap: [(RepeatDays, String)] = [
+            (.sunday, .localized(.sun)),
+            (.monday, .localized(.mon)),
+            (.tuesday, .localized(.tue)),
+            (.wednesday, .localized(.wed)),
+            (.thursday, .localized(.thu)),
+            (.friday, .localized(.fri)),
+            (.saturday, .localized(.sat))
+        ]
+        
+        let selectedDays = dayMap
+            .filter { self.contains($0.0) }
+            .map { NSLocalizedString($0.1, comment: "") }
+        
+        return selectedDays.joined(separator: ", ")
     }
     
     public init(rawValue: Int) {
@@ -425,6 +447,36 @@ extension WatchSettings {
             self.startEndTime = startEndTime
             self.interval = interval
             self.repeatDays = repeatDays
+        }
+        
+        public func update(
+            notifyState: NotificationPreference? = nil,
+            autoMeasure: Bool? = nil,
+            highHRAlert: Bool? = nil,
+            startEndTime: TimeRange? = nil,
+            interval: Int? = nil,
+            repeatDays: RepeatDays? = nil
+        ) -> Stress {
+            // Check if any real value has changed
+            guard notifyState.map({ $0 != self.notifyState }) ?? false ||
+                  autoMeasure.map({ $0 != self.autoMeasure }) ?? false ||
+                  highHRAlert.map({ $0 != self.highHRAlert }) ?? false ||
+                  startEndTime.map({ $0 != self.startEndTime }) ?? false ||
+                  interval.map({ $0 != self.interval }) ?? false ||
+                  repeatDays.map({ $0 != self.repeatDays }) ?? false
+            else {
+                return self // No actual change, return existing instance
+            }
+            
+            return Stress(
+                watchType: self.watchType,
+                notifyState: notifyState ?? self.notifyState,
+                autoMeasure: autoMeasure ?? self.autoMeasure,
+                highHRAlert: highHRAlert ?? self.highHRAlert,
+                startEndTime: startEndTime ?? self.startEndTime,
+                interval: interval ?? self.interval,
+                repeatDays: repeatDays ?? self.repeatDays
+            )
         }
     }
 }

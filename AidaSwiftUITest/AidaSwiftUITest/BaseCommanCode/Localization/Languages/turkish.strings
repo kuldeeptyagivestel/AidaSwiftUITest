@@ -1704,14 +1704,12 @@ Bu işlevin açık veya kapalı olmasına bakılmaksızın, bir egzersiz başlat
 "autoStressMeasureDesc" = "Stres seviyeni gün boyunca otomatik olarak izlemek için bu özelliği etkinleştir.";
 "reminderInterval" = "Hatırlatma aralığı";
 "stressDesc" = "Stres seviyen 80’in üzerine çıktığında, cihaz sana rahatlamanı hatırlatır.
-                                                    
 Uygun düzeyde stres, fiziksel ve zihinsel sağlığını desteklerken, aşırı stres sağlığını olumsuz etkileyebilir. Stres seviyen gerçek zamanlı olarak ölçülerek fiziksel ve zihinsel sağlığını yönetmene yardımcı olur.";
 "stressZone" = "Stres seviyesi aralığı";
-"relax" = "Rahat";
-"medium" = "Orta";
-"high" = "Yüksek";
+"stressZoneGraph" = "smartwatchv3/stressGraphTR";
+"setStartEndTimeTitle" = "Başlangıç - bitiş saati ayarla";
+"min" = "dk";
 
-"reminderInterval" = "Hatırlatma Aralığı";
 "automaticStressManagement" = "Otomatik stres yönetimi";
 "automaticStressManagementDesc" = "Gün boyunca stres seviyenizi otomatik olarak izlemek için etkinleştirin.";
 "stressGraphDesc" = "Stres seviyeniz 80'i aştığında, cihaz size rahatlamanızı hatırlatacaktır.

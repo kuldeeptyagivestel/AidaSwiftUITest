@@ -10,11 +10,11 @@ import SwiftUI
 struct InfoCell: View {
     let title: String
     var icon: Image? = nil
+    var onTap: (() -> Void)? = nil
 
     @Binding var value: String?
     @Binding var isEnabled: Bool
-    
-    var onTap: (() -> Void)? = nil
+    @State private var dividerColor: Color = .cellDividerColor
     
     init(
         title: String,
@@ -29,34 +29,51 @@ struct InfoCell: View {
         self._isEnabled = isEnabled
         self.onTap = onTap
     }
-
+    
+    // View modifier support
+    func dividerColor(_ color: Color) -> some View {
+        var copy = self
+        copy._dividerColor = State(initialValue: color)
+        return copy
+    }
+    
     var body: some View {
-        HStack {
-            Text(title)
-                .font(.custom(.muli, style: .bold, size: 17))
-                .foregroundColor(isEnabled ? Color.lblPrimary : Color.disabledColor)
-                .animation(.easeInOut(duration: 0.35), value: isEnabled)
+        VStack(alignment: .center) {
+            Spacer()
+            
+            HStack {
+                Text(title)
+                    .font(.custom(.muli, style: .bold, size: 17))
+                    .foregroundColor(isEnabled ? Color.lblPrimary : Color.disabledColor)
+                    .animation(.easeInOut(duration: 0.35), value: isEnabled)
+                
+                Spacer()
+                
+                if let value = value {
+                    Text(value)
+                        .font(.custom(.muli, style: .semibold, size: 16))
+                        .foregroundColor(isEnabled ? Color.descSecondary : Color.disabledColor)
+                        .transition(.opacity)
+                        .animation(.easeInOut(duration: 0.35), value: value)
+                }
+                
+                if let icon = icon {
+                    icon
+                        .foregroundColor(isEnabled ? Color.cellNavigationArrowColor : Color.disabledColor)
+                        .animation(.easeInOut(duration: 0.35), value: isEnabled)
+                }
+            }
+            .padding(.horizontal, 16)
             
             Spacer()
             
-            if let value = value {
-                Text(value)
-                    .font(.custom(.muli, style: .semibold, size: 16))
-                    .foregroundColor(isEnabled ? Color.descSecondary : Color.disabledColor)
-                    .padding(.trailing, 5)
-                    .transition(.opacity)
-                    .animation(.easeInOut(duration: 0.35), value: value)
-            }
-            
-            if let icon = icon {
-                icon
-                    .foregroundColor(isEnabled ? Color.cellNavigationArrowColor : Color.disabledColor)
-                    .padding(.trailing, 5)
-                    .animation(.easeInOut(duration: 0.35), value: isEnabled)
+            // Custom full-width divider
+            if dividerColor != .clear {
+                Divider().background(dividerColor)
             }
         }
         .frame(height: 48)
-        .padding(.horizontal, 16)
+        .contentShape(Rectangle()) // Ensures the entire area is tappable
         .onTapGesture {
             if isEnabled { onTap?() }
         }
@@ -72,7 +89,7 @@ struct InfoCell: View {
         @State private var isLimitEnabled: Bool = true
 
         var body: some View {
-            VStack(spacing: 10) {
+            VStack(spacing: 0) {
                 InfoCell(
                     title: "Start-end time",
                     value: $startEndTime,
