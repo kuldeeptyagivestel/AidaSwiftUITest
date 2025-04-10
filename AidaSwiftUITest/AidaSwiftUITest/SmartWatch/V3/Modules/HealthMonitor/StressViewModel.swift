@@ -90,6 +90,14 @@ extension SmartWatch.V3.HealthTracking {
             
             PickerPopup.show(standard: model)
         }
+        
+        internal func openRepeatDaysPicker() {
+            let view = SmartWatch.V3.HealthTracking.RepeatDaysPicker(preset: [.wednesday, .saturday]) { newValue in
+                print("Updated repeat days: \(newValue.rawValue)")
+            }
+            
+            self.navCoordinator.push(view, with: self)
+        }
     }
 }
 

@@ -72,7 +72,7 @@ public enum NotificationPreference: Int, Codable, RadioSelectable {
  print(RepeatDays.weekends.rawValue)    // Output: 65
  print(RepeatDays.allDays.rawValue)     // Output: 127
  */
-public struct RepeatDays: OptionSet, Codable, CaseIterable {
+public struct RepeatDays: OptionSet, Codable, CaseIterable, Hashable {
     public let rawValue: Int
 
     public static let sunday    = RepeatDays(rawValue: 1 << 0) // 0000001
@@ -90,7 +90,7 @@ public struct RepeatDays: OptionSet, Codable, CaseIterable {
     public static let allDays: RepeatDays = [.workingDays, .weekends] // 1111111 (127)
     
     public static var allCases: [RepeatDays] {
-        return [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday]
+        return [.monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday]
     }
     
     var localizedText: String {
@@ -111,6 +111,25 @@ public struct RepeatDays: OptionSet, Codable, CaseIterable {
         return selectedDays.joined(separator: ", ")
     }
     
+    /// Computed property for user-friendly name: Every Monday
+    public var localizedDay: String {
+        switch self {
+        case .monday: return .localized(.every_mon)
+        case .tuesday: return .localized(.every_tue)
+        case .wednesday: return .localized(.every_wed)
+        case .thursday: return .localized(.every_thu)
+        case .friday: return .localized(.every_fri)
+        case .saturday: return .localized(.every_sat)
+        case .sunday: return .localized(.every_sun)
+        default: return ""
+        }
+    }
+    
+    /// List of all individual days with their name
+    public static var allLocalizedDays: [(day: RepeatDays, name: String)] {
+        return allCases.map { ($0, $0.localizedDay) }
+    }
+    
     public init(rawValue: Int) {
         self.rawValue = rawValue
     }
@@ -124,6 +143,14 @@ public struct RepeatDays: OptionSet, Codable, CaseIterable {
     public func encode(to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
         try container.encode(rawValue)
+    }
+
+    public static func == (lhs: RepeatDays, rhs: RepeatDays) -> Bool {
+        return lhs.rawValue == rhs.rawValue
+    }
+
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(rawValue)
     }
 }
 

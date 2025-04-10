@@ -192,7 +192,7 @@ extension SmartWatch.V3.HealthTracking {
                         icon: Image(systemName: "arrow.right"),
                         isEnabled: .constant(isChildEnabled)
                     ) {
-                        
+                        viewModel.openRepeatDaysPicker()
                     }
                     .dividerColor(.clear)
                 }
