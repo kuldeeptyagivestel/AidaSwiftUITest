@@ -1578,12 +1578,13 @@ public enum LocalizationKey: String {
     case autoRespiratoryMeasure
     case autoRespiratoryMeasureDesc
     
-    case automaticBloodOxygen
-    case automaticBloodOxygenDesc
-    
+    ///BLOOD OXYGEN
+    case bloodOxygenLevel
+    case autoBloodOxygenMeasure
+    case autoBloodOxygenMeasureDesc
     case lowBloodOxygenLevel
-    case limitValue
     case lowBloodOxygenLevelDesc
+    case limitValue
     
     case drinkingReminderDesc
     case handWashReminderDesc

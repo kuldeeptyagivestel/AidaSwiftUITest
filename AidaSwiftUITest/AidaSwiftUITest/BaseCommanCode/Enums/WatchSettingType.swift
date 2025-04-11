@@ -546,8 +546,8 @@ extension WatchSettings {
         public var notifyState: NotificationPreference
         public var autoMeasure: Bool
         public var lowSPO2Alert: Bool
-        public var highLimit: Int
-
+        public var lowLimit: Int
+        
         // Convert to dictionary
         public func toDict() -> [String: String] {
             return [
@@ -555,7 +555,7 @@ extension WatchSettings {
                 "notifyState": String(notifyState.rawValue),
                 "autoMeasure": String(autoMeasure),
                 "lowSPO2Alert": String(lowSPO2Alert),
-                "highLimit": String(highLimit)
+                "lowLimit": String(lowLimit)
             ]
         }
 
@@ -565,7 +565,7 @@ extension WatchSettings {
             self.notifyState = NotificationPreference(rawValue: dict["notifyState"]?.intValue ?? 1) ?? .allow
             self.autoMeasure = dict["autoMeasure"] == "true"
             self.lowSPO2Alert = dict["lowSPO2Alert"] == "true"
-            self.highLimit = Int(dict["highLimit"] ?? "85") ?? 85
+            self.lowLimit = Int(dict["lowLimit"] ?? "85") ?? 85
         }
 
         // Default initializer
@@ -574,13 +574,37 @@ extension WatchSettings {
             notifyState: NotificationPreference = .allow,
             autoMeasure: Bool = false,
             lowSPO2Alert: Bool = false,
-            highLimit: Int = 85
+            lowLimit: Int = 85
         ) {
             self.watchType = watchType
             self.notifyState = notifyState
             self.autoMeasure = autoMeasure
             self.lowSPO2Alert = lowSPO2Alert
-            self.highLimit = highLimit
+            self.lowLimit = lowLimit
+        }
+        
+        func update(
+            notifyState: NotificationPreference? = nil,
+            autoMeasure: Bool? = nil,
+            lowSPO2Alert: Bool? = nil,
+            lowLimit: Int? = nil
+        ) -> SPO2 {
+            // Check if any real value has changed
+            guard notifyState.map({ $0 != self.notifyState }) ?? false ||
+                    autoMeasure.map({ $0 != self.autoMeasure }) ?? false ||
+                    lowSPO2Alert.map({ $0 != self.lowSPO2Alert }) ?? false ||
+                    lowLimit.map({ $0 != self.lowLimit }) ?? false
+            else {
+                return self // No change, return existing instance
+            }
+            
+            return SPO2(
+                watchType: self.watchType,
+                notifyState: notifyState ?? self.notifyState,
+                autoMeasure: autoMeasure ?? self.autoMeasure,
+                lowSPO2Alert: lowSPO2Alert ?? self.lowSPO2Alert,
+                lowLimit: lowLimit ?? self.lowLimit
+            )
         }
     }
 }

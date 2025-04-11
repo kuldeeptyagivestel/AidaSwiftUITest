@@ -9,9 +9,9 @@
 import SwiftUI
 
 extension SmartWatch.V3.HealthTracking {
-    //MARK: - HEART RATE VIEW
+    //MARK: - BLOOD OXYGEN VIEW
     internal struct BloodOxygenView: View {
-        @ObservedObject var viewModel: HeartRateViewModel
+        @ObservedObject var viewModel: BloodOxygenViewModel
         
         @State private var autoFeature: FeatureCell.Model
         @State private var lowFeature: FeatureCell.Model
@@ -19,8 +19,8 @@ extension SmartWatch.V3.HealthTracking {
         private var isLowAlertSectionEnabled: Binding<Bool> {
             Binding(
                 get: {
-                    let auto = viewModel.hrModel.autoMeasure
-                    let notify = viewModel.hrModel.notifyState
+                    let auto = viewModel.model.autoMeasure
+                    let notify = viewModel.model.notifyState
                     return auto && notify != .turnOff
                 },
                 set: { _ in } // Do nothing, because this is a derived value
@@ -28,25 +28,20 @@ extension SmartWatch.V3.HealthTracking {
         }
 
         // Custom Init to initialize @State
-        init(viewModel: HeartRateViewModel) {
+        init(viewModel: BloodOxygenViewModel) {
             self.viewModel = viewModel
             
-            _autoHRFeature = State(
+            _autoFeature = State(
                 initialValue: FeatureCell.Model(
-                    title: .localized(.continuousHRMeasure),
-                    type: .switchable(value: viewModel.hrModel.autoMeasure)
+                    title: .localized(.autoBloodOxygenMeasure),
+                    type: .switchable(value: viewModel.model.autoMeasure)
                 )
             )
-            _highHRFeature = State(
+
+            _lowFeature = State(
                 initialValue: FeatureCell.Model(
-                    title: .localized(.highHRAlert),
-                    type: .switchable(value: viewModel.hrModel.highHRAlert)
-                )
-            )
-            _lowHRFeature = State(
-                initialValue: FeatureCell.Model(
-                    title: .localized(.lowHRAlert),
-                    type: .switchable(value: viewModel.hrModel.lowHRAlert)
+                    title: .localized(.lowBloodOxygenLevel),
+                    type: .switchable(value: viewModel.model.lowSPO2Alert)
                 )
             )
         }
@@ -56,68 +51,41 @@ extension SmartWatch.V3.HealthTracking {
                 ScrollView {
                     VStack(alignment: .leading) {
                         ///NOTIFICATION
-                        RadioSelectionView(selectedOption: $viewModel.hrModel.notifyState) { selectedState in
-                            ///Automatically update the hrModel
-                            viewModel.setCommand(watchType: viewModel.watchType, updatedModel: viewModel.hrModel)
+                        RadioSelectionView(selectedOption: $viewModel.model.notifyState) { selectedState in
+                            ///Automatically update the model.
+                            viewModel.setCommand(watchType: viewModel.watchType, updatedModel: viewModel.model)
                         }
                         
-                        HRDescView(text: .localized(.notificationDesc))
+                        DescView(text: .localized(.notificationDesc))
                         
                         ///AUTO MEASUREMENT
-                        HRFeatureSection(feature: $autoHRFeature, desc: .localized(.hrMeasureDesc)) { feature in
+                        AutoMeasureSection(feature: $autoFeature, desc: .localized(.autoBloodOxygenMeasureDesc)) { feature in
                             if case .switchable(let newValue) = feature.type {
                                 ///Manually update the model.
-                                viewModel.hrModel = viewModel.hrModel.update(autoMeasure: newValue)
-                                viewModel.setCommand(watchType: viewModel.watchType, updatedModel: viewModel.hrModel)
+                                viewModel.model = viewModel.model.update(autoMeasure: newValue)
+                                viewModel.setCommand(watchType: viewModel.watchType, updatedModel: viewModel.model)
                             }
                         }
                         
-                        ///Heart Rate Alerts TEXT
-                        Text(String.localized(.heartRateAlerts))
-                            .font(.custom(.muli, style: .semibold, size: 16))
-                            .padding(.horizontal, 16)
-                            .foregroundColor(Color.lblPrimary)
-                        
-                        // HIGH HEART RATE ALERT
-                        HRAlertSection(
-                            title: .localized(.highHRAlert),
-                            feature: $highHRFeature,
+                        ///LOW  LEVEL
+                        AlertSection(
+                            title: .localized(.lowBloodOxygenLevel),
+                            feature: $lowFeature,
                             infoValue: Binding(
-                                get: { "\(viewModel.hrModel.highHRLimit) bpm" },
+                                get: { "\(viewModel.model.lowLimit)%" },
                                 set: { _ in }
                             ),
-                            isEnabled: isHRAlertSectionEnabled,
+                            isEnabled: isLowAlertSectionEnabled,
                             onSwitchChange: { isEnable in
                                 ///Manually update the model.
-                                viewModel.hrModel = viewModel.hrModel.update(highHRAlert: isEnable)
-                                viewModel.setCommand(watchType: viewModel.watchType, updatedModel: viewModel.hrModel)
+                                viewModel.model = viewModel.model.update(lowSPO2Alert: isEnable)
+                                viewModel.setCommand(watchType: viewModel.watchType, updatedModel: viewModel.model)
                             }) {
-                                viewModel.openHighHRLimitPicker()
-                            }
-
-                        //DESC TEXT
-                        HRDescView(text: .localized(.hrAlertDescDesc))
-                            .padding(.vertical, 5)
-                        
-                        ///LOW HEART RATE
-                        HRAlertSection(
-                            title: .localized(.lowHRAlert),
-                            feature: $lowHRFeature,
-                            infoValue: Binding(
-                                get: { "\(viewModel.hrModel.lowHRLimit) bpm" },
-                                set: { _ in }
-                            ),
-                            isEnabled: isHRAlertSectionEnabled,
-                            onSwitchChange: { isEnable in
-                                ///Manually update the model.
-                                viewModel.hrModel = viewModel.hrModel.update(lowHRAlert: isEnable)
-                                viewModel.setCommand(watchType: viewModel.watchType, updatedModel: viewModel.hrModel)
-                            }) {
-                                viewModel.openLowHRLimitPicker()
+                                viewModel.openLowLimitPicker()
                             }
                         
                         //DESC TEXT
-                        HRDescView(text: .localized(.hrAlertDescDesc))
+                        DescView(text: .localized(.lowBloodOxygenLevelDesc))
                             .padding(.vertical, 5)
                     }
                     .padding(.bottom, 25) /// To make some space at bottom
@@ -129,7 +97,7 @@ extension SmartWatch.V3.HealthTracking {
     }
     
     // MARK: - DESC VIEW
-    private struct HRDescView: View {
+    private struct DescView: View {
         let text: String
         
         var body: some View {
@@ -142,7 +110,7 @@ extension SmartWatch.V3.HealthTracking {
     }
 
     // MARK: - AUTO MEASUREMENT
-    private struct HRFeatureSection: View {
+    private struct AutoMeasureSection: View {
         @Binding var feature: FeatureCell.Model
         let desc: String
         var onTap: ((FeatureCell.Model) -> Void)?
@@ -159,12 +127,12 @@ extension SmartWatch.V3.HealthTracking {
                     .shadow(color: Color.black.opacity(0.1), radius: 6, x: 0, y: 2)
             )
             
-            HRDescView(text: desc)
+            DescView(text: desc)
         }
     }
     
-    // MARK: - Reusable HR Alert Section
-    private struct HRAlertSection: View {
+    // MARK: - Reusable Alert Section
+    private struct AlertSection: View {
         let title: String
         @Binding var feature: FeatureCell.Model
         @Binding var infoValue: String?
@@ -203,6 +171,6 @@ extension SmartWatch.V3.HealthTracking {
 
 //MARK: - PREVIEW
 #Preview {
-    let rootViewModel = SmartWatch.V3.HealthTracking.HeartRateViewModel(navCoordinator: NavigationCoordinator(), watchType: .v3)
-    SmartWatch.V3.HealthTracking.HeartRateView(viewModel: rootViewModel)
+    let rootViewModel = SmartWatch.V3.HealthTracking.BloodOxygenViewModel(navCoordinator: NavigationCoordinator(), watchType: .v3)
+    SmartWatch.V3.HealthTracking.BloodOxygenView(viewModel: rootViewModel)
 }

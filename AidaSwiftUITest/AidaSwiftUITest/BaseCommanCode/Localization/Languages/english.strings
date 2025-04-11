@@ -1698,18 +1698,20 @@ While an appropriate level of stress supports your physical and mental health, e
                  
 Note: Power consumption will increase while monitoring is active.";
 
-"automaticBloodOxygen" = "Automatic blood oxygen measurement";
-"automaticBloodOxygenDesc" = "Enable to measure and record your blood oxygen level automatically when you are in a static state. Results can help you monitor your health status (e.g., during sleep or at high altitudes).
-                         
-Note: This feature may reduce the device's standby time.";
+///BLOOD OXYGEN
+"bloodOxygenLevel" = "Blood Oxygen Level";
+"autoBloodOxygenMeasure" = "Automatic blood oxygen measurement";
+"autoBloodOxygenMeasureDesc" = "Enable to measure and record your blood oxygen level automatically when you are in a static state. Results can help you monitor your health status (e.g., during sleep or at high altitudes). 
 
+Note: This feature may reduce the device's standby time.";
 "lowBloodOxygenLevel" = "Low blood oxygen level reminder";
-"limitValue" = "Limit value";
 "lowBloodOxygenLevelDesc" = "You will receive a reminder when your blood oxygen level falls below the limit value.
                         
 Note: For accurate measurements, wear the device at least one finger above your wrist bone and ensure it fits snugly.
 
 Note: External factors (e.g., low blood perfusion, excessive arm hair, tattoos, arm movement, improper wearing, or cold temperatures) can affect accuracy or cause measurement errors.";
+
+
 
 "drinkingReminderDesc" =  "Drinking reminder sends you notifications to remind you to drink water. During the start-end time period you have set, you will be reminded to drink water repeatedly according to your reminder duration setting.";
 "handWashReminderDesc" = "Hand-washing reminder sends you notifications to wash your hands regularly within the set time period and reminder interval. It is designed to help improve your hand-washing habits.";
