@@ -1716,8 +1716,9 @@ Uygun düzeyde stres, fiziksel ve zihinsel sağlığını desteklerken, aşırı
 
 Uygun bir stres seviyesi fiziksel ve ruhsal sağlığınızı desteklerken, aşırı stres refahınızı olumsuz etkileyebilir. Stres seviyeniz, fiziksel ve ruhsal sağlığınızı etkili bir şekilde yönetmenize yardımcı olmak için gerçek zamanlı olarak ölçülür.";
 
-"automaticRespiratoryRateDetection" = "Otomatik solunum hızı tespiti";
-"automaticRespiratoryRateDesc" = "Uyku sırasında solunum hızınızı izlemek için etkinleştirin.
+///Respiratory
+"autoRespiratoryMeasure" = "Otomatik solunum hızı tespiti";
+"autoRespiratoryMeasureDesc" = "Uyku sırasında solunum hızınızı izlemek için etkinleştirin.
 
 Not: İzleme etkinken güç tüketimi artacaktır.";
 

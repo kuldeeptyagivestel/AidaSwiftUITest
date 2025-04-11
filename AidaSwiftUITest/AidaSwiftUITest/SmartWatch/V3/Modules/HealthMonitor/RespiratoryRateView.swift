@@ -15,13 +15,13 @@ extension SmartWatch.V3.HealthMonitor{
         var body: some View {
             VStack(alignment: .leading) {
                 VStack{
-                    FeatureCell(feature: .constant(FeatureCell.Model(title:String.localized(.automaticRespiratoryRateDetection),
+                    FeatureCell(feature: .constant(FeatureCell.Model(title:String.localized(.autoRespiratoryMeasure),
                         type: .switchable(value:viewModel.isON ))))
                 }
                 .padding(.bottom, 8)
                 
                 // Description text
-                Text(String.localized(.automaticRespiratoryRateDesc))
+                Text(String.localized(.autoRespiratoryMeasureDesc))
                     .font(.custom(.openSans, style: .regular, size: 14))
                     .foregroundColor(Color.lblSecondary)
                     .padding(.leading,12)

@@ -1574,8 +1574,9 @@ public enum LocalizationKey: String {
     case automaticStressManagementDesc
     case stressGraphDesc
     
-    case automaticRespiratoryRateDetection
-    case automaticRespiratoryRateDesc
+    ///Respiratory
+    case autoRespiratoryMeasure
+    case autoRespiratoryMeasureDesc
     
     case automaticBloodOxygen
     case automaticBloodOxygenDesc

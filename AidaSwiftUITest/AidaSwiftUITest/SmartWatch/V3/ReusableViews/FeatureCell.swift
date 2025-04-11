@@ -64,7 +64,7 @@ struct FeatureCell: View {
                     .lineLimit(2)
                     .multilineTextAlignment(.leading)
                     .fixedSize(horizontal: false, vertical: true) // Ensure proper wrapping
-                    .frame(width: 280, alignment: .leading) //250 becuase text can more space.
+                    .frame(width: 290, alignment: .leading) //250 becuase text can more space.
                     .animation(.easeInOut(duration: 0.35), value: isEnabled)
                     .background(
                         GeometryReader { geo in
@@ -144,7 +144,7 @@ struct FeatureCell: View {
                 )
                 
                 FeatureCell(
-                    feature: .constant(FeatureCell.Model(title: "Continuous heart rate measurements", type: .switchable(value: true))),
+                    feature: .constant(FeatureCell.Model(title: "Automatic respiratory rate\ndetection", type: .switchable(value: true))),
                     isEnabled: $isEnabled
                 ) { tappedFeature in
                     switch tappedFeature.type {

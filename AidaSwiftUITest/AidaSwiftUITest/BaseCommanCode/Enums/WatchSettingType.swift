@@ -513,26 +513,26 @@ extension WatchSettings {
     public struct Respiratory: WatchFeatureSetting {
         public static var feature: String { "healthTracking.respiratory" }  // Feature identifier
         public var watchType: SmartWatchType
-        public var isEnabled: Bool
+        public var autoMeasure: Bool
 
         // Convert to dictionary
         public func toDict() -> [String: String] {
             return [
                 "watchType": String(watchType.rawValue),
-                "isEnabled": String(isEnabled)
+                "autoMeasure": String(autoMeasure)
             ]
         }
 
         // Dictionary-based initializer
         public init?(from dict: [String: String]) {
             self.watchType = SmartWatchType(rawValue: Int(dict["watchType"] ?? "\(SmartWatchType.v3.rawValue)") ?? SmartWatchType.v3.rawValue) ?? .v3
-            self.isEnabled = dict["isEnabled"] == "true"
+            self.autoMeasure = dict["autoMeasure"] == "true"
         }
 
         // Default initializer
-        public init(watchType: SmartWatchType = .v3, isEnabled: Bool = false) {
+        public init(watchType: SmartWatchType = .v3, autoMeasure: Bool = false) {
             self.watchType = watchType
-            self.isEnabled = isEnabled
+            self.autoMeasure = autoMeasure
         }
     }
 }

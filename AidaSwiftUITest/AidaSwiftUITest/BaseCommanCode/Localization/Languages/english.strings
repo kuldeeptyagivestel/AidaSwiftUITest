@@ -1692,8 +1692,9 @@ Whether this function is on or off, heart rate will be measured in real time by 
                     
 While an appropriate level of stress supports your physical and mental health, excessive stress can negatively impact your well-being. Your stress level is measured in real time to help you manage your physical and mental health effectively.";
 
-"automaticRespiratoryRateDetection" = "Automatic respiratory rate detection";
-"automaticRespiratoryRateDesc" = "Enable to monitor your respiratory rate during sleep.
+///Respiratory
+"autoRespiratoryMeasure" = "Automatic respiratory rate detection";
+"autoRespiratoryMeasureDesc" = "Enable to monitor your respiratory rate during sleep.
                  
 Note: Power consumption will increase while monitoring is active.";
 
