@@ -25,6 +25,24 @@ public struct TimeRange: Codable, Equatable {
     public var formattedText: String {
         return "\(start)-\(end)"
     }
+    
+    public var asOptionTypes: (start: Popup.OptionType, end: Popup.OptionType)? {
+        guard let (startHour, startMinute) = parseTime(start),
+              let (endHour, endMinute) = parseTime(end) else {
+            return nil
+        }
+        
+        return (
+            .time(hour: startHour, minute: startMinute),
+            .time(hour: endHour, minute: endMinute)
+        )
+    }
+    
+    private func parseTime(_ string: String) -> (Int, Int)? {
+        let components = string.split(separator: ":").compactMap { Int($0) }
+        guard components.count == 2 else { return nil }
+        return (components[0], components[1])
+    }
 }
 
 /// Protocol for UI view requirement for Selection View
@@ -658,6 +676,30 @@ extension WatchSettings {
             self.startEndTime = startEndTime
             self.interval = interval
             self.repeatDays = repeatDays
+        }
+        
+        func update(
+            isEnabled: Bool? = nil,
+            startEndTime: TimeRange? = nil,
+            interval: Int? = nil,
+            repeatDays: RepeatDays? = nil
+        ) -> DrinkingReminder {
+            // Check if any real value has changed
+            guard isEnabled.map({ $0 != self.isEnabled }) ?? false ||
+                    startEndTime.map({ $0 != self.startEndTime }) ?? false ||
+                    interval.map({ $0 != self.interval }) ?? false ||
+                    repeatDays.map({ $0 != self.repeatDays }) ?? false
+            else {
+                return self // No change, return existing instance
+            }
+            
+            return DrinkingReminder(
+                watchType: self.watchType,
+                isEnabled: isEnabled ?? self.isEnabled,
+                startEndTime: startEndTime ?? self.startEndTime,
+                interval: interval ?? self.interval,
+                repeatDays: repeatDays ?? self.repeatDays
+            )
         }
     }
 }

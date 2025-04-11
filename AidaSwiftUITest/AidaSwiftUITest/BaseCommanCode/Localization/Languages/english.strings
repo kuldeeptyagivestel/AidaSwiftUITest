@@ -1711,9 +1711,10 @@ Note: For accurate measurements, wear the device at least one finger above your 
 
 Note: External factors (e.g., low blood perfusion, excessive arm hair, tattoos, arm movement, improper wearing, or cold temperatures) can affect accuracy or cause measurement errors.";
 
-
-
+//DRINKING REMINDER
+"drinkingReminder" = "Drinking reminder";
 "drinkingReminderDesc" =  "Drinking reminder sends you notifications to remind you to drink water. During the start-end time period you have set, you will be reminded to drink water repeatedly according to your reminder duration setting.";
+
 "handWashReminderDesc" = "Hand-washing reminder sends you notifications to wash your hands regularly within the set time period and reminder interval. It is designed to help improve your hand-washing habits.";
 
 "sleepMonitor" = "Sleep monitoring";
