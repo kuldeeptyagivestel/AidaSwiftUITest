@@ -49,10 +49,10 @@ public extension Popup {
     }
     
     /// Quickly show an alert with a single cancel button
-    /// #Alert Popup (One Button)
-    static func showAlert(icon: String = "popup/connectionFailed", title: String, desc: String? = nil, onCancel: (() -> Void)? = nil) {
+    /// #Alert Popup (One Button): OK BUTTON
+    static func showAlert(icon: String = "popup/connectionFailed", title: String, desc: String? = nil, priority: Priority = .high, onCancel: (() -> Void)? = nil) {
         let model = Popup.Alert(icon: icon, title: title, desc: desc, onCancel: onCancel)
-        Popup.show(model, animationType: .fromTop, priority: .high)
+        Popup.show(model, animationType: .fromTop, priority: priority)
     }
     
     ///#Instruction Alert Popup (Extending Alert: Icon, Title, Desc, Steps, One Action Button)

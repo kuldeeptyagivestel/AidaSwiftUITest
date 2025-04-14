@@ -1728,8 +1728,10 @@ Note: Power consumption will increase while monitoring is active.";
 "menstrualDesc" = "You can track your menstruation cycle and set period reminder.";
 "menstrulaRecommendSetting" = "Continuous recording can improve forecast accuracy. We recommend updating your settings according to your actual period each month to receive more accurate forecasts and reminders.";
 
-//MARK: DO NOT DISTURB MODE
-"doNotDisturbMode" = "Do Not Disturb Mode";
+//MARK: DND MODE
+"allDayDNDMode" = "All-day DND mode";
+"scheduledDNDMode" = "Scheduled DND mode";
+"allDayDNDModeDesc" = "When do not disturb mode is enabled, the alarm clock, timer, and device upgrades will still trigger alerts, but all other notifications will be silenced.";
 
 //MARK: SPORT RECOGNITION
 "sportRecognition" = "Sport Recognition";

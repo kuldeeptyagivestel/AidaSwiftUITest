@@ -955,12 +955,33 @@ extension WatchSettings {
             watchType: SmartWatchType = .v3,
             isEnabledAllDay: Bool = false,
             isEnabledScheduled: Bool = false,
-            startEndTime: TimeRange = TimeRange(start: "09:00", end: "11:00")
+            startEndTime: TimeRange = TimeRange(start: "09:00", end: "18:00")
         ) {
             self.watchType = watchType
             self.isEnabledAllDay = isEnabledAllDay
             self.isEnabledScheduled = isEnabledScheduled
             self.startEndTime = startEndTime
+        }
+        
+        public func update(
+            isEnabledAllDay: Bool? = nil,
+            isEnabledScheduled: Bool? = nil,
+            startEndTime: TimeRange? = nil
+        ) -> DND {
+            // Check if any actual value has changed
+            guard isEnabledAllDay.map({ $0 != self.isEnabledAllDay }) ?? false ||
+                  isEnabledScheduled.map({ $0 != self.isEnabledScheduled }) ?? false ||
+                  startEndTime.map({ $0 != self.startEndTime }) ?? false
+            else {
+                return self // No change detected, return existing instance
+            }
+
+            return DND(
+                watchType: self.watchType,
+                isEnabledAllDay: isEnabledAllDay ?? self.isEnabledAllDay,
+                isEnabledScheduled: isEnabledScheduled ?? self.isEnabledScheduled,
+                startEndTime: startEndTime ?? self.startEndTime
+            )
         }
     }
 }

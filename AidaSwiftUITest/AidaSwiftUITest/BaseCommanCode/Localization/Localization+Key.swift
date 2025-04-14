@@ -1601,6 +1601,11 @@ public enum LocalizationKey: String {
     case menstrualDesc
     case menstrulaRecommendSetting
     
+    //MARK: DND MODE
+    case allDayDNDMode
+    case scheduledDNDMode
+    case allDayDNDModeDesc
+    
     //MARK: Sport Recognition
     case sportRecognitionDesc
     case automaticSportPause

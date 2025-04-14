@@ -1751,8 +1751,11 @@ Not: İzleme etkinken güç tüketimi artacaktır.";
 
 "menstrualDesc" = "Adet döngünüzü takip edebilir ve adet hatırlatıcısı ayarlayabilirsiniz.";
 "menstrulaRecommendSetting" = "Sürekli kayıt, tahmin doğruluğunu artırabilir. Daha doğru tahminler ve hatırlatıcılar almak için ayarlarınızı her ay gerçek adetinize göre güncellemenizi öneririz.";
-//MARK: DO NOT DISTURB MODE
-"doNotDisturbMode" = "Rahatsız etmeyin modu";
+
+//MARK: DND MODE
+"allDayDNDMode" = "Tüm gün rahatsız etme modu";
+"scheduledDNDMode" = "Planlanmış rahatsız etme modu";
+"allDayDNDModeDesc" = "Rahatsız Etme (Do Not Disturb) modu etkinleştirildiğinde, alarm saati, zamanlayıcı ve cihaz güncellemeleri yine de uyarı verecektir, ancak diğer tüm bildirimler sessize alınacaktır.";
 
 //MARK: SPORT RECOGNITION
 "sportRecognition" = "Spor tanıma";
