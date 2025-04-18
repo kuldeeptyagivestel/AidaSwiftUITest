@@ -24,74 +24,57 @@ extension SmartWatch.V3 {
 extension SmartWatch.V3.Notification {
     // ViewModel responsible for managing data related to the Route History view.
     class NotificationViewModel: ViewModel {
-        var title: String = .localized(.settings_notifications)
+        ///#INSTANCE PROPERTIES
+        @Published var title: String = .localized(.healthTracking)
+        var navCoordinator: NavigationCoordinator
+        let watchType: SmartWatchType
+        
+        ///#PUBLISHED PROPERTIES
+        @Published var allowNotifFeature: FeatureCell.Model = FeatureCell.Model(title: .localized(.syncPhoneNotifications), type: .switchable(value: true))
+        @Published var inhouseAppFeatures: [FeatureCell.Model] = []
+        @Published var systemAppFeatures: [FeatureCell.Model] = []
+        @Published var socialFeatures: [FeatureCell.Model] = []
 
-        @Published var allowNotifications: Bool = false {
-            didSet {
-                if !allowNotifications {
-                    disableAllNotifications()
-                }
-            }
+        // MARK: METHODS
+        ///#LIFE CYCLE METHODS
+        init(navCoordinator: NavigationCoordinator, watchType: SmartWatchType) {
+            self.navCoordinator = navCoordinator
+            self.watchType = watchType
+            
+            fetchDataRefreshView()
         }
         
-        @Published var systemPermission: Bool = false
+        deinit {
 
-        @Published var socialOptions: [NotificationOption] = [
-            NotificationOption(name: String.localized(.APP_TYPE_WHATSAPP), icon: "APP_TYPE_WHATSAPP", isEnabled: false),
-            NotificationOption(name: String.localized(.APP_TYPE_INSTAGRAM), icon: "APP_TYPE_INSTAGRAM", isEnabled: false),
-            NotificationOption(name: String.localized(.APP_TYPE_FACEBOOK), icon: "APP_TYPE_FACEBOOK", isEnabled: false),
-            NotificationOption(name: String.localized(.APP_TYPE_TWITTER), icon: "APP_TYPE_TWITTER", isEnabled: false),
-            NotificationOption(name: String.localized(.APP_TYPE_LINKEDIN), icon: "APP_TYPE_LINKEDIN", isEnabled: false),
-            NotificationOption(name: String.localized(.APP_TYPE_YOUTUBE), icon: "APP_TYPE_YOUTUBE", isEnabled: false)
-        ]
-
-        @Published var systemOptions: [NotificationOption] = [
-            NotificationOption(name: String.localized(.APP_TYPE_CALENDAR), icon: "APP_TYPE_CALENDAR", isEnabled: false),
-            NotificationOption(name: String.localized(.APP_TYPE_GMAIL), icon: "APP_TYPE_NewEMAIL", isEnabled: false),
-            NotificationOption(name: String.localized(.APP_TYPE_SMS), icon: "APP_TYPE_SMS", isEnabled: false),
-            NotificationOption(name: String.localized(.APP_TYPE_MISSEDCALL), icon: "APP_TYPE_MISSEDCALL", isEnabled: false)
-        ]
-
-        @Published var notificationOptions: [NotificationOption] = [
-            NotificationOption(name: String.localized(.app_name), icon: "smartHealth", isEnabled: false),
-            NotificationOption(name: String.localized(.app_NameSmartLife), icon: "smartLife", isEnabled: false)
-        ]
-
-        // Function to toggle system permissions
-        func toggleSystemPermission() {
-            systemPermission.toggle()
         }
-
-        // Function to disable all notification options
-        private func disableAllNotifications() {
-            notificationOptions = notificationOptions.map { option in
-                var updatedOption = option
-                updatedOption.isEnabled = false
-                return updatedOption
-            }
+        
+        ///#FETCH DATA
+        ///Return Stored Model from DB
+        internal func fetchDataRefreshView() {
+            allowNotifFeature = FeatureCell.Model(title: .localized(.syncPhoneNotifications), type: .switchable(value: true))
             
-            systemOptions = systemOptions.map { option in
-                var updatedOption = option
-                updatedOption.isEnabled = false
-                return updatedOption
-            }
-
-            socialOptions = socialOptions.map { option in
-                var updatedOption = option
-                updatedOption.isEnabled = false
-                return updatedOption
-            }
+            inhouseAppFeatures = [
+                FeatureCell.Model(title: .localized(.app_name), type: .switchable(value: false), icon: "APP_TYPE_SMARTHEALTH"),
+                FeatureCell.Model(title: .localized(.app_NameSmartLife), type: .switchable(value: false), icon: "APP_TYPE_SMARTLIFE"),
+            ]
+            
+            systemAppFeatures = [
+                FeatureCell.Model(title: .localized(.APP_TYPE_CALENDAR), type: .switchable(value: false), icon: "APP_TYPE_CALENDER_V3"),
+                FeatureCell.Model(title: .localized(.APP_TYPE_GMAIL), type: .switchable(value: false), icon: "APP_TYPE_EMAIL_V3"),
+                FeatureCell.Model(title: .localized(.APP_TYPE_SMS), type: .switchable(value: true), icon: "APP_TYPE_SMS_V3"),
+                FeatureCell.Model(title: .localized(.APP_TYPE_MISSEDCALL), type: .switchable(value: false), icon: "APP_TYPE_MISSEDCALL_V3")
+            ]
+            
+            socialFeatures = [
+                FeatureCell.Model(title: .localized(.APP_TYPE_WHATSAPP), type: .switchable(value: false), icon: "APP_TYPE_WHATSAPP_V3"),
+                FeatureCell.Model(title: .localized(.APP_TYPE_INSTAGRAM), type: .switchable(value: true), icon: "APP_TYPE_INSTAGRAM"),
+                FeatureCell.Model(title: .localized(.APP_TYPE_FACEBOOK), type: .switchable(value: false), icon: "APP_TYPE_FACEBOOK"),
+                FeatureCell.Model(title: .localized(.APP_TYPE_TWITTER), type: .switchable(value: false), icon: "APP_TYPE_TWITTER"),
+                FeatureCell.Model(title: .localized(.APP_TYPE_LINKEDIN), type: .switchable(value: false), icon: "APP_TYPE_LINKEDIN"),
+                FeatureCell.Model(title: .localized(.APP_TYPE_YOUTUBE), type: .switchable(value: true), icon: "APP_TYPE_YOUTUBE_V3"),
+                FeatureCell.Model(title: .localized(.APP_TYPE_TELEGRAM), type: .switchable(value: false), icon: "APP_TYPE_TELEGRAM_V3"),
+                FeatureCell.Model(title: .localized(.APP_TYPE_SLACK), type: .switchable(value: true), icon: "APP_TYPE_SLACK")
+            ]
         }
-    }
-
-}
-//MARK: - UI MODELS
-extension SmartWatch.V3.Notification {
-    
-    struct NotificationOption: Identifiable {
-        let id = UUID()
-        var name: String
-        var icon: String
-        var isEnabled: Bool
     }
 }

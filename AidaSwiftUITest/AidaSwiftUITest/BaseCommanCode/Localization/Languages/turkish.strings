@@ -1461,7 +1461,7 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "APP_TYPE_WHATSAPP" = "Whatsapp";
 "APP_TYPE_INSTAGRAM" = "Instagram";
 "APP_TYPE_FACEBOOK" = "Facebook";
-"APP_TYPE_TWITTER" = "Twitter";
+"APP_TYPE_TWITTER" = "X";
 "APP_TYPE_SKYPE" = "Skype";
 "APP_TYPE_GMAIL" = "E-mail";
 "APP_TYPE_MESSENGER" = "Messenger";
@@ -1472,6 +1472,7 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 "APP_TYPE_SLACK" = "Slack";
 "APP_TYPE_YOUTUBE" = "Youtube";
 "APP_TYPE_MISSEDCALL" = "Cevapsız aramalar";
+
 //MARK: watch v2 - do not disturb
 "duringDay" = "Gündüz boyunca rahatsız etme";
 "startEndTime" = "Başlangıç - bitiş saati";
@@ -1655,8 +1656,12 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 
 "noContact" = "İletişim yok";
 "noContact Desc" = "Saatinize 20'ye kadar iletişim ekleyebilirsiniz.";
+
 //MARK: NOTIFICATIONS
 "notifications" = "Bildirimler";
+"syncPhoneNotifications" = "Sync phone notifications";
+"syncPhoneNotificationsDesc" = "Telefon bildirimlerini eşlemek için, Bluetooth ayarlarından “sistem bildirimlerini paylaş” seçeneğini açman gerekiyor.  İzin verdiğin uygulamalara gelen bildirimlerde saat titreyecektir.";
+
 "notificationsDesc" = "Bildirimleri alabilmeniz için telefon ayarlarınızdan bildirim iznini aktifleştirmeniz gerekmektedir.";
 "systemNotificationPermission" = "Sistem bildirimleri izni";
 

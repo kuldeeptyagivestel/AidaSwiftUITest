@@ -17,6 +17,7 @@ extension FeatureCell {
     struct Model {
         let title: String
         var type: CellType
+        var icon: String? = nil
     }
 }
 
@@ -58,13 +59,22 @@ struct FeatureCell: View {
             Spacer()
             
             HStack() {
+                if let iconName = feature.icon {
+                    Image(iconName)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 24, height: 24)
+                        .padding(.horizontal, 5)
+                        .opacity(isEnabled ? 1.0 : 0.4)
+                }
+                
                 Text(feature.title)
                     .font(.custom(.muli, style: .bold, size: 17))
                     .foregroundStyle(isEnabled ? Color.lblPrimary : Color.disabledColor)
                     .lineLimit(2)
                     .multilineTextAlignment(.leading)
                     .fixedSize(horizontal: false, vertical: true) // Ensure proper wrapping
-                    .frame(width: 290, alignment: .leading) //250 becuase text can more space.
+                    .frame(width: ((feature.icon != nil) ? 230 : 290) , alignment: .leading) //250 becuase text can more space.
                     .animation(.easeInOut(duration: 0.35), value: isEnabled)
                     .background(
                         GeometryReader { geo in
@@ -127,7 +137,20 @@ struct FeatureCell: View {
         var body: some View {
             VStack(spacing: 0) {
                 FeatureCell(
-                    feature: .constant(FeatureCell.Model(title: "Firmware update", type: .navigable)),
+                    feature: .constant(FeatureCell.Model(title: "Firmware update", type: .switchable(value: true), icon: "APP_TYPE_WHATSAPP")),
+                    isEnabled: $isEnabled
+                ) { tappedFeature in
+                    switch tappedFeature.type {
+                    case .switchable(let value):
+                        print("Toggle Changed: \(tappedFeature.title) → \(value ? "ON" : "OFF")")
+                    case .navigable:
+                        print("Tapped: \(tappedFeature.title)")
+                    }
+                }
+                
+                
+                FeatureCell(
+                    feature: .constant(FeatureCell.Model(title: "Firmware update", type: .navigable, icon: "APP_TYPE_NewEMAIL")),
                     isEnabled: $isEnabled
                 ) { tappedFeature in
                     switch tappedFeature.type {
@@ -144,7 +167,7 @@ struct FeatureCell: View {
                 )
                 
                 FeatureCell(
-                    feature: .constant(FeatureCell.Model(title: "Automatic respiratory rate\ndetection", type: .switchable(value: true))),
+                    feature: .constant(FeatureCell.Model(title: "Continuous heart rate measurements", type: .switchable(value: true))),
                     isEnabled: $isEnabled
                 ) { tappedFeature in
                     switch tappedFeature.type {
@@ -174,4 +197,3 @@ struct FeatureCell: View {
 
     return PreviewWrapper()
 }
-

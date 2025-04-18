@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "APP_TYPE_NewEMAIL.png",
+      "filename" : "Telegram.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "APP_TYPE_NewEMAIL@2x.png",
+      "filename" : "Telegram@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "APP_TYPE_NewEMAIL@3x.png",
+      "filename" : "Telegram@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

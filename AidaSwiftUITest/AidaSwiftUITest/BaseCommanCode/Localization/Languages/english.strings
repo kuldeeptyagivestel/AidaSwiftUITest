@@ -1452,7 +1452,7 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 "APP_TYPE_WHATSAPP" = "Whatsapp";
 "APP_TYPE_INSTAGRAM" = "Instagram";
 "APP_TYPE_FACEBOOK" = "Facebook";
-"APP_TYPE_TWITTER" = "Twitter";
+"APP_TYPE_TWITTER" = "X";
 "APP_TYPE_SKYPE" = "Skype";
 "APP_TYPE_GMAIL" = "E-mail";
 "APP_TYPE_MESSENGER" = "Messenger";
@@ -1463,6 +1463,7 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 "APP_TYPE_SLACK" = "Slack";
 "APP_TYPE_YOUTUBE" = "Youtube";
 "APP_TYPE_MISSEDCALL" = "Missed Calls";
+
 //MARK: watch v2 - do not disturb
 "duringDay" = "Do not disturb during the day";
 "startEndTime" = "Start-end time";
@@ -1631,8 +1632,12 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 
 "noContacts" = "No contacts";
 "noContactsDesc" = "You can add up to 20 contacts to your watch.";
+
 //MARK: NOTIFICATIONS
 "notifications" = "Notifications";
+"syncPhoneNotifications" = "Sync phone notifications";
+"syncPhoneNotificationsDesc" = "To sync phone notifications, turn on “Share system notifications” in your Bluetooth settings.  The watch will vibrate when you receive notifications for allowed ones.";
+
 "notificationsDesc" = "To receive notifications, you need to enable notification permission in your phone settings.";
 "systemNotificationPermission" = "System notifications permission";
 

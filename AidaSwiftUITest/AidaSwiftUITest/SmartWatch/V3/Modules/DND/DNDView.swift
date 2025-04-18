@@ -14,8 +14,8 @@ extension SmartWatch.V3.DND {
     internal struct DNDView: View {
         @ObservedObject var viewModel: DNDViewModel
         
-        @State private var allDayDNDFeature: FeatureCell.Model
-        @State private var scheduleDNDFeature: FeatureCell.Model
+        @State private var allDayFeature: FeatureCell.Model
+        @State private var scheduleFeature: FeatureCell.Model
         
         private var startEndTime: Binding<String?> {
             Binding(
@@ -26,7 +26,7 @@ extension SmartWatch.V3.DND {
         
         // Derived value: only enabled if both `isEnabled` and switch is ON
         private var isChildEnabled: Bool {
-            guard case .switchable(let isOn) = scheduleDNDFeature.type else { return false }
+            guard case .switchable(let isOn) = scheduleFeature.type else { return false }
             return isOn
         }
         
@@ -34,14 +34,14 @@ extension SmartWatch.V3.DND {
         init(viewModel: DNDViewModel) {
             self.viewModel = viewModel
             
-            _allDayDNDFeature = State(
+            _allDayFeature = State(
                 initialValue: FeatureCell.Model(
                     title: .localized(.allDayDNDMode),
                     type: .switchable(value: viewModel.model.isEnabledAllDay)
                 )
             )
             
-            _scheduleDNDFeature = State(
+            _scheduleFeature = State(
                 initialValue: FeatureCell.Model(
                     title: .localized(.scheduledDNDMode),
                     type: .switchable(value: viewModel.model.isEnabledScheduled)
@@ -53,11 +53,9 @@ extension SmartWatch.V3.DND {
             VStack(alignment: .leading) {
                 ScrollView {
                     VStack(alignment: .leading) {
-                        FeatureCell(feature: $allDayDNDFeature) { feature in
+                        FeatureCell(feature: $allDayFeature) { feature in
                             if case .switchable(let newValue) = feature.type {
-                                ///Manually update the model.
-                                viewModel.model = viewModel.model.update(isEnabledAllDay: newValue)
-                                viewModel.setCommand(watchType: viewModel.watchType, updatedModel: viewModel.model)
+                                handleToggleChange(isAllDay: true, isOn: newValue)
                             }
                         }
                         .dividerColor(.clear)
@@ -69,11 +67,9 @@ extension SmartWatch.V3.DND {
                         .padding(.bottom, 32)
                         
                         VStack(alignment: .leading) {
-                            FeatureCell(feature: $scheduleDNDFeature) { feature in
+                            FeatureCell(feature: $scheduleFeature) { feature in
                                 if case .switchable(let newValue) = feature.type {
-                                    ///Manually update the model.
-                                    viewModel.model = viewModel.model.update(isEnabledScheduled: newValue)
-                                    viewModel.setCommand(watchType: viewModel.watchType, updatedModel: viewModel.model)
+                                    handleToggleChange(isAllDay: false, isOn: newValue)
                                 }
                             }
                             
@@ -99,6 +95,21 @@ extension SmartWatch.V3.DND {
                 .background(Color.viewBgColor)
                 .padding(.top, 2) //Prevent view hide behind the Nav bar
             }
+        }
+        
+        //Toggle Handling: when one is turned on, the other turns off 
+        private func handleToggleChange(isAllDay: Bool, isOn: Bool) {
+            if isAllDay {
+                allDayFeature.type = .switchable(value: isOn)
+                scheduleFeature.type = .switchable(value: false)
+                viewModel.model = viewModel.model.update(isEnabledAllDay: isOn, isEnabledScheduled: false)
+            } else {
+                allDayFeature.type = .switchable(value: false)
+                scheduleFeature.type = .switchable(value: isOn)
+                viewModel.model = viewModel.model.update(isEnabledAllDay: false, isEnabledScheduled: isOn)
+            }
+            
+            viewModel.setCommand(watchType: viewModel.watchType, updatedModel: viewModel.model)
         }
         
         // MARK: - DESC VIEW

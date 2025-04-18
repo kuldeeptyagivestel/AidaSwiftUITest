@@ -1529,6 +1529,8 @@ public enum LocalizationKey: String {
     case noContactsDesc
     
     //MARK: Notifications
+    case syncPhoneNotifications
+    case syncPhoneNotificationsDesc
     case notificationsDesc
     case systemNotificationPermission
     
