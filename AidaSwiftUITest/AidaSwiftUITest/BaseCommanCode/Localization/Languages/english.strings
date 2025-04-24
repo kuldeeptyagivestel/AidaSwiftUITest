@@ -1755,8 +1755,15 @@ Note: Power consumption will increase while monitoring is active.";
 "weatherDisplay" = "Weather Display";
 
 //MARK: SHORTCUTS
-"shortcuts" = "Shortcuts";
 "shortcutsDesc" = "Long press and drag to reorder the functions. The device displays at least 2 cards.";
+"showFunctions" = "Show Functions";
+"hideFunctions" = "Hide Functions";
+"steps" = "Steps";
+"phone" = "Phone";
+"activity" = "Activity";
+"health" = "Health";
+"sports" = "Sports";
+
 //MARK: SPORT DISPLAY
 "sportDisplay" = "Sport Display";
 

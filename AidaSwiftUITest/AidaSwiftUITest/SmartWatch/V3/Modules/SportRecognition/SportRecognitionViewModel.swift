@@ -8,8 +8,6 @@
 
 import Foundation
 
-import Foundation
-
 internal typealias WatchV3SportRecognitionViewModel = SmartWatch.V3.SportRecognition.SportRecognitionViewModel
 internal typealias WatchV3SportRecognitionView = SmartWatch.V3.SportRecognition.SportRecognitionView
 

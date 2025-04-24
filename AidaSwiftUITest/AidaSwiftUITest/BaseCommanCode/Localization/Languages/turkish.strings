@@ -1779,8 +1779,15 @@ Not: İzleme etkinken güç tüketimi artacaktır.";
 "weatherDisplay" = "Hava durumu ekranı";
 
 //MARK: SHORTCUTS
-"shortcuts" = "Kısayollar";
 "shortcutsDesc" = "Fonksiyonları yeniden sıralamak için uzun basın ve sürükleyin. Cihaz en az 2 kart görüntüler.";
+"showFunctions" = "Fonksiyonları Göster";
+"hideFunctions" = "Fonksiyonları Gizle";
+"steps" = "Adımlar";
+"phone" = "Telefon";
+"activity" = "Etkinlik";
+"health" = "Sağlık";
+"sports" = "Spor";
+
 //MARK: SPORT DISPLAY
 "sportDisplay" = "Spor ekranı";
 

@@ -1040,6 +1040,59 @@ extension WatchSettings {
     }
 }
 
+// MARK: - SHORTCUT MENU
+extension WatchSettings {
+    struct ShortcutMenu: WatchFeatureSetting {
+        public static var feature: String { "autoSportRecognition" }
+        
+        public var watchType: SmartWatchType
+        public var orderedShortcuts: [ShortcutMenuItem]
+        
+        func toDict() -> [String: String] {
+            let orderedString = orderedShortcuts.map { String($0.rawValue) }.joined(separator: ",")
+            return [
+                "watchType": String(watchType.rawValue),
+                "orderedShortcuts": orderedString
+            ]
+        }
+
+        init?(from dict: [String: String]) {
+            let typeValue = Int(dict["watchType"] ?? "") ?? SmartWatchType.v3.rawValue
+            self.watchType = SmartWatchType(rawValue: typeValue) ?? .v3
+            
+            if let orderedRaw = dict["orderedShortcuts"] {
+                let rawValues = orderedRaw.split(separator: ",").compactMap { Int($0) }
+                self.orderedShortcuts = rawValues.compactMap { ShortcutMenuItem(rawValue: $0) }
+            } else {
+                self.orderedShortcuts = []
+            }
+        }
+        
+        public init(
+            watchType: SmartWatchType = .v3,
+            orderedShortcuts: [ShortcutMenuItem]
+        ) {
+            self.watchType = watchType
+            self.orderedShortcuts = orderedShortcuts
+        }
+        
+        public func update(
+            orderedShortcuts: [ShortcutMenuItem]? = nil
+        ) -> ShortcutMenu {
+            // Check if actual change occurred
+            guard let newItems = orderedShortcuts,
+                  newItems != self.orderedShortcuts else {
+                return self // No changes
+            }
+            
+            return ShortcutMenu(
+                watchType: self.watchType,
+                orderedShortcuts: newItems
+            )
+        }
+    }
+}
+
 //// MARK: - SHORTCUT
 //extension WatchSettings {
 //    public struct Shortcut: FeatureSetting {

@@ -13,17 +13,25 @@ struct ContentView: View {
    // static let rootViewModel = SmartWatch.V3.DeviceConfigDashboard.ConfigDashboardViewModelMocking()
     static let rootViewModel = WatchV3ConfigDashboardViewModel()
     let navController: UINavigationController = UINavigationController()
-    let rootViewModel: WatchV3WatchfaceViewModel
     var navCoordinator = NavigationCoordinator()
     
+    
+    let viewModel = WatchV3ShortcutsViewModel(navCoordinator: NavigationCoordinator(), watchType: .v3)
+    
     init() {
-        self.navCoordinator.navigationController = navController
-        rootViewModel = WatchV3WatchfaceViewModel(navCoordinator: navCoordinator, watchType: .v3)
+
     }
+    
+    
     
     var body: some View {
         
-        SmartWatch.V3.Watchface.WatchfaceDashboardView(viewModel: rootViewModel)
+        SmartWatch.V3.Shortcuts.ShortcutsView(viewModel: viewModel)
+        
+//        let rootViewModel = WatchV3ShortcutsViewModel()
+//        SmartWatch.V3.Shortcuts.ShortcutsView(viewModel: rootViewModel)
+        
+     //SmartWatch.V3.Watchface.WatchfaceDashboardView(viewModel: rootViewModel)
         
 //        VStack(spacing: 10) {
 //            SmartWatch.V3.DeviceConfigDashboard.ConfigDashboardView(viewModel: ContentView.rootViewModel)

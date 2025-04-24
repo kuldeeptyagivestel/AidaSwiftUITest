@@ -1608,14 +1608,22 @@ public enum LocalizationKey: String {
     case scheduledDNDMode
     case allDayDNDModeDesc
     
+    //MARK: SHORTCUTS
+    case shortcutsDesc
+    case showFunctions
+    case hideFunctions
+    case steps
+    case phone
+    case activity
+    case health
+    case sports
+    
     //MARK: Sport Recognition
     case sportRecognitionDesc
     case automaticSportPause
     case automaticSportDesc
     case automaticSportEnd
     case automaticSportEndDesc
-    
-    case shortcutsDesc
     
     //MARK: -
     //MARK: -  AIRPURIFIER
