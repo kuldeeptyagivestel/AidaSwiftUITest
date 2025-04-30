@@ -1656,6 +1656,12 @@ Uygun stres, fiziksel ve zihinsel sağlığa faydalıdır, ancak çok fazla stre
 
 "noContact" = "İletişim yok";
 "noContact Desc" = "Saatinize 20'ye kadar iletişim ekleyebilirsiniz.";
+"searchContactsPlaceholder" = "%d kişi arasında arayın";
+"contacts" = "Rehber";
+"contactPermissionPopupTitle" = "Vestel Akıllı Sağlık kişilerinize erişmek istiyor";
+"contactPermissionPopupDesc" = "Cihazınızdan çağrı bildirimi almak için izin gereklidir.";
+"allow" = "İzin Ver";
+"deny" = "Reddet";
 
 //MARK: NOTIFICATIONS
 "notifications" = "Bildirimler";

@@ -1632,6 +1632,12 @@ Appropriate stress is beneficial to physical and mental health, but too much str
 
 "noContacts" = "No contacts";
 "noContactsDesc" = "You can add up to 20 contacts to your watch.";
+"searchContactsPlaceholder" = "Search among %d contacts";
+"contacts" = "Contacts";
+"contactPermissionPopupTitle" = "Vestel Smart Health would like to access your contacts";
+"contactPermissionPopupDesc" = "Access is needed to receive call notifications from your device.";
+"allow" = "Allow";
+"deny" = "Deny";
 
 //MARK: NOTIFICATIONS
 "notifications" = "Notifications";

@@ -19,14 +19,17 @@ struct ContentView: View {
     let viewModel = WatchV3ShortcutsViewModel(navCoordinator: NavigationCoordinator(), watchType: .v3)
     
     init() {
-
+        
     }
     
     
     
     var body: some View {
         
-        SmartWatch.V3.Shortcuts.ShortcutsView(viewModel: viewModel)
+        let rootViewModel = WatchV3CallsViewModel(navCoordinator: navCoordinator, watchType: .v3)
+        SmartWatch.V3.Calls.CallsView(viewModel: rootViewModel)
+        
+       // SmartWatch.V3.Shortcuts.ShortcutsView(viewModel: viewModel)
         
 //        let rootViewModel = WatchV3ShortcutsViewModel()
 //        SmartWatch.V3.Shortcuts.ShortcutsView(viewModel: rootViewModel)

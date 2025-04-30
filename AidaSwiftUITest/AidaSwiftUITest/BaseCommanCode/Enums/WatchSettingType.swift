@@ -193,23 +193,81 @@ public extension WatchFeatureSetting {
 //MARK: - VALUE TYPES
 extension WatchSettings {
     public struct Calls: WatchFeatureSetting {
-        public static var feature: String { "calls" }  // Feature identifier
+        public static var feature: String { "calls" }
+        public static var parentalKey: String { "isEnabled" }
+
         public var watchType: SmartWatchType
-        public var isEnabled: Bool = false
+        public var isEnabled: Bool
+        public var contacts: [PhoneContact]
 
         public func toDict() -> [String: String] {
-            ["isEnabled": String(isEnabled)]
+            let contactsString = contacts.map { "\($0.name):\($0.phone)" }.joined(separator: "|")
+            return [
+                "watchType": String(watchType.rawValue),
+                "isEnabled": String(isEnabled),
+                "contacts": contactsString
+            ]
         }
-        
+
         public init?(from dict: [String: String]) {
             self.watchType = SmartWatchType(rawValue: Int(dict["watchType"] ?? "\(SmartWatchType.v3.rawValue)") ?? SmartWatchType.v3.rawValue) ?? .v3
             self.isEnabled = Bool(dict["isEnabled"] ?? "false") ?? false
+
+            if let contactsString = dict["contacts"], !contactsString.isEmpty {
+                self.contacts = contactsString.split(separator: "|").compactMap { entry in
+                    let parts = entry.split(separator: ":", maxSplits: 1).map(String.init)
+                    guard parts.count == 2 else { return nil }
+                    return PhoneContact(name: parts[0], phone: parts[1])
+                }
+            } else {
+                self.contacts = []
+            }
         }
-        
-        // Default initializer
-        public init(watchType: SmartWatchType = .v3, isEnabled: Bool = false) {
+
+        public init(watchType: SmartWatchType, isEnabled: Bool = false, contacts: [PhoneContact] = []) {
             self.watchType = watchType
             self.isEnabled = isEnabled
+            self.contacts = contacts
+        }
+        
+        public func update(
+            isEnabled: Bool? = nil,
+            contacts: [PhoneContact]? = nil
+        ) -> Calls {
+            // Check if any actual value has changed
+            guard isEnabled.map({ $0 != self.isEnabled }) ?? false ||
+                  contacts.map({ $0 != self.contacts }) ?? false
+            else {
+                return self // No change detected
+            }
+
+            return Calls(
+                watchType: self.watchType,
+                isEnabled: isEnabled ?? self.isEnabled,
+                contacts: contacts ?? self.contacts
+            )
+        }
+        
+        public func addContact(_ contact: PhoneContact) -> Calls {
+            var updatedContacts = contacts
+            updatedContacts.append(contact)
+            return update(contacts: updatedContacts)
+        }
+        
+        public func addContacts(_ newContacts: [PhoneContact]) -> Calls {
+            var updatedContacts = contacts
+            updatedContacts.append(contentsOf: newContacts)
+            return update(contacts: updatedContacts)
+        }
+        
+        public func removeContact(_ contact: PhoneContact) -> Calls {
+            let updatedContacts = contacts.filter { $0 != contact }
+            return update(contacts: updatedContacts)
+        }
+        
+        public func removeContacts(_ contactsToRemove: [PhoneContact]) -> Calls {
+            let updatedContacts = contacts.filter { !contactsToRemove.contains($0) }
+            return update(contacts: updatedContacts)
         }
     }
 }

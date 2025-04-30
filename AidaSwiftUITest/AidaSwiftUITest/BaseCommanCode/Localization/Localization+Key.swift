@@ -1520,13 +1520,19 @@ public enum LocalizationKey: String {
     
     //MARK: - V3 Features
     
-    //MARK: Calls
+    //MARK: CALLS
     case incomingCallAlert
     case frequentContacts
     case incomingCallAlertDesc
     case frequentContactsDesc
     case noContacts
     case noContactsDesc
+    case searchContactsPlaceholder
+    case contacts
+    case contactPermissionPopupTitle
+    case contactPermissionPopupDesc
+    case allow
+    case deny
     
     //MARK: Notifications
     case syncPhoneNotifications

@@ -40,14 +40,14 @@ struct EmptyStateView: View {
                 .padding(.bottom, 4)
             
             Text(title)
-                .font(.custom(style: .bold, size: 19))
+                .font(.custom(style: .black, size: 19))
                 .foregroundColor(.lblPrimary)
                 .multilineTextAlignment(.center)
             
             if let desc = desc {
                 Text(desc)
-                    .font(.custom(style: .semibold, size: 15))
-                    .foregroundColor(.lblSecondary.opacity(0.7))
+                    .font(.custom(.openSans, style: .regular, size: 14))
+                    .foregroundColor(.lblSecondary)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 16)
                     .padding(.vertical, 5)

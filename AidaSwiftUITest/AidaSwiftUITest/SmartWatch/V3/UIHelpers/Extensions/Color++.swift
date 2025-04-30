@@ -44,7 +44,7 @@ extension Color {
     static let toggleOffColor = Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1))
     
     //MARK: - Title Colors
-    static let titlePrimary = Color(#colorLiteral(red: 0.2392156863, green: 0.231372549, blue: 0.231372549, alpha: 1))
+    static let titlePrimary = Color(#colorLiteral(red: 0.2392156863, green: 0.231372549, blue: 0.231372549, alpha: 1)) //3D3B3B
     
     //MARK: - Battery Cell
     static let batteryCell = Color(#colorLiteral(red: 0.3294117647, green: 0.8196078431, blue: 0.7450980392, alpha: 1)) //#54D1BE
