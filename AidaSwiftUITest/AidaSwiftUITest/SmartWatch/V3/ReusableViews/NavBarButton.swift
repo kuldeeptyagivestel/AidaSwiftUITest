@@ -76,7 +76,7 @@ struct NavBarButton: View {
             }
         }
         .aspectRatio(contentMode: .fit)
-        .frame(width: 20, height: 20)
+        .frame(width: 24, height: 24)
     }
 }
 
@@ -148,6 +148,10 @@ private extension NavBarButton.Style {
             buttonState: .disabled
         ) {
             print("Upload tapped")
+        }
+        
+        NavBarButton(style: .icon(.asset(name: "smartwatchv3/editIcon"))) {
+            
         }
     }
     .padding()

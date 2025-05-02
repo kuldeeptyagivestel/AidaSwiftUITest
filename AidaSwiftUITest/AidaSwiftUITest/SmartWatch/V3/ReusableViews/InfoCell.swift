@@ -87,7 +87,7 @@ struct InfoCell: View {
         @State private var isStartEndEnabled: Bool = false
         @State private var limitValue: String? = "120 bpm"
         @State private var isLimitEnabled: Bool = true
-
+        
         var body: some View {
             VStack(spacing: 0) {
                 InfoCell(
@@ -96,7 +96,7 @@ struct InfoCell: View {
                     icon: Image(systemName: "arrow.right"),
                     isEnabled: $isStartEndEnabled
                 )
-
+                
                 InfoCell(
                     title: "Limit value",
                     value: $limitValue
@@ -122,4 +122,3 @@ struct InfoCell: View {
     
     return PreviewWrapper()
 }
-

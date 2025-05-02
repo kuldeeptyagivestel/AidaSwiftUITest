@@ -26,8 +26,8 @@ struct ContentView: View {
     
     var body: some View {
         
-        let rootViewModel = WatchV3CallsViewModel(navCoordinator: navCoordinator, watchType: .v3)
-        SmartWatch.V3.Calls.CallsView(viewModel: rootViewModel)
+        let viewModel = SmartWatch.V3.SportsDisplay.SportsDisplayViewModel(navCoordinator: NavigationCoordinator(), watchType: .v3)
+        SmartWatch.V3.SportsDisplay.EditSportsView(viewModel: viewModel)
         
        // SmartWatch.V3.Shortcuts.ShortcutsView(viewModel: viewModel)
         

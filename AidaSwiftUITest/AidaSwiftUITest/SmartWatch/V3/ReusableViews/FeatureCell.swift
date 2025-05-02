@@ -148,9 +148,8 @@ struct FeatureCell: View {
                     }
                 }
                 
-                
                 FeatureCell(
-                    feature: .constant(FeatureCell.Model(title: "Firmware update", type: .navigable, icon: "APP_TYPE_NewEMAIL")),
+                    feature: .constant(FeatureCell.Model(title: "Firmware update", type: .navigable, icon: "alpineSkiing")),
                     isEnabled: $isEnabled
                 ) { tappedFeature in
                     switch tappedFeature.type {
